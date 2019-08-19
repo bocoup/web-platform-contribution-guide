@@ -5,7 +5,7 @@ Version 0.1-pre
 Various Authors[^1]
 
 
-# Web Platform Community Contributing Guidebook
+# Web Platform Contribution Guide
 
 
 ## Getting started with a history, skill guide and how-to of web standards.
