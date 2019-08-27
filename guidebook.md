@@ -366,7 +366,7 @@ In this issue, we see the editor suggesting future work to generalize the algori
 
 ### Filing bugs on a Browser
 
-Browser implementers are more likely to implement a proposed change if there is a bug reported for the change in their bug tracker. Therefore, filing bugs for each browser engine that should be changed is an important step.
+Browser implementers are more likely to implement a proposed change if there is a bug reported for the change in their bug tracker. Therefore, filing a bug for each browser engine that should be changed is an important step.
 
 Here are links for filing a new bug for each major browser engine:
 
@@ -376,7 +376,7 @@ Here are links for filing a new bug for each major browser engine:
 
 Before filing a bug, search the bug tracker if there is already a bug filed for the same thing. If you find one, you can add a comment to that bug instead of filing a new bug. If you can't find anything, or if you find something that is related but not exactly the same bug, then file a new bug. Don't worry if your bug gets marked as a duplicate, that is common and not a big deal.
 
-The default template typically asks for steps to reproduce, on the assumption that the bug report needs reproduction and debugging of the browser to understand what the actual bug is. For bugs asking to implement a specification change, it might not always add clarity with reproduction steps. If you have a specification issue that explains the problem, and PRs for a proposed specification change and a PR for a WPT test case, then the browser bug can often just briefly explain the problem and then link to the relevant specification issue and the PRs.
+The default template typically asks for steps to reproduce, on the assumption that the bug report needs reproduction and debugging of the browser to understand what the actual bug is. For bugs asking to implement a specification change, it might not always add clarity with reproduction steps. If you have a specification issue that explains the problem, and a pull request (PR) for a proposed specification change and a PR for a web-platform-tests test case, then the browser bug can often just briefly explain the problem and then link to the relevant specification issue and the PRs.
 
 Make sure to write a clear summary of the bug. The summary should briefly but clearly say what the bug is.
 
@@ -741,6 +741,7 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
 *   **Normative** - content in a specification that contains requirements or is referenced by something that is normative.
 *   **Non-normative** - content in a specification that is not normative, e.g. examples or statements of fact.
 *   **Prose** - written words.
+*   **PR** - pull request (in GitHub).
 *   **TC** - Technical Committee (at Ecma).
 *   **TSC** - Technical Steering Committee
 *   **UA** - User Agent - a piece of software that acts on behalf of the user: i.e. a web browser.
