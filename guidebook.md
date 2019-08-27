@@ -26,7 +26,7 @@ ____________________          __________________
 
 
 
-**Table of Contents**
+## Table of Contents
 
 
 [TOC]
@@ -41,10 +41,9 @@ The web platform is powerful and expressive, but it's also a little broken in pa
 
 In this guide, we are going to focus on bugs in a web standard for browsers. Bugs are a great way to get started because in order to get them fixed, you have to touch all of the components of a web standard; a specification, a patch to the source code of a browser engine, and interoperability tests. You might be surprised by how working on browser bugs will get you moving into deep parts of the web platform! Many of the most prolific contributors to the web platform got their start by working on interoperability bugs between browsers.
 
-
-            <p style="text-align: right">
-“The goal of this guide is to reach interoperability, not to add features, or change specs. This is maintenance work, and it is the most important thing that the web needs.”</p>
-
+<aside class="pull-quote">
+“The goal of this guide is to reach interoperability, not to add features, or change specs. This is maintenance work, and it is the most important thing that the web needs.”
+</aside>
 
 In the context of this guide, the goal of working on the web platform is to reach interoperability, not to add features, or change specs. This is maintenance work, and it is the most important thing that the web needs. This can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser. All forms of this work are part of maintenance and we celebrate each kind of contribution.
 
@@ -66,9 +65,9 @@ In the context of this guide, the goal of working on the web platform is to reac
 
 
 
-### **W3C**
+### W3C
 
-The W3C (World Wide Web Consortium) is an international standards body, with ~20 or so employees based out of four universities; MIT (Massachusetts Institute of Technology), ERCIM (European Research Center for Informatics and Mathematics), Keio University in Japan and Beihang University in Beijing, China. The W3C has 450 member companies which send delegates to WGs (working groups). Working groups oversee specifications. There is an annual meeting of all working groups hosted in a different city each year called TPAC (Technical Plenary Advisory Committee).
+The W3C (World Wide Web Consortium) is an international standards body, with 20 or so employees based out of four universities; MIT (Massachusetts Institute of Technology), ERCIM (European Research Center for Informatics and Mathematics), Keio University in Japan and Beihang University in Beijing, China. The W3C has 450 member companies which send delegates to WGs (working groups). Working groups oversee specifications. There is an annual meeting of all working groups hosted in a different city each year called TPAC (Technical Plenary Advisory Committee).
 
 The W3C working groups oversee and are leading the charge on technologies like SVG, CSS, ARIA, Web Driver, Generic Sensors, Web XR, Web Payments, Gamepad and UI Events.
 
@@ -85,7 +84,7 @@ In late 2017, the WHATWG formalized its operating principles under a “steering
 
 In 2018, the W3C invited WHATWG back to run the HTML standard. The main HTML specification is now worked on under the whatwg/html repository[^6]. In May 2019, the details of this arrangement were worked out, and the W3C and WHATWG agreed to collaborate on a single version of the HTML and DOM specifications[^7].
 
-The WHATWG is leading work on things like** **HTML, Compatibility, Console Object, DOM, Encoding, Fetch, Fullscreen, URL and XHR.
+The WHATWG is leading work on things like HTML, Compatibility, Console Object, DOM, Encoding, Fetch, Fullscreen, URL and XHR.
 
 
 ### CSS WG
@@ -108,7 +107,7 @@ In addition to the W3C and WHATWG, there are many other standards bodies that ma
 Ecma (formerly ECMA - the European Computer Manufacturing Association, but now just Ecma) is a standards body based in Geneva Switzerland. Ecma has 4 full time employees, and several active TCs (Technical Committees), most notably, TC39 (the 39th technical committee) which writes three specifications: Ecma-262, Ecma-402, Ecma-404 (collectively ECMAScript). These are the underlying specifications for the JavaScript programming language which is implemented in web browsers and Node.js. We’d really like to get more into how ECMAScript is standardized, but this is material for a separate guide, or potentially a future version of this guide.
 
 
-#### **OpenJS Foundation**
+#### OpenJS Foundation
 
 The OpenJS Foundation is a US-based Trade organization home to several dozen open source JavaScript projects including Node.js. Node.js is a de facto standard with a more ad hoc process for adding features than other technologies. OpenJS is not a standards body, but it does have a governance model for adding features to Node.js. Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International. The Node TSC (technical Steering Committee)[^8] operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in APIs on top of the JavaScript programming language which adds useful functionality that developers use to make software. The node global is similar to the `window` object in browsers, but geared toward server side software, and build tools for web developers. Many web developers use node to manage their projects’ build processes. Node share several APIs with web browsers, like URL, Fetch, Text Decoding, etc. Node.js is even known to run some of the web-platform-tests tests to ensure interoperability for the features that node and browsers share.
 
@@ -123,12 +122,12 @@ The IETF is a loose organization with no formal membership. This group develops 
 The Unicode Consortium defines the Unicode Standard[^9], the universal character set that is used for the web. New versions of the Unicode Standard can include new characters such as new emoji. Unicode also defines the UTF-8 and UTF-16 encodings. These are now also defined in the WHATWG Encoding Standard, for completeness sake. Unicode also has recommendations on text-related issues such as handling bi-directional text[^10] and rules for line breaking[^11] which are important for the web because following best practices for multilingual text helps users to read and understand text better.
 
 
-#### **IEEE**
+#### IEEE
 
 In their own words, “IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.” Of the many and diverse technical standards they develop, you may be familiar with the IEEE 802.11 standard (defining the WLAN protocol), or the IEEE 754 Standard for Floating-Point Arithmetic. The IEEE have working groups and their own process for developing standards.
 
 
-#### **ISO**
+#### ISO
 
 ISO/IEC JTC1 was formed as a merger of three subcommittees of international standards bodies to avoid duplicative or incompatible standards between several _national_ standards bodies. The group's purpose is to develop, maintain, and promote standards in the fields of information technology and information and communications technology. JTC1 subcommittees and working groups are responsible for more than 2600 published standards in areas such as programming languages, character sets, and multimedia. Standards organizations such as the W3C are able to publish ISO standards through a working relationship with ISO/JTC1.
 
@@ -137,7 +136,7 @@ Web standards are primarily specified in other places, like the W3C and Ecma Int
 For example, the W3C Web Content Accessibility Guidelines 2.0 (WCAG 2.0) is an ISO standard, which benefits countries and organizations that can more easily adopt ISO standards[^12]. WCAG 2.0 explains how to make web content more accessible to people with disabilities.
 
 
-#### **Khronos**
+#### Khronos
 
 Khronos is the name of the standards body that specifies WebGL, the low level graphics card programming interface of the web. This API can be used with the HTML canvas element, defined by the WHATWG.
 
@@ -258,9 +257,9 @@ For example, the following requirement about the `href` attribute’s value appl
 On the other hand, this requirement applies for how to parse the `href` attribute applies to the web browser conformance class and not to the web developer conformance class:
 
 > When a user follows a hyperlink created by an element subject, optionally with a hyperlink suffix, the user agent must run the following steps:
-
+>
 > …
-
+>
 > 9. Parse the URL given by subject's href attribute, relative to subject's node document.
 
 Note in particular that the requirement for web developers can be “stricter” than the possible syntaxes that will result in the same behavior in web browsers. This might be done to help web developers catch mistakes, or to allow for future extensions to the language, while at the same time ensuring compatibility with existing web content. This is common in HTML, but can be confusing at first.
@@ -271,7 +270,7 @@ Note in particular that the requirement for web developers can be “stricter”
 A definition is a specification shorthand for a longer piece of text, similar to the glossary of terms at the beginning of this guidebook. For example:
 
 > Hyperlink:
-
+>
 > These are links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, e.g. to visit them in a browser or download them.
 
 In this example, the HTML standard is defining what a hyperlink is, so that it can be referenced later.
@@ -282,11 +281,11 @@ In this example, the HTML standard is defining what a hyperlink is, so that it c
 An algorithm is a recipe for how a browser should do something. Algorithms describe the control flow that a user agent implements. For example:
 
 > The activation behavior of `a` elements that create hyperlinks is to run the following steps:
-
+>
 > 1. If the target of the click event is an img element with an ismap attribute specified, then server-side image map processing must be performed, as follows:
-
+>
 > ….
-
+>
 > 2. Follow the hyperlink or download the hyperlink created by the a element, as determined by the download attribute and any expressed user preference, passing hyperlink suffix, if the steps above defined it.
 
 In this example the HTML Standard is specifying the activation behavior algorithm. You can see how the “definition” for Hyperlink is used here.
@@ -317,9 +316,9 @@ In this example, the statement of fact helps explain the concept further by spel
 An example is a block of prose which shows how the technology being specified is intended to be used. For example:
 
 > If a site uses a consistent navigation toolbar on every page, then the link that would normally link to the page itself could be marked up using an a element:
-
+>
 > `<li> <a href="https://foobar.com">The Greatest Website</a> </li>`
-
+>
 > `<li> <a>Examples</a> </li>`
 
 In this example, we are showing an `a` element, both with and without an href attribute to orient readers to how the technology could be used.
@@ -572,7 +571,7 @@ What is the path for this?
 
 ### Start a Community Group
 
-If you’re interested in facilitation and consensus building without the overhead of editing a specification, starting a CG is a great way to go. Anyone can start a community group at the W3C. Community groups are great places to flesh out a technology area and it’s intersection with the web. Community groups can be used in many different ways. One very effective way to work is to start a CG, and as the CG Chair invite people from outside the W3C in the domain of the CG to give feedback on their pain points for the web. Then take those pain points, synthesize them into use cases and bring them to existing working groups to include in their existing standardization workflows. In 2011, the games community group did just this, producing a set of use cases and bringing them to various working groups to be addressed. ~8 years later nearly all of the game developer pain points for the web have been addressed. You can one of the initial Games CG reports from 2011 here:   [https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0](https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0)
+If you’re interested in facilitation and consensus building without the overhead of editing a specification, starting a CG is a great way to go. Anyone can start a community group at the W3C. Community groups are great places to flesh out a technology area and it’s intersection with the web. Community groups can be used in many different ways. One very effective way to work is to start a CG, and as the CG Chair invite people from outside the W3C in the domain of the CG to give feedback on their pain points for the web. Then take those pain points, synthesize them into use cases and bring them to existing working groups to include in their existing standardization workflows. In 2011, the games community group did just this, producing a set of use cases and bringing them to various working groups to be addressed. Around 8 years later nearly all of the game developer pain points for the web have been addressed. You can one of the initial Games CG reports from 2011 here:   [https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0](https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0)
 
 
 ## Case Study Examples
@@ -611,7 +610,7 @@ We alerted the Safari developers of the incompatibility by submitting [a report 
 
 **Impact**
 
-The Safari team has acknowledged the issue and filed it among their upcoming tasks. **BEGIN TENTATIVE **The web-platform-tests project has accepted the new test, and that test has been automatically transmitted to the Chromium project, where it serves as a reminder that the non-standard feature continues to reduce interoperability. **END TENTATIVE**
+The Safari team has acknowledged the issue and filed it among their upcoming tasks. **BEGIN TENTATIVE** The web-platform-tests project has accepted the new test, and that test has been automatically transmitted to the Chromium project, where it serves as a reminder that the non-standard feature continues to reduce interoperability. **END TENTATIVE**
 
 
 ## Testimonials
@@ -708,11 +707,11 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
 
 
 
-*   **API **- Application Programming Interface (like a GUI for computers).
+*   **API** - Application Programming Interface (like a GUI for computers).
 *   **ARIA** - Accessible Rich Internet Applications.
 *   **CSS** - Cascading Style Sheets, the collection of technologies used to change how elements on a web page look.
 *   **CG** - Community Group (at the W3C).
-*   **CLA **- Contributors License Agreement
+*   **CLA** - Contributors License Agreement
 *   **Spec** - short for specification.
 *   **Ecma** - The name of the standards body that makes ECMAScript, the standard for the JavaScript programming language.
 *   **HTML** - Hypertext Markup Language, the collection of technologies for structuring and linking between documents on the web.
@@ -721,12 +720,12 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
 *   **IPR** - Intellectual Property Rights
 *   **IRC** - Internet Relay Chat - how people chat with each other about web standards (instead of slack).
 *   **JS** - JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in node.js.
-*   **Living Standard **-
+*   **Living Standard** -
 *   **Node Global** - the collection of built-in APIs in node.
 *   **Normative** - content in a specification that contains requirements or is referenced by something that is normative.
 *   **Non-normative** - content in a specification that is not normative, e.g. examples or statements of fact.
 *   **Prose** - written words.
-*   **TC **- Technical Committee (at Ecma).
+*   **TC** - Technical Committee (at Ecma).
 *   **TSC** - Technical Steering Committee
 *   **UA** - User Agent - a piece of software that acts on behalf of the user: i.e. a web browser.
 *   **W3C** - World Wide Web Consortium.
