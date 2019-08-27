@@ -376,13 +376,16 @@ Here are links for filing a new bug for each major browser engine:
 
 Before filing a bug, search the bug tracker if there is already a bug filed for the same thing. If you find one, you can add a comment to that bug instead of filing a new bug. If you can't find anything, or if you find something that is related but not exactly the same bug, then file a new bug. Don't worry if your bug gets marked as a duplicate, that is common and not a big deal.
 
-The default template assumes that a typical user is reporting a bug, so asks for steps to reproduce. If you're reading this, you are not a typical user. If you have a specification issue that explains the problem, and PRs for a proposed specification change and a PR for a WPT test case, then the browser bug can just briefly explain the problem and then link to the relevant specification issue and the PRs.
+The default template typically asks for steps to reproduce, on the assumption that the bug report needs reproduction and debugging of the browser to understand what the actual bug is. For bugs asking to implement a specification change, it might not always add clarity with reproduction steps. If you have a specification issue that explains the problem, and PRs for a proposed specification change and a PR for a WPT test case, then the browser bug can often just briefly explain the problem and then link to the relevant specification issue and the PRs.
 
-Make sure to write a clear summary of the bug. The summary should briefly but clearly say what the bug is. Here are some good examples:
+Make sure to write a clear summary of the bug. The summary should briefly but clearly say what the bug is.
 
-* "fieldset should have min-inline-size instead of min-width in UA stylesheet"
-* "RegExp handling of /[a-z]/ig broken for Turkish language, breaks Google Maps"
-* "innerHTML serialization for javascript: URL attribute doesn't conform to the specification"
+Here are some good examples:
+
+* [Change DOMQuad bounds to getBounds() as per specification](https://bugzilla.mozilla.org/show_bug.cgi?id=1454622)
+* [Remove `<keygen>`](https://bugs.webkit.org/show_bug.cgi?id=167018)
+* [fieldset should have min-inline-size instead of min-width in UA stylesheet](https://bugs.chromium.org/p/chromium/issues/detail?id=874053)
+* [innerHTML serialization for javascript: URL attribute doesn't conform to the specification](https://bugs.chromium.org/p/chromium/issues/detail?id=927164)
 
 When you have filed browser bugs, link to them from the specification PR.
 
