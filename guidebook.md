@@ -172,7 +172,7 @@ All of the skills covered below contribute to your ability to build consensus ac
 
 When working on a change to a web browser, for example, it is important to get feedback from the specification editor, a WPT maintainer, and from a person or people who would be implementing your change within each browser engineering team. Sometimes you’ll also need to make your case to the manager of the person who would be implementing your change in the browser engine in order to get the work prioritized.
 
-Figuring out who to talk to about what and when can be a difficult project in its own right for a beginner because a lot of this consensus work is done between people who already know each other, know what each other work on, and know who has power and influence over what technology areas in the web. This knowledge is a key part of changing the web. We’re working to make this a more transparent process through this guide, but it can still be opaque at times. Don’t feel bad if you get stuck. You can start by referring to the “who to talk to” section of this guide. If you’re still stuck, you can email [simon@bocoup.com](mailto:simon@bocoup.com), [boaz@bocoup.com](mailto:boaz@bocoup.com), [jory@bocoup.com](mailto:jory@bocoup.com), [valerie@bocoup.com](mailto:valerie@bocoup.com), [leo@bocoup.com](mailto:leo@bocoup.com), [rick@bocoup.com](mailto:rick@bocoup.com) for an introduction.
+Figuring out who to talk to about what and when can be a difficult project in its own right for a beginner because a lot of this consensus work is done between people who already know each other, know what each other work on, and know who has power and influence over what technology areas in the web. This knowledge is a key part of changing the web. We’re working to make this a more transparent process through this guide, but it can still be opaque at times. Don’t feel bad if you get stuck. You can start by referring to the “Directory listing of people to talk to” section of this guide. If you’re still stuck, you can email [simon@bocoup.com](mailto:simon@bocoup.com), [boaz@bocoup.com](mailto:boaz@bocoup.com), [jory@bocoup.com](mailto:jory@bocoup.com), [valerie@bocoup.com](mailto:valerie@bocoup.com), [leo@bocoup.com](mailto:leo@bocoup.com), [rick@bocoup.com](mailto:rick@bocoup.com) for an introduction.
 
 
 ### Research
@@ -366,12 +366,25 @@ In this issue, we see the editor suggesting future work to generalize the algori
 
 ### Filing bugs on a Browser
 
+Browser implementers are more likely to implement a proposed change if there is a bug reported for the change in their bug tracker. Therefore, filing bugs for each browser engine that should be changed is an important step.
 
+Here are links for filing a new bug for each major browser engine:
 
-*   Reaching out to implementers via email first
-*   Loop them in on github issues for specs after emailing
-*   Filing browser bugs after reaching out to implementers
-*   Listen to and address implementer feedback in a timely manner
+* [Gecko](https://bugzilla.mozilla.org/enter_bug.cgi?product=Core)
+* [WebKit](https://bugs.webkit.org/enter_bug.cgi?product=WebKit)
+* [Chromium](https://crbug.com/new)
+
+Before filing a bug, search the bug tracker if there is already a bug filed for the same thing. If you find one, you can add a comment to that bug instead of filing a new bug. If you can't find anything, or if you find something that is related but not exactly the same bug, then file a new bug. Don't worry if your bug gets marked as a duplicate, that is common and not a big deal.
+
+The default template assumes that a typical user is reporting a bug, so asks for steps to reproduce. If you're reading this, you are not a typical user. If you have a specification issue that explains the problem, and PRs for a proposed specification change and a PR for a WPT test case, then the browser bug can just briefly explain the problem and then link to the relevant specification issue and the PRs.
+
+Make sure to write a clear summary of the bug. The summary should briefly but clearly say what the bug is. Here are some good examples:
+
+* "fieldset should have min-inline-size instead of min-width in UA stylesheet"
+* "RegExp handling of /[a-z]/ig broken for Turkish language, breaks Google Maps"
+* "innerHTML serialization for javascript: URL attribute doesn't conform to the specification"
+
+When you have filed browser bugs, link to them from the specification PR.
 
 
 ## Step by step guide to fix a W3C or WHATWG bug
