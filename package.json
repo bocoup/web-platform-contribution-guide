@@ -1,0 +1,25 @@
+{
+  "name": "web-platform-contribution-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11y/eleventy",
+    "serve": "npx @11y/eleventy --serve",
+    "debug": "DEBUG=* npx @11y/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bocoup/web-platform-contribution-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bocoup/web-platform-contribution-guide/issues"
+  },
+  "homepage": "https://github.com/bocoup/web-platform-contribution-guide#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  }
+}

@@ -1,3 +1,8 @@
+---
+layout: layouts/base.njk
+title: Web Platform Contribution Guide
+---
+
 March 2019
 
 Version 0.1-pre
@@ -5,7 +10,7 @@ Version 0.1-pre
 Various Authors[^1]
 
 
-# Web Platform Contribution Guide
+# {{ title }}
 
 
 ## Getting started with a history, skill guide and how-to of web standards.
@@ -79,7 +84,7 @@ WHATWG (Web Hypertext Application Technology Working Group) is an independent gr
 
 In 2007, the W3C saw the importance of HTML, and started working on HTML5 as a downstream fork of WHATWG’s HTML, initially with both groups working together from a single source document to produce identical specifications from the Table of Contents onwards. Over time, the two groups disagreed on both technical details and goals for the specification, where the W3C prioritized creating a “finished” version of HTML5 and WHATWG prioritized continuous improvement of bug fixes and new features.
 
-In 2011, the WHATWG stopped versioning HTML in favor of a living standard[^4]. HTML5 is still a popular marketing term for “modern web technology”, but no longer refers to a technology that people are working on today. 
+In 2011, the WHATWG stopped versioning HTML in favor of a living standard[^4]. HTML5 is still a popular marketing term for “modern web technology”, but no longer refers to a technology that people are working on today.
 
 In late 2017, the WHATWG formalized its operating principles under a “steering group agreement” for cooperation between Google, Apple, Mozilla and Microsoft[^5]. Before that, the WHATWG was a loose group of interested parties and did not have any patent policy, which prevented some companies from contributing formally (in particular Microsoft).
 
@@ -108,14 +113,14 @@ In addition to the W3C and WHATWG, there are many other standards bodies that ma
 Ecma (formerly ECMA - the European Computer Manufacturing Association, but now just Ecma) is a standards body based in Geneva Switzerland. Ecma has 4 full time employees, and several active TCs (Technical Committees), most notably, TC39 (the 39th technical committee) which writes three specifications: Ecma-262, Ecma-402, Ecma-404 (collectively ECMAScript). These are the underlying specifications for the JavaScript programming language which is implemented in web browsers and Node.js. We’d really like to get more into how ECMAScript is standardized, but this is material for a separate guide, or potentially a future version of this guide.
 
 
-#### **OpenJS Foundation** 
+#### **OpenJS Foundation**
 
 The OpenJS Foundation is a US-based Trade organization home to several dozen open source JavaScript projects including Node.js. Node.js is a de facto standard with a more ad hoc process for adding features than other technologies. OpenJS is not a standards body, but it does have a governance model for adding features to Node.js. Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International. The Node TSC (technical Steering Committee)[^8] operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in APIs on top of the JavaScript programming language which adds useful functionality that developers use to make software. The node global is similar to the `window` object in browsers, but geared toward server side software, and build tools for web developers. Many web developers use node to manage their projects’ build processes. Node share several APIs with web browsers, like URL, Fetch, Text Decoding, etc. Node.js is even known to run some of the web-platform-tests tests to ensure interoperability for the features that node and browsers share.
 
 
 #### IETF
 
-The IETF is a loose organization with no formal membership. This group develops the HTTP (Hypertext Transfer Protocol) standard, which web browsers use as the protocol for transferring web pages. 
+The IETF is a loose organization with no formal membership. This group develops the HTTP (Hypertext Transfer Protocol) standard, which web browsers use as the protocol for transferring web pages.
 
 
 #### Unicode Consortium
@@ -151,7 +156,7 @@ The Internet Assigned Numbers Authority (IANA) coordinate the DNS Root (includin
 
 In order to contribute to the web platform, you must forfeit your intellectual property rights associated with the technology or technique you’re contributing. Companies that make browser engines use the W3C and now the WHATWG and other standards bodies to facilitate this process so that all technologies standardized as part of the web are available royalty free. All WHATWG standards are royalty-free[^13]. Most W3C Working Groups operate under a royalty-free licensing mode, but there is an option for working groups to use a "reasonable and non-discriminatory" (RAND[^14]) licensing mode, which EPUB3, for example, uses[^15]. [TODO: MAKE SURE RAND IS STILL A THING AT W3C EVEN THOUGH w3.org/TR/patent-policy/ DOESNT MENTION IT]
 
-When contributing to the web, you and/or the company that you work for will be asked to sign an intellectual property rights agreement which makes copyrights in technologies you work on royalty free and renders patents that govern the technology you are working on neutral, or not enforceable in the context of any implementation of the standard to which you have contributed. 
+When contributing to the web, you and/or the company that you work for will be asked to sign an intellectual property rights agreement which makes copyrights in technologies you work on royalty free and renders patents that govern the technology you are working on neutral, or not enforceable in the context of any implementation of the standard to which you have contributed.
 
 At the W3C this is called the W3C Patent policy[^16] which you have to agree to in order to participate, either as a representative of your company or as an “invited expert”. At the WHATWG you or your company must sign a Contributors License Agreement[^17].
 
@@ -199,9 +204,9 @@ Consensus is constantly being negotiated between web developers, browser impleme
 
 ### Imagining the Runtime
 
-One of the most technically difficult things that we do when we write specifications is to reason about the underlying model and behavior of a feature-set that does not yet exist. It is our job to imagine the runtime and execution context, and then write down instructions for how to implement that runtime of our imagination. 
+One of the most technically difficult things that we do when we write specifications is to reason about the underlying model and behavior of a feature-set that does not yet exist. It is our job to imagine the runtime and execution context, and then write down instructions for how to implement that runtime of our imagination.
 
-Depending on the feature, it is sometimes helpful to write down the behavior you are trying to specify in psued-code, actual “brainstorm code”, or to implement the feature as a JavaScript program or in a web browser engine before proceeding. 
+Depending on the feature, it is sometimes helpful to write down the behavior you are trying to specify in psued-code, actual “brainstorm code”, or to implement the feature as a JavaScript program or in a web browser engine before proceeding.
 
 
 ### Spec writing
@@ -211,7 +216,7 @@ When you want to fix a bug, change a behaviour, or add a new feature to the web,
 
 #### Where to write
 
-It is often difficult to get started because these specifications are very long and take a while to get used to reading. Often the specification reference each other and themselves. After a few read-throughs of, for example, HTML, you’ll start to see patterns, and the short hand will become more legible. Don’t be discouraged if these documents look like foreign languages to you at first. They are! 
+It is often difficult to get started because these specifications are very long and take a while to get used to reading. Often the specification reference each other and themselves. After a few read-throughs of, for example, HTML, you’ll start to see patterns, and the short hand will become more legible. Don’t be discouraged if these documents look like foreign languages to you at first. They are!
 
 Writing specification prose is in principle similar to writing code.  You should think about writing a specification as though you are implementing it as a program. With today’s standards of spec writing, that is the level of fidelity you want from a specification. It is not enough to describe how something works, we need to precisely describe what needs to be done to implement it completely, including all edge cases and error handling.
 
@@ -233,7 +238,7 @@ When we write specifications we aim to use unambiguous prose.
 Cross referencing between specifications
 
 
-#### How the tools work 
+#### How the tools work
 
 All of the specifications for technology on the web platform use a short hand (kind of like markdown) to make authoring and editing easier for specifications editors and maintainers. The repository for the specification at hand usually contains documentation about the tools necessary to generate the spec. These are command line tools that you will be installing to generate publishable specifications from the specification source that is version controlled on github.
 
@@ -279,13 +284,13 @@ In this example, the HTML standard is defining what a hyperlink is, so that it c
 
 ##### Algorithm
 
-An algorithm is a recipe for how a browser should do something. Algorithms describe the control flow that a user agent implements. For example: 
+An algorithm is a recipe for how a browser should do something. Algorithms describe the control flow that a user agent implements. For example:
 
 > The activation behavior of `a` elements that create hyperlinks is to run the following steps:
 
 > 1. If the target of the click event is an img element with an ismap attribute specified, then server-side image map processing must be performed, as follows:
 
-> …. 
+> ….
 
 > 2. Follow the hyperlink or download the hyperlink created by the a element, as determined by the download attribute and any expressed user preference, passing hyperlink suffix, if the steps above defined it.
 
@@ -294,7 +299,7 @@ In this example the HTML Standard is specifying the activation behavior algorith
 
 ##### Requirement
 
-A requirement is something that the web developer or web browser needs to do in order to conform to the specification. For example: 
+A requirement is something that the web developer or web browser needs to do in order to conform to the specification. For example:
 
 > If the itemprop attribute is specified on an `a` element, then the href attribute must also be specified.
 
@@ -305,7 +310,7 @@ Requirements typically use words like “must”.
 
 ##### Statement of Fact
 
-A statement of fact is a piece of prose that makes a claim about the state of things around has no requirements, but is useful as context. For example: 
+A statement of fact is a piece of prose that makes a claim about the state of things around has no requirements, but is useful as context. For example:
 
 > The level of stress that a particular piece of content has is given by its number of ancestor em elements.
 
@@ -322,7 +327,7 @@ An example is a block of prose which shows how the technology being specified is
 
 > `<li> <a>Examples</a> </li>`
 
-In this example, we are showing an `a` element, both with and without an href attribute to orient readers to how the technology could be used. 
+In this example, we are showing an `a` element, both with and without an href attribute to orient readers to how the technology could be used.
 
 
 ##### Note
@@ -380,11 +385,11 @@ In this issue, we see the editor suggesting future work to generalize the algori
 
 ### 1. Select a bug
 
-The first step in working on a change to the web platform is to identify a bug you want to work on. There are many different kinds of outcomes you can expect to have when contributing to the web platform and the type of bug you select will influence this. 
+The first step in working on a change to the web platform is to identify a bug you want to work on. There are many different kinds of outcomes you can expect to have when contributing to the web platform and the type of bug you select will influence this.
 
-Depending on the bug you select, you might end up suggesting a change to a specification, submitting a test to web-platform-tests, and reporting a bug on two different browsers. Or, you might find that the bug is in the browsers, and all that is needed is a report to the browsers and a test to guarantee the right behavior. There might be a bug only in the specification, and you might only need to submit a spec change. Or perhaps the spec is correct, and matches the behavior of all the browsers, but there is a missing test, in which case you’ll be tasked with writing the test and notifying everyone that it exists. All versions of this, and the many other possible permutations are all valid forms of contribution. 
+Depending on the bug you select, you might end up suggesting a change to a specification, submitting a test to web-platform-tests, and reporting a bug on two different browsers. Or, you might find that the bug is in the browsers, and all that is needed is a report to the browsers and a test to guarantee the right behavior. There might be a bug only in the specification, and you might only need to submit a spec change. Or perhaps the spec is correct, and matches the behavior of all the browsers, but there is a missing test, in which case you’ll be tasked with writing the test and notifying everyone that it exists. All versions of this, and the many other possible permutations are all valid forms of contribution.
 
-When selecting a bug, it’s always a good idea to ask a specification editor. If you have an idea of which technology area that you’d like to work on, you can open the specification for that technology, and contact one of the editors listed at the top of the specification. 
+When selecting a bug, it’s always a good idea to ask a specification editor. If you have an idea of which technology area that you’d like to work on, you can open the specification for that technology, and contact one of the editors listed at the top of the specification.
 
 
 #### Types of Bugs
@@ -398,19 +403,19 @@ These are bugs where the main work is clarifying what the specification says. Of
 
 
 
-*   [https://github.com/whatwg/html/labels/clarification](https://github.com/whatwg/html/labels/clarification) 
-*   [https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure](https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure) 
+*   [https://github.com/whatwg/html/labels/clarification](https://github.com/whatwg/html/labels/clarification)
+*   [https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure](https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure)
 
 
-##### Interoperability bugs 
+##### Interoperability bugs
 
 Interop bugs deal with situations in which browsers behave differently from each other, and the specification either agrees with one or two, or requires a behavior that is not implemented anywhere, or is not clear about the correct behavior. If you want to do research into how most websites behave, and determine what is web compatible, this is the type of bug for you. Whatwg/html and and csswg-drafts maintain lists of bugs in his category:
 
 
 
-*   [https://github.com/whatwg/html/labels/interop](https://github.com/whatwg/html/labels/interop) 
-*   [https://github.com/whatwg/html/labels/needs%20compat%20analysis](https://github.com/whatwg/html/labels/needs%20compat%20analysis) 
-*   [https://github.com/w3c/csswg-drafts/labels/Needs%20Data](https://github.com/w3c/csswg-drafts/labels/Needs%20Data) 
+*   [https://github.com/whatwg/html/labels/interop](https://github.com/whatwg/html/labels/interop)
+*   [https://github.com/whatwg/html/labels/needs%20compat%20analysis](https://github.com/whatwg/html/labels/needs%20compat%20analysis)
+*   [https://github.com/w3c/csswg-drafts/labels/Needs%20Data](https://github.com/w3c/csswg-drafts/labels/Needs%20Data)
 
 
 ##### Normative changes, additions and removals
@@ -466,7 +471,7 @@ There are a number of resources that recommend good first issues:
 
 1. suggest the fix you have in mind  in issue on github
 2. Ask editors and implementers if they agree (check the specification).
-3. Ask implementers 
+3. Ask implementers
     1. Look at source code of browser and git blame to identify implementer
     2. Look at the bug database and search for the feature.
     3. Email [simon@bocoup.com](mailto:simon@bocoup.com) to ask who to talk to.
@@ -498,7 +503,7 @@ There are a number of resources that recommend good first issues:
     11. Say what issue this is fixing with “fixes: #1234”.
 8. Make a pull request
     12. ...
-9. Ipr commitment 
+9. Ipr commitment
     13. Create a w3c account [TODO ADD LINK]
     14. link your github account to your w3c account - E.g. [https://labs.w3.org/repo-manager/pr/id/w3c/csswg-drafts/3735](https://labs.w3.org/repo-manager/pr/id/w3c/csswg-drafts/3735) [TODO FIGURE OUT AND EXPLAIN HOW THIS WORKS ACROSS SPECS[
     15. For whatwg, sign participant agreement
@@ -544,7 +549,7 @@ There are a number of resources that recommend good first issues:
 
 ### Continue Squashing Bugs
 
-What you’ve learned how to do in this guide will serve you in building a career around maintaining the web platform. 
+What you’ve learned how to do in this guide will serve you in building a career around maintaining the web platform.
 
 
 ### Analyze Web Compat Bugs
@@ -555,7 +560,7 @@ The Web Compat Project is a place to report bugs for websites that work in one b
 ### Become a WPT Maintainer
 
 
-### Become a Spec Editor 
+### Become a Spec Editor
 
 These are the steps to take to become a spec editor.
 
@@ -565,7 +570,7 @@ These are the steps to take to become a spec editor.
 Impossible to spell :D.
 
 
-### Become a Working Group Chair 
+### Become a Working Group Chair
 
 What is the path for this?
 
@@ -666,7 +671,7 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
     *   Boris - gecko
     *   Mats Palmgren - mozilla
 *   Microsoft
-    *   John Jansen - Edge 
+    *   John Jansen - Edge
 *   Bocoup
     *   Rick Waldron
     *   Leo Balter
@@ -699,7 +704,7 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
 
 
 
-*   Simon Pieters - [simon@bocoup.com](mailto:simon@bocoup.com) 
+*   Simon Pieters - [simon@bocoup.com](mailto:simon@bocoup.com)
 
 
 
@@ -714,14 +719,14 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
 *   **CG** - Community Group (at the W3C).
 *   **CLA **- Contributors License Agreement
 *   **Spec** - short for specification.
-*   **Ecma** - The name of the standards body that makes ECMAScript, the standard for the JavaScript programming language. 
+*   **Ecma** - The name of the standards body that makes ECMAScript, the standard for the JavaScript programming language.
 *   **HTML** - Hypertext Markup Language, the collection of technologies for structuring and linking between documents on the web.
 *   **HTTP** - Hypertext Transfer Protocol
 *   **HTTP Archive** - A database of the HTML, CSS and JS response bodies and other data of the top several million1,000,000 pages, collected twice per month. Useful for figuring out how web developers use the web, and what changes will be compatible.
 *   **IPR** - Intellectual Property Rights
 *   **IRC** - Internet Relay Chat - how people chat with each other about web standards (instead of slack).
-*   **JS** - JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in node.js. 
-*   **Living Standard **- 
+*   **JS** - JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in node.js.
+*   **Living Standard **-
 *   **Node Global** - the collection of built-in APIs in node.
 *   **Normative** - content in a specification that contains requirements or is referenced by something that is normative.
 *   **Non-normative** - content in a specification that is not normative, e.g. examples or statements of fact.
@@ -742,7 +747,7 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
      Simon Pieters, Mike Pennisi, Leo Balter, Valerie Young, Boaz Sender, future contributors here
 
 [^2]:
-     Forming of the WHATWG: 
+     Forming of the WHATWG:
 
 [^3]:
      Opera/Mozilla Position Paper: [https://www.w3.org/2004/04/webapps-cdf-ws/papers/opera.html](https://www.w3.org/2004/04/webapps-cdf-ws/papers/opera.html)
@@ -763,13 +768,13 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
      Node TSC: [https://github.com/nodejs/TSC](https://github.com/nodejs/TSC)
 
 [^9]:
-     [http://www.unicode.org/versions/Unicode12.0.0/](http://www.unicode.org/versions/Unicode12.0.0/) 
+     [http://www.unicode.org/versions/Unicode12.0.0/](http://www.unicode.org/versions/Unicode12.0.0/)
 
 [^10]:
-     Bi-directional text: [http://unicode.org/reports/tr9/](http://unicode.org/reports/tr9/) 
+     Bi-directional text: [http://unicode.org/reports/tr9/](http://unicode.org/reports/tr9/)
 
 [^11]:
-     Rules for line breaking: [http://unicode.org/reports/tr14/](http://unicode.org/reports/tr14/) 
+     Rules for line breaking: [http://unicode.org/reports/tr14/](http://unicode.org/reports/tr14/)
 
 [^12]:
      WCAG 2 FAQ: [https://www.w3.org/WAI/standards-guidelines/wcag/faq/#iso](https://www.w3.org/WAI/standards-guidelines/wcag/faq/#iso)
@@ -784,10 +789,10 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
      EPUP3 example of RAND License: [https://www.w3.org/2017/02/EPUB3CGcharter](https://www.w3.org/2017/02/EPUB3CGcharter)
 
 [^16]:
-     W3C Patent Policy: [https://www.w3.org/Consortium/Patent/](https://www.w3.org/Consortium/Patent/) 
+     W3C Patent Policy: [https://www.w3.org/Consortium/Patent/](https://www.w3.org/Consortium/Patent/)
 
 [^17]:
-     WHATWG Participant Agreement: [https://participate.whatwg.org/agreement](https://participate.whatwg.org/agreement)  
+     WHATWG Participant Agreement: [https://participate.whatwg.org/agreement](https://participate.whatwg.org/agreement)
 
 [^18]:
      _Based on notes from [[RETRO] Mozilla Fieldset Interop Retrospective SoW#3276.2](https://docs.google.com/document/d/1G_YfLMgE7cj3K2U2DDbX51RfIwwwUI7CzQEZleNEX_g/edit#bookmark=id.ek85y8jpf2oy)_
@@ -805,5 +810,5 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
      HTML Standard a element: [https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)
 
 [^23]:
-     WHATWG Working Mode: [https://whatwg.org/working-mode#changes](https://whatwg.org/working-mode#changes) 
+     WHATWG Working Mode: [https://whatwg.org/working-mode#changes](https://whatwg.org/working-mode#changes)
 
