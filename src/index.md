@@ -779,7 +779,7 @@ When working on fieldset interoperability, Simon spoke with the following 15 peo
      Node TSC: [https://github.com/nodejs/TSC](https://github.com/nodejs/TSC)
 
 [^9]:
-     [http://www.unicode.org/versions/Unicode12.0.0/](http://www.unicode.org/versions/Unicode12.0.0/)
+     Unicode 12.0.0 [http://www.unicode.org/versions/Unicode12.0.0/](http://www.unicode.org/versions/Unicode12.0.0/)
 
 [^10]:
      Bi-directional text: [http://unicode.org/reports/tr9/](http://unicode.org/reports/tr9/)
