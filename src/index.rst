@@ -739,7 +739,7 @@ Glossary of Terms and Jargon
 -  **IPR** - Intellectual Property Rights
 -  **IRC** - Internet Relay Chat - how people chat with each other about web standards (instead of slack).
 -  **JS** - JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in node.js.
--  **Living Standard** -
+-  **Living Standard** - TODO: define this term
 -  **Node Global** - the collection of built-in APIs in node.
 -  **Normative** - content in a specification that contains requirements or is referenced by something that is normative.
 -  **Non-normative** - content in a specification that is not normative, e.g. examples or statements of fact.
