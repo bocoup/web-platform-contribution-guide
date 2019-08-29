@@ -11,9 +11,11 @@ If you would like to build the site locally, follow these instructions.
 2. Download the source code. Clone this repository using the `git clone`
    command.
 3. Install the Python dependencies. Run the following command in a terminal
-   from the "docs" directory of the WPT repository:
+   from the root directory of this repository:
 
-       pip install -r requirements.txt
+       pip3 install -r requirements.txt
 
-4. Build the documentation. Windows users should execute the `make.bat` batch
-   file. GNU/Linux and macOS users should use the `make` command.
+4. Build the site. Windows users should execute the `make.bat` batch file.
+   GNU/Linux and macOS users should use the `make` command:
+
+       make html
