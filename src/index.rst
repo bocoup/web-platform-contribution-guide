@@ -381,7 +381,7 @@ Make sure to write a clear summary of the bug. The summary should briefly but cl
 Here are some good examples:
 
 -  `Change DOMQuad bounds to getBounds() as per specification <https://bugzilla.mozilla.org/show_bug.cgi?id=1454622>`__
--  `Remove ``<keygen>`` <https://bugs.webkit.org/show_bug.cgi?id=167018>`__
+-  `Remove \<keygen> <https://bugs.webkit.org/show_bug.cgi?id=167018>`__
 -  `fieldset should have min-inline-size instead of min-width in UA stylesheet <https://bugs.chromium.org/p/chromium/issues/detail?id=874053>`__
 -  `innerHTML serialization for javascript: URL attribute doesn't conform to the specification <https://bugs.chromium.org/p/chromium/issues/detail?id=927164>`__
 
