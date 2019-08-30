@@ -193,14 +193,32 @@ In this issue, we see the editor suggesting future work to generalize the algori
 Testing
 ~~~~~~~
 
--  Writing a test plan - which involves mapping out all of the things that are interesting to test
--  Ref tests
--  Testharness.js test
--  Manual tests (i.e for a11y features)
--  Making a PR
+Tests are one way software maintainers verify the correctness of their work.
+They can alert maintainers about bugs (i.e. when new tests are added which their project does not pass), and they can also help maintainers avoid making mistakes (i.e. when they are changing code, and their change causes a new failure).
 
-   -  Referencing other relevant issues
-   -  Getting a review
+Even if your contribution doesn't involve changing code directly, it may still be appropriate to write tests.
+
+If you're helping to fix a browser which doesn't follow an instruction in some specification, then you probably need to add some tests to the standard test suite.
+Be sure to review the existing tests, though; it may be that someone has already written a test for the bug that you've found!
+
+If you're changing the normative text in a specification, then it's likely that the test suite has tests for the "old" behavior.
+In that case, you'll need to update the tests so they are consistent with the change you're making.
+It's also possible that the test suite is missing tests for the behavior you're changing.
+In that case, you'll need to write brand new tests from scratch!
+
+Many kinds of contributions won't involve tests.
+If you're still unsure about whether you ought to be working with tests, :doc:`there are plenty of people who can help you decide <directory>`.
+If you *do* find yourself writing tests, you should try to be thorough.
+Think about the ways people might misinterpret the specification, and write tests that would show them their mistake.
+
+The process of writing tests varies greatly between the various test suites.
+You can learn all the technical details from each suite's documentation.
+Here are the test suites for the web platform:
+
+- `the web-platform-tests <https://github.com/web-platform-tests/wpt>`__
+- `Test262 <https://github.com/tc39/test262>`__
+- `the WebGL test suite <https://github.com/KhronosGroup/WebGL>`__
+- `the WASM test suite <https://github.com/WebAssembly/spec>`__
 
 Filing bugs on a Browser
 ~~~~~~~~~~~~~~~~~~~~~~~~
