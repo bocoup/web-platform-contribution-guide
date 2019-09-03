@@ -44,7 +44,7 @@ TC
 TSC
     Technical Steering Committee
 UA
-    User Agent - a piece of software that acts on behalf of the user: i.e. a web browser.
+    User Agent - a piece of software that acts on behalf of the user. For example, a web browser.
 W3C
     World Wide Web Consortium.
 WG

@@ -64,13 +64,6 @@ There is usually no hard rule for where something should go, but we can use our 
 
 Sometimes behavior gets specified in a completely different spec while it is being worked out. Maybe that person wanted to keep it in a different spec while they were iterating on the design of the feature until it was stable, so that once it was stable it can be put in its proper home. There are sometimes political reasons why things end up in the wrong place. Sometimes it is easier to put things in a specification that you maintain, or that is maintained by someone you are already talking to and working with, than to ask a new person to change their spec.
 
-How to Write Spec Prose
-^^^^^^^^^^^^^^^^^^^^^^^
-
-When we write specifications we aim to use unambiguous prose.
-
-Cross referencing between specifications
-
 How the tools work
 ^^^^^^^^^^^^^^^^^^
 
@@ -88,13 +81,13 @@ We write specification prose in the following categories of language (the follow
 Conformance Class
 '''''''''''''''''
 
-A Conformance class is an implementation of a web standard that requirements can apply to. For example, web browsers, web developers, conformance checkers, validators, and authoring tools are all types of conformance classes. Requirements, notes, examples, and warnings can all target different conformance classes.
+A Conformance class is an implementation of a web standard that requirements can apply to. For example, user agents (web browsers), documents (created by web developers), conformance checkers or validators, and authoring tools are all types of conformance classes.
 
-For example, the following requirement about the ``href`` attribute’s value applies to the web developer conformance class but not to the web browser conformance class:
+For example, the following requirement about the ``href`` attribute’s value applies to the documents conformance class but not to the user agents conformance class:
 
-    The href attribute on a and area elements must have a value that is a valid URL potentially surrounded by spaces.
+    The ``href`` attribute on ``a`` and ``area`` elements must have a value that is a valid URL potentially surrounded by spaces.
 
-On the other hand, this requirement applies for how to parse the ``href`` attribute applies to the web browser conformance class and not to the web developer conformance class:
+On the other hand, this requirement applies for how to parse the ``href`` attribute applies to the user agents conformance class and not to the documents conformance class:
 
     When a user follows a hyperlink created by an element subject, optionally with a hyperlink suffix, the user agent must run the following steps:
 
@@ -102,7 +95,43 @@ On the other hand, this requirement applies for how to parse the ``href`` attrib
 
     9. Parse the URL given by subject's href attribute, relative to subject's node document.
 
-Note in particular that the requirement for web developers can be "stricter" than the possible syntaxes that will result in the same behavior in web browsers. This might be done to help web developers catch mistakes, or to allow for future extensions to the language, while at the same time ensuring compatibility with existing web content. This is common in HTML, but can be confusing at first.
+Note in particular that the requirement for documents can be "stricter" than the possible syntaxes that will result in the same behavior in user agents. This might be done to help web developers catch mistakes, or to allow for future extensions to the language, while at the same time ensuring compatibility with existing web content. This is common in HTML, but can be confusing at first.
+
+Requirement
+'''''''''''
+
+A requirement is something that a particular conformance class (e.g., document or user agent) needs to do in order to conform to the specification. For example:
+
+    If the ``itemprop`` attribute is specified on an ``a`` element, then the ``href`` attribute must also be specified.
+
+This is a requirement for documents (to omit the ``href`` attribute if ``itemprop`` is specified). This requirement does not say anything about what user agents have to do if this requirement were to be violated. There is no implicit relationship between requirements for one conformance class to requirements for another conformance class.
+
+Requirements typically use normative keywords like "must", "must not", "should", "should not", and "may".
+
+Algorithm
+'''''''''
+
+An algorithm is a recipe for how to do something. Algorithms describe the control flow. For example:
+
+    The activation behavior  of ``a`` elements that create **hyperlinks** is to run the following steps:
+
+    1. If the target of the ``click`` event is an ``img`` element with an ``ismap`` attribute specified, then server-side image map processing must be performed, as follows:
+
+        1. Let *x* and *y* be zero.
+
+        2. If the ``click`` event was a real pointing-device-triggered ``click`` event on the ``img`` element, then set *x* to the distance in CSS pixels from the left edge of the image to the location of the click, and set *y* to the distance in CSS pixels from the top edge of the image to the location of the click.
+
+        3. If *x* is negative, set *x* to zero.
+
+        4. If *y* is negative, set *y* to zero.
+
+        5. Let *hyperlink suffix* be a U+003F QUESTION MARK character, the value of *x* expressed as a base-ten integer using ASCII digits, a U+002C COMMA character (,), and the value of *y* expressed as a base-ten integer using ASCII digits.
+
+    2. Follow the hyperlink or download the hyperlink created by the ``a`` element, as determined by the ``download`` attribute and any expressed user preference, passing *hyperlink suffix*, if the steps above defined it.
+
+In this example the HTML Standard is specifying the activation behavior algorithm. You can see how the definition for "hyperlink" is used here. The algorithm also references other definitions, e.g., "Follow the hyperlink", which is a separate algorithm. So that algorithm is invoked from this algorithm, similar to calling a function in programming.
+
+Algorithms in specifications are usually written to be clear and easy to follow, while an implementation might use a different algorithm that is optimized for performance, memory usage, or power consumption. If the end result is equivalent, then the implementation is conforming.
 
 Definition
 ''''''''''
@@ -113,33 +142,15 @@ A definition is a specification shorthand for a longer piece of text, similar to
 
     These are links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, e.g. to visit them in a browser or download them.
 
-In this example, the HTML standard is defining what a hyperlink is, so that it can be referenced later.
+In this example, the HTML standard is defining what a hyperlink is, so that it can be referenced later. Definitions in one specification can also be referenced by other specifications.
 
-Algorithm
-'''''''''
+It should be possible (in principle) to expand each reference with its definition without changing the meaning of the specification. For example:
 
-An algorithm is a recipe for how a browser should do something. Algorithms describe the control flow that a user agent implements. For example:
+    Let *hyperlink suffix* be a U+003F QUESTION MARK character, the value of *x* expressed as a base-ten integer using **ASCII digits**, a U+002C COMMA character (,), and the value of *y* expressed as a base-ten integer using **ASCII digits**.
 
-    The activation behavior of ``a`` elements that create hyperlinks is to run the following steps:
+"ASCII digit" is defined as "a code point in the range U+0030 (0) to U+0039 (9), inclusive", so this is equivalent:
 
-    1. If the target of the click event is an img element with an ismap attribute specified, then server-side image map processing must be performed, as follows:
-
-    ….
-
-    2. Follow the hyperlink or download the hyperlink created by the a element, as determined by the download attribute and any expressed user preference, passing hyperlink suffix, if the steps above defined it.
-
-In this example the HTML Standard is specifying the activation behavior algorithm. You can see how the "definition" for Hyperlink is used here.
-
-Requirement
-'''''''''''
-
-A requirement is something that the web developer or web browser needs to do in order to conform to the specification. For example:
-
-    If the itemprop attribute is specified on an ``a`` element, then the href attribute must also be specified.
-
-This is a requirement for web developers (to omit the href attribute if ``itemprop`` is specified). This requirement does not say anything about what web browsers have to do if this requirement were to be violated. There is no implicit relationship between requirements for one conformance class to requirements for another conformance class.
-
-Requirements typically use words like "must".
+    Let *hyperlink suffix* be a U+003F QUESTION MARK character, the value of *x* expressed as a base-ten integer using **code points in the range U+0030 (0) to U+0039 (9), inclusive**, a U+002C COMMA character (,), and the value of *y* expressed as a base-ten integer using **code points in the range U+0030 (0) to U+0039 (9), inclusive**.
 
 Statement of Fact
 '''''''''''''''''
@@ -153,24 +164,39 @@ In this example, the statement of fact helps explain the concept further by spel
 Example
 '''''''
 
-An example is a block of prose which shows how the technology being specified is intended to be used. For example:
+An example is a block of prose which can help clarify a concept, show how something can be used, etc. For example:
 
-    If a site uses a consistent navigation toolbar on every page, then the link that would normally link to the page itself could be marked up using an a element:
+    If the ``a`` element has an ``href`` attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents.
 
-    ``<li> <a href="https://foobar.com">The Greatest Website</a> </li>``
+    If the ``a`` element has no ``href`` attribute, then the element represents a placeholder for where a link might otherwise have been placed, if it had been relevant, consisting of just the element's contents.
 
-    ``<li> <a>Examples</a> </li>``
+    Example: If a site uses a consistent navigation toolbar on every page, then the link that would normally link to the page itself could be marked up using an ``a`` element:
 
-In this example, we are showing an ``a`` element, both with and without an href attribute to orient readers to how the technology could be used.
+    .. code-block:: html
+
+     <nav>
+      <ul>
+       <li> <a href="/">Home</a> </li>
+       <li> <a href="/news">News</a> </li>
+       <li> <a>Examples</a> </li>
+       <li> <a href="/legal">Legal</a> </li>
+      </ul>
+     </nav>
+
+First, the specification states what an ``a`` element represents depending on whether it has an ``href`` attribute. Then it gives an example to demonstrate a case where it makes sense to omit the ``href`` attribute, to support the previous statement.
+
+Examples are non-normative; they should not contain any requirements. It should be possible to remove all examples from a specification without changing the meaning of the specification.
 
 Note
 ''''
 
-A note is a type of prose used to further expand on a technology with making a statement of fact. Notes are typically styled differently than statements of fact. For example:
+A note is a type of prose used to further expand on something with making a statement of fact. Notes are typically styled differently than statements of fact. For example:
 
-    Note: The href attribute on a and area elements is not required; when those elements do not have href attributes they do not create hyperlinks.
+    Note: The ``href`` attribute on ``a`` and ``area`` elements is not required; when those elements do not have ``href`` attributes they do not create hyperlinks.
 
 In this example we are explaining that an ``href`` attribute is not necessary in order to have a valid anchor tag.
+
+Notes are non-normative; they should not contain any requirements. It should be possible to remove all notes from a specification without changing the meaning of the specification.
 
 Warning
 '''''''
@@ -179,16 +205,51 @@ A warning is a piece of prose that calls out a specified technology that has dan
 
     Warning: This algorithm is intended to mitigate security dangers involved in downloading files from untrusted sites, and user agents are strongly urged to follow it.
 
-In this example we see a warning that comes after the algorithm for downloading a hyperlink. That algorithm has steps in it to protect users, this warning encourages implementers to follow them.
+In this example we see a warning that comes after the algorithm for downloading a hyperlink. That algorithm has steps in it to protect users, this warning encourages implementers to follow them. Warnings are normative and can contain requirements.
 
 Issue
 '''''
 
-An issue is like a "TODO" for a spec editor. It identifies a part of the spec that still needs fleshing out, or to be remediated because of other issues, like web compatibility, etc. For example:
+An issue is like a "TODO" for a spec editor, or notifying readers that something is a known issue. It identifies a part of the spec that still needs fleshing out, or to be remediated because of other issues. For example:
 
-    Issue: This algorithm is amenable to being generalized to work on all hyperlink elements. See Bugzilla bug 1234.
+    Issue: As explained in issue #1130 the use of a browsing context as source might not be the correct architecture.
 
-In this issue, we see the editor suggesting future work to generalize the algorithm it comes after.
+This issue links to an issue in the specification's issue tracker and suggests that this part of the specification may be incorrect.
+
+How to Write Spec Prose
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Here are some tips for writing good specification text.
+
+Normative and non-normative
+'''''''''''''''''''''''''''
+
+From the building blocks discussed above, it is useful to differentiate between the things that are normative from the things that are non-normative. The normative things are requirements, and everything that are tied to requirements (conformance classes, algorithms, definitions). Non-normative things are everything else.
+
+The normative parts represent what the specification "actually" says. They represent what test cases need to test, and what implementations have to do.
+
+You should therefore make sure that the thing you want to specify behaves as intended as a result of the requirements you specify. Any examples, notes, and statements of fact should only serve to make the specification easier to understand. If a feature is defined only by statements of fact and examples, and no requirements, then it is technically not defined.
+
+Avoid ambiguity
+'''''''''''''''
+
+A specification needs to be unambiguous in its requirements and algorithms in order to result in conforming and interoperable implementations.
+
+For example, writing an algorithm usually reduces ambiguity compared to stating requirements based on specific cases, since it is possible to reason that an algorithm covers 100% of possible cases, and an algorithm inherently states the order in which things should happen.
+
+For example, the specification for the DOM ``createElementNS()`` method as defined in the (superseded) DOM Level 3 Core specification [#dom3core_createElementNS]_ states that some things cause an exception to be thrown:
+
+    ``INVALID_CHARACTER_ERR``: Raised if the specified ``qualifiedName`` is not an XML name according to the XML version in use specified in the ``Document.xmlVersion`` attribute.
+
+    ``NAMESPACE_ERR``: Raised if the ``qualifiedName`` is a malformed qualified name, if the ``qualifiedName`` has a prefix and the ``namespaceURI`` is null, or if the ``qualifiedName`` has a prefix that is "xml" and the ``namespaceURI`` is different from "``http://www.w3.org/XML/1998/namespace``" [XML Namespaces], or if the ``qualifiedName`` or its prefix is "xmlns" and the ``namespaceURI`` is different from "``http://www.w3.org/2000/xmlns/``", or if the ``namespaceURI`` is "``http://www.w3.org/2000/xmlns/``" and neither the ``qualifiedName`` nor its prefix is "xmlns".
+
+If a case matches both the criteria for ``INVALID_CHARACTER_ERR`` and ``NAMESPACE_ERR``, it is ambiguous which exception should be thrown.
+
+In the current DOM Standard [#dom_namespaces]_, this is unambiguous by the use of an algorithm, where it is clear that the check for ``InvalidCharacterError`` comes before the checks for ``NamespaceError``.
+
+A good way to reduce ambiguity is to write specification prose in terms of the Infra Standard [#infra]_. This standard lays the groundwork for other standards. Similar to how a programming language provides a grammar and a standard library, the Infra Standard defines terminology for algorithms, defines data types and related operations.
+
+This results in specifications that are well-defined, unambiguous, and have a clear mapping to an implementation. For example, the DOM Standard is written in terms of the Infra Standard.
 
 Testing
 ~~~~~~~
@@ -242,3 +303,12 @@ When you have filed browser bugs, link to them from the specification PR.
 
 .. [22]
    HTML Standard a element: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
+
+.. [#dom3core_createElementNS]
+   DOM Level 3 Core ``createElementNS()``: https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/core.html#ID-DocCrElNS
+
+.. [#dom_namespaces]
+   DOM Standard Namespaces: https://dom.spec.whatwg.org/#namespaces
+
+.. [#infra]
+   Infra Standard: https://infra.spec.whatwg.org/
