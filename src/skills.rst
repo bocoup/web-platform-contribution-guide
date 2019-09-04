@@ -81,13 +81,13 @@ We write specification prose in the following categories of language (the follow
 Conformance Class
 '''''''''''''''''
 
-A Conformance class is an implementation of a web standard that requirements can apply to. For example, user agents (web browsers), documents (created by web developers), conformance checkers or validators, and authoring tools are all types of conformance classes.
+A conformance class is an implementation of a web standard that requirements can apply to. For example, user agents (web browsers), documents (created by web developers), conformance checkers or validators, and authoring tools are all types of conformance classes.
 
-For example, the following requirement about the ``href`` attribute’s value applies to the documents conformance class but not to the user agents conformance class:
+For example, the following requirement about the ``href`` attribute’s value applies to the "documents" conformance class but not to the "user agents" conformance class:
 
     The ``href`` attribute on ``a`` and ``area`` elements must have a value that is a valid URL potentially surrounded by spaces.
 
-On the other hand, this requirement applies for how to parse the ``href`` attribute applies to the user agents conformance class and not to the documents conformance class:
+On the other hand, this requirement applies for how to parse the ``href`` attribute applies to the "user agents" conformance class and not to the "documents" conformance class:
 
     When a user follows a hyperlink created by an element subject, optionally with a hyperlink suffix, the user agent must run the following steps:
 
@@ -104,14 +104,14 @@ A requirement is something that a particular conformance class (e.g., document o
 
     If the ``itemprop`` attribute is specified on an ``a`` element, then the ``href`` attribute must also be specified.
 
-This is a requirement for documents (to omit the ``href`` attribute if ``itemprop`` is specified). This requirement does not say anything about what user agents have to do if this requirement were to be violated. There is no implicit relationship between requirements for one conformance class to requirements for another conformance class.
+This is a requirement for documents (to include the ``href`` attribute if ``itemprop`` is specified). This requirement does not say anything about what user agents have to do if this requirement were to be violated. There is no implicit relationship between requirements for one conformance class to requirements for another conformance class.
 
 Requirements typically use normative keywords like "must", "must not", "should", "should not", and "may".
 
 Algorithm
 '''''''''
 
-An algorithm is a recipe for how to do something. Algorithms describe the control flow. For example:
+An algorithm is a recipe for how to do something. Algorithms describe the flow of control through a complex system. For example:
 
     The activation behavior  of ``a`` elements that create **hyperlinks** is to run the following steps:
 
@@ -210,11 +210,11 @@ In this example we see a warning that comes after the algorithm for downloading 
 Issue
 '''''
 
-An issue is like a "TODO" for a spec editor, or notifying readers that something is a known issue. It identifies a part of the spec that still needs fleshing out, or to be remediated because of other issues. For example:
+An issue is like a "TODO" for a spec editor. It also notifies readers that a problem is known. It identifies a part of the spec that still needs fleshing out or remediation because of other issues. For example:
 
     Issue: As explained in issue #1130 the use of a browsing context as source might not be the correct architecture.
 
-This issue links to an issue in the specification's issue tracker and suggests that this part of the specification may be incorrect.
+This links to an issue report in the specification's issue tracker and suggests that this part of the specification may be incorrect.
 
 How to Write Spec Prose
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -226,16 +226,16 @@ Normative and non-normative
 
 From the building blocks discussed above, it is useful to differentiate between the things that are normative from the things that are non-normative. The normative things are requirements, and everything that are tied to requirements (conformance classes, algorithms, definitions). Non-normative things are everything else.
 
-The normative parts represent what the specification "actually" says. They represent what test cases need to test, and what implementations have to do.
+The normative parts represent what test cases need to test and what implementations have to do.
 
 You should therefore make sure that the thing you want to specify behaves as intended as a result of the requirements you specify. Any examples, notes, and statements of fact should only serve to make the specification easier to understand. If a feature is defined only by statements of fact and examples, and no requirements, then it is technically not defined.
 
 Avoid ambiguity
 '''''''''''''''
 
-A specification needs to be unambiguous in its requirements and algorithms in order to result in conforming and interoperable implementations.
+A specification needs to be unambiguous in its requirements and algorithms so that people can build conforming and interoperable implementations.
 
-For example, writing an algorithm usually reduces ambiguity compared to stating requirements based on specific cases, since it is possible to reason that an algorithm covers 100% of possible cases, and an algorithm inherently states the order in which things should happen.
+When possible, express your intention in terms of an algorithm. Writing an algorithm usually reduces ambiguity compared to stating requirements based on specific cases. It is possible to reason that an algorithm covers 100% of possible cases and an algorithm inherently states the order in which things should happen.
 
 For example, the specification for the DOM ``createElementNS()`` method as defined in the (superseded) DOM Level 3 Core specification [#dom3core_createElementNS]_ states that some things cause an exception to be thrown:
 
@@ -247,7 +247,7 @@ If a case matches both the criteria for ``INVALID_CHARACTER_ERR`` and ``NAMESPAC
 
 In the current DOM Standard [#dom_namespaces]_, this is unambiguous by the use of an algorithm, where it is clear that the check for ``InvalidCharacterError`` comes before the checks for ``NamespaceError``.
 
-A good way to reduce ambiguity is to write specification prose in terms of the Infra Standard [#infra]_. This standard lays the groundwork for other standards. Similar to how a programming language provides a grammar and a standard library, the Infra Standard defines terminology for algorithms, defines data types and related operations.
+A good way to reduce ambiguity is to write specification prose in terms of the Infra Standard [#infra]_. This standard lays the groundwork for other standards. Similar to how a programming language provides a standard library, the Infra Standard defines terminology for algorithms, defines data types and related operations.
 
 This results in specifications that are well-defined, unambiguous, and have a clear mapping to an implementation. For example, the DOM Standard is written in terms of the Infra Standard.
 
