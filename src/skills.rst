@@ -194,7 +194,10 @@ Testing
 ~~~~~~~
 
 Tests are one way software maintainers verify the correctness of their work.
-They can alert maintainers about bugs (i.e. when new tests are added which their project does not pass), and they can also help maintainers avoid making mistakes (i.e. when they are changing code, and their change causes a new failure).
+They can alert maintainers about bugs (i.e. when new tests are added which their project does not pass).
+That's particularly helpful on the web, where different implementations share the same tests and review each other's results.
+Maintainers prioritize fixing the problems that are unique to their project because those represent interoperability challenges for web developers.
+Separately, tests can also help maintainers avoid making mistakes (i.e. when they are changing code, and their change causes a new failure).
 
 Even if your contribution doesn't involve changing code directly, it may still be appropriate to write tests.
 
