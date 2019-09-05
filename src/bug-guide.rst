@@ -4,21 +4,31 @@ Step by step guide to fix a W3C or WHATWG bug
 1. Select a bug
 ~~~~~~~~~~~~~~~
 
-The first step in working on a change to the web platform is to identify a bug you want to work on. There are many different kinds of outcomes you can expect to have when contributing to the web platform and the type of bug you select will influence this.
+The first step in working on a change to the web platform is to identify a bug you want to work on.
+There are many different kinds of outcomes you can expect to have when contributing to the web platform and the type of bug you select will influence this.
 
-Depending on the bug you select, you might end up suggesting a change to a specification, submitting a test to web-platform-tests, and reporting a bug on two different browsers. Or, you might find that the bug is in the browsers, and all that is needed is a report to the browsers and a test to guarantee the right behavior. There might be a bug only in the specification, and you might only need to submit a spec change. Or perhaps the spec is correct, and matches the behavior of all the browsers, but there is a missing test, in which case you’ll be tasked with writing the test and notifying everyone that it exists. All versions of this, and the many other possible permutations are all valid forms of contribution.
+Depending on the bug you select, you might end up suggesting a change to a specification, submitting a test to web-platform-tests, and reporting a bug on two different browsers.
+Or, you might find that the bug is in the browsers, and all that is needed is a report to the browsers and a test to guarantee the right behavior.
+There might be a bug only in the specification, and you might only need to submit a spec change.
+Or perhaps the spec is correct, and matches the behavior of all the browsers, but there is a missing test, in which case you’ll be tasked with writing the test and notifying everyone that it exists.
+All versions of this, and the many other possible permutations are all valid forms of contribution.
 
-When selecting a bug, it’s always a good idea to ask a specification editor. If you have an idea of which technology area that you’d like to work on, you can open the specification for that technology, and contact one of the editors listed at the top of the specification.
+When selecting a bug, it’s always a good idea to ask a specification editor.
+If you have an idea of which technology area that you’d like to work on, you can open the specification for that technology, and contact one of the editors listed at the top of the specification.
 
 Types of Bugs
 ^^^^^^^^^^^^^
 
-It is also a good idea to familiarize yourself with the types of bugs we deal with when contributing to the web. Here is a list of the kinds of bugs you might run into, and the impact they’ll have on what kind of work you’ll be doing
+It is also a good idea to familiarize yourself with the types of bugs we deal with when contributing to the web.
+Here is a list of the kinds of bugs you might run into, and the impact they’ll have on what kind of work you’ll be doing
 
 Clarification bugs
 ''''''''''''''''''
 
-These are bugs where the main work is clarifying what the specification says. Often times browsers will agree on a behavior, and the relevant specification will be inaccurate, or underspecified for the correct behavior. If you want to dive into the spec and spec tooling without digging into browsers, this is the type of bug for you. Whatwg/html and and csswg-drafts maintain lists of bugs in his category:
+These are bugs where the main work is clarifying what the specification says.
+Often times browsers will agree on a behavior, and the relevant specification will be inaccurate, or underspecified for the correct behavior.
+If you want to dive into the spec and spec tooling without digging into browsers, this is the type of bug for you.
+Whatwg/html and and csswg-drafts maintain lists of bugs in his category:
 
 -  https://github.com/whatwg/html/labels/clarification
 -  https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure
@@ -26,7 +36,9 @@ These are bugs where the main work is clarifying what the specification says. Of
 Interoperability bugs
 '''''''''''''''''''''
 
-Interop bugs deal with situations in which browsers behave differently from each other, and the specification either agrees with one or two, or requires a behavior that is not implemented anywhere, or is not clear about the correct behavior. If you want to do research into how most websites behave, and determine what is web compatible, this is the type of bug for you. Whatwg/html and and csswg-drafts maintain lists of bugs in his category:
+Interop bugs deal with situations in which browsers behave differently from each other, and the specification either agrees with one or two, or requires a behavior that is not implemented anywhere, or is not clear about the correct behavior.
+If you want to do research into how most websites behave, and determine what is web compatible, this is the type of bug for you.
+Whatwg/html and and csswg-drafts maintain lists of bugs in his category:
 
 -  https://github.com/whatwg/html/labels/interop
 -  https://github.com/whatwg/html/labels/needs%20compat%20analysis
@@ -35,7 +47,10 @@ Interop bugs deal with situations in which browsers behave differently from each
 Normative changes, additions and removals
 '''''''''''''''''''''''''''''''''''''''''
 
-Some issues are about changing how an existing feature works, or adding a new feature or removing one that is already specified. The WHATWG has a defined process for changes, additions and removals [23]_. In the W3C it depends on the Working Group, but usually the same principles will apply there as well. This kind of issue might require both research for web compatibility impact as well as building consensus.
+Some issues are about changing how an existing feature works, or adding a new feature or removing one that is already specified.
+The WHATWG has a defined process for changes, additions and removals [23]_.
+In the W3C it depends on the Working Group, but usually the same principles will apply there as well.
+This kind of issue might require both research for web compatibility impact as well as building consensus.
 
 Additional Resources
 ^^^^^^^^^^^^^^^^^^^^

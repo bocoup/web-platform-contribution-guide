@@ -20,7 +20,8 @@ HTML
 HTTP
     Hypertext Transfer Protocol
 HTTP Archive
-    A database of the HTML, CSS and JS response bodies and other data of the top several million1,000,000 pages, collected twice per month. Useful for figuring out how web developers use the web, and what changes will be compatible.
+    A database of the HTML, CSS and JS response bodies and other data of the top several million1,000,000 pages, collected twice per month.
+    Useful for figuring out how web developers use the web, and what changes will be compatible.
 IPR
     Intellectual Property Rights
 IRC
@@ -44,7 +45,8 @@ TC
 TSC
     Technical Steering Committee
 UA
-    User Agent - a piece of software that acts on behalf of the user. For example, a web browser.
+    User Agent - a piece of software that acts on behalf of the user.
+    For example, a web browser.
 W3C
     World Wide Web Consortium.
 WG
