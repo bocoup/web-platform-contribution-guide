@@ -8,3 +8,8 @@ stylistic conventions:
   breaks won't be visible in the rendered version of the guide; see [Semantic
   Linefeeds](https://rhodesmill.org/brandon/2012/one-sentence-per-line/) for
   the rationale behind this convention
+
+The `lint.sh` script checks for the above conventions. You can run it before
+building as follows:
+
+    ./lint.sh && make html
