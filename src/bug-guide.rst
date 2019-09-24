@@ -107,16 +107,16 @@ There are a number of resources that recommend good first issues:
 
 (Alternative to steps 2-7 is using the github ui)
 
-1.  Create an account on github dot com
-2.  Fork the spec
-3.  Clone your fork
-4.  Different specs have different build tools Install the one you need or not
+1. Create an account on github dot com
+2. Fork the spec
+3. Clone your fork
+4. Different specs have different build tools Install the one you need or not
 
     1. HTML has a custom one
     2. CSS specs all use Bikeshed
 
-5.  Make a feature branch
-6.  Make the change
+5. Make a feature branch
+6. Make the change
 
     3. Search for the text you are looking to modify or add prose next to (be careful of line breaks in the spec source).
     4. Read the surrounding text and try to match that style
@@ -124,18 +124,18 @@ There are a number of resources that recommend good first issues:
     6. It takes a few tries in order to get an intuitive sense for how to write in this style
     7. Some specs have a style guide or contributor guide that can be helpful to read.
 
-7.  Commit the change
+7. Commit the change
 
-    8.  Commit message should say what you’re changing and why
-    9.  For CSS specs you have to say what the spec is at the beginning of the commit message in [square brackets]
+    8. Commit message should say what you’re changing and why
+    9. For CSS specs you have to say what the spec is at the beginning of the commit message in [square brackets]
     10. The body of the message should say more detail about the fix
     11. Say what issue this is fixing with "fixes: #1234".
 
-8.  Make a pull request
+8. Make a pull request
 
     12. ...
 
-9.  Ipr commitment
+9. Ipr commitment
 
     13. Create a w3c account [TODO ADD LINK]
     14. link your github account to your w3c account - E.g. https://labs.w3.org/repo-manager/pr/id/w3c/csswg-drafts/3735 [TODO FIGURE OUT AND EXPLAIN HOW THIS WORKS ACROSS SPECS[
@@ -162,9 +162,9 @@ There are a number of resources that recommend good first issues:
 
 4. Make a pull request with test
 
-   7.  PR should point to spec change
-   8.  "This follows spec change foo"
-   9.  Request review
+   7. PR should point to spec change
+   8. "This follows spec change foo"
+   9. Request review
    10. Address review comments
    11. Update your spec bug/PR with a reference to the test
 
