@@ -23,7 +23,7 @@ Here are some tips on minimizing the time you ask of others, while maximizing yo
 * Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.
 * If you don't get a timely response, try something with a broader audience like discussion group, IRC, or report a bug/issue.
 * IRC etiquette: Ask your question directly.
-  Stay connected and wait. https://workaround.org/getting-help-on-irc/
+  Stay connected and wait. [#irc_etiquette]_
 
 
 Specifications
@@ -40,7 +40,7 @@ In W3C specifications, this is typically listed at the top, maybe under "Specifi
 In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for "This standard is written by").
 
 Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
-Check out the repo, and use Git commands such as ``git blame`` and ``git log`` to find who wrote a particular part of the specification.
+Check out the repo, and use Git commands such as ``git blame`` [#git_blame_docs]_ and ``git log`` [#git_log_docs]_ to find who wrote a particular part of the specification.
 It could be the specification's editor, but it could also be someone else.
 
 Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
@@ -53,10 +53,10 @@ Search the archives to see if there has been prior discussion.
 
 Here are some of the active IRC channels:
 
-* CSS: #css on irc.w3.org[#w3c_irc]_
-* HTML, DOM, etc.: #whatwg on Freenode[#whatwg_irc]_
-* JavaScript: #tc39 on Freenode[#tc39_irc]_
-* Node.js: #node.js on Freenode[#nodejs_irc]_
+* CSS: #css on irc.w3.org [#w3c_irc]_
+* HTML, DOM, etc.: #whatwg on Freenode [#whatwg_irc]_
+* JavaScript: #tc39 on Freenode [#tc39_irc]_
+* Node.js: #node.js on Freenode [#nodejs_irc]_
 
 Browser engines
 ~~~~~~~~~~~~~~~
@@ -73,39 +73,41 @@ Chromium
 Chromium has OWNERS files in its source tree, which list the email addresses of people qualified to review changes in that directory.
 See the Chromium documentation on `Code Reviews <https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md>`_ for details.
 
-You can navigate the chromium source code on the web at https://cs.chromium.org/ or you can check out the code[#build_chromium]_ if you prefer to navigate it locally.
+You can navigate the chromium source code on the web at https://cs.chromium.org/ or you can check out the code [#build_chromium]_ if you prefer to navigate it locally.
 Navigating the code base can be tricky, but there's documentation to help, or you can try to simply search.
 However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (CSS, DOM, HTML, SVG, etc.).
 
+The next approach is to look at issues in the Chromium issue tracker. [#crbug]_
+Click the drop-down arrow in the search field to find Advanced search.
 
-issue assignee/owner
-crbug.com - advanced search:
-search within: all issues
-Statuses: fixed
-Components: <component of interest>
-search!
-Owner column can give you a hint of who has fixed issues in the past
-clicking on an issue can show who has reviewed those fixes
-Pro: Strong signal: someone who has fixed many bugs for the feature recently is likely the right person
-Con: Can be difficult to find relevant issues
+* Change "Search within" to "All issues".
+* Leave the "with all of the words" and "without the words" empty.
+  You can go back and use these fields to narrow down the results later.
+* In "Statuses", type "Fixed".
+* In "Components", find the relevant component.
+  Some components are very broad, e.g., Blink>CSS, and some are very specific, e.g., Blink>Layout>Ruby.
 
-source code blame
-https://cs.chromium.org/
-Find the implementation
-View in: git blame or git revision log
-Pro: shows who has touched a specific line of code
-Con: high noise. change may be unrelated to the feature. committer may not be an expert of the feature.
+Click Search.
+Look at the Owners column, this is probably the person who fixed the issue.
+If the results have too few or too many issues, go back and tweak the search by changing the "Components" and "with all of the words" fields.
 
-report a new issue
-As an alternative to emailing, report an issue with your query.
-The issue can say "Consider implementing change X" or "Please provide feedback for spec change Y".
-Pro: likely reaches the right people
-Pro: conversation is public
-Con: not appropriate if there is no bug
+If you find a list of relevant issues, and one person has fixed several of them, that is an indication that they have relevant expertise.
+If you don't get a good list of relevant issues after a few searches, it's possible that there aren't enough relevant issues related to the thing you're looking for.
 
-Discussion group or IRC
-If you can't find who to talk to, you can turn to a discussion group or join IRC.
-https://www.chromium.org/contact
+Instead of hunting for issues, you can check who has changed the code of the implementation.
+Find the code that implements the feature you want feedback on, and use ``git blame`` or ``git log``.
+This can also be done in https://cs.chromium.org/ -- after finding the right file, click "View in", then "Git blame" or "Git Revision Log".
+This can identify who most recently changed a particular line of code, or who wrote it originally.
+However, some changes to the code are entirely unrelated to the feature at hand, e.g., it can be part of a bigger refactor or reformatting of the code.
+Read the commit message to make sure the change is relevant.
+
+As an alternative to emailing a single person, you can also report a new issue in the Chromium issue tracker.
+Set the "Component" to what you think is the right one.
+This is likely to reach the right people, and also provides for a public discussion.
+The issue summary can be along the lines of "Consider implementing change X", and link to the spec change.
+This invites them to review the spec change and also make a statement about whether they want to implement the change.
+
+Finally, you can turn to the ``chromium-discuss`` discussion group or ``#chromium`` IRC. [#chromium_contact]_
 
 WebKit
 ''''''
@@ -175,8 +177,23 @@ Test262
 TODO
 
 
+.. [#irc_etiquette]
+   https://workaround.org/getting-help-on-irc/
+
+.. [#git_blame_docs]
+   https://git-scm.com/docs/git-blame
+
+.. [#git_log_docs]
+   https://git-scm.com/docs/git-log
+
 .. [#build_chromium]
    https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building
+
+.. [#crbug]
+   https://crbug.com/
+
+.. [#chromium_contact]
+   https://www.chromium.org/contact
 
 .. [#tc39_irc]
    https://github.com/tc39/ecma262/blob/master/README.md#community
