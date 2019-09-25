@@ -112,35 +112,38 @@ Finally, you can turn to the ``chromium-discuss`` discussion group or ``#chromiu
 WebKit
 ''''''
 
-https://webkit.org/getting-started/
+The documentation on how to get started [#webkit_getting_started]_ with contributing to WebKit covers how to get the code,
+how to navigate the code [#webkit_navigate_code]_,
+but also how to get in contact with the team via mailing lists, IRC, and the bug tracker.
 
-http://lists.webkit.org/mailman/listinfo/webkit-help
+You can navigate the WebKit source code online with `WebKit Trac <http://trac.webkit.org/>`_.
+Click "Browse Source" or "Search".
+Most of the web-facing features are implemented in ``trunk/Source/WebCore``. [#webkit_trac_webcore]_
+When viewing a particular file, there are links for "Blame" and "Revision Log", which are useful for finding who has made changes to the implementation.
 
-IRC
+There is also an (unofficial) mirror of WebKit in GitHub [#webkit_github]_, if you prefer to use git to navigate the source code.
 
-bugs
-https://webkit.org/reporting-bugs/
-search
-https://bugs.webkit.org/query.cgi
-Product: WebKit
-Component: <component of interest>
-Status: (select multiple) RESOLVED, VERIFIED, CLOSED
-Resolution: FIXED
-Search!
-Look at assignee column.
-Click through, latest comment by WebKit Commit Bot that says "Committed <some revision>", shows who reviewed the change.
+Next, you can look for bugs in the WebKit bug tracker.
+See the WebKit documentation on `Reporting Bugs <https://webkit.org/reporting-bugs/>`_.
+You can use the `Advanced search <https://bugs.webkit.org/query.cgi?format=advanced>`_:
 
-https://webkit.org/team/ has a list of reviewers & committers, where you can probably work out what their email is.
+* Select WebKit as the Product
+* Take a guess at the Component (you can select multiple)
+* Status: select RESOLVED, VERIFIED and CLOSED.
+* Resolution: FIXED
+* Write something in the search field to narrow down the results
 
-source code
-https://trac.webkit.org/browser/webkit/trunk
-or
-https://github.com/WebKit/webkit (git mirror)
+Click Search.
+Look at the Assignee column.
+If someone has fixed several related bugs, they could be a suitable person to reach out to.
+You can also click on a specific bug, and find the latest comment by WebKit Commit Bot that says "Committed *revision*", which says who reviewed the change ("Reviewed by *Name*").
 
-Source > WebCore is likely of interest
+The `WebKit Team <https://webkit.org/team/>`_ page has a list of reviewers.
+Check if the reviewer's name is listed there.
+You can probably work out what their email is from this page.
 
-Each file shows latest change.
-Navigating to a file you can choose "Blame" or "Revision Log"
+Again, you can also report a new bug ("Consider implementing change X"),
+or ask in one of the mailing lists, or in IRC.
 
 Gecko
 '''''
@@ -194,6 +197,18 @@ TODO
 
 .. [#chromium_contact]
    https://www.chromium.org/contact
+
+.. [#webkit_getting_started]
+   https://webkit.org/getting-started/
+
+.. [#webkit_navigate_code]
+   https://trac.webkit.org/wiki/WikiStart#GettingAroundtheWebKitSourceCode
+
+.. [#webkit_trac_webcore]
+   https://trac.webkit.org/browser#webkit/trunk/Source/WebCore
+
+.. [#webkit_github]
+   https://github.com/webkit/webkit
 
 .. [#tc39_irc]
    https://github.com/tc39/ecma262/blob/master/README.md#community
