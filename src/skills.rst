@@ -142,14 +142,13 @@ We write specification prose in the following categories of language (the follow
 Conformance Class
 '''''''''''''''''
 
-A conformance class is an implementation of a web standard that requirements can apply to.
-For example, user agents (web browsers), documents (created by web developers), conformance checkers or validators, and authoring tools are all types of conformance classes.
+A Conformance class is an implementation of a web standard that requirements can apply to. For example, web browsers, web developers, conformance checkers, validators, and authoring tools are all types of conformance classes. Requirements, notes, examples, and warnings can all target different conformance classes.
 
-For example, the following requirement about the ``href`` attribute’s value applies to the "documents" conformance class but not to the "user agents" conformance class:
+For example, the following requirement about the ``href`` attribute’s value applies to the web developer conformance class but not to the web browser conformance class:
 
     The ``href`` attribute on ``a`` and ``area`` elements must have a value that is a valid URL potentially surrounded by spaces.
 
-On the other hand, this requirement applies for how to parse the ``href`` attribute applies to the "user agents" conformance class and not to the "documents" conformance class:
+On the other hand, the following requirement describing how to parse the ``href`` attribute applies to the web browser conformance class, not to the web developer conformance class:
 
     When a user follows a hyperlink created by an element subject, optionally with a hyperlink suffix, the user agent must run the following steps:
 
@@ -157,9 +156,7 @@ On the other hand, this requirement applies for how to parse the ``href`` attrib
 
     9. Parse the URL given by subject's href attribute, relative to subject's node document.
 
-Note in particular that the requirement for documents can be "stricter" than the possible syntaxes that will result in the same behavior in user agents.
-This might be done to help web developers catch mistakes, or to allow for future extensions to the language, while at the same time ensuring compatibility with existing web content.
-This is common in HTML, but can be confusing at first.
+Note in particular that the requirement for web developers can be “stricter” than the possible syntaxes that will result in the same behavior in web browsers. This might be done to help web developers catch mistakes, or to allow for future extensions to the language, while at the same time ensuring compatibility with existing web content. This is common in HTML, but can be confusing at first.
 
 Requirement
 '''''''''''
