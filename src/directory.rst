@@ -1,34 +1,55 @@
 Finding who to talk to
 ----------------------
 
-Successful specification changes aren't made in a vacuum. It may seem reasonable to think that a working group responsible for a standard decide how things should work, and then implementers are required to comply, but this isn't how things happen in practice. Instead it is an iterative process where implementations inform what is specified, as much as the influence in the other direction. Therefore it is important to talk to the people who are likely to implement your proposed change. It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.
+Successful specification changes aren't made in a vacuum.
+It may seem reasonable to think that a working group responsible for a standard decide how things should work, and then implementers are required to comply, but this isn't how things happen in practice.
+Instead it is an iterative process where implementations inform what is specified, as much as the influence in the other direction.
+Therefore it is important to talk to the people who are likely to implement your proposed change.
+It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.
 
-Finding who to talk to requires a bit of investigation. While it seems simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly as new topics appear, people change projects, teams, or employers, new people become experts on something, and so on. Therefore, we suggest an approach for how to find who are currently involved in a particular topic.
+Finding who to talk to requires a bit of investigation.
+While it seems simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly as new topics appear, people change projects, teams, or employers, new people become experts on something, and so on.
+Therefore, we suggest an approach for how to find who are currently involved in a particular topic.
 
 Etiquette
 ~~~~~~~~~
 
-It is easy to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them. Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.
+It is easy to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
+Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.
 
-* Keep your message short, but provide a link to the relevant GitHub issue (or other) for more detailed information. Say clearly what you are expecting from them (e.g., a review from a subject matter expert, or a statement if they are willing to implement something).
+* Keep your message short, but provide a link to the relevant GitHub issue (or other) for more detailed information.
+  Say clearly what you are expecting from them (e.g., a review from a subject matter expert, or a statement if they are willing to implement something).
 * Say why you are contacting them in particular (e.g., they are listed in the OWNERS file).
 * Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.
 * If you don't get a timely response, try something with a broader audience like discussion group, IRC, or report a bug/issue.
-* IRC etiquette: Ask your question directly. Stay connected and wait. https://workaround.org/getting-help-on-irc/
+* IRC etiquette: Ask your question directly.
+  Stay connected and wait. https://workaround.org/getting-help-on-irc/
 
 
 Specifications
 ~~~~~~~~~~~~~~
 
-Reporting a new issue on the relevant specification's repository is a good way to reach the correct people, and also a good place to discuss the topic at hand (e.g., instead of private email threads). So if there isn't already an issue filed for the topic you want to discuss, start with filing a new issue. When reaching out to others for feedback, you can link to this issue and ask them to comment there.
+Reporting a new issue on the relevant specification's repository is a good way to reach the correct people, and also a good place to discuss the topic at hand (e.g., instead of private email threads).
+So if there isn't already an issue filed for the topic you want to discuss, start with filing a new issue.
+When reaching out to others for feedback, you can link to this issue and ask them to comment there.
 
-The specification itself is also a good source for finding relevant people to talk to. The specification editors will usually have relevant expertise.  Each specification typically lists who edits the specification. In W3C specifications, this is typically listed at the top, maybe under "Specification metadata". In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for "This standard is written by").
+The specification itself is also a good source for finding relevant people to talk to.
+The specification editors will usually have relevant expertise.
+Each specification typically lists who edits the specification.
+In W3C specifications, this is typically listed at the top, maybe under "Specification metadata".
+In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for "This standard is written by").
 
-Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself. Check out the repo, and use Git commands such as ``git blame`` and ``git log`` to find who wrote a particular part of the specification. It could be the specification's editor, but it could also be someone else.
+Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
+Check out the repo, and use Git commands such as ``git blame`` and ``git log`` to find who wrote a particular part of the specification.
+It could be the specification's editor, but it could also be someone else.
 
-Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue. Look through open and closed issues and pull requests for the specification, and see who have contributed with comments, reviews, or changes to related issues.
+Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
+Look through open and closed issues and pull requests for the specification, and see who have contributed with comments, reviews, or changes to related issues.
 
-Specifications or working groups often also have a mailing list and IRC channel. This could be stated in the specification itself, or in the repository's README. Both mailing lists and IRC channels usually have public archives. Search the archives to see if there has been prior discussion.
+Specifications or working groups often also have a mailing list and IRC channel.
+This could be stated in the specification itself, or in the repository's README.
+Both mailing lists and IRC channels usually have public archives.
+Search the archives to see if there has been prior discussion.
 
 Here are some of the active IRC channels:
 
@@ -40,16 +61,21 @@ Here are some of the active IRC channels:
 Browser engines
 ~~~~~~~~~~~~~~~
 
-Specification changes typically involve changes to browser engine implementations. Browser engines usually have people actively participating in standards discussions, who can either respond to your specification issue directly or help with finding who can do so. However, that doesn't always happen, so it can be necessary to find someone to reach out to.
+Specification changes typically involve changes to browser engine implementations.
+Browser engines usually have people actively participating in standards discussions, who can either respond to your specification issue directly or help with finding who can do so.
+However, that doesn't always happen, so it can be necessary to find someone to reach out to.
 
 The approaches include finding who owns a module, who has recently fixed related bugs, who has recently changed related code in the implementation, and ways of reaching out to a slightly wider audience.
 
 Chromium
 ''''''''
 
-Chromium has OWNERS files in its source tree, which list the email addresses of people qualified to review changes in that directory. See the Chromium documentation on `Code Reviews <https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md>`_ for details.
+Chromium has OWNERS files in its source tree, which list the email addresses of people qualified to review changes in that directory.
+See the Chromium documentation on `Code Reviews <https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md>`_ for details.
 
-You can navigate the chromium source code on the web at https://cs.chromium.org/ or you can check out the code[#build_chromium]_ if you prefer to navigate it locally. Navigating the code base can be tricky, but there's documentation to help, or you can try to simply search. However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (CSS, DOM, HTML, SVG, etc.).
+You can navigate the chromium source code on the web at https://cs.chromium.org/ or you can check out the code[#build_chromium]_ if you prefer to navigate it locally.
+Navigating the code base can be tricky, but there's documentation to help, or you can try to simply search.
+However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (CSS, DOM, HTML, SVG, etc.).
 
 
 issue assignee/owner
@@ -71,7 +97,8 @@ Pro: shows who has touched a specific line of code
 Con: high noise. change may be unrelated to the feature. committer may not be an expert of the feature.
 
 report a new issue
-As an alternative to emailing, report an issue with your query. The issue can say "Consider implementing change X" or "Please provide feedback for spec change Y".
+As an alternative to emailing, report an issue with your query.
+The issue can say "Consider implementing change X" or "Please provide feedback for spec change Y".
 Pro: likely reaches the right people
 Pro: conversation is public
 Con: not appropriate if there is no bug
@@ -110,7 +137,8 @@ https://github.com/WebKit/webkit (git mirror)
 
 Source > WebCore is likely of interest
 
-Each file shows latest change. Navigating to a file you can choose "Blame" or "Revision Log"
+Each file shows latest change.
+Navigating to a file you can choose "Blame" or "Revision Log"
 
 Gecko
 '''''
