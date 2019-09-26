@@ -1,4 +1,4 @@
-name: Web Platform Contribution Guide
+name: Lint & Build
 
 on:
   pull_request:
