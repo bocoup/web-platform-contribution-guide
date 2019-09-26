@@ -142,13 +142,13 @@ We write specification prose in the following categories of language (the follow
 Conformance Class
 '''''''''''''''''
 
-A Conformance class is an implementation of a web standard that requirements can apply to. For example, web browsers, web developers, conformance checkers, validators, and authoring tools are all types of conformance classes. Requirements, notes, examples, and warnings can all target different conformance classes.
+A Conformance class is an implementation of a web standard that requirements can apply to. For example, web browsers (called 'user agents' in spec speak), web documents (authored by web developers), conformance checkers, validators, and authoring tools are all types of conformance classes. Requirements, notes, examples, and warnings can all target different conformance classes.
 
-For example, the following requirement about the ``href`` attribute’s value applies to the web developer conformance class but not to the web browser conformance class:
+For example, the following requirement about the ``href`` attribute’s value applies to the web document conformance class but not to the user agent conformance class:
 
     The ``href`` attribute on ``a`` and ``area`` elements must have a value that is a valid URL potentially surrounded by spaces.
 
-On the other hand, the following requirement describing how to parse the ``href`` attribute applies to the web browser conformance class, not to the web developer conformance class:
+On the other hand, the following requirement describing how to parse the ``href`` attribute applies to the user agent conformance class, not to the web document conformance class:
 
     When a user follows a hyperlink created by an element subject, optionally with a hyperlink suffix, the user agent must run the following steps:
 
