@@ -117,5 +117,5 @@ Your Community Group can then take those pain points, synthesize them into use c
  
 In 2011, the Web Games Community Group did just this, producing a set of use cases and bringing them to various W3C Working Groups to be addressed. 
 By 2019, nearly all of the pain points the CG identified for web games developers had been addressed. 
-You can read one of the initial Games CG reports from 2011 `here <https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0>`_
+You can read one of the `initial Games CG reports from 2011 <https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0>`_.
  
