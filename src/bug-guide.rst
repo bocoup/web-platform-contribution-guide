@@ -96,11 +96,7 @@ There are a number of resources that recommend good first issues:
 
 1. suggest the fix you have in mind in issue on github
 2. Ask editors and implementers if they agree (check the specification).
-3. Ask implementers
-
-   1. Look at source code of browser and git blame to identify implementer
-   2. Look at the bug database and search for the feature.
-   3. Email simon@bocoup.com to ask who to talk to.
+3. Ask implementers (see :doc:`directory`)
 
 6. Change the spec
 ~~~~~~~~~~~~~~~~~~

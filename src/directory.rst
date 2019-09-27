@@ -11,6 +11,8 @@ Finding who to talk to requires a bit of investigation.
 While it seems simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly as new topics appear, people change projects, teams, or employers, new people become experts on something, and so on.
 Therefore, we suggest an approach for how to find who are currently involved in a particular topic.
 
+**If you get stuck, feel free to reach out to us** and we're happy to help: web-platform-contribution-guide@bocoup.com
+
 Etiquette
 ~~~~~~~~~
 
@@ -22,8 +24,8 @@ Here are some tips on minimizing the time you ask of others, while maximizing yo
 * Say why you are contacting them in particular (e.g., they are listed in the OWNERS file).
 * Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.
 * If you don't get a timely response, try something with a broader audience like discussion group, IRC, or report a bug/issue.
-* IRC etiquette: Ask your question directly.
-  Stay connected and wait. [#irc_etiquette]_
+* `IRC etiquette <https://workaround.org/getting-help-on-irc/>`__: Ask your question directly.
+  Stay connected and wait.
 
 
 Specifications
@@ -40,7 +42,7 @@ In W3C specifications, this is typically listed at the top, maybe under "Specifi
 In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for "This standard is written by").
 
 Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
-Check out the repo, and use Git commands such as ``git blame`` [#git_blame_docs]_ and ``git log`` [#git_log_docs]_ to find who wrote a particular part of the specification.
+Check out the repo, and use Git commands such as `git blame <https://git-scm.com/docs/git-blame>`__ and `git log <https://git-scm.com/docs/git-log>`__ to find who wrote a particular part of the specification.
 It could be the specification's editor, but it could also be someone else.
 
 Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
@@ -53,10 +55,10 @@ Search the archives to see if there has been prior discussion.
 
 Here are some of the active IRC channels:
 
-* CSS: #css on irc.w3.org [#w3c_irc]_
-* HTML, DOM, etc.: #whatwg on Freenode [#whatwg_irc]_
-* JavaScript: #tc39 on Freenode [#tc39_irc]_
-* Node.js: #node.js on Freenode [#nodejs_irc]_
+* CSS: `#css on irc.w3.org <https://www.w3.org/wiki/IRC>`__
+* HTML, DOM, etc.: `#whatwg on Freenode <https://whatwg.org/irc>`__
+* JavaScript: `#tc39 on Freenode <https://github.com/tc39/ecma262/blob/master/README.md#community>`__
+* Node.js: `#node.js on Freenode <https://nodejs.org/en/get-involved/>`__
 
 Browser engines
 ~~~~~~~~~~~~~~~
@@ -71,13 +73,13 @@ Chromium
 ''''''''
 
 Chromium has OWNERS files in its source tree, which list the email addresses of people qualified to review changes in that directory.
-See the Chromium documentation on `Code Reviews <https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md>`_ for details.
+See the Chromium documentation on `Code Reviews <https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md>`__ for details.
 
-You can navigate the chromium source code on the web at https://cs.chromium.org/ or you can check out the code [#build_chromium]_ if you prefer to navigate it locally.
+You can `navigate the chromium source code on the web <https://cs.chromium.org/>`__ or you can `check out the code <https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building>`__ if you prefer to navigate it locally.
 Navigating the code base can be tricky, but there's documentation to help, or you can try to simply search.
 However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (CSS, DOM, HTML, SVG, etc.).
 
-The next approach is to look at issues in the Chromium issue tracker. [#crbug]_
+The next approach is to look at issues in the `Chromium issue tracker <https://crbug.com/>`__.
 Click the drop-down arrow in the search field to find Advanced search.
 
 * Change "Search within" to "All issues".
@@ -107,25 +109,25 @@ This is likely to reach the right people, and also provides for a public discuss
 The issue summary can be along the lines of "Consider implementing change X", and link to the spec change.
 This invites them to review the spec change and also make a statement about whether they want to implement the change.
 
-Finally, you can turn to the ``chromium-discuss`` discussion group or ``#chromium`` IRC. [#chromium_contact]_
+Finally, you can turn to the `chromium-discuss discussion group or #chromium IRC <https://www.chromium.org/contact>`__.
 
 WebKit
 ''''''
 
-The documentation on how to get started [#webkit_getting_started]_ with contributing to WebKit covers how to get the code,
-how to navigate the code [#webkit_navigate_code]_,
+The documentation on how to `get started with contributing to WebKit <https://webkit.org/getting-started/>`__ covers how to get the code,
+how to `navigate the code <https://trac.webkit.org/wiki/WikiStart#GettingAroundtheWebKitSourceCode>`__,
 but also how to get in contact with the team via mailing lists, IRC, and the bug tracker.
 
-You can navigate the WebKit source code online with `WebKit Trac <http://trac.webkit.org/>`_.
+You can navigate the WebKit source code online with `WebKit Trac <http://trac.webkit.org/>`__.
 Click "Browse Source" or "Search".
-Most of the web-facing features are implemented in ``trunk/Source/WebCore``. [#webkit_trac_webcore]_
+Most of the web-facing features are implemented in `trunk/Source/WebCore <https://trac.webkit.org/browser#webkit/trunk/Source/WebCore>`__.
 When viewing a particular file, there are links for "Blame" and "Revision Log", which are useful for finding who has made changes to the implementation.
 
-There is also an (unofficial) mirror of WebKit in GitHub [#webkit_github]_, if you prefer to use git to navigate the source code.
+There is also an (unofficial) `mirror of WebKit in GitHub <https://github.com/webkit/webkit>`__, if you prefer to use git to navigate the source code.
 
 Next, you can look for bugs in the WebKit bug tracker.
-See the WebKit documentation on `Reporting Bugs <https://webkit.org/reporting-bugs/>`_.
-You can use the `Advanced search <https://bugs.webkit.org/query.cgi?format=advanced>`_:
+See the WebKit documentation on `Reporting Bugs <https://webkit.org/reporting-bugs/>`__.
+You can use the `Advanced search <https://bugs.webkit.org/query.cgi?format=advanced>`__:
 
 * Select WebKit as the Product
 * Take a guess at the Component (you can select multiple)
@@ -138,7 +140,7 @@ Look at the Assignee column.
 If someone has fixed several related bugs, they could be a suitable person to reach out to.
 You can also click on a specific bug, and find the latest comment by WebKit Commit Bot that says "Committed *revision*", which says who reviewed the change ("Reviewed by *Name*").
 
-The `WebKit Team <https://webkit.org/team/>`_ page has a list of reviewers.
+The `WebKit Team <https://webkit.org/team/>`__ page has a list of reviewers.
 Check if the reviewer's name is listed there.
 You can probably work out what their email is from this page.
 
@@ -148,22 +150,22 @@ or ask in one of the mailing lists, or in IRC.
 Gecko
 '''''
 
-Mozilla has good documentation on how you can `contribute <https://wiki.mozilla.org/Contribute>`_, and also have a `step-by-step developer introduction <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction>`_.
+Mozilla has good documentation on how you can `contribute <https://wiki.mozilla.org/Contribute>`__, and also have a `step-by-step developer introduction <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction>`__.
 The relevant parts for our purposes include:
 
-* how to `ask for help <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Need_help>`_
-* how to `get the code <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_build>`_
-* how to `search for bugs <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_2_Find_something_to_work_on>`_
-* how to `find a reviewer <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_4_Get_your_code_reviewed>`_
+* how to `ask for help <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Need_help>`__
+* how to `get the code <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_build>`__
+* how to `search for bugs <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_2_Find_something_to_work_on>`__
+* how to `find a reviewer <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_4_Get_your_code_reviewed>`__
 
-The `source code can also be viewed online <https://dxr.mozilla.org/mozilla-central/source/>`_.
+The `source code can also be viewed online <https://dxr.mozilla.org/mozilla-central/source/>`__.
 When viewing a file, there are logs for "Blame" and "Log" to find out who has made changes to that file.
 The commit messages typically say who reviewed the change, with ``r=username``.
 
-If you prefer to work locally with the code, you can use `hg blame <https://www.mercurial-scm.org/repo/hg/help/annotate>`_ or `hg log <https://www.mercurial-scm.org/repo/hg/help/log>`_.
-If you prefer Git over Mercurial, there's a `read-only Git mirror on GitHub <https://github.com/mozilla/gecko-dev>`_.
+If you prefer to work locally with the code, you can use `hg blame <https://www.mercurial-scm.org/repo/hg/help/annotate>`__ or `hg log <https://www.mercurial-scm.org/repo/hg/help/log>`__.
+If you prefer Git over Mercurial, there's a `read-only Git mirror on GitHub <https://github.com/mozilla/gecko-dev>`__.
 
-Next, you can `search for bugs in Bugzilla <https://bugzilla.mozilla.org/query.cgi?format=advanced>`_ to find out who has fixed related bugs.
+Next, you can `search for bugs in Bugzilla <https://bugzilla.mozilla.org/query.cgi?format=advanced>`__ to find out who has fixed related bugs.
 
 * Select Components as the Classification.
 * Select Core as the Product.
@@ -177,10 +179,10 @@ Click Search.
 Look at the Assignee column.
 You can also click on a bug to see who has reviewed.
 
-The `Modules/Core wiki page <https://wiki.mozilla.org/Modules/Core>`_ documents who are the `module owners and peers <https://www.mozilla.org/en-US/about/governance/policies/module-ownership/>`_ for different parts of the code, and also links to a discussion group for each module.
+The `Modules/Core wiki page <https://wiki.mozilla.org/Modules/Core>`__ documents who are the `module owners and peers <https://www.mozilla.org/en-US/about/governance/policies/module-ownership/>`__ for different parts of the code, and also links to a discussion group for each module.
 Module owners have a leadership role, and make decisions about what changes can be made to that module.
 
-The `Standards wiki page <https://wiki.mozilla.org/Standards>`_ has Mozilla's points of contact per web standard or working group.
+The `Standards wiki page <https://wiki.mozilla.org/Standards>`__ has Mozilla's points of contact per web standard or working group.
 The people listed here are likely good candidates to reach out to for a given specification, and may be able to help identify who the right person to talk to is for a given issue.
 
 web-platform-tests
@@ -190,22 +192,22 @@ Folders have a META.yml file with ``suggested_reviewers`` which lists GitHub use
 In any case, they have indicated interest in the folder in question, so they may be good candidates to reach out to for the subject matter at hand.
 
 Using Git (``git blame`` or ``git log``) to find who has contributed to a particular test is a good way to find the right person for a test.
-This can also be viewed in GitHub's user interface; when viewing a file, the contributors for that file are listed, and there are also "Blame" and "History" buttons (`example <https://github.com/web-platform-tests/wpt/blob/master/url/historical.any.js>`_).
+This can also be viewed in GitHub's user interface; when viewing a file, the contributors for that file are listed, and there are also "Blame" and "History" buttons (`example <https://github.com/web-platform-tests/wpt/blob/master/url/historical.any.js>`__).
 
 It can also be worthwhile to search for open and closed issues and pull requests, to see who are contributing with issues, code, comments, and who are reviewing.
 
-Finally, you can reach out in IRC `#testing on irc.w3.org <http://irc.w3.org/?channels=testing>`_ (`archive <https://w3.logbot.info/testing>`_), or the `public-test-infra mailing list <https://lists.w3.org/Archives/Public/public-test-infra/>`_.
+Finally, you can reach out in IRC `#testing on irc.w3.org <http://irc.w3.org/?channels=testing>`__ (`archive <https://w3.logbot.info/testing>`__), or the `public-test-infra mailing list <https://lists.w3.org/Archives/Public/public-test-infra/>`__.
 
 Test262
 ~~~~~~~
 
-`Test262 <https://github.com/tc39/test262>`_ is the testsuite for JavaScript and related specifications.
+`Test262 <https://github.com/tc39/test262>`__ is the testsuite for JavaScript and related specifications.
 Similarly to web-platform-tests, you can find out who has contributed to a test using ``git blame`` or ``git log``.
 
-The TC39 (the committee for JavaScript) has `process <https://tc39.es/process-document/>`_ for proposals where a proposal goes through several stages, and each proposal has a "champion".
-The current proposals are `tracked in GitHub <https://github.com/tc39/proposals>`_, where the proposals' authors and champions are listed.
+The TC39 (the committee for JavaScript) has `process <https://tc39.es/process-document/>`__ for proposals where a proposal goes through several stages, and each proposal has a "champion".
+The current proposals are `tracked in GitHub <https://github.com/tc39/proposals>`__, where the proposals' authors and champions are listed.
 
-Finally, you can reach out on IRC, `#tc39 on Freenode <https://freenode.net/kb/answer/chat>`_, or the `es-discuss mailing list <https://esdiscuss.org/>`_.
+Finally, you can reach out on IRC, `#tc39 on Freenode <https://github.com/tc39/ecma262/blob/master/README.md#community>`__, or the `es-discuss mailing list <https://esdiscuss.org/>`__.
 
 
 Web Developers & Framework Developers
@@ -222,56 +224,13 @@ Other ways to reach web developers can involve talking to people who have a comm
 A question on Twitter from such a person can go a long way to identify pain points web developers have.
 
 Other ways involve actively searching for blog posts where web developers document how they work around something or complain about differences between browsers.
-Searching for questions in `StackOverflow <https://stackoverflow.com/>`_ can also reveal common problems.
+Searching for questions in `StackOverflow <https://stackoverflow.com/>`__ can also reveal common problems.
 
-You can also help conduct surveys such as the `MDN Web Developer & Designer Survey <https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/>`_ or `this survey about form controls <https://www.gwhitworth.com/blog/2019/07/form-controls-components/>`_.
+You can also help conduct surveys such as the `MDN Web Developer & Designer Survey <https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/>`__ or `this survey about form controls <https://www.gwhitworth.com/blog/2019/07/form-controls-components/>`__.
 
 You can speak at web developer conferences to raise awareness and get direct feedback about a particular issue.
 
 Some browser vendors have Developer Relation teams, which can help act as a communication channel between browser vendors or web standards groups and web developers.
 
-* `Mozilla Devrel <https://wiki.mozilla.org/Devrel>_`
-* `Google Chrome Developer Relations on Twitter <https://twitter.com/ChromiumDev>`_)
-
-
-.. [#irc_etiquette]
-   https://workaround.org/getting-help-on-irc/
-
-.. [#git_blame_docs]
-   https://git-scm.com/docs/git-blame
-
-.. [#git_log_docs]
-   https://git-scm.com/docs/git-log
-
-.. [#build_chromium]
-   https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building
-
-.. [#crbug]
-   https://crbug.com/
-
-.. [#chromium_contact]
-   https://www.chromium.org/contact
-
-.. [#webkit_getting_started]
-   https://webkit.org/getting-started/
-
-.. [#webkit_navigate_code]
-   https://trac.webkit.org/wiki/WikiStart#GettingAroundtheWebKitSourceCode
-
-.. [#webkit_trac_webcore]
-   https://trac.webkit.org/browser#webkit/trunk/Source/WebCore
-
-.. [#webkit_github]
-   https://github.com/webkit/webkit
-
-.. [#tc39_irc]
-   https://github.com/tc39/ecma262/blob/master/README.md#community
-
-.. [#whatwg_irc]
-   https://whatwg.org/irc
-
-.. [#w3c_irc]
-   https://www.w3.org/wiki/IRC
-
-.. [#nodejs_irc]
-   https://nodejs.org/en/get-involved/
+* `Mozilla Devrel <https://wiki.mozilla.org/Devrel>`__
+* `Google Chrome Developer Relations on Twitter <https://twitter.com/ChromiumDev>`__

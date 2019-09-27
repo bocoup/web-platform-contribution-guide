@@ -26,7 +26,7 @@ This knowledge is a key part of changing the web.
 We’re working to make this a more transparent process through this guide, but it can still be opaque at times.
 Don’t feel bad if you get stuck.
 You can start by referring to the :doc:`directory` section of this guide.
-If you’re still stuck, you can email simon@bocoup.com, boaz@bocoup.com, jory@bocoup.com, valerie@bocoup.com, leo@bocoup.com, rick@bocoup.com for an introduction.
+If you’re still stuck, you can email web-platform-contribution-guide@bocoup.com for an introduction.
 
 Research
 ~~~~~~~~

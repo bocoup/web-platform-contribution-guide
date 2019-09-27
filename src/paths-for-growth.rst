@@ -25,7 +25,7 @@ In many cases, you'll need to communicate with the website's developers to let t
 In other cases, you may end up filing browser bugs.
 
 The Web Compat Project has a well-defined process and a number of expert contributors to help you get started with these kinds of bugs.
-You can `learn more about the process, and get started on your first Web Compat bug <https://webcompat.com/contributors/reproduce-bug>`_.
+You can `learn more about the process, and get started on your first Web Compat bug <https://webcompat.com/contributors/reproduce-bug>`__.
 
 Join a web-platform-tests Team
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,7 +39,7 @@ Monitoring and maintaining this infrastructure is a critical part of WPT work, j
 As with testing, there are always opportunities to meaningfully support the web platform through infrastructure work.
 
 Once you've mastered the process of fixing or implementing tests, or fulfilling infrastructure support needs, you may want to take on a bigger role by joining a team or administering a component of the infrastructure.
-Anyone who puts in the effort to master the subject matter can join a WPT team, such as the 'reviewers' team, which reviews PRs for tests or infrastructure; or the 'wpt.fyi' team, which reviews contributions to `wpt.fyi <https://wpt.fyi/>`_ repositories.
+Anyone who puts in the effort to master the subject matter can join a WPT team, such as the 'reviewers' team, which reviews PRs for tests or infrastructure; or the 'wpt.fyi' team, which reviews contributions to `wpt.fyi <https://wpt.fyi/>`__ repositories.
 These teams play an important role assessing, prioritizing, and triaging WPT issues.
 They provide feedback to the WPT core team, and help onboard and mentor new contributors.
 Conversely, you could volunteer to take on 'ownership' of a piece of infrastructure, like the wpt-pr-bot.
@@ -118,5 +118,5 @@ Your community group can then take those pain points, synthesize them into use c
 
 In 2011, the Games Community Group did just this, producing a set of use cases and bringing them to various W3C working groups to be addressed.
 By 2019, nearly all of the pain points the CG identified for web games developers had been addressed.
-You can read one of the `initial Games CG reports from 2011 <https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0>`_.
+You can read one of the `initial Games CG reports from 2011 <https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0>`__.
 
