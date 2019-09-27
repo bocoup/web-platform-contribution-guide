@@ -39,7 +39,7 @@ Monitoring and maintaining this infrastructure is a critical part of WPT work, j
 As with testing, there are always opportunities to meaningfully support the web platform through infrastructure work.
  
 Once you've mastered the process of fixing or implementing tests, or fulfilling infrastructure support needs, you may want to take on a bigger role by joining a team or administering a component of the infrastructure. 
-Anyone who puts in the effort to master the subject matter can join a WPT team, such as the 'reviewers' team, which PRs for tests or infrastructure; or the 'wpt.fyi' team, which reviews contributions to `wpt.fyi <https://wpt.fyi/>`_ repositories. 
+Anyone who puts in the effort to master the subject matter can join a WPT team, such as the 'reviewers' team, which reviews PRs for tests or infrastructure; or the 'wpt.fyi' team, which reviews contributions to `wpt.fyi <https://wpt.fyi/>`_ repositories. 
 These teams play an important role assessing, prioritizing, and triaging WPT issues. 
 They provide feedback to the WPT Core Team, and help onboard and mentor new contributors.
 Conversely, you could volunteer to take on 'ownership' of a piece of infrastructure, like the wpt-pr-bot.
