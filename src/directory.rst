@@ -186,7 +186,7 @@ The people listed here are likely good candidates to reach out to for a given sp
 web-platform-tests
 ~~~~~~~~~~~~~~~~~~
 
-Folders have a META.yml file with `suggested_reviewers` which lists GitHub usernames of people who want to be notified of pull requests for that folder, maybe because they want to review, but not necessarily.
+Folders have a META.yml file with ``suggested_reviewers`` which lists GitHub usernames of people who want to be notified of pull requests for that folder, maybe because they want to review, but not necessarily.
 In any case, they have indicated interest in the folder in question, so they may be good candidates to reach out to for the subject matter at hand.
 
 Using Git (``git blame`` or ``git log``) to find who has contributed to a particular test is a good way to find the right person for a test.
@@ -194,17 +194,44 @@ This can also be viewed in GitHub's user interface; when viewing a file, the con
 
 It can also be worthwhile to search for open and closed issues and pull requests, to see who are contributing with issues, code, comments, and who are reviewing.
 
-* git blame
-* git log
-* issue and PR comments
-
-IRC: http://irc.w3.org/?channels=testing (archive https://w3.logbot.info/testing )
-Mailing list: https://lists.w3.org/Archives/Public/public-test-infra/
+Finally, you can reach out in IRC `#testing on irc.w3.org <http://irc.w3.org/?channels=testing>`_ (`archive <https://w3.logbot.info/testing>`_), or the `public-test-infra mailing list <https://lists.w3.org/Archives/Public/public-test-infra/>`_.
 
 Test262
 ~~~~~~~
 
-TODO
+`Test262 <https://github.com/tc39/test262>`_ is the testsuite for JavaScript and related specifications.
+Similarly to web-platform-tests, you can find out who has contributed to a test using ``git blame`` or ``git log``.
+
+The TC39 (the committee for JavaScript) has `process <https://tc39.es/process-document/>`_ for proposals where a proposal goes through several stages, and each proposal has a "champion".
+The current proposals are `tracked in GitHub <https://github.com/tc39/proposals>`_, where the proposals' authors and champions are listed.
+
+Finally, you can reach out on IRC, `#tc39 on Freenode <https://freenode.net/kb/answer/chat>`_, or the `es-discuss mailing list <https://esdiscuss.org/>`_.
+
+
+Web Developers & Framework Developers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This category can be a bit tricky because it is a much larger audience.
+How to proceed probably depends heavily on the topic at hand.
+
+Maybe there are frameworks that handle the use case that you want feedback on.
+If you find such frameworks, you can reach out to the maintainers and ask for their input.
+Maybe they also have an idea about how to get relevant feedback from web developers that are using their framework.
+
+Other ways to reach web developers can involve talking to people who have a community of web developers around them.
+A question on Twitter from such a person can go a long way to identify pain points web developers have.
+
+Other ways involve actively searching for blog posts where web developers document how they work around something or complain about differences between browsers.
+Searching for questions in `StackOverflow <https://stackoverflow.com/>`_ can also reveal common problems.
+
+You can also help conduct surveys such as the `MDN Web Developer & Designer Survey <https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/>`_ or `this survey about form controls <https://www.gwhitworth.com/blog/2019/07/form-controls-components/>`_.
+
+You can speak at web developer conferences to raise awareness and get direct feedback about a particular issue.
+
+Some browser vendors have Developer Relation teams, which can help act as a communication channel between browser vendors or web standards groups and web developers.
+
+* `Mozilla Devrel <https://wiki.mozilla.org/Devrel>_`
+* `Google Chrome Developer Relations on Twitter <https://twitter.com/ChromiumDev>`_)
 
 
 .. [#irc_etiquette]
