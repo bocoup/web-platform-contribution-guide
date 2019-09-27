@@ -142,7 +142,9 @@ We write specification prose in the following categories of language (the follow
 Conformance Class
 '''''''''''''''''
 
-A Conformance class is an implementation of a web standard that requirements can apply to. For example, web browsers (called 'user agents' in spec speak), web documents (authored by web developers), conformance checkers, validators, and authoring tools are all types of conformance classes. Requirements, notes, examples, and warnings can all target different conformance classes.
+A Conformance class is an implementation of a web standard that requirements can apply to.
+For example, web browsers (called 'user agents' in spec speak), web documents (authored by web developers), conformance checkers, validators, and authoring tools are all types of conformance classes.
+Requirements, notes, examples, and warnings can all target different conformance classes.
 
 For example, the following requirement about the ``href`` attribute’s value applies to the web document conformance class but not to the user agent conformance class:
 
@@ -156,7 +158,9 @@ On the other hand, the following requirement describing how to parse the ``href`
 
     9. Parse the URL given by subject's href attribute, relative to subject's node document.
 
-Note in particular that the requirement for web developers can be “stricter” than the possible syntaxes that will result in the same behavior in web browsers. This might be done to help web developers catch mistakes, or to allow for future extensions to the language, while at the same time ensuring compatibility with existing web content. This is common in HTML, but can be confusing at first.
+Note in particular that the requirement for web developers can be “stricter” than the possible syntaxes that will result in the same behavior in web browsers.
+This might be done to help web developers catch mistakes, or to allow for future extensions to the language, while at the same time ensuring compatibility with existing web content.
+This is common in HTML, but can be confusing at first.
 
 Requirement
 '''''''''''
