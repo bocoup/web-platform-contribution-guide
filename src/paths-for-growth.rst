@@ -25,7 +25,7 @@ In many cases, you'll need to communicate with the website's developers to let t
 In other cases, you may end up filing browser bugs. 
  
 The Web Compat Project has a well-defined process and a number of expert contributors to help you get started with these kinds of bugs. 
-You can learn more about the process, and get started on your first Web Compat bug at https://webcompat.com/contributors/reproduce-bug.
+You can `learn more about the process, and get started on your first Web Compat bug <https://webcompat.com/contributors/reproduce-bug>`_.
  
 Join a Web Platform Tests Team
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
