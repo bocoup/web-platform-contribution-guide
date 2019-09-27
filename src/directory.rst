@@ -148,24 +148,51 @@ or ask in one of the mailing lists, or in IRC.
 Gecko
 '''''
 
-https://wiki.mozilla.org/Contribute
+Mozilla has good documentation on how you can `contribute <https://wiki.mozilla.org/Contribute>`_, and also have a `step-by-step developer introduction <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction>`_.
+The relevant parts for our purposes include:
 
-https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction
+* how to `ask for help <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Need_help>`_
+* how to `get the code <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_build>`_
+* how to `search for bugs <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_2_Find_something_to_work_on>`_
+* how to `find a reviewer <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_4_Get_your_code_reviewed>`_
 
-Code review
-https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_4_Get_your_code_reviewed
+The `source code can also be viewed online <https://dxr.mozilla.org/mozilla-central/source/>`_.
+When viewing a file, there are logs for "Blame" and "Log" to find out who has made changes to that file.
+The commit messages typically say who reviewed the change, with ``r=username``.
 
-* hg blame
-* hg log
-* bugzilla
-* https://wiki.mozilla.org/Modules/Core
+If you prefer to work locally with the code, you can use `hg blame <https://www.mercurial-scm.org/repo/hg/help/annotate>`_ or `hg log <https://www.mercurial-scm.org/repo/hg/help/log>`_.
+If you prefer Git over Mercurial, there's a `read-only Git mirror on GitHub <https://github.com/mozilla/gecko-dev>`_.
 
-https://wiki.mozilla.org/Standards has Mozilla's points of contact per web standard or working group
+Next, you can `search for bugs in Bugzilla <https://bugzilla.mozilla.org/query.cgi?format=advanced>`_ to find out who has fixed related bugs.
+
+* Select Components as the Classification.
+* Select Core as the Product.
+* Take a guess at the Component.
+  You can select multiple.
+* Select RESOLVED, VERIFIED, and CLOSED as the Status.
+* Select FIXED as the Resolution.
+* If the component is too broad, type something in the Summary field to search for.
+
+Click Search.
+Look at the Assignee column.
+You can also click on a bug to see who has reviewed.
+
+The `Modules/Core wiki page <https://wiki.mozilla.org/Modules/Core>`_ documents who are the `module owners and peers <https://www.mozilla.org/en-US/about/governance/policies/module-ownership/>`_ for different parts of the code, and also links to a discussion group for each module.
+Module owners have a leadership role, and make decisions about what changes can be made to that module.
+
+The `Standards wiki page <https://wiki.mozilla.org/Standards>`_ has Mozilla's points of contact per web standard or working group.
+The people listed here are likely good candidates to reach out to for a given specification, and may be able to help identify who the right person to talk to is for a given issue.
 
 web-platform-tests
 ~~~~~~~~~~~~~~~~~~
 
-Folders have a META.yml file with `suggested_reviewers` which lists GitHub usernames of people who have signed up to review that folder.
+Folders have a META.yml file with `suggested_reviewers` which lists GitHub usernames of people who want to be notified of pull requests for that folder, maybe because they want to review, but not necessarily.
+In any case, they have indicated interest in the folder in question, so they may be good candidates to reach out to for the subject matter at hand.
+
+Using Git (``git blame`` or ``git log``) to find who has contributed to a particular test is a good way to find the right person for a test.
+This can also be viewed in GitHub's user interface; when viewing a file, the contributors for that file are listed, and there are also "Blame" and "History" buttons (`example <https://github.com/web-platform-tests/wpt/blob/master/url/historical.any.js>`_).
+
+It can also be worthwhile to search for open and closed issues and pull requests, to see who are contributing with issues, code, comments, and who are reviewing.
 
 * git blame
 * git log
