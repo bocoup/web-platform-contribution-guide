@@ -30,8 +30,8 @@ Often times browsers will agree on a behavior, and the relevant specification wi
 If you want to dive into the spec and spec tooling without digging into browsers, this is the type of bug for you.
 The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in his category:
 
-- `clarification <https://github.com/whatwg/html/labels/clarification>`_
-- `Needs Example or Figure <https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure>`_
+- `clarification <https://github.com/whatwg/html/labels/clarification>`__
+- `Needs Example or Figure <https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure>`__
 
 Interoperability bugs
 '''''''''''''''''''''
@@ -40,9 +40,9 @@ Interop bugs deal with situations in which browsers behave differently from each
 If you want to do research into how most websites behave, and determine what is web compatible, this is the type of bug for you.
 The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in his category:
 
-- `interop <https://github.com/whatwg/html/labels/interop>`_
-- `needs compat analysis <https://github.com/whatwg/html/labels/needs%20compat%20analysis>`_
-- `Needs Data <https://github.com/w3c/csswg-drafts/labels/Needs%20Data>`_
+- `interop <https://github.com/whatwg/html/labels/interop>`__
+- `needs compat analysis <https://github.com/whatwg/html/labels/needs%20compat%20analysis>`__
+- `Needs Data <https://github.com/w3c/csswg-drafts/labels/Needs%20Data>`__
 
 Normative changes, additions and removals
 '''''''''''''''''''''''''''''''''''''''''
@@ -57,9 +57,9 @@ Additional Resources
 
 There are a number of resources that recommend good first issues:
 
-- The `whatwg/html repository maintains a list of "good first issues" <https://github.com/whatwg/html/labels/good%20first%20issue>`_ which the maintainers think would be a good place for a first time contributor to html to get started.
-- The `CSS WG maintains a list of "help wanted" issues <https://github.com/w3c/csswg-drafts/labels/Help%20Wanted>`_.
-- The `web-platform-tests project maintains a list of "good first issues" <https://github.com/web-platform-tests/wpt/labels/good%20first%20issue>`_.
+- The `whatwg/html repository maintains a list of "good first issues" <https://github.com/whatwg/html/labels/good%20first%20issue>`__ which the maintainers think would be a good place for a first time contributor to html to get started.
+- The `CSS WG maintains a list of "help wanted" issues <https://github.com/w3c/csswg-drafts/labels/Help%20Wanted>`__.
+- The `web-platform-tests project maintains a list of "good first issues" <https://github.com/web-platform-tests/wpt/labels/good%20first%20issue>`__.
 
 Verify the bug
 ~~~~~~~~~~~~~~
@@ -122,44 +122,65 @@ However, they may also disagree or provide feedback where you need to iterate on
 Change the spec
 ~~~~~~~~~~~~~~~
 
-(Alternative to steps 2-7 is using the github ui)
+Most specifications are maintained in GitHub.
+Proposing a change is done by submitting a pull request.
+The steps for doing so are mostly the same as `the steps for web-platform-tests <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
 
-1. Create an account on github dot com
-2. Fork the spec
-3. Clone your fork
-4. Different specs have different build tools Install the one you need or not
+In short, the steps are:
 
-    1. HTML has a custom one
-    2. CSS specs all use Bikeshed
+1. Fork the specification's repository.
+2. Clone your fork.
+3. Create a feature branch: ``git checkout -b fix-some-issue``
+4. Make the change.
+5. Add the changed file to staging: ``git add the-file.bs``
+6. Commit the change with ``git commit``.
+   The commit message should say what you’re changing and why,
+   and also which issue that the change fixes (with ``Fixes: #1234.``).
+   For CSS specifications, prefix the first line of the commit message with the spec's shortname,
+   e.g., ``[css-grid]``.
+7. Push the commit to your fork.
+   ``git push -u origin fix-some-issue``
+8. Go to your fork in GitHub and `create a pull request <https://help.github.com/en/articles/creating-a-pull-request>`__ for the new branch.
+9. Request review.
+10. Address review comments.
 
-5. Make a feature branch
-6. Make the change
+Different specifications can have different tools for generating the document.
+This is usually documented in the ``README.md`` or ``CONTRIBUTING.md`` file.
+For example, CSS specifications, as well as most WHATWG specifications,
+use `Bikeshed <https://tabatkins.github.io/bikeshed/>`__,
+which can be installed locally but can also be invoked via a web service.
+Many specifications, e.g. `ARIA <https://github.com/w3c/aria`__,
+use `ReSpec <http://www.w3.org/respec/>`__.
+The HTML Standard has a `custom build tool called Wattsi <https://github.com/whatwg/html/blob/master/CONTRIBUTING.md>`__.
+These preprocessors use slightly different markup for doing things such as cross-references.
 
-    3. Search for the text you are looking to modify or add prose next to (be careful of line breaks in the spec source).
-    4. Read the surrounding text and try to match that style
-    5. Its alright to get this wrong the first time, your reviewer is here to help
-    6. It takes a few tries in order to get an intuitive sense for how to write in this style
-    7. Some specs have a style guide or contributor guide that can be helpful to read.
+You should read the documentation on how the specification's source text is formatted.
+Maybe it has a style guide on how to break lines or on how to phrase things.
 
-7. Commit the change
+An easy way to get started is to look at the surrounding text and try to match that style.
+Often that will go a long way to get most things right.
+It's OK if the formatting isn't exactly correct;
+reviewers will help you.
 
-    8. Commit message should say what you’re changing and why
-    9. For CSS specs you have to say what the spec is at the beginning of the commit message in [square brackets]
-    10. The body of the message should say more detail about the fix
-    11. Say what issue this is fixing with "fixes: #1234".
+For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager/>`__ for pull requests to make sure that the IPR commitment for the change is covered.
 
-8. Make a pull request
+* If the change is trivial or doesn't change the requirements,
+  then the editors or the group's chair can mark the pull request as non-substantive,
+  which makes the check pass.
+* Otherwise, if you or your employer is already a member of the working group,
+  you need `get a W3C account <https://www.w3.org/accounts/request>`__
+  and then `link your W3C and github accounts together <https://www.w3.org/users/myprofile/connectedaccounts>`__.
+* You can ask for help in the pull request, or reach out to the working group chairs.
 
-    12. ...
+Each W3C specification should have a "Status of this document" section,
+which says which working group it falls under.
+For example, "This document was produced by the CSS Working Group.",
+which links to the `Working Group home page <https://www.w3.org/Style/CSS/members>`__,
+which should have a link to the `working group's charter <https://www.w3.org/Style/2016/css-2016>`__,
+which says at the top who the chairs are.
 
-9. Ipr commitment
-
-    13. Create a w3c account [TODO ADD LINK]
-    14. link your github account to your w3c account - E.g. https://labs.w3.org/repo-manager/pr/id/w3c/csswg-drafts/3735 [TODO FIGURE OUT AND EXPLAIN HOW THIS WORKS ACROSS SPECS[
-    15. For whatwg, sign participant agreement
-
-10. Request review
-11. Address review comments
+For WHATWG standards, you need to `sign the participation agreement <https://participate.whatwg.org/>`__
+in order to have a pull request accepted (regardless of what the change is).
 
 Write a test
 ~~~~~~~~~~~~
