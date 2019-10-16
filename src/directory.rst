@@ -204,7 +204,7 @@ Test262
 `Test262 <https://github.com/tc39/test262>`__ is the testsuite for JavaScript and related specifications.
 Similarly to web-platform-tests, you can find out who has contributed to a test using ``git blame`` or ``git log``.
 
-The TC39 (the committee for JavaScript) has `process <https://tc39.es/process-document/>`__ for proposals where a proposal goes through several stages, and each proposal has a "champion".
+TC39 (the committee for JavaScript) has `process <https://tc39.es/process-document/>`__ for proposals where a proposal goes through several stages, and each proposal has a "champion".
 The current proposals are `tracked in GitHub <https://github.com/tc39/proposals>`__, where the proposals' authors and champions are listed.
 
 Finally, you can reach out on IRC, `#tc39 on Freenode <https://github.com/tc39/ecma262/blob/master/README.md#community>`__, or the `es-discuss mailing list <https://esdiscuss.org/>`__.
