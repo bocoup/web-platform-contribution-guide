@@ -149,7 +149,7 @@ This is usually documented in the ``README.md`` or ``CONTRIBUTING.md`` file.
 For example, CSS specifications, as well as most WHATWG specifications,
 use `Bikeshed <https://tabatkins.github.io/bikeshed/>`__,
 which can be installed locally but can also be invoked via a web service.
-Many specifications, e.g. `ARIA <https://github.com/w3c/aria`__,
+Many specifications, e.g. `ARIA <https://github.com/w3c/aria>`__,
 use `ReSpec <http://www.w3.org/respec/>`__.
 The HTML Standard has a `custom build tool called Wattsi <https://github.com/whatwg/html/blob/master/CONTRIBUTING.md>`__.
 These preprocessors use slightly different markup for doing things such as cross-references.
