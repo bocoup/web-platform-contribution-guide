@@ -67,7 +67,8 @@ Verify the bug
 Create a minimized test case for the bug.
 "Minimized" means that anything that can be removed *and still reproduce the bug*, should be removed.
 See `Reducing testcases <https://developer.mozilla.org/en-US/docs/Mozilla/QA/Reducing_testcases>`__ on MDN for a guide on how to do this when starting with a full web page.
-The test case at this point doens't need to be a proper WPT test, but it could be.
+The test case at this point doens't need to be a proper web-platform-tests test;
+we'll get to that `later on <#write-a-web-platform-tests-test>`__.
 Then load this test case in different browsers to see what the result is.
 
 If you get different results in different browsers, then that indicates that there is an interop bug.
@@ -79,15 +80,16 @@ Make sure to test in the "latest" versions of browsers.
 The latest *stable* version is old in this context; you need something that includes literally yesterday's bug fixes.
 Maybe the bug has been fixed in the past few days or weeks.
 
-* `Chrome Canary <https://www.google.com/intl/en/chrome/canary/>`__
-* `Safari Technology Preview or nightly builds <https://webkit.org/downloads/>`__
 * `Firefox Nightly <https://www.mozilla.org/en-US/firefox/nightly/all/>`__
+* `Safari Technology Preview or nightly builds <https://webkit.org/downloads/>`__
+* `Chrome Canary <https://www.google.com/intl/en/chrome/canary/>`__
 
 Communicate about your work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Comment in the specification issue, saying that you wish to work on it.
 You can link to your test case and other findings so far.
+This can avoid duplicating work, but you may also get useful feedback about things to consider.
 
 Figure out the "right" behavior
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,6 +121,8 @@ See :doc:`directory` for how to find the relevant implementers.
 
 Possibly they will all agree with your suggestion, in which case you can go ahead with the next step!
 However, they may also disagree or provide feedback where you need to iterate on the proposal until there is agreement on the general approach, and we need a more concrete proposal to review the specifics.
+
+See `example spec issue <https://github.com/w3c/fxtf-drafts/issues/120>`__ where there was discussion about how the stringifier for ``DOMMatrix`` should work.
 
 Change the spec
 ~~~~~~~~~~~~~~~
@@ -183,6 +187,15 @@ which says at the top who the chairs are.
 For WHATWG standards, you need to `sign the participation agreement <https://participate.whatwg.org/>`__
 in order to have a pull request accepted (regardless of what the change is).
 
+If the spec is changed, that's great!
+But it's not enough.
+Will browsers implement the change?
+Without writing a test in web-platform-tests and reporting a bug,
+`they might not be aware that the spec changed for several years <https://blog.whatwg.org/improving-interoperability>`__,
+at which point there may exist enough web content that expect the bug to exist that it's no longer possible for them to fix.
+
+See `example spec change pull request <https://github.com/w3c/fxtf-drafts/pull/148>`__.
+
 Write a web-platform-tests test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -221,6 +234,8 @@ For example, `custom-elements/historical.html <https://github.com/web-platform-t
 
 When you have some tests, you can `submit them in a pull request <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
 
+See `example WPT pull request <https://github.com/web-platform-tests/wpt/pull/5885>`__.
+
 Report bugs for browser engines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -237,10 +252,11 @@ Link to the spec change pull request, if there is one,
 or to the relevant part of the spec.
 Link to the web-platform-tests pull request with the new tests,
 or to the https://wpt.fyi/ results page for the relevant test.
+See `example bug <https://bugs.webkit.org/show_bug.cgi?id=172114>`__.
 
-* `Report a Chromium bug <https://crbug.com/new>`__
-* `Report a WebKit bug <https://bugs.webkit.org/enter_bug.cgi?product=WebKit>`__
 * `Report a Gecko bug <https://bugzilla.mozilla.org/enter_bug.cgi?product=Core>`__
+* `Report a WebKit bug <https://bugs.webkit.org/enter_bug.cgi?product=WebKit>`__
+* `Report a Chromium bug <https://crbug.com/new>`__
 
 When the bugs are reported, you can link to them in the pull request for the specification,
 so that it is easy to find and follow up later.
