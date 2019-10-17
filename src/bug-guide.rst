@@ -65,7 +65,8 @@ Verify the bug
 ~~~~~~~~~~~~~~
 
 Create a minimized test case for the bug.
-"Minimized" means that anything that can be removed and still reproduce the bug, should be removed.
+"Minimized" means that anything that can be removed *and still reproduce the bug*, should be removed.
+See `Reducing testcases <https://developer.mozilla.org/en-US/docs/Mozilla/QA/Reducing_testcases>`__ on MDN for a guide on how to do this when starting with a full web page.
 The test case at this point doens't need to be a proper WPT test, but it could be.
 Then load this test case in different browsers to see what the result is.
 
@@ -182,29 +183,43 @@ which says at the top who the chairs are.
 For WHATWG standards, you need to `sign the participation agreement <https://participate.whatwg.org/>`__
 in order to have a pull request accepted (regardless of what the change is).
 
-Write a test
-~~~~~~~~~~~~
+Write a web-platform-tests test
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Write a web platform test
-2. There are different kinds of tests
+At this point, if you have a minimal test case from earlier when you `verified the bug <#verify-the-bug>`_,
+you can convert that to a web-platform-tests test case.
 
-   1. Testharness.js tests - anything that you can verify from javascript
-   2. Ref tests - anything that can be verified by taking a screenshot from the test and comparing it to a different document with identical rendering, but done in a different way.
-   3. Historical tests (negative tests; test that removed features are *not* supported)
-   4. Docs at web-platform-tests.org
+There are `different kinds of tests <https://web-platform-tests.org/writing-tests/#test-type>`__:
 
-3. Find a similar test to figure out how to write that kind of test and where to put it
+* `testharness.js tests <https://web-platform-tests.org/writing-tests/testharness.html>`__:
+  for things that can be asserted in JavaScript.
+  See also the `testharnes.js API documentation <https://web-platform-tests.org/writing-tests/testharness-api.html>`__.
+* `Reftests <https://web-platform-tests.org/writing-tests/reftests.html>`__:
+  in the simple case, these consist of one test page that exersices the thing to test,
+  and a reference page that should have identical rendering,
+  but the reference achieves in a different way.
+  These are good for testing rendering bugs.
+  See also the `writing a reftest <https://web-platform-tests.org/writing-tests/reftest-tutorial.html>`__ tutorial.
+* `Manual tests <https://web-platform-tests.org/writing-tests/manual.html>`__:
+  Anything that can't be tested automatically as a reftest or testharness.js test can be a manual test.
+  The minimized test case from earlier can be a manual test.
+  Since these are not automated, they are generally not run, so will not catch regressions.
+  Automate if you can!
+* `testdriver.js tests <https://web-platform-tests.org/writing-tests/testdriver.html>`__:
+  If a test requires some user interaction, such as a click or some key presses,
+  but could otherwise be tested using testharness.js, can be automated with testdriver.js.
+  See also the `testdriver.js tutorial <https://web-platform-tests.org/writing-tests/testdriver-tutorial.html>`__.
 
-   5. Clone wpt repo and do a git grep.
-   6. If you are testing activeElement, try ``git grep activeElement``.
+If there was a specification change that you want to test,
+you usually need to test more than one thing to verify that it is implemented correctly.
+Further bugs can be found by enumerating and testing interesting cases, including edge cases and error cases.
+See `Making a Testing Plan <https://web-platform-tests.org/writing-tests/making-a-testing-plan.html>`__ for a walkthrough on how to decide what to test (and what not to test).
 
-4. Make a pull request with test
+If the spec change was to remove a feature, then tests that expect that feature to exist should typically be removed,
+but *also* there should be a "negative" test that verifies that the feature is *not* supported.
+For example, `custom-elements/historical.html <https://github.com/web-platform-tests/wpt/blob/master/custom-elements/historical.html>`__ tests that the v0 API of custom elements is not supported.
 
-   7. PR should point to spec change
-   8. "This follows spec change foo"
-   9. Request review
-   10. Address review comments
-   11. Update your spec bug/PR with a reference to the test
+When you have some tests, you can `submit them in a pull request <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
 
 Report and document buggy behavior
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
