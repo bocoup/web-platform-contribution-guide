@@ -48,7 +48,7 @@ Normative changes, additions and removals
 '''''''''''''''''''''''''''''''''''''''''
 
 Some issues are about changing how an existing feature works, or adding a new feature or removing one that is already specified.
-The WHATWG has a defined process for changes, additions and removals [23]_.
+The WHATWG has a defined `process for changes, additions and removals <https://whatwg.org/working-mode#changes>`__.
 In the W3C it depends on the working group, but usually the same principles will apply there as well.
 This kind of issue might require both research for web compatibility impact as well as building consensus.
 
@@ -221,17 +221,30 @@ For example, `custom-elements/historical.html <https://github.com/web-platform-t
 
 When you have some tests, you can `submit them in a pull request <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
 
-Report and document buggy behavior
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Report bugs for browser engines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. When the test is merged, or ready to be merged
-2. File browser bugs
+When the test or spec change is merged, or ready to be merged,
+it's time to report bugs on browser engines that need to be updated.
 
-   1. Link for chromium
-   2. Link for webkit
-   3. Link for gecko
+But before reporting new bugs, search the bug trackers to see if a bug already exists.
+If it does, you can add a comment to it with any new information.
+:doc:`directory` contains tips on how to search for specific bugs.
+If you can't find a bug, report a new one!
 
-3. Document issue on web developer resources, e.g. `the Mozilla Developer Network <https://developer.mozilla.org>`__
+The bug report should say what the bug is, and what should happen instead.
+Link to the spec change pull request, if there is one,
+or to the relevant part of the spec.
+Link to the web-platform-tests pull request with the new tests,
+or to the https://wpt.fyi/ results page for the relevant test.
 
-.. [23]
-   WHATWG Working Mode: https://whatwg.org/working-mode#changes
+* `Report a Chromium bug <https://crbug.com/new>`__
+* `Report a WebKit bug <https://bugs.webkit.org/enter_bug.cgi?product=WebKit>`__
+* `Report a Gecko bug <https://bugzilla.mozilla.org/enter_bug.cgi?product=Core>`__
+
+When the bugs are reported, you can link to them in the pull request for the specification,
+so that it is easy to find and follow up later.
+
+If you've reached this point, you have done the heavy lifting towards fixing the bug!
+The situation for the bug is now much clearer for browser engine implementers,
+so they can more easily evaluate and prioritize fixing the bug.
