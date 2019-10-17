@@ -68,7 +68,7 @@ I accepted the offer and dropped off University.
 Which do you find most important for success?**
 
 Communication is critical.
-In my case, this is almost always asyncronous written communication.
+In my case, this is almost always asynchronous written communication.
 This allows me to think things through and do my research before responding to a question.
 
 Being able to read (and write) a specification correctly.
@@ -80,6 +80,10 @@ Identifying interesting cases to test.
 **4. What advice do would you have given to your younger self when you were starting out?**
 
 Maybe to study Computer Science.
+I think it would have been more relevant knowledge for me, given what I ended up working with.
+On the other hand, maybe I would end up on a completely different career path?
+
+I think my advice would be to have the courage to change what to study when I realized what my interests were.
 
 **5. Why do you think web standards work is important?
 What's at stake?**
