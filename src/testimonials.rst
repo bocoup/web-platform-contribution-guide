@@ -67,14 +67,21 @@ I accepted the offer and dropped off University.
 **3. What skills do you rely on most in your work?
 Which do you find most important for success?**
 
-Communication is critical.
+Communication is critical:
 In my case, this is almost always asynchronous written communication.
 This allows me to think things through and do my research before responding to a question.
 
-Being able to read (and write) a specification correctly.
+Research and analytical skills:
+Making decisions in web standards often requires research into what browsers currently do and what web content expects to happen.
 
+Literacy with web standards:
+Ability to read and write a specification correctly.
+
+Imagination:
 Ability to imagine the behavior of a complex system or an algorithm.
 
+Creativity:
+Coming up with novel solutions.
 Identifying interesting cases to test.
 
 **4. What advice do would you have given to your younger self when you were starting out?**
