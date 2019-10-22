@@ -60,6 +60,9 @@ There are a number of resources that recommend good first issues:
 - The `whatwg/html repository maintains a list of "good first issues" <https://github.com/whatwg/html/labels/good%20first%20issue>`__ which the maintainers think would be a good place for a first time contributor to html to get started.
 - The `CSS WG maintains a list of "help wanted" issues <https://github.com/w3c/csswg-drafts/labels/Help%20Wanted>`__.
 - The `web-platform-tests project maintains a list of "good first issues" <https://github.com/web-platform-tests/wpt/labels/good%20first%20issue>`__.
+- The `Web Compat project <https://webcompat.com>`__ has instructions on
+  `how to reproduce a webcompat bug <https://webcompat.com/contributors/reproduce-bug>`__ and
+  `how to diagnose a webcompat bug <https://webcompat.com/contributors/diagnose-bug>`__.
 
 Verify the bug
 ~~~~~~~~~~~~~~
