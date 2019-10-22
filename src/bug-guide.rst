@@ -49,7 +49,7 @@ Normative changes, additions and removals
 
 Some issues are about changing how an existing feature works, or adding a new feature or removing one that is already specified.
 The WHATWG has a defined `process for changes, additions and removals <https://whatwg.org/working-mode#changes>`__.
-In the W3C it depends on the working group, but usually the same principles will apply there as well.
+In the W3C it depends on the working group, but usually similar principles will apply there as well.
 This kind of issue might require both research for web compatibility impact as well as building consensus.
 
 Additional Resources
