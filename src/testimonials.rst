@@ -79,8 +79,8 @@ Identifying interesting cases to test.
 
 **4. What advice do would you have given to your younger self when you were starting out?**
 
-Maybe to study Computer Science.
-I think it would have been more relevant knowledge for me, given what I ended up working with.
+Maybe to study Computer Science, which I have not done.
+I think it would have been more relevant knowledge for me (e.g., algorithms, data structures), given what I ended up working with.
 On the other hand, maybe I would end up on a completely different career path?
 
 I think my advice would be to have the courage to change what to study when I realized what my interests were.
