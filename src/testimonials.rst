@@ -16,20 +16,20 @@ Simon Pieters (zcorpan)
 
 **1. Tell us about the role you play in web standards work - what, where, and how are you contributing?**
 
+I am one of the editors of the HTML standard.
+I have contributed in particular to images, video, form controls, rendering, and the HTML parser.
+
 I try to improve interoperability between browser engines,
 and at the same time address web developers' pain points and improve accessibility.
 
-I analyze web compatibility by researching HTTP Archive,
+I analyze web compatibility,
 identify pain points for web developers,
-design solutions,
 discuss with implementers to understand their requirements,
+design solutions,
 write specification prose,
 write conformance tests,
 review specification changes and tests,
 find, report, and sometimes fix bugs in specifications and implementations.
-
-I am one of the editors of the HTML standard,
-in particular images, video, form controls, rendering, the HTML parser.
 
 **2. How did you first get into web standards work?**
 
