@@ -98,8 +98,8 @@ Figure out the "right" behavior
 
 If two browser engines have one behavior, and one browser engine has a different behavior, we generally give preference to the majority behavior, since that typically is the least-resistance path to interoperability.
 In some cases, however, there exist reasons to go with the minority behavior, or to come up with a completely novel approach.
-
 For example, if all browsers do something that is non-sensical and confusing, then that is an argument to specify something else.
+
 However, web compatibility often constrains what changes browsers are able to make.
 If web content stops working when a browser implements a change, then there needs to be a very compelling reason to go through with that change (e.g., a security fix).
 Otherwise, browsers simply will not ship that change, lest they lose users to competing browsers that are compatible with that web content.
