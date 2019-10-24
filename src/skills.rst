@@ -297,7 +297,7 @@ Warnings are normative and can contain requirements.
 Issue
 '''''
 
-An issue is like a "TODO" for a spec editor.
+An issue is like a to-do for a spec editor.
 It also notifies readers that a problem is known.
 It identifies a part of the spec that still needs fleshing out or remediation because of other issues.
 For example:
