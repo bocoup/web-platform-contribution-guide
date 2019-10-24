@@ -174,9 +174,9 @@ reviewers will help you.
 
 Here's an `example of a pull request that successfully modified the Geometry Interfaces <https://github.com/w3c/fxtf-drafts/pull/148>`__ in the W3C.
 
-For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager/>`__ for pull requests to make sure that the IPR (Intellectual Property Rights) commitment for the change is covered.
-W3C has a `patent policy <https://www.w3.org/Consortium/Patent-Policy-20170801/>`__ so that their specifications can be implemented on a royalty-free basis.
+The W3C has a `patent policy <https://www.w3.org/Consortium/Patent-Policy-20170801/>`__ so that their specifications can be implemented on a royalty-free basis.
 For that to work, contributors, or their employer, need to agree to the policy.
+For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager/>`__ for pull requests to make sure that the IPR (Intellectual Property Rights) commitment for the change is covered.
 
 * If the change is trivial or doesn't change the requirements,
   then the editors or the group's chair can mark the pull request as non-substantive,
@@ -206,8 +206,8 @@ at which point there may exist enough web content that expect the bug to exist t
 Write a web-platform-tests test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-At this point, if you have a minimal test case from earlier when you `verified the bug <#verify-the-bug>`_,
-you can convert that to a web-platform-tests test case.
+At this point, if you have a minimal demo from earlier when you `verified the bug <#verify-the-bug>`_,
+you can convert that to a web-platform-tests test.
 
 There are `different kinds of tests <https://web-platform-tests.org/writing-tests/#test-type>`__, but most tests should be one of:
 
