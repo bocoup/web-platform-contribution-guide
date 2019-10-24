@@ -95,7 +95,8 @@ I think my advice would be to have the courage to change what to study when I re
 **5. Why do you think web standards work is important?
 What's at stake?**
 
-The web, in principle, gives anyone free speech and access to information, without full control of any one entity.
+The web, in principle, gives anyone free speech and access to information.
+No one entity has full control.
 
 Throughout the lifetime of the web, it has been in competition with other information or application platforms that are often under control of one company.
 
