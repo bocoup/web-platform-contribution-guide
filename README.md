@@ -19,3 +19,8 @@ If you would like to build the site locally, follow these instructions.
    GNU/Linux and macOS users should use the `make` command:
 
        make html
+
+5. Run the linter to make sure your changes follow the conventions described
+   in CONTRIBUTING.md. To lint and then build, use:
+
+       ./lint.sh && make html
