@@ -26,24 +26,24 @@ The W3C working groups oversee and are leading the charge on technologies like S
 WHATWG and HTML
 ~~~~~~~~~~~~~~~
 
-WHATWG (Web Hypertext Application Technology Working Group) is an independent group of standards developers that split off from the W3C in 2004 [2]_ based on disagreements about the future of HTML.
-The W3C wanted to stop working on HTML, and start working on XHTML 2, a new version of XHTML that was by design not backwards compatible with HTML 4.01 or XHTML 1.x.
-WHATWG saw proprietary technologies like Flash and Silverlight as threats to an open and royalty free web, and wanted to make the future of web standards include a story for web application development [3]_.
+WHATWG (Web Hypertext Application Technology Working Group) is an independent group of standards developers that `split off from the W3C in 2004 <https://whatwg.org/news/start>`__ based on disagreements about the future of HTML.
+The W3C wanted to stop working on HTML, and continue working on XHTML 2, a new version of XHTML that was by design not backwards compatible with HTML 4.01 or XHTML 1.x.
+WHATWG saw proprietary technologies like Flash and Silverlight as threats to an open and royalty free web, and wanted to make the future of web standards `include a story for web application development <https://www.w3.org/2004/04/webapps-cdf-ws/papers/opera.html>`__.
 WHATWG did this in HTML, and was successful.
 WHATWG split off, and continued working on what briefly became known as HTML5.
 
 In 2007, the W3C saw the importance of HTML, and started working on HTML5 as a downstream fork of WHATWG’s HTML, initially with both groups working together from a single source document to produce identical specifications from the Table of Contents onwards.
 Over time, the two groups disagreed on both technical details and goals for the specification, where the W3C prioritized creating a "finished" version of HTML5 and WHATWG prioritized continuous improvement of bug fixes and new features.
 
-In 2011, the WHATWG stopped versioning HTML in favor of a living standard [4]_.
+In 2011, the `WHATWG stopped versioning HTML in favor of a living standard <https://blog.whatwg.org/html-is-the-new-html5>`__.
 HTML5 is still a popular marketing term for "modern web technology", but no longer refers to a technology that people are working on today.
 
-In late 2017, the WHATWG formalized its operating principles under a "steering group agreement" for cooperation between Google, Apple, Mozilla and Microsoft [5]_.
+In late 2017, the WHATWG formalized its operating principles under a `steering group agreement <https://whatwg.org/sg-agreement>`__ for cooperation between Google, Apple, Mozilla and Microsoft.
 Before that, the WHATWG was a loose group of interested parties and did not have any patent policy, which prevented some companies from contributing formally (in particular Microsoft).
 
 In 2018, the W3C invited WHATWG back to run the HTML standard.
-The main HTML specification is now worked on under the whatwg/html repository [6]_.
-In May 2019, the details of this arrangement were worked out, and the W3C and WHATWG agreed to collaborate on a single version of the HTML and DOM specifications [7]_.
+The main HTML specification is now worked on under the `whatwg/html repository <https://github.com/whatwg/html/>`__.
+In May 2019, the details of this arrangement were worked out, and the `W3C and WHATWG agreed to collaborate <https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/>`__ on a single version of the HTML and DOM specifications.
 
 The WHATWG is leading work on things like HTML, Compatibility, Console Object, DOM, Encoding, Fetch, Fullscreen, URL and XHR.
 
@@ -85,7 +85,7 @@ The OpenJS Foundation is a US-based Trade organization home to several dozen ope
 Node.js is a de facto standard with a more ad hoc process for adding features than other technologies.
 OpenJS is not a standards body, but it does have a governance model for adding features to Node.js.
 Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International.
-The Node TSC (technical Steering Committee) [8]_ operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in APIs on top of the JavaScript programming language which adds useful functionality that developers use to make software.
+The `Node TSC <https://github.com/nodejs/TSC>`__ (technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in APIs on top of the JavaScript programming language which adds useful functionality that developers use to make software.
 The node global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
 Many web developers use node to manage their projects’ build processes.
 Node share several APIs with web browsers, like URL, Fetch, Text Decoding, etc.
@@ -100,11 +100,11 @@ This group develops the HTTP (Hypertext Transfer Protocol) standard, which web b
 Unicode Consortium
 ^^^^^^^^^^^^^^^^^^
 
-The Unicode Consortium defines the Unicode Standard [9]_, the universal character set that is used for the web.
+The Unicode Consortium defines the `Unicode Standard <http://www.unicode.org/versions/Unicode12.0.0/>`__, the universal character set that is used for the web.
 New versions of the Unicode Standard can include new characters such as new emoji.
 Unicode also defines the UTF-8 and UTF-16 encodings.
 These are now also defined in the WHATWG Encoding Standard, for completeness sake.
-Unicode also has recommendations on text-related issues such as handling bi-directional text [10]_ and rules for line breaking [11]_ which are important for the web because following best practices for multilingual text helps users to read and understand text better.
+Unicode also has recommendations on text-related issues such as `handling bi-directional text <http://unicode.org/reports/tr9/>`__ and `rules for line breaking <http://unicode.org/reports/tr14/>`__ which are important for the web because following best practices for multilingual text helps users to read and understand text better.
 
 IEEE
 ^^^^
@@ -123,7 +123,7 @@ Standards organizations such as the W3C are able to publish ISO standards throug
 Web standards are primarily specified in other places, like the W3C and Ecma International, and come to the ISO for international de jure standardization.
 That means governments can require these standards for policy and procurement purposes.
 
-For example, the W3C Web Content Accessibility Guidelines 2.0 (WCAG 2.0) is an ISO standard, which benefits countries and organizations that can more easily adopt ISO standards [12]_.
+For example, the W3C Web Content Accessibility Guidelines 2.0 (WCAG 2.0) `is an ISO standard <https://www.w3.org/WAI/standards-guidelines/wcag/faq/#iso>`__, which benefits countries and organizations that can more easily adopt ISO standards.
 WCAG 2.0 explains how to make web content more accessible to people with disabilities.
 
 Khronos
@@ -136,36 +136,3 @@ IANA
 ^^^^
 
 The Internet Assigned Numbers Authority (IANA) coordinate the DNS Root (including managing Top Level Domains), IP addressing, and other Internet protocol resources.
-
-.. [2]
-   Forming of the WHATWG:
-
-.. [3]
-   Opera/Mozilla Position Paper: https://www.w3.org/2004/04/webapps-cdf-ws/papers/opera.html
-
-.. [4]
-   Beginning of the HTML living standard: https://blog.whatwg.org/html-is-the-new-html5
-
-.. [5]
-   WHATWG Steering Group Agreement: https://whatwg.org/sg-agreement
-
-.. [6]
-   Repository for the HTML Standard: `https://github.com/whatwg/html <https://github.com/whatwg/html/>`__
-
-.. [7]
-   W3C and WHATWG collaboration announcement: `https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform <https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/>`__
-
-.. [8]
-   Node TSC: https://github.com/nodejs/TSC
-
-.. [9]
-   Unicode 12.0.0 http://www.unicode.org/versions/Unicode12.0.0/
-
-.. [10]
-   Bi-directional text: http://unicode.org/reports/tr9/
-
-.. [11]
-   Rules for line breaking: http://unicode.org/reports/tr14/
-
-.. [12]
-   WCAG 2 FAQ: https://www.w3.org/WAI/standards-guidelines/wcag/faq/#iso
