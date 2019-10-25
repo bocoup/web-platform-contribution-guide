@@ -22,6 +22,8 @@ HTTP
 HTTP Archive
     A database of the HTML, CSS and JS response bodies and other data of the top several million1,000,000 pages, collected twice per month.
     Useful for figuring out how web developers use the web, and what changes will be compatible.
+Interoperability
+    Different implementations behave exactly the same for a given case.
 IPR
     Intellectual Property Rights
 IRC
@@ -49,6 +51,9 @@ UA
     For example, a web browser.
 W3C
     World Wide Web Consortium.
+Web compatibility
+    An implementation works (is compatible) with existing web content.
+    A web standard is web compatible if a conforming implementation is web compatible.
 WG
     Working Group (at the W3C).
 WHATWG

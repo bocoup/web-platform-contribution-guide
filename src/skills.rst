@@ -39,7 +39,7 @@ Looking at Data
 ^^^^^^^^^^^^^^^
 
 Research also involves modeling compatibility with the existing platform.
-For changes to web browsers, we model compatibility using the HTTP Archive, a database of twice-a-month crawls of the top 1,000,000 most visited websites consisting of those pages HTTP response bodies.
+For changes to web browsers, we model compatibility using the HTTP Archive, a database of twice-a-month crawls of the top 5,000,000 most visited websites consisting of those pages HTTP response bodies.
 We query this database to see how popular web pages use the web platform in order to understand how a technology is used.
 We use this data to reason about the risks to a browser for changing things in terms of how it will effect web page rendering for the people who use that browser.
 A user will change browsers if rendering on their favorite websites changes, or if a site they use stops working.
@@ -54,7 +54,7 @@ Soliciting Feedback
 ^^^^^^^^^^^^^^^^^^^
 
 We can also ask web developers (by survey, on twitter, in community forums) about their preferences.
-If you are working on a "compatibility bug" where different browsers treat the same piece of HTML or CSS code differently, then it’s a good idea to consider not only what the whole web is doing, but what web developers say they would ideally like to see happen.
+If you are working on an interoperability bug where different browsers treat the same piece of HTML or CSS code differently, then it’s a good idea to consider not only what the whole web is doing, but what web developers say they would ideally like to see happen.
 
 We can develop a solution to a web platform issue based on the data we look at and the feedback we collect from web developers.
 We then also seek feedback from spec authors and implementers on this solution.
