@@ -38,5 +38,6 @@ We also created `tests <https://github.com/web-platform-tests/wpt/pull/19889>`__
 
 **Impact**
 
-The WebKit team has acknowledged the issue and filed it among their upcoming tasks. The web-platform-tests project has accepted the new tests, and those tests have been automatically transmitted to the Chromium project.
+The WebKit team has acknowledged the issue and filed it among their upcoming tasks.
+The web-platform-tests project has accepted the new tests, and those tests have been automatically transmitted to the Chromium project.
 Chromium and WebKit developers can now more easily and with more confidence remove the feature and know that, if they pass the tests, their new behavior will be interoperable with Firefox.
