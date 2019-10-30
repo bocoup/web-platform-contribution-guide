@@ -29,7 +29,7 @@ IRC
 JS
     JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in node.js.
 Living Standard
-    TODO: define this term
+    A versionless continuously maintained standard (at the WHATWG).
 Node Global
     the collection of built-in APIs in node.
 Normative
