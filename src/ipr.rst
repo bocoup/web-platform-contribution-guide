@@ -4,7 +4,7 @@ Intellectual Property Rights Management
 In order to contribute to the web platform, you must forfeit your intellectual property rights associated with the technology or technique you’re contributing.
 Companies that make browser engines use the W3C and now the WHATWG and other standards bodies to facilitate this process so that all technologies standardized as part of the web are available royalty free.
 All `WHATWG standards are royalty-free <https://whatwg.org/ipr-policy>`__.
-Most W3C Working Groups operate under a royalty-free licensing mode,
+Most W3C Working Groups operate under a royalty-free (RF) licensing mode,
 but there are some exceptions that have used a "reasonable and non-discriminatory" (RAND) licensing mode,
 for example `EPUB3 <https://www.w3.org/2017/02/EPUB3CGcharter>`__.
 
