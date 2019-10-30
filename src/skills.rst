@@ -5,7 +5,7 @@ Before we get to the step by step guide on how to contribute to a web standard a
 The goal of this skills overview is to orient you in the guide so that you can see what skills you would be setting out to master if you choose to build a career in web standards.
 If you prefer to learn by doing, you can skip this skills overview and jump right into the step by step guide below.
 You do not need to have all of these skills in order to start contributing to the web platform, but we have included this overview for those of you that would like a higher level learning map.
-These skills are extrapolated from internal retrospective documentation at Bocoup [18]_ for a Mozilla funded project to improve the interoperability of the Fieldset element [19]_.
+These skills are extrapolated from internal retrospective documentation at Bocoup for a Mozilla funded project to `improve the interoperability of the fieldset element <https://bocoup.com/work/fieldset-interoperability>`__.
 
 Consensus Building
 ~~~~~~~~~~~~~~~~~~
@@ -76,7 +76,7 @@ Spec writing
 When you want to fix a bug, change a behaviour, or add a new feature to the web, this involves writing specification prose.
 Specification prose includes English language descriptions of the technology.
 It is important to know that many of our biggest specifications are a work in progress.
-The HTML spec, for example has many under-specified sections, several sections that are in conflict with actual implementations, and many many open issues (936 at the time of this writing) [20]_.
+The HTML spec, for example has many under-specified sections, several sections that are in conflict with actual implementations, and `many many open issues <https://github.com/whatwg/html/issues/>`__.
 
 Where to write
 ^^^^^^^^^^^^^^
@@ -137,7 +137,7 @@ Don’t worry, it is all well documented for you :D.
 Building blocks of a Spec
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We write specification prose in the following categories of language (the following examples are loosely based on the HTML standard’s ``a`` element [21]_ and hyperlink [22]_ definitions):
+We write specification prose in the following categories of language (the following examples are loosely based on the HTML standard’s `a element <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element>`__ and `hyperlink <https://html.spec.whatwg.org/multipage/links.html#hyperlink>`__ definitions):
 
 Conformance Class
 '''''''''''''''''
@@ -333,7 +333,7 @@ When possible, express your intention in terms of an algorithm.
 Writing an algorithm usually reduces ambiguity compared to stating requirements based on specific cases.
 It is possible to reason that an algorithm covers 100% of possible cases and an algorithm inherently states the order in which things should happen.
 
-For example, the specification for the DOM ``createElementNS()`` method as defined in the (superseded) DOM Level 3 Core specification [#dom3core_createElementNS]_ states that some things cause an exception to be thrown:
+For example, the specification for the DOM ``createElementNS()`` method as `defined in the (superseded) DOM Level 3 Core specification <https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/core.html#ID-DocCrElNS>`__ states that some things cause an exception to be thrown:
 
     ``INVALID_CHARACTER_ERR``: Raised if the specified ``qualifiedName`` is not an XML name according to the XML version in use specified in the ``Document.xmlVersion`` attribute.
 
@@ -341,9 +341,9 @@ For example, the specification for the DOM ``createElementNS()`` method as defin
 
 If a case matches both the criteria for ``INVALID_CHARACTER_ERR`` and ``NAMESPACE_ERR``, it is ambiguous which exception should be thrown.
 
-In the current DOM Standard [#dom_namespaces]_, this is unambiguous by the use of an algorithm, where it is clear that the check for ``InvalidCharacterError`` comes before the checks for ``NamespaceError``.
+`In the current DOM Standard <https://dom.spec.whatwg.org/#namespaces>`__, this is unambiguous by the use of an algorithm, where it is clear that the check for ``InvalidCharacterError`` comes before the checks for ``NamespaceError``.
 
-A good way to reduce ambiguity is to write specification prose in terms of the Infra Standard [#infra]_.
+A good way to reduce ambiguity is to write specification prose in terms of the `Infra Standard <https://infra.spec.whatwg.org/>`__.
 This standard lays the groundwork for other standards.
 Similar to how a programming language provides a standard library, the Infra Standard defines terminology for algorithms, defines data types and related operations.
 
@@ -415,27 +415,3 @@ Here are some good examples:
 -  `innerHTML serialization for javascript: URL attribute doesn't conform to the specification <https://bugs.chromium.org/p/chromium/issues/detail?id=927164>`__
 
 When you have filed browser bugs, link to them from the specification PR.
-
-.. [18]
-   *Based on notes from `[RETRO] Mozilla Fieldset Interop Retrospective SoW#3276.2 <https://docs.google.com/document/d/1G_YfLMgE7cj3K2U2DDbX51RfIwwwUI7CzQEZleNEX_g/edit#bookmark=id.ek85y8jpf2oy>`__*
-
-.. [19]
-   Fieldset interoperability project: https://bocoup.com/work/fieldset-interoperability and https://bocoup.com/blog/the-state-of-fieldset-interoperability
-
-.. [20]
-   List of open HTML issues: `https://github.com/whatwg/html/issues <https://github.com/whatwg/html/issues/>`__
-
-.. [21]
-   HTML Standard Hyperlink: https://html.spec.whatwg.org/multipage/links.html#hyperlink
-
-.. [22]
-   HTML Standard a element: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
-
-.. [#dom3core_createElementNS]
-   DOM Level 3 Core ``createElementNS()``: https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/core.html#ID-DocCrElNS
-
-.. [#dom_namespaces]
-   DOM Standard Namespaces: https://dom.spec.whatwg.org/#namespaces
-
-.. [#infra]
-   Infra Standard: https://infra.spec.whatwg.org/
