@@ -1,0 +1,67 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2.1
+
+references:
+  v1-dependencies_cache_key: &v1-dependencies_cache_key
+    v1-dependencies-{{ checksum "requirements.txt" }}
+  v1-dependencies_backup_cache_key: &v1-dependencies_backup_cache_key
+    v1-dependencies
+  python_ver: &python_ver
+    circleci/python:3.7
+
+defaults: &defaults
+  docker:
+    - image: *python_ver
+  working_directory: ~/web-platform-contribution-guide
+
+restore_cache: &restore_cache
+  restore_cache:
+    keys:
+      - *v1-dependencies_cache_key
+      - *v1-dependencies_backup_cache_key
+save_cache: &save_cache
+  save_cache:
+    paths:
+      - ./venv
+    key: *v1-dependencies_cache_key
+
+commands:
+  setup_steps:
+    steps:
+      - checkout
+      - *restore_cache
+      - run: python -m pip install --upgrade pip
+      - run: pip install --user virtualenv -r requirements.txt
+      - *save_cache
+
+jobs:
+  lint:
+    <<: *defaults
+    steps:
+      - setup_steps
+      - run:
+          name: Lint
+          command: |
+            . venv/bin/activate
+            ./lint.sh
+  build:
+    <<: *defaults
+    steps:
+      - setup_steps
+      - run:
+          name: Build
+          command: |
+            . venv/bin/activate
+            make html
+
+workflows:
+  version: 2.1
+  "Lint and Build":
+    jobs:
+      - lint
+      - build:
+          requires:
+            - lint
