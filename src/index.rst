@@ -19,7 +19,7 @@ Getting started with a history, skill guide and how-to of web standards.
     |  CSS           | JavaScript    |              |
     |  ARIA          | (ECMA 262,    |______________|
     |  Window Object | 402, 404)     |
-    |                |_______________|
+    |  setTimeout()  |_______________|
     |________________|
 
 Table of Contents
