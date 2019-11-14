@@ -176,7 +176,7 @@ Here's an `example of a pull request that successfully modified the Geometry Int
 
 The W3C has a `patent policy <https://www.w3.org/Consortium/Patent-Policy-20170801/>`__ so that their specifications can be implemented on a royalty-free basis.
 For that to work, contributors, or their employer, need to agree to the policy.
-For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager/>`__ for pull requests to make sure that the IPR (Intellectual Property Rights) commitment for the change is covered.
+For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager/>`__ for pull requests to make sure that the :term:`IPR (Intellectual Property Rights) <IPR>` commitment for the change is covered.
 
 * If the change is trivial or doesn't change the requirements,
   then the editors or the group's chair can mark the pull request as non-substantive,

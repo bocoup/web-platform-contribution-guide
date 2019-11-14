@@ -13,7 +13,7 @@ Glossary of Terms and Jargon
         Cascading Style Sheets, the collection of technologies used to change how elements on a web page look.
 
     CG
-        Community Group (at the W3C).
+        Community Group (at the :term:`W3C`).
 
     CLA
         Contributors License Agreement
@@ -31,7 +31,7 @@ Glossary of Terms and Jargon
         Hypertext Transfer Protocol
 
     HTTP Archive
-        A database of the HTML, CSS and JS response bodies and other data of the top several million1,000,000 pages, collected twice per month.
+        A database of the :term:`HTML`, :term:`CSS` and :term:`JS` response bodies and other data of the top several million1,000,000 pages, collected twice per month.
         Useful for figuring out how web developers use the web, and what changes will be compatible.
 
     Interoperable
@@ -50,7 +50,7 @@ Glossary of Terms and Jargon
         A versionless continuously maintained standard (at the WHATWG).
 
     Node Global
-        the collection of built-in APIs in node.
+        the collection of built-in :term:`APIs <API>` in node.
 
     Normative
         content in a specification that contains requirements or is referenced by something that is normative.
@@ -65,7 +65,7 @@ Glossary of Terms and Jargon
         pull request (in GitHub).
 
     TC
-        Technical Committee (at Ecma).
+        Technical Committee (at :term:`Ecma`).
 
     TSC
         Technical Steering Committee
@@ -82,7 +82,7 @@ Glossary of Terms and Jargon
         In the context of web standards, required behavior for user agents that matches user expectations when using existing web content, and lack of required behavior that breaks those expectations.
 
     WG
-        Working Group (at the W3C).
+        Working Group (at the :term:`W3C`).
 
     WHATWG
         Web Hypertext Application Technology Working Group.
