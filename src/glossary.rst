@@ -22,6 +22,8 @@ HTTP
 HTTP Archive
     A database of the HTML, CSS and JS response bodies and other data of the top several million1,000,000 pages, collected twice per month.
     Useful for figuring out how web developers use the web, and what changes will be compatible.
+Interoperable
+    Different implementations behave exactly the same for a given case.
 IPR
     Intellectual Property Rights
 IRC
@@ -29,7 +31,7 @@ IRC
 JS
     JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in node.js.
 Living Standard
-    TODO: define this term
+    A versionless continuously maintained standard (at the WHATWG).
 Node Global
     the collection of built-in APIs in node.
 Normative
@@ -49,6 +51,9 @@ UA
     For example, a web browser.
 W3C
     World Wide Web Consortium.
+Web compatible
+    In the context of implementations, behavior that matches user expectation for existing web content.
+    In the context of web standards, required behavior for user agents that matches user expectations when using existing web content, and lack of required behavior that breaks those expectations.
 WG
     Working Group (at the W3C).
 WHATWG
