@@ -85,17 +85,17 @@ The OpenJS Foundation is a US-based Trade organization home to several dozen ope
 Node.js is a de facto standard with a more ad hoc process for adding features than other technologies.
 OpenJS is not a standards body, but it does have a governance model for adding features to Node.js.
 Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International.
-The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in APIs on top of the JavaScript programming language which adds useful functionality that developers use to make software.
+The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
 The node global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
 Many web developers use node to manage their projects’ build processes.
-Node share several APIs with web browsers, like URL, Fetch, Text Decoding, etc.
+Node share several :term:`APIs <API>` with web browsers, like URL, Fetch, Text Decoding, etc.
 Node.js is even known to run some of the web-platform-tests tests to ensure interoperability for the features that node and browsers share.
 
 IETF
 ^^^^
 
 The IETF is a loose organization with no formal membership.
-This group develops the HTTP (Hypertext Transfer Protocol) standard, which web browsers use as the protocol for transferring web pages.
+This group develops the :term:`HTTP (Hypertext Transfer Protocol) <HTTP>` standard, which web browsers use as the protocol for transferring web pages.
 
 Unicode Consortium
 ^^^^^^^^^^^^^^^^^^
@@ -130,7 +130,7 @@ Khronos
 ^^^^^^^
 
 Khronos is the name of the standards body that specifies WebGL, the low level graphics card programming interface of the web.
-This API can be used with the HTML canvas element, defined by the WHATWG.
+This :term:`API` can be used with the HTML canvas element, defined by the WHATWG.
 
 IANA
 ^^^^
