@@ -13,7 +13,7 @@ This pseudo-class was `defined in HTML <https://html.spec.whatwg.org/multipage/s
 
 **Solution**
 
-At first, we proposed to move the definition from HTML into Selectors.
+At first, we (Bocoup) proposed to move the definition from HTML into Selectors.
 However, it was pointed out that the Selectors specification should have a host language-agnostic high-level definition,
 and the host language (e.g., HTML) should have a precise definition as appropriate for that language.
 
