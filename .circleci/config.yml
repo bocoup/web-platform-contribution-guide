@@ -45,7 +45,7 @@ jobs:
       - run:
           name: Lint
           command: |
-            . venv/bin/activate
+            ~/.venv/bin/activate
             ./lint.sh
   build:
     <<: *defaults
@@ -54,7 +54,7 @@ jobs:
       - run:
           name: Build
           command: |
-            . venv/bin/activate
+            ~/.venv/bin/activate
             make html
 
 workflows:
