@@ -20,9 +20,7 @@ commands:
   setup_steps:
     steps:
       - checkout
-      - python/load-cache
       - python/install-deps
-      - python/save-cache
 
 jobs:
   lint:
