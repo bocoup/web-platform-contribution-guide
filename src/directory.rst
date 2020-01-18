@@ -42,7 +42,7 @@ In W3C specifications, this is typically listed at the top, maybe under "Specifi
 In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for "This standard is written by").
 
 Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
-Check out the repo, and use Git commands such as `git blame <https://git-scm.com/docs/git-blame>`__ and `git log <https://git-scm.com/docs/git-log>`__ to find who wrote a particular part of the specification.
+Check out the repo, and use :term:`Git` commands such as `git blame <https://git-scm.com/docs/git-blame>`__ and `git log <https://git-scm.com/docs/git-log>`__ to find who wrote a particular part of the specification.
 It could be the specification's editor, but it could also be someone else.
 
 Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
