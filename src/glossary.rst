@@ -92,7 +92,8 @@ Glossary of Terms and Jargon
         Web Hypertext Application Technology Working Group.
 
     WPT
-        web-platform-tests
+        web-platform-tests; a cross-browser test suite for the Web-platform
+        stack; project homepage: https://web-platform-tests.org
 
     Window
         the main global object in a web page.
