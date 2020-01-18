@@ -48,8 +48,8 @@ Normative changes, additions and removals
 '''''''''''''''''''''''''''''''''''''''''
 
 Some issues are about changing how an existing feature works, or adding a new feature or removing one that is already specified.
-The WHATWG has a defined `process for changes, additions and removals <https://whatwg.org/working-mode#changes>`__.
-In the W3C it depends on the working group, but usually similar principles will apply there as well.
+The :term:`WHATWG` has a defined `process for changes, additions and removals <https://whatwg.org/working-mode#changes>`__.
+In the :term:`W3C` it depends on the working group, but usually similar principles will apply there as well.
 This kind of issue might require both research for web compatibility impact as well as building consensus.
 
 Additional Resources
@@ -58,8 +58,8 @@ Additional Resources
 There are a number of resources that recommend good first issues:
 
 - The `whatwg/html repository maintains a list of "good first issues" <https://github.com/whatwg/html/labels/good%20first%20issue>`__ which the maintainers think would be a good place for a first time contributor to html to get started.
-- The `CSS WG maintains a list of "help wanted" issues <https://github.com/w3c/csswg-drafts/labels/Help%20Wanted>`__.
-- The `web-platform-tests project maintains a list of "good first issues" <https://github.com/web-platform-tests/wpt/labels/good%20first%20issue>`__.
+- The CSS :term:`WG` maintains `a list of "help wanted" issues <https://github.com/w3c/csswg-drafts/labels/Help%20Wanted>`__.
+- The :term:`web-platform-tests project <WPT>` maintains `a list of "good first issues" <https://github.com/web-platform-tests/wpt/labels/good%20first%20issue>`__.
 - The `Web Compat project <https://webcompat.com>`__ has instructions on
   `how to reproduce a webcompat bug <https://webcompat.com/contributors/reproduce-bug>`__ and
   `how to diagnose a webcompat bug <https://webcompat.com/contributors/diagnose-bug>`__.
@@ -155,7 +155,7 @@ In short, the steps are:
 
 Different specifications can have different tools for generating the document.
 This is usually documented in the ``README.md`` or ``CONTRIBUTING.md`` file.
-For example, CSS specifications, as well as most WHATWG specifications,
+For example, :term:`CSS` specifications, as well as most WHATWG specifications,
 use `Bikeshed <https://tabatkins.github.io/bikeshed/>`__,
 which can be installed locally but can also be invoked via a web service.
 Many specifications, e.g. `ARIA <https://github.com/w3c/aria>`__,

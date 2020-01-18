@@ -21,7 +21,7 @@ The W3C has 450 member companies which send delegates to WGs (working groups).
 Working groups oversee specifications.
 There is an annual meeting of all working groups hosted in a different city each year called TPAC (Technical Plenary Advisory Committee).
 
-The W3C working groups oversee and are leading the charge on technologies like SVG, CSS, ARIA, Web Driver, Generic Sensors, Web XR, Web Payments, Gamepad and UI Events.
+The W3C working groups oversee and are leading the charge on technologies like SVG, CSS, :term:`ARIA`, Web Driver, Generic Sensors, Web XR, Web Payments, Gamepad and UI Events.
 
 WHATWG and HTML
 ~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ We use the general term "CSS" and refer to individual technologies at their diff
 ARIA
 ~~~~
 
-ARIA (Accessible Rich Internet Applications) is a collection of standards developed by several working groups at the W3C that deal with accessibility of web technologies, mainly assistive technologies like screen readers.
+:term:`ARIA` (Accessible Rich Internet Applications) is a collection of standards developed by several working groups at the W3C that deal with accessibility of web technologies, mainly assistive technologies like screen readers.
 
 Other Standards Bodies & Foundations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
