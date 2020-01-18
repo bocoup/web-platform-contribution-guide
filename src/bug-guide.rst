@@ -132,7 +132,7 @@ See `example spec issue <https://github.com/w3c/fxtf-drafts/issues/120>`__ where
 Change the spec
 ~~~~~~~~~~~~~~~
 
-Most specifications are maintained in GitHub.
+Most specifications are maintained in :term:`GitHub`.
 Proposing a change is done by submitting a pull request.
 The steps for doing so are mostly the same as `the steps for web-platform-tests <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
 

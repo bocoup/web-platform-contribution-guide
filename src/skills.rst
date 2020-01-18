@@ -100,7 +100,7 @@ Don’t try to know everything, it is not possible.
 It is a better idea to try and get comfortable with working on specific technical areas in the context of ambiguity.
 
 Nevertheless, there are some quick tips to help you figure out where to put spec prose when you’re getting started.
-Sometimes the right location will already be documented in an issue on GitHub.
+Sometimes the right location will already be documented in an issue on :term:`GitHub`.
 You can search WHATWG and W3C working group issues with the github advanced search feature.
 If it is not in an issue, you can also use this search tool to look at source code of specification.
 Search for related features to what you want to specify, and put it near those related features.

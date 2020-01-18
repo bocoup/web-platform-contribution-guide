@@ -19,7 +19,7 @@ Etiquette
 It is easy to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
 Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.
 
-* Keep your message short, but provide a link to the relevant GitHub issue (or other) for more detailed information.
+* Keep your message short, but provide a link to the relevant :term:`GitHub` issue (or other) for more detailed information.
   Say clearly what you are expecting from them (e.g., a review from a subject matter expert, or a statement if they are willing to implement something).
 * Say why you are contacting them in particular (e.g., they are listed in the OWNERS file).
 * Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.

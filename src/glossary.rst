@@ -24,6 +24,10 @@ Glossary of Terms and Jargon
     Ecma
         The name of the standards body that makes ECMAScript, the standard for the JavaScript programming language.
 
+    GitHub
+        a website that provides hosting for software development version
+        control using Git; homepage: https://github.com
+
     HTML
         Hypertext Markup Language, the collection of technologies for structuring and linking between documents on the web.
 
@@ -62,7 +66,7 @@ Glossary of Terms and Jargon
         written words.
 
     PR
-        pull request (in GitHub).
+        pull request (in :term:`GitHub`).
 
     TC
         Technical Committee (at :term:`Ecma`).
