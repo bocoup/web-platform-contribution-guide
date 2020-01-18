@@ -183,7 +183,7 @@ For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager
   which makes the check pass.
 * Otherwise, if you or your employer is already a member of the working group,
   you need `get a W3C account <https://www.w3.org/accounts/request>`__
-  and then `link your W3C and github accounts together <https://www.w3.org/users/myprofile/connectedaccounts>`__.
+  and then `link your W3C and GitHub accounts together <https://www.w3.org/users/myprofile/connectedaccounts>`__.
 
 In either case, you can ask for help in the pull request, or reach out to the working group chairs.
 Each W3C specification should have a "Status of this document" section,
