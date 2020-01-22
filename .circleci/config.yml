@@ -36,12 +36,41 @@ jobs:
     steps:
       - setup_steps
       - run: make html
+      - persist_to_workspace:
+          root: build
+          paths: html
+
+  deploy-pages:
+    docker:
+      - image: node:12
+    steps:
+      - checkout
+      - attach_workspace:
+          at: build
+      - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@2.0.1
+            git config user.email "ci-build@web-platform-contributing-guide.doc"
+            git config user.name "ci-build"
+      - add_ssh_keys:
+          fingerprints:
+            - "8a:f6:29:f9:b3:9f:b5:1a:fd:b8:44:2e:c5:cc:4a:91"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist build/html
 
 workflows:
   version: 2.1
-  "Lint and Build":
+  "Lint and Build and Deploy":
     jobs:
       - lint
       - build:
           requires:
             - lint
+      - deploy-pages:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
