@@ -19,7 +19,7 @@ Etiquette
 It is easy to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
 Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.
 
-* Keep your message short, but provide a link to the relevant GitHub issue (or other) for more detailed information.
+* Keep your message short, but provide a link to the relevant :term:`GitHub` issue (or other) for more detailed information.
   Say clearly what you are expecting from them (e.g., a review from a subject matter expert, or a statement if they are willing to implement something).
 * Say why you are contacting them in particular (e.g., they are listed in the OWNERS file).
 * Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.
@@ -42,7 +42,7 @@ In W3C specifications, this is typically listed at the top, maybe under "Specifi
 In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for "This standard is written by").
 
 Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
-Check out the repo, and use Git commands such as `git blame <https://git-scm.com/docs/git-blame>`__ and `git log <https://git-scm.com/docs/git-log>`__ to find who wrote a particular part of the specification.
+Check out the repo, and use :term:`Git` commands such as `git blame <https://git-scm.com/docs/git-blame>`__ and `git log <https://git-scm.com/docs/git-log>`__ to find who wrote a particular part of the specification.
 It could be the specification's editor, but it could also be someone else.
 
 Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
@@ -77,7 +77,7 @@ See the Chromium documentation on `Code Reviews <https://chromium.googlesource.c
 
 You can `navigate the chromium source code on the web <https://cs.chromium.org/>`__ or you can `check out the code <https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building>`__ if you prefer to navigate it locally.
 Navigating the code base can be tricky, but there's documentation to help, or you can try to simply search.
-However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (CSS, DOM, HTML, SVG, etc.).
+However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (:term:`CSS`, :term:`DOM`, :term:`HTML`, :term:`SVG`, etc.).
 
 The next approach is to look at issues in the `Chromium issue tracker <https://crbug.com/>`__.
 Click the drop-down arrow in the search field to find Advanced search.

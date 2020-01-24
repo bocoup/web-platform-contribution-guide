@@ -18,11 +18,19 @@ Glossary of Terms and Jargon
     CLA
         Contributors License Agreement
 
-    Spec
-        short for specification.
+    DOM
+        Document Object Model.
 
     Ecma
         The name of the standards body that makes ECMAScript, the standard for the JavaScript programming language.
+
+    Git
+        Git is a free and open source distributed version control system;
+        project homepage: https://git-scm.com/
+
+    GitHub
+        a website that provides hosting for software development version
+        control using :term:`Git`; homepage: https://github.com
 
     HTML
         Hypertext Markup Language, the collection of technologies for structuring and linking between documents on the web.
@@ -62,7 +70,13 @@ Glossary of Terms and Jargon
         written words.
 
     PR
-        pull request (in GitHub).
+        pull request (in :term:`GitHub`).
+
+    Spec
+        short for specification.
+
+    SVG
+        Scalable Vector Graphics.
 
     TC
         Technical Committee (at :term:`Ecma`).
@@ -88,7 +102,8 @@ Glossary of Terms and Jargon
         Web Hypertext Application Technology Working Group.
 
     WPT
-        web-platform-tests
+        web-platform-tests; a cross-browser test suite for the Web-platform
+        stack; project homepage: https://web-platform-tests.org
 
     Window
         the main global object in a web page.

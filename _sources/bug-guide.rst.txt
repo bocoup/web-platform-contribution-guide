@@ -48,8 +48,8 @@ Normative changes, additions and removals
 '''''''''''''''''''''''''''''''''''''''''
 
 Some issues are about changing how an existing feature works, or adding a new feature or removing one that is already specified.
-The WHATWG has a defined `process for changes, additions and removals <https://whatwg.org/working-mode#changes>`__.
-In the W3C it depends on the working group, but usually similar principles will apply there as well.
+The :term:`WHATWG` has a defined `process for changes, additions and removals <https://whatwg.org/working-mode#changes>`__.
+In the :term:`W3C` it depends on the working group, but usually similar principles will apply there as well.
 This kind of issue might require both research for web compatibility impact as well as building consensus.
 
 Additional Resources
@@ -58,8 +58,8 @@ Additional Resources
 There are a number of resources that recommend good first issues:
 
 - The `whatwg/html repository maintains a list of "good first issues" <https://github.com/whatwg/html/labels/good%20first%20issue>`__ which the maintainers think would be a good place for a first time contributor to html to get started.
-- The `CSS WG maintains a list of "help wanted" issues <https://github.com/w3c/csswg-drafts/labels/Help%20Wanted>`__.
-- The `web-platform-tests project maintains a list of "good first issues" <https://github.com/web-platform-tests/wpt/labels/good%20first%20issue>`__.
+- The CSS :term:`WG` maintains `a list of "help wanted" issues <https://github.com/w3c/csswg-drafts/labels/Help%20Wanted>`__.
+- The :term:`web-platform-tests project <WPT>` maintains `a list of "good first issues" <https://github.com/web-platform-tests/wpt/labels/good%20first%20issue>`__.
 - The `Web Compat project <https://webcompat.com>`__ has instructions on
   `how to reproduce a webcompat bug <https://webcompat.com/contributors/reproduce-bug>`__ and
   `how to diagnose a webcompat bug <https://webcompat.com/contributors/diagnose-bug>`__.
@@ -132,7 +132,7 @@ See `example spec issue <https://github.com/w3c/fxtf-drafts/issues/120>`__ where
 Change the spec
 ~~~~~~~~~~~~~~~
 
-Most specifications are maintained in GitHub.
+Most specifications are maintained in :term:`GitHub`.
 Proposing a change is done by submitting a pull request.
 The steps for doing so are mostly the same as `the steps for web-platform-tests <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
 
@@ -155,7 +155,7 @@ In short, the steps are:
 
 Different specifications can have different tools for generating the document.
 This is usually documented in the ``README.md`` or ``CONTRIBUTING.md`` file.
-For example, CSS specifications, as well as most WHATWG specifications,
+For example, :term:`CSS` specifications, as well as most WHATWG specifications,
 use `Bikeshed <https://tabatkins.github.io/bikeshed/>`__,
 which can be installed locally but can also be invoked via a web service.
 Many specifications, e.g. `ARIA <https://github.com/w3c/aria>`__,
@@ -183,7 +183,7 @@ For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager
   which makes the check pass.
 * Otherwise, if you or your employer is already a member of the working group,
   you need `get a W3C account <https://www.w3.org/accounts/request>`__
-  and then `link your W3C and github accounts together <https://www.w3.org/users/myprofile/connectedaccounts>`__.
+  and then `link your W3C and GitHub accounts together <https://www.w3.org/users/myprofile/connectedaccounts>`__.
 
 In either case, you can ask for help in the pull request, or reach out to the working group chairs.
 Each W3C specification should have a "Status of this document" section,
