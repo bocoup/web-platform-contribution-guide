@@ -3,7 +3,7 @@ Skills
 
 Before we get to the step by step guide on how to contribute to a web standard and in order to make that guide easier to follow, we’d like to step through an overview of the skills involved in working on web standards.
 The goal of this skills overview is to orient you in the guide so that you can see what skills you would be setting out to master if you choose to build a career in web standards.
-If you prefer to learn by doing, you can skip this skills overview and jump right into the step by step guide below.
+If you prefer to learn by doing, you can skip this skills overview and jump right into the `step by step guide <Step by step guide to fix a W3C or WHATWG bug>`_.
 You do not need to have all of these skills in order to start contributing to the web platform, but we have included this overview for those of you that would like a higher level learning map.
 These skills are extrapolated from internal retrospective documentation at Bocoup for a Mozilla funded project to `improve the interoperability of the fieldset element <https://bocoup.com/work/fieldset-interoperability>`__.
 
@@ -14,7 +14,7 @@ The web platform is all about consensus.
 Consensus on the web platform involves getting many different people from many different groups to agree on how a web technology should work.
 On any given change to the web platform, you should expect to talk to between 5 and 20 different people from 2-4 different companies and multiple standards groups (such as working groups or technical committees).
 
-All of the skills covered below contribute to your ability to build consensus across a large group of stakeholders.
+All of the skills covered in this chapter contribute to your ability to build consensus across a large group of stakeholders.
 We build consensus by talking to people, collecting feedback, and modifying our solutions to meet their needs and requests.
 Every change to the web platform has its own nuanced needs for consensus.
 
