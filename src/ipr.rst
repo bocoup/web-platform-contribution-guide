@@ -8,7 +8,7 @@ Most W3C Working Groups operate under a royalty-free (RF) licensing mode,
 but there are some exceptions that have used a "reasonable and non-discriminatory" (RAND) licensing mode,
 for example `EPUB3 <https://www.w3.org/2017/02/EPUB3CGcharter>`__.
 
-When contributing to the web, you and/or the company that you work for will be asked to sign an intellectual property rights agreement which makes copyrights in technologies you work on royalty free and renders patents that govern the technology you are working on neutral, or not enforceable in the context of any implementation of the standard to which you have contributed.
+When contributing to the web, you or the company that you work for will be asked to sign an intellectual property rights agreement which makes copyrights in technologies you work on royalty free and renders patents that govern the technology you are working on neutral, or not enforceable in the context of any implementation of the standard to which you have contributed.
 
 At the W3C this is called the `W3C patent policy <https://www.w3.org/TR/patent-policy/>`__ which you have to agree to in order to participate, either as a representative of your company or as an "invited expert".
 At the WHATWG you or your company must sign a `Contributors License Agreement <https://participate.whatwg.org/agreement>`__.

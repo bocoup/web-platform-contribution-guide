@@ -314,7 +314,7 @@ Here are some tips for writing good specification text.
 Normative and non-normative
 '''''''''''''''''''''''''''
 
-From the building blocks discussed above, it is useful to differentiate between the things that are normative from the things that are non-normative.
+From the building blocks discussed earlier, it is useful to differentiate between the things that are normative from the things that are non-normative.
 The normative things are requirements, and everything that are tied to requirements (conformance classes, algorithms, definitions).
 Non-normative things are everything else.
 

@@ -8,7 +8,7 @@ Therefore it is important to talk to the people who are likely to implement your
 It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.
 
 Finding who to talk to requires a bit of investigation.
-While it seems simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly as new topics appear, people change projects, teams, or employers, new people become experts on something, and so on.
+While it may seem simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly as new topics appear, people change projects, teams, or employers, new people become experts on something, and so on.
 Therefore, we suggest an approach for how to find who are currently involved in a particular topic.
 
 **If you get stuck, feel free to reach out to us** and we're happy to help: web-platform-contribution-guide@bocoup.com
@@ -76,7 +76,7 @@ Chromium has OWNERS files in its source tree, which list the email addresses of 
 See the Chromium documentation on `Code Reviews <https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md>`__ for details.
 
 You can `navigate the chromium source code on the web <https://cs.chromium.org/>`__ or you can `check out the code <https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building>`__ if you prefer to navigate it locally.
-Navigating the code base can be tricky, but there's documentation to help, or you can try to simply search.
+Navigating the code base can be tricky, but there's documentation to help, or you can try to search.
 However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (:term:`CSS`, :term:`DOM`, :term:`HTML`, :term:`SVG`, etc.).
 
 The next approach is to look at issues in the `Chromium issue tracker <https://crbug.com/>`__.
@@ -210,8 +210,8 @@ The current proposals are `tracked in GitHub <https://github.com/tc39/proposals>
 Finally, you can reach out on IRC, `#tc39 on Freenode <https://github.com/tc39/ecma262/blob/master/README.md#community>`__, or the `es-discuss mailing list <https://esdiscuss.org/>`__.
 
 
-Web Developers & Framework Developers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Web Developers and Framework Developers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This category can be a bit tricky because it is a much larger audience.
 How to proceed probably depends heavily on the topic at hand.
@@ -226,7 +226,7 @@ A question on Twitter from such a person can go a long way to identify pain poin
 Other ways involve actively searching for blog posts where web developers document how they work around something or complain about differences between browsers.
 Searching for questions in `StackOverflow <https://stackoverflow.com/>`__ can also reveal common problems.
 
-You can also help conduct surveys such as the `MDN Web Developer & Designer Survey <https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/>`__ or `this survey about form controls <https://www.gwhitworth.com/blog/2019/07/form-controls-components/>`__.
+You can also help conduct surveys such as the `MDN Web Developer and Designer Survey <https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/>`__ or `this survey about form controls <https://www.gwhitworth.com/blog/2019/07/form-controls-components/>`__.
 
 You can speak at web developer conferences to raise awareness and get direct feedback about a particular issue.
 
