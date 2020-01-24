@@ -12,7 +12,7 @@ Consensus Building
 
 The web platform is all about consensus.
 Consensus on the web platform involves getting many different people from many different groups to agree on how a web technology should work.
-On any given change to the web platform, you should expect to talk to between 5 and 20 different people from 2-4 different companies and multiple standards groups (working groups, technical committees, etc).
+On any given change to the web platform, you should expect to talk to between 5 and 20 different people from 2-4 different companies and multiple standards groups (such as working groups or technical committees).
 
 All of the skills covered below contribute to your ability to build consensus across a large group of stakeholders.
 We build consensus by talking to people, collecting feedback, and modifying our solutions to meet their needs and requests.
@@ -242,7 +242,7 @@ In this example, the statement of fact helps explain the concept further by spel
 Example
 '''''''
 
-An example is a block of prose which can help clarify a concept, show how something can be used, etc.
+An example is a block of prose which can help clarify a concept, or show how something can be used.
 For example:
 
     If the ``a`` element has an ``href`` attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents.
@@ -285,7 +285,7 @@ It should be possible to remove all notes from a specification without changing 
 Warning
 '''''''
 
-A warning is a piece of prose that calls out a specified technology that has dangerous potential implications for web compatibility, security, user privacy, etc.
+A warning is a piece of prose that calls out a specified technology that has dangerous potential implications for web compatibility, security, user privacy, or similar.
 For example:
 
     Warning: This algorithm is intended to mitigate security dangers involved in downloading files from untrusted sites, and user agents are strongly urged to follow it.

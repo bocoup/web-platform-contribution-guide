@@ -8,7 +8,7 @@ Therefore it is important to talk to the people who are likely to implement your
 It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.
 
 Finding who to talk to requires a bit of investigation.
-While it may seem simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly as new topics appear, people change projects, teams, or employers, new people become experts on something, and so on.
+While it may seem simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly for various reasons, such as new topics appear, people change projects, teams, or employers, or new people become experts on something.
 Therefore, we suggest an approach for how to find who are currently involved in a particular topic.
 
 **If you get stuck, feel free to reach out to us** and we're happy to help: web-platform-contribution-guide@bocoup.com
@@ -56,7 +56,7 @@ Search the archives to see if there has been prior discussion.
 Here are some of the active IRC channels:
 
 * CSS: `#css on irc.w3.org <https://www.w3.org/wiki/IRC>`__
-* HTML, DOM, etc.: `#whatwg on Freenode <https://whatwg.org/irc>`__
+* HTML, DOM: `#whatwg on Freenode <https://whatwg.org/irc>`__
 * JavaScript: `#tc39 on Freenode <https://github.com/tc39/ecma262/blob/master/README.md#community>`__
 * Node.js: `#node.js on Freenode <https://nodejs.org/en/get-involved/>`__
 
@@ -77,7 +77,7 @@ See the Chromium documentation on `Code Reviews <https://chromium.googlesource.c
 
 You can `navigate the chromium source code on the web <https://cs.chromium.org/>`__ or you can `check out the code <https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building>`__ if you prefer to navigate it locally.
 Navigating the code base can be tricky, but there's documentation to help, or you can try to search.
-However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (:term:`CSS`, :term:`DOM`, :term:`HTML`, :term:`SVG`, etc.).
+However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (including, but not limited to, :term:`CSS`, :term:`DOM`, :term:`HTML`, and :term:`SVG`).
 
 The next approach is to look at issues in the `Chromium issue tracker <https://crbug.com/>`__.
 Click the drop-down arrow in the search field to find Advanced search.
