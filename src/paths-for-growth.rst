@@ -52,7 +52,7 @@ Become a Spec Editor
 ~~~~~~~~~~~~~~~~~~~~
 
 If you find yourself drawn to certain domains, such as accessibility for example, you can also contribute to the web platform by working on those specifications.
-For W3C and ECMA specifications, you will need to 'join' the working group or technical committee in order to contribute in an official capacity, but in most cases you can get started by participating in the conversations and issues happening wherever the spec is hosted on GitHub.
+For W3C and ECMA specifications, you will need to 'join' the working group or technical committee in order to contribute in an official capacity, but in most cases you can get started by participating in the conversations and issues happening wherever the spec is hosted on :term:`GitHub`.
 For the WHATWG, your or your employer needs to sign the participation agreement to make direct contributions to the spec text.
 Find the sections that are interesting and relevant to you, and start by introducing yourself, your use case(s), or see if there's an issue on the repository you can help solve.
 Lastly, spend time learning the processes the group uses to make decisions and advance work.
