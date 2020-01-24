@@ -1,16 +1,6 @@
 Testimonials
 ------------
 
-Elika Etemad (fantasai)
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Interview fantasai about how they got started.
-
-Ian Hickson (Hixie)
-~~~~~~~~~~~~~~~~~~~
-
-Interview Ian Hickson about how they got started.
-
 Simon Pieters (zcorpan)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -102,13 +92,3 @@ Throughout the lifetime of the web, it has been in competition with other inform
 
 Without working on web standards, the web would probably have been replaced completely by one or more of those,
 enabling censorship and limitation of access to information.
-
-Anne van Kesteren (annevk)
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Interview Anne van Kesteren about how they got started.
-
-Boris Zbarsky (bz)
-~~~~~~~~~~~~~~~~~~
-
-Interview Boris Zbarsky about how they got started.
