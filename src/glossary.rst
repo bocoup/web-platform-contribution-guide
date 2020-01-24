@@ -18,8 +18,8 @@ Glossary of Terms and Jargon
     CLA
         Contributors License Agreement
 
-    Spec
-        short for specification.
+    DOM
+        Document Object Model.
 
     Ecma
         The name of the standards body that makes ECMAScript, the standard for the JavaScript programming language.
@@ -71,6 +71,12 @@ Glossary of Terms and Jargon
 
     PR
         pull request (in :term:`GitHub`).
+
+    Spec
+        short for specification.
+
+    SVG
+        Scalable Vector Graphics.
 
     TC
         Technical Committee (at :term:`Ecma`).

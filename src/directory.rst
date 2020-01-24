@@ -77,7 +77,7 @@ See the Chromium documentation on `Code Reviews <https://chromium.googlesource.c
 
 You can `navigate the chromium source code on the web <https://cs.chromium.org/>`__ or you can `check out the code <https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building>`__ if you prefer to navigate it locally.
 Navigating the code base can be tricky, but there's documentation to help, or you can try to simply search.
-However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (:term:`CSS`, DOM, HTML, SVG, etc.).
+However, it is likely that you want to look in the ``src/third_party/blink/renderer/core/`` directory in particular, which holds the implementation of most web-facing features (:term:`CSS`, :term:`DOM`, :term:`HTML`, :term:`SVG`, etc.).
 
 The next approach is to look at issues in the `Chromium issue tracker <https://crbug.com/>`__.
 Click the drop-down arrow in the search field to find Advanced search.
