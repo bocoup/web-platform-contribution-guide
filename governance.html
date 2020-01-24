@@ -36,7 +36,7 @@
 <h1>Web Platform Governance<a class="headerlink" href="#web-platform-governance" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">___________________</span>           <span class="n">_________________</span>
 <span class="o">|</span>  <span class="n">Browser</span>          <span class="o">|</span>         <span class="o">|</span>    <span class="n">node</span><span class="o">.</span><span class="n">js</span>      <span class="o">|</span>
-<span class="o">|</span>  <span class="p">(</span><span class="n">W3C</span> <span class="o">&amp;</span> <span class="n">WHATWG</span><span class="p">)</span>   <span class="o">|</span>         <span class="o">|</span>    <span class="p">(</span><span class="n">OpenJS</span><span class="p">)</span>     <span class="o">|</span>
+<span class="o">|</span>  <span class="p">(</span><span class="n">W3C</span><span class="p">,</span> <span class="n">WHATWG</span><span class="p">)</span>    <span class="o">|</span>         <span class="o">|</span>    <span class="p">(</span><span class="n">OpenJS</span><span class="p">)</span>     <span class="o">|</span>
 <span class="o">|</span>  <span class="n">HTML</span>          <span class="n">___</span><span class="o">|</span><span class="n">_________</span><span class="o">|</span><span class="n">__</span>  <span class="n">Node</span> <span class="n">Global</span>  <span class="o">|</span>
 <span class="o">|</span>  <span class="n">CSS</span>           <span class="o">|</span> <span class="n">JavaScript</span>    <span class="o">|</span>              <span class="o">|</span>
 <span class="o">|</span>  <span class="n">ARIA</span>          <span class="o">|</span> <span class="p">(</span><span class="n">ECMA</span> <span class="mi">262</span><span class="p">,</span>    <span class="o">|</span><span class="n">______________</span><span class="o">|</span>
@@ -78,7 +78,7 @@ CSS Specifications have levels instead of versions, and are backwards compatible
 The people working on CSS decided at some point that each CSS technology should have levels.
 CSS 1 was the beginning.
 Both CSS1 and CSS2 were monolithic specifications defining all of CSS features at that level.
-After CSS2, the CSSWG started modularizing the specification by technology.
+After CSS2, the CSS WG started modularizing the specification by technology.
 New specifications that built on top of CSS2 technologies became modules at level 3. Then all new CSS technologies that got started after CSS2 started with level 1. So some CSS technologies are at level 1 (e.g., CSS Variables Level 1) while others are at level 5 (e.g., Media Queries Level 5) at the time of this writing.
 For this reason, we don’t talk about “CSS3” or “CSS4”.
 We use the general term “CSS” and refer to individual technologies at their different levels.</p>
@@ -87,8 +87,8 @@ We use the general term “CSS” and refer to individual technologies at their 
 <h2>ARIA<a class="headerlink" href="#aria" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="glossary.html#term-aria"><span class="xref std std-term">ARIA</span></a> (Accessible Rich Internet Applications) is a collection of standards developed by several working groups at the W3C that deal with accessibility of web technologies, mainly assistive technologies like screen readers.</p>
 </div>
-<div class="section" id="other-standards-bodies-foundations">
-<h2>Other Standards Bodies &amp; Foundations<a class="headerlink" href="#other-standards-bodies-foundations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="other-standards-bodies-and-foundations">
+<h2>Other Standards Bodies and Foundations<a class="headerlink" href="#other-standards-bodies-and-foundations" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the W3C and WHATWG, there are many other standards bodies that make web platform technologies.</p>
 <div class="section" id="ecma-international">
 <h3>Ecma International<a class="headerlink" href="#ecma-international" title="Permalink to this headline">¶</a></h3>
@@ -103,10 +103,11 @@ We’d really like to get more into how ECMAScript is standardized, but this is 
 Node.js is a de facto standard with a more ad hoc process for adding features than other technologies.
 OpenJS is not a standards body, but it does have a governance model for adding features to Node.js.
 Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International.
-The <a class="reference external" href="https://github.com/nodejs/TSC">Node TSC</a> (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">APIs</span></a> on top of the JavaScript programming language which adds useful functionality that developers use to make software.
+The <a class="reference external" href="https://github.com/nodejs/TSC">Node TSC</a> (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global.</p>
+<p>The <a class="reference internal" href="glossary.html#term-node-global"><span class="xref std std-term">node global</span></a> is a set of built in <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">APIs</span></a> on top of the JavaScript programming language which adds useful functionality that developers use to make software.
 The node global is similar to the <code class="docutils literal notranslate"><span class="pre">window</span></code> object in browsers, but geared toward server side software, and build tools for web developers.
 Many web developers use node to manage their projects’ build processes.
-Node share several <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">APIs</span></a> with web browsers, like URL, Fetch, Text Decoding, etc.
+Node share several <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">APIs</span></a> with web browsers, such as <code class="docutils literal notranslate"><span class="pre">URL</span></code>, <code class="docutils literal notranslate"><span class="pre">fetch</span></code>, and <code class="docutils literal notranslate"><span class="pre">TextDecoder</span></code>.
 Node.js is even known to run some of the web-platform-tests tests to ensure interoperability for the features that node and browsers share.</p>
 </div>
 <div class="section" id="ietf">
@@ -131,7 +132,7 @@ The IEEE have working groups and their own process for developing standards.</p>
 <h3>ISO<a class="headerlink" href="#iso" title="Permalink to this headline">¶</a></h3>
 <p>ISO/IEC JTC1 was formed as a merger of three subcommittees of international standards bodies to avoid duplicative or incompatible standards between several <em>national</em> standards bodies.
 The group’s purpose is to develop, maintain, and promote standards in the fields of information technology and information and communications technology.
-JTC1 subcommittees and working groups are responsible for more than 2600 published standards in areas such as programming languages, character sets, and multimedia.
+JTC1 subcommittees and working groups are responsible for more than 2,600 published standards in areas such as programming languages, character sets, and multimedia.
 Standards organizations such as the W3C are able to publish ISO standards through a working relationship with ISO/JTC1.</p>
 <p>Web standards are primarily specified in other places, like the W3C and Ecma International, and come to the ISO for international de jure standardization.
 That means governments can require these standards for policy and procurement purposes.</p>
@@ -141,7 +142,7 @@ WCAG 2.0 explains how to make web content more accessible to people with disabil
 <div class="section" id="khronos">
 <h3>Khronos<a class="headerlink" href="#khronos" title="Permalink to this headline">¶</a></h3>
 <p>Khronos is the name of the standards body that specifies WebGL, the low level graphics card programming interface of the web.
-This <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">API</span></a> can be used with the HTML canvas element, defined by the WHATWG.</p>
+This <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">API</span></a> can be used with the HTML <code class="docutils literal notranslate"><span class="pre">canvas</span></code> element, defined by the WHATWG.</p>
 </div>
 <div class="section" id="iana">
 <h3>IANA<a class="headerlink" href="#iana" title="Permalink to this headline">¶</a></h3>
@@ -173,7 +174,7 @@ This <a class="reference internal" href="glossary.html#term-api"><span class="xr
 <li class="toctree-l2"><a class="reference internal" href="#whatwg-and-html">WHATWG and HTML</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#css-wg">CSS WG</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#aria">ARIA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#other-standards-bodies-foundations">Other Standards Bodies &amp; Foundations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-standards-bodies-and-foundations">Other Standards Bodies and Foundations</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ipr.html">Intellectual Property Rights Management</a></li>

@@ -40,7 +40,7 @@ Instead it is an iterative process where implementations inform what is specifie
 Therefore it is important to talk to the people who are likely to implement your proposed change.
 It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.</p>
 <p>Finding who to talk to requires a bit of investigation.
-While it seems simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly as new topics appear, people change projects, teams, or employers, new people become experts on something, and so on.
+While it may seem simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly for various reasons, such as new topics appear, people change projects, teams, or employers, or new people become experts on something.
 Therefore, we suggest an approach for how to find who are currently involved in a particular topic.</p>
 <p><strong>If you get stuck, feel free to reach out to us</strong> and we’re happy to help: <a class="reference external" href="mailto:web-platform-contribution-guide&#37;&#52;&#48;bocoup&#46;com">web-platform-contribution-guide<span>&#64;</span>bocoup<span>&#46;</span>com</a></p>
 <div class="section" id="etiquette">
@@ -79,7 +79,7 @@ Search the archives to see if there has been prior discussion.</p>
 <p>Here are some of the active IRC channels:</p>
 <ul class="simple">
 <li><p>CSS: <a class="reference external" href="https://www.w3.org/wiki/IRC">#css on irc.w3.org</a></p></li>
-<li><p>HTML, DOM, etc.: <a class="reference external" href="https://whatwg.org/irc">#whatwg on Freenode</a></p></li>
+<li><p>HTML, DOM: <a class="reference external" href="https://whatwg.org/irc">#whatwg on Freenode</a></p></li>
 <li><p>JavaScript: <a class="reference external" href="https://github.com/tc39/ecma262/blob/master/README.md#community">#tc39 on Freenode</a></p></li>
 <li><p>Node.js: <a class="reference external" href="https://nodejs.org/en/get-involved/">#node.js on Freenode</a></p></li>
 </ul>
@@ -95,8 +95,8 @@ However, that doesn’t always happen, so it can be necessary to find someone to
 <p>Chromium has OWNERS files in its source tree, which list the email addresses of people qualified to review changes in that directory.
 See the Chromium documentation on <a class="reference external" href="https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md">Code Reviews</a> for details.</p>
 <p>You can <a class="reference external" href="https://cs.chromium.org/">navigate the chromium source code on the web</a> or you can <a class="reference external" href="https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building">check out the code</a> if you prefer to navigate it locally.
-Navigating the code base can be tricky, but there’s documentation to help, or you can try to simply search.
-However, it is likely that you want to look in the <code class="docutils literal notranslate"><span class="pre">src/third_party/blink/renderer/core/</span></code> directory in particular, which holds the implementation of most web-facing features (<a class="reference internal" href="glossary.html#term-css"><span class="xref std std-term">CSS</span></a>, <a class="reference internal" href="glossary.html#term-dom"><span class="xref std std-term">DOM</span></a>, <a class="reference internal" href="glossary.html#term-html"><span class="xref std std-term">HTML</span></a>, <a class="reference internal" href="glossary.html#term-svg"><span class="xref std std-term">SVG</span></a>, etc.).</p>
+Navigating the code base can be tricky, but there’s documentation to help, or you can try to search.
+However, it is likely that you want to look in the <code class="docutils literal notranslate"><span class="pre">src/third_party/blink/renderer/core/</span></code> directory in particular, which holds the implementation of most web-facing features (including, but not limited to, <a class="reference internal" href="glossary.html#term-css"><span class="xref std std-term">CSS</span></a>, <a class="reference internal" href="glossary.html#term-dom"><span class="xref std std-term">DOM</span></a>, <a class="reference internal" href="glossary.html#term-html"><span class="xref std std-term">HTML</span></a>, and <a class="reference internal" href="glossary.html#term-svg"><span class="xref std std-term">SVG</span></a>).</p>
 <p>The next approach is to look at issues in the <a class="reference external" href="https://crbug.com/">Chromium issue tracker</a>.
 Click the drop-down arrow in the search field to find Advanced search.</p>
 <ul class="simple">
@@ -206,8 +206,8 @@ Similarly to web-platform-tests, you can find out who has contributed to a test 
 The current proposals are <a class="reference external" href="https://github.com/tc39/proposals">tracked in GitHub</a>, where the proposals’ authors and champions are listed.</p>
 <p>Finally, you can reach out on IRC, <a class="reference external" href="https://github.com/tc39/ecma262/blob/master/README.md#community">#tc39 on Freenode</a>, or the <a class="reference external" href="https://esdiscuss.org/">es-discuss mailing list</a>.</p>
 </div>
-<div class="section" id="web-developers-framework-developers">
-<h2>Web Developers &amp; Framework Developers<a class="headerlink" href="#web-developers-framework-developers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="web-developers-and-framework-developers">
+<h2>Web Developers and Framework Developers<a class="headerlink" href="#web-developers-and-framework-developers" title="Permalink to this headline">¶</a></h2>
 <p>This category can be a bit tricky because it is a much larger audience.
 How to proceed probably depends heavily on the topic at hand.</p>
 <p>Maybe there are frameworks that handle the use case that you want feedback on.
@@ -217,7 +217,7 @@ Maybe they also have an idea about how to get relevant feedback from web develop
 A question on Twitter from such a person can go a long way to identify pain points web developers have.</p>
 <p>Other ways involve actively searching for blog posts where web developers document how they work around something or complain about differences between browsers.
 Searching for questions in <a class="reference external" href="https://stackoverflow.com/">StackOverflow</a> can also reveal common problems.</p>
-<p>You can also help conduct surveys such as the <a class="reference external" href="https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/">MDN Web Developer &amp; Designer Survey</a> or <a class="reference external" href="https://www.gwhitworth.com/blog/2019/07/form-controls-components/">this survey about form controls</a>.</p>
+<p>You can also help conduct surveys such as the <a class="reference external" href="https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/">MDN Web Developer and Designer Survey</a> or <a class="reference external" href="https://www.gwhitworth.com/blog/2019/07/form-controls-components/">this survey about form controls</a>.</p>
 <p>You can speak at web developer conferences to raise awareness and get direct feedback about a particular issue.</p>
 <p>Some browser vendors have Developer Relation teams, which can help act as a communication channel between browser vendors or web standards groups and web developers.</p>
 <ul class="simple">
@@ -258,7 +258,7 @@ Searching for questions in <a class="reference external" href="https://stackover
 <li class="toctree-l2"><a class="reference internal" href="#browser-engines">Browser engines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#web-platform-tests">web-platform-tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#test262">Test262</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#web-developers-framework-developers">Web Developers &amp; Framework Developers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-developers-and-framework-developers">Web Developers and Framework Developers</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms and Jargon</a></li>
