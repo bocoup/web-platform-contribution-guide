@@ -9,7 +9,7 @@ There are many different kinds of outcomes you can expect to have when contribut
 
 Depending on the bug you select, you might end up suggesting a change to a specification, submitting a test to web-platform-tests, and reporting a bug on two different browsers.
 Or, you might find that the bug is in the browsers, and all that is needed is a report to the browsers and a test to guarantee the right behavior.
-There might be a bug only in the specification, and you might only need to submit a spec change.
+There might be a bug in the specification, and you might need to submit a spec change.
 Or perhaps the spec is correct, and matches the behavior of all the browsers, but there is a missing test, in which case you’ll be tasked with writing the test.
 All versions of this, and the many other possible permutations are all valid forms of contribution.
 
@@ -102,7 +102,7 @@ For example, if all browsers do something that is non-sensical and confusing, th
 
 However, web compatibility often constrains what changes browsers are able to make.
 If web content stops working when a browser implements a change, then there needs to be a very compelling reason to go through with that change (e.g., a security fix).
-Otherwise, browsers simply will not ship that change, lest they lose users to competing browsers that are compatible with that web content.
+Otherwise, browsers will most likely not ship that change, lest they lose users to competing browsers that are compatible with that web content.
 Therefore, it is useful to research web content, to investigate if there are web compatibility constraints.
 
 This can be done with `HTTP Archive <https://httparchive.org>`__, a dataset of several million web pages, which can be queried `using the BigQuery service <https://httparchive.org/faq#how-do-i-use-bigquery-to-write-custom-queries-over-the-data>`__.
@@ -215,7 +215,7 @@ There are `different kinds of tests <https://web-platform-tests.org/writing-test
   for things that can be asserted in JavaScript.
   See also the `testharnes.js API documentation <https://web-platform-tests.org/writing-tests/testharness-api.html>`__.
 * `Reftests <https://web-platform-tests.org/writing-tests/reftests.html>`__:
-  in the simple case, these consist of one test page that exersices the thing to test,
+  in the general case, these consist of one test page that exersices the thing to test,
   and a reference page that should have identical rendering,
   but the reference achieves in a different way.
   These are good for testing rendering bugs.

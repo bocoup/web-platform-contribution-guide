@@ -14,7 +14,7 @@ Getting started with a history, skill guide and how-to of web standards.
 
     ____________________          __________________
     |  Browser          |         |    node.js      |
-    |  (W3C & WHATWG)   |         |    (OpenJS)     |
+    |  (W3C, WHATWG)    |         |    (OpenJS)     |
     |  HTML          ___|_________|__  Node Global  |
     |  CSS           | JavaScript    |              |
     |  ARIA          | (ECMA 262,    |______________|

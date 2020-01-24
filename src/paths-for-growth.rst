@@ -34,7 +34,7 @@ The web-platform-tests project (WPT for short) is an important part of ensuring 
 In the :doc:`bug-guide` section of this guidebook, you learned how to write and submit different kinds of WPT tests.
 There are thousands of tests, and thus plenty of opportunities to dive deep into certain types of tests, or tests for certain specifications.
 
-The WPT project is also home to tools and infrastructure -- test runners, bots, servers & more -- that keep WPT running smoothly.
+The WPT project is also home to tools and infrastructure -- test runners, bots, servers, and more -- that keep WPT running smoothly.
 Monitoring and maintaining this infrastructure is a critical part of WPT work, just as important as contributing tests.
 As with testing, there are always opportunities to meaningfully support the web platform through infrastructure work.
 
@@ -58,7 +58,7 @@ Find the sections that are interesting and relevant to you, and start by introdu
 Lastly, spend time learning the processes the group uses to make decisions and advance work.
 
 Constructively engaging on those repositories, adding use cases, contributing tests, and filing or resolving issues will result in others viewing you as someone with expertise in the domain, and will enable you to join the working group or technical committee as an invited expert if your organization is not already a member of the W3C or ECMA.
-If your organization is a member, you simply need to ask your W3C AC rep or ECMA Primary Contact to add you to the working group (your organization may have other steps they require you to take).
+If your organization is a member, you need to ask your W3C AC rep or ECMA Primary Contact to add you to the working group (your organization may have other steps they require you to take).
 If you don't belong to a member company, you can ask the spec editor, working group chairperson, or W3C/ECMA staff contact to add you as an invited expert.
 
 Specification editors are responsible for the accuracy of different versions of a specification.
@@ -94,7 +94,7 @@ Become a Working Group Chair
 
 The working group or technical committee chair is responsible for keeping the group's work on track, per its charter or scope documents.
 This role can handle a variety of tasks, depending on the community built up around the work.
-They may call meetings, keep repositories organized and issues triaged, prioritize tasks & workstreams, interface with implementers, plan new work or features, lead internal process and decision-making, maintain the group's tooling, work with W3C staff, prepare documents for horizontal review or publication... the list of responsibilities can seem endless, which is why most groups have co-chairs!
+They may call meetings, keep repositories organized and issues triaged, prioritize tasks and workstreams, interface with implementers, plan new work or features, lead internal process and decision-making, maintain the group's tooling, work with W3C staff, prepare documents for horizontal review or publication... the list of responsibilities can seem endless, which is why most groups have co-chairs!
 
 It's a good idea to be an active member of a working group community for some time before volunteering to chair.
 To be successful in this role, you'll need to be able to build and maintain good working relationships.

@@ -5,7 +5,7 @@ Web Platform Governance
 
      ___________________           _________________
     |  Browser          |         |    node.js      |
-    |  (W3C & WHATWG)   |         |    (OpenJS)     |
+    |  (W3C, WHATWG)    |         |    (OpenJS)     |
     |  HTML          ___|_________|__  Node Global  |
     |  CSS           | JavaScript    |              |
     |  ARIA          | (ECMA 262,    |______________|
@@ -55,7 +55,7 @@ CSS Specifications have levels instead of versions, and are backwards compatible
 The people working on CSS decided at some point that each CSS technology should have levels.
 CSS 1 was the beginning.
 Both CSS1 and CSS2 were monolithic specifications defining all of CSS features at that level.
-After CSS2, the CSSWG started modularizing the specification by technology.
+After CSS2, the CSS WG started modularizing the specification by technology.
 New specifications that built on top of CSS2 technologies became modules at level 3. Then all new CSS technologies that got started after CSS2 started with level 1. So some CSS technologies are at level 1 (e.g., CSS Variables Level 1) while others are at level 5 (e.g., Media Queries Level 5) at the time of this writing.
 For this reason, we don’t talk about "CSS3" or "CSS4".
 We use the general term "CSS" and refer to individual technologies at their different levels.
@@ -65,8 +65,8 @@ ARIA
 
 :term:`ARIA` (Accessible Rich Internet Applications) is a collection of standards developed by several working groups at the W3C that deal with accessibility of web technologies, mainly assistive technologies like screen readers.
 
-Other Standards Bodies & Foundations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Other Standards Bodies and Foundations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In addition to the W3C and WHATWG, there are many other standards bodies that make web platform technologies.
 
@@ -85,7 +85,9 @@ The OpenJS Foundation is a US-based Trade organization home to several dozen ope
 Node.js is a de facto standard with a more ad hoc process for adding features than other technologies.
 OpenJS is not a standards body, but it does have a governance model for adding features to Node.js.
 Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International.
-The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
+The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global.
+
+The :term:`node global` is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
 The node global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
 Many web developers use node to manage their projects’ build processes.
 Node share several :term:`APIs <API>` with web browsers, like URL, Fetch, Text Decoding, etc.
@@ -117,7 +119,7 @@ ISO
 
 ISO/IEC JTC1 was formed as a merger of three subcommittees of international standards bodies to avoid duplicative or incompatible standards between several *national* standards bodies.
 The group's purpose is to develop, maintain, and promote standards in the fields of information technology and information and communications technology.
-JTC1 subcommittees and working groups are responsible for more than 2600 published standards in areas such as programming languages, character sets, and multimedia.
+JTC1 subcommittees and working groups are responsible for more than 2,600 published standards in areas such as programming languages, character sets, and multimedia.
 Standards organizations such as the W3C are able to publish ISO standards through a working relationship with ISO/JTC1.
 
 Web standards are primarily specified in other places, like the W3C and Ecma International, and come to the ISO for international de jure standardization.
@@ -130,7 +132,7 @@ Khronos
 ^^^^^^^
 
 Khronos is the name of the standards body that specifies WebGL, the low level graphics card programming interface of the web.
-This :term:`API` can be used with the HTML canvas element, defined by the WHATWG.
+This :term:`API` can be used with the HTML ``canvas`` element, defined by the WHATWG.
 
 IANA
 ^^^^

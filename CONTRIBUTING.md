@@ -11,7 +11,7 @@ stylistic conventions:
 - One space after punctuation - don't use double space after a period,
   exclamation mark, or question mark.
 
-The `lint.sh` script checks for the above conventions. You can run it before
+The `lint.sh` script checks for the preceding conventions. You can run it before
 building as follows:
 
     ./lint.sh && make html
