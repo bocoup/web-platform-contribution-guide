@@ -56,12 +56,6 @@ Bugs are a great way to get started because in order to get them fixed, you have
 You might be surprised by how working on browser bugs will get you moving into deep parts of the web platform!
 Many of the most prolific contributors to the web platform got their start by working on interoperability bugs between browsers.
 
-
-.. pull-quote::
-
-   The goal of this guide is to reach interoperability, not to add features, or change specs.
-   This is maintenance work, and it is the most important thing that the web needs.
-
 In the context of this guide, the goal of working on the web platform is to reach interoperability, not to add features, or change specs.
 This is maintenance work, and it is the most important thing that the web needs.
 This can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser.
