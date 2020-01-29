@@ -23,6 +23,24 @@ There is an annual meeting of all working groups hosted in a different city each
 
 The W3C working groups oversee and are leading the charge on technologies like SVG, CSS, :term:`ARIA`, Web Driver, Generic Sensors, Web XR, Web Payments, Gamepad and UI Events.
 
+CSS WG
+^^^^^^
+
+The CSS WG is a working group at the W3C.
+CSS Specifications have levels instead of versions, and are backwards compatible.
+The people working on CSS decided at some point that each CSS technology should have levels.
+CSS 1 was the beginning.
+Both CSS1 and CSS2 were monolithic specifications defining all of CSS features at that level.
+After CSS2, the CSS WG started modularizing the specification by technology.
+New specifications that built on top of CSS2 technologies became modules at level 3. Then all new CSS technologies that got started after CSS2 started with level 1. So some CSS technologies are at level 1 (e.g., CSS Variables Level 1) while others are at level 5 (e.g., Media Queries Level 5) at the time of this writing.
+For this reason, we don’t talk about "CSS3" or "CSS4".
+We use the general term "CSS" and refer to individual technologies at their different levels.
+
+ARIA
+^^^^
+
+:term:`ARIA` (Accessible Rich Internet Applications) is a collection of standards developed by several working groups at the W3C that deal with accessibility of web technologies, mainly assistive technologies like screen readers.
+
 WHATWG and HTML
 ~~~~~~~~~~~~~~~
 
@@ -46,24 +64,6 @@ The main HTML specification is now worked on under the `whatwg/html repository <
 In May 2019, the details of this arrangement were worked out, and the `W3C and WHATWG agreed to collaborate <https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/>`__ on a single version of the HTML and DOM specifications.
 
 The WHATWG is leading work on things like HTML, Compatibility, Console Object, DOM, Encoding, Fetch, Fullscreen, URL and XHR.
-
-CSS WG
-~~~~~~
-
-The CSS WG is a working group at the W3C.
-CSS Specifications have levels instead of versions, and are backwards compatible.
-The people working on CSS decided at some point that each CSS technology should have levels.
-CSS 1 was the beginning.
-Both CSS1 and CSS2 were monolithic specifications defining all of CSS features at that level.
-After CSS2, the CSS WG started modularizing the specification by technology.
-New specifications that built on top of CSS2 technologies became modules at level 3. Then all new CSS technologies that got started after CSS2 started with level 1. So some CSS technologies are at level 1 (e.g., CSS Variables Level 1) while others are at level 5 (e.g., Media Queries Level 5) at the time of this writing.
-For this reason, we don’t talk about "CSS3" or "CSS4".
-We use the general term "CSS" and refer to individual technologies at their different levels.
-
-ARIA
-~~~~
-
-:term:`ARIA` (Accessible Rich Internet Applications) is a collection of standards developed by several working groups at the W3C that deal with accessibility of web technologies, mainly assistive technologies like screen readers.
 
 Other Standards Bodies and Foundations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
