@@ -119,9 +119,12 @@ I left a few years later to work on the linux operating system Debian through `O
 There I got my first experience in testing, working on the `Reproducible Builds <https://reproducible-builds.org/>`__ project (the goal: test all of Debian for "reproducibility" -- every binary Debian ships should be reproducible bit-for-bit by any curious developer!).
 
 Eventually, I needed a regular job again, so I began looking for a work place where I could contribute to free and open source software projects.
-Luckily, I found Bocoup, a software consulting company that specializes in reliability, standards and testing of the web platform. In my first interview I was exposed to the ECMAScript specification and the test262 test suite, and I thought, "This is cool, I would totally work on this." It is through my work at Bocoup that I got involved in all of the answers to question 1 above!
+Luckily, I found Bocoup, a software consulting company that specializes in reliability, standards and testing of the web platform.
+In my first interview I was exposed to the ECMAScript specification and the test262 test suite, and I thought, "This is cool, I would totally work on this."
+It is through my work at Bocoup that I got involved in all of the answers to question 1 above!
 
-**3. What skills do you rely on most in your work? Which do you find most important for success?**
+**3. What skills do you rely on most in your work?
+Which do you find most important for success?**
 
 First, patience.
 Writing and reading and understanding specifications, writing tests of specifications, getting to the bottom of a web platform bug (is the bug in the specification? the implementation? the test I wrote???) can take a while.
@@ -139,13 +142,15 @@ It's nice to work on a product when you are the consumer!
 
 **4. What advice would you have given to your younger self when you were starting out?**
 
-You will be rewarded for your courage and humility! Keep going!
+You will be rewarded for your courage and humility!
+Keep going!
 
 Also, you will find yourself in committee meetings with mostly men who have much more experience than you (more experience on the committee, specifically) -- this can be intimidating.
 Remember there are good people on those committees, people who are excited to have more diversity, excited to have you contribute, and want to help you succeed.
 Focus on those people when you ask questions and offer opinions!
 
-**5. Why do you think web standards work is important? What's at stake?**
+**5. Why do you think web standards work is important?
+What's at stake?**
 
 I initially thought free and open source software was the most important way to keep technology democratic.
 But really, it keeps technology do-ocratic: whoever does the most work gets the most say.
