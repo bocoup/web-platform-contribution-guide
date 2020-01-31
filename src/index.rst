@@ -52,7 +52,7 @@ The web can only work if it's built with an understanding of all its constituent
 This guide aims to help you participate in the continuing design of the web platform so that your perspective can help shape the direction of the web.
 
 In this guide, we are going to focus on bugs in a web standard for browsers.
-Bugs are a great way to get started because in order to get them fixed, you have to touch all of the components of a web standard; a specification, a patch to the source code of a browser engine, and interoperability tests.
+Bugs are a great way to get started because to get them fixed, you have to touch all of the components of a web standard; a specification, a patch to the source code of a browser engine, and interoperability tests.
 You might be surprised by how working on browser bugs will get you moving into deep parts of the web platform!
 Many of the most prolific contributors to the web platform got their start by working on interoperability bugs between browsers.
 
