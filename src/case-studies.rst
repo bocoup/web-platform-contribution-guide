@@ -8,14 +8,14 @@ Case Study Examples
 
 **Problem**
 
-The ``:defined`` pseudo-class was added in order to allow differentiating between custom elements that have been successfully constructed from those that have not yet been constructed or have failed to construct.
+The ``:defined`` pseudo-class was added to allow differentiating between custom elements that have been successfully constructed from those that have not yet been constructed or have failed to construct.
 This pseudo-class was `defined in HTML <https://html.spec.whatwg.org/multipage/semantics-other.html#selector-defined>`__ but did not have a definition in the `Selectors specification <https://drafts.csswg.org/selectors/>`__.
 
 **Solution**
 
 At first, we (Bocoup) proposed to move the definition from HTML into Selectors.
-However, it was pointed out that the Selectors specification should have a host language-agnostic high-level definition,
-and the host language (e.g., HTML) should have a precise definition as appropriate for that language.
+Anne van Kesteren commented that previous features are defined as host language-agnostic in the Selectors specification,
+and the host language (such as HTML) have precise definitions as appropriate for that language.
 
 We `specified a high-level definition <https://github.com/w3c/csswg-drafts/pull/3735>`__ in the Selectors specification with examples showing how to use it for HTML.
 

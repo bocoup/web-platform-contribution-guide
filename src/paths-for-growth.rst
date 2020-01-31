@@ -35,7 +35,7 @@ In the :doc:`bug-guide` section of this guidebook, you learned how to write and 
 There are thousands of tests, and thus plenty of opportunities to dive deep into certain types of tests, or tests for certain specifications.
 
 The WPT project is also home to tools and infrastructure -- test runners, bots, servers, and more -- that keep WPT running smoothly.
-Monitoring and maintaining this infrastructure is a critical part of WPT work, just as important as contributing tests.
+Monitoring and maintaining this infrastructure is a critical part of WPT work, equally important as contributing tests.
 As with testing, there are always opportunities to meaningfully support the web platform through infrastructure work.
 
 Once you've mastered the process of fixing or implementing tests, or fulfilling infrastructure support needs, you may want to take on a bigger role by joining a team or administering a component of the infrastructure.
@@ -52,7 +52,7 @@ Become a Spec Editor
 ~~~~~~~~~~~~~~~~~~~~
 
 If you find yourself drawn to certain domains, such as accessibility for example, you can also contribute to the web platform by working on those specifications.
-For W3C and ECMA specifications, you will need to 'join' the working group or technical committee in order to contribute in an official capacity, but in most cases you can get started by participating in the conversations and issues happening wherever the spec is hosted on :term:`GitHub`.
+For W3C and ECMA specifications, you will need to 'join' the working group or technical committee to contribute in an official capacity, but in most cases you can get started by participating in the conversations and issues happening wherever the spec is hosted on :term:`GitHub`.
 For the WHATWG, your or your employer needs to sign the participation agreement to make direct contributions to the spec text.
 Find the sections that are interesting and relevant to you, and start by introducing yourself, your use case(s), or see if there's an issue on the repository you can help solve.
 Lastly, spend time learning the processes the group uses to make decisions and advance work.
@@ -100,7 +100,7 @@ It's a good idea to be an active member of a working group community for some ti
 To be successful in this role, you'll need to be able to build and maintain good working relationships.
 You'll need to be able to help others work through disagreements and conflict, and you'll need a good understanding of the group's technical decision-making, historical contexts, and other dynamics that can influence the productivity of the group.
 It takes a lot of time to gather this knowledge and experience, so think carefully before stepping into this role.
-When you do, you'll find that it just as rewarding as it is challenging.
+When you do, you'll find that it equally rewarding as it is challenging.
 
 To prepare for such a responsibility, you can start out by volunteering for or chairing sub-committees or task groups within the working group.
 This will help you get a sense of what the experience will be like in a lower-stakes setting.
@@ -116,7 +116,7 @@ In starting or joining a group, you can share your vision, ideas for possible so
 One possible path is to start a community group and invite people from outside the W3C who care about the domain you're exploring to give feedback on their pain points where that domain intersects with web.
 Your community group can then take those pain points, synthesize them into use cases, and bring them to existing working groups to include in their standardization work.
 
-In 2011, the Games Community Group did just this, producing a set of use cases and bringing them to various W3C working groups to be addressed.
+In 2011, the Games Community Group did exactly this, producing a set of use cases and bringing them to various W3C working groups to be addressed.
 By 2019, nearly all of the pain points the CG identified for web games developers had been addressed.
 You can read one of the `initial Games CG reports from 2011 <https://docs.google.com/a/bocoup.com/document/pub?id=1fs1hpZvP05ViEWtaLSmNQUV_PW2jCWS5Oe2GAdBKgl0>`__.
 

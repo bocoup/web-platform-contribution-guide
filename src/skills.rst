@@ -1,25 +1,25 @@
 Skills
 ------
 
-Before we get to the step by step guide on how to contribute to a web standard and in order to make that guide easier to follow, we’d like to step through an overview of the skills involved in working on web standards.
+Before we get to the step by step guide on how to contribute to a web standard and to make that guide easier to follow, we’d like to step through an overview of the skills involved in working on web standards.
 The goal of this skills overview is to orient you in the guide so that you can see what skills you would be setting out to master if you choose to build a career in web standards.
 If you prefer to learn by doing, you can skip this skills overview and jump right into the `step by step guide <Step by step guide to fix a W3C or WHATWG bug>`_.
-You do not need to have all of these skills in order to start contributing to the web platform, but we have included this overview for those of you that would like a higher level learning map.
+You do not need to have all of these skills to start contributing to the web platform, but we have included this overview for those of you that would like a higher level learning map.
 These skills are extrapolated from internal retrospective documentation at Bocoup for a Mozilla funded project to `improve the interoperability of the fieldset element <https://bocoup.com/work/fieldset-interoperability>`__.
 
 Consensus Building
 ~~~~~~~~~~~~~~~~~~
 
 The web platform is all about consensus.
-Consensus on the web platform involves getting many different people from many different groups to agree on how a web technology should work.
-On any given change to the web platform, you should expect to talk to between 5 and 20 different people from 2-4 different companies and multiple standards groups (such as working groups or technical committees).
+Consensus on the web platform involves getting many different people from many different groups to agree on a web technology specification.
+On any given change to the web platform, you can expect to talk to between 5 and 20 different people from 2-4 different companies and multiple standards groups (such as working groups or technical committees).
 
 All of the skills covered in this chapter contribute to your ability to build consensus across a large group of stakeholders.
 We build consensus by talking to people, collecting feedback, and modifying our solutions to meet their needs and requests.
 Every change to the web platform has its own nuanced needs for consensus.
 
 When working on a change to a web browser, for example, it is important to get feedback from the specification editor, a WPT maintainer, and from a person or people who would be implementing your change within each browser engineering team.
-Sometimes you’ll also need to make your case to the manager of the person who would be implementing your change in the browser engine in order to get the work prioritized.
+Sometimes you’ll also need to make your case to the manager of the person who would be implementing your change in the browser engine to get the work prioritized.
 
 Figuring out who to talk to about what and when can be a difficult project in its own right for a beginner because a lot of this consensus work is done between people who already know each other, know what each other work on, and know who has power and influence over what technology areas in the web.
 This knowledge is a key part of changing the web.
@@ -40,14 +40,14 @@ Looking at Data
 
 Research also involves modeling compatibility with the existing platform.
 For changes to web browsers, we model compatibility using the HTTP Archive, a database of twice-a-month crawls of the top 5,000,000 most visited websites consisting of those pages HTTP response bodies.
-We query this database to see how popular web pages use the web platform in order to understand how a technology is used.
+We query this database to see how popular web pages use the web platform to understand how a technology is used.
 We use this data to reason about the risks to a browser for changing things in terms of how it will effect web page rendering for the people who use that browser.
 A user will change browsers if rendering on their favorite websites changes, or if a site they use stops working.
 Browser companies will not make a change if it causes a person to stop using that web browser.
 
 Another possibility to collecting data is to implement instrumentation in a web browser to measure how often a feature is used.
 For Chromium, this is called a "use counter"; Firefox calls this "telemetry".
-A benefit over HTTP Archive research is that it is able to reach effectively anything that users access.
+A benefit over HTTP Archive research is that it is able to reach effectively anything that users use, including when logged in to a site.
 A disadvantage is that it takes weeks or months before reliable data is available with this method.
 
 Soliciting Feedback
@@ -88,7 +88,7 @@ Don’t be discouraged if these documents look like foreign languages to you at 
 They are!
 
 Writing specification prose is in principle similar to writing code.
-You should think about writing a specification as though you are implementing it as a program.
+Think about writing a specification as though you are implementing it as a program.
 With today’s standards of spec writing, that is the level of fidelity you want from a specification.
 It is not enough to describe how something works, we need to precisely describe what needs to be done to implement it completely, including all edge cases and error handling.
 
@@ -111,9 +111,9 @@ The decision about where to specify something ultimately impacts the maintainer(
 It is important to make sure that the specification maintainer is comfortable maintaining the spec prose.
 You can figure this out by reading issues and discussion notes, or by asking them directly.
 
-There is usually no hard rule for where something should go, but we can use our intuition and specification search skill to figure this out.
-For example, if you have a CSS selector that you want to specify, it should likely go in a CSS WG Selectors spec.
-We want to use our searching skills to figure out where the issue is being talked about, and what the emergent consensus of where the technology should be specified.
+There is usually no hard rule for where to put something, but we can use our intuition and specification search skill to figure this out.
+For example, if you have a CSS selector that you want to specify, a first candidate is the CSS WG Selectors spec.
+We want to use our searching skills to figure out where the issue is being talked about, and what the emergent consensus of where the technology is to be specified.
 
 Sometimes behavior gets specified in a completely different spec while it is being worked out.
 Maybe that person wanted to keep it in a different spec while they were iterating on the design of the feature until it was stable, so that once it was stable it can be put in its proper home.
@@ -165,7 +165,7 @@ This is common in HTML, but can be confusing at first.
 Requirement
 '''''''''''
 
-A requirement is something that a particular conformance class (e.g., document or user agent) needs to do in order to conform to the specification.
+A requirement is something that a particular conformance class (for example, document or user agent) needs to do to conform to the specification.
 For example:
 
     If the ``itemprop`` attribute is specified on an ``a`` element, then the ``href`` attribute must also be specified.
@@ -197,14 +197,14 @@ For example:
 
         5. Let *hyperlink suffix* be a U+003F QUESTION MARK character, the value of *x* expressed as a base-ten integer using ASCII digits, a U+002C COMMA character (,), and the value of *y* expressed as a base-ten integer using ASCII digits.
 
-    2. Follow the hyperlink or download the hyperlink created by the ``a`` element, as determined by the ``download`` attribute and any expressed user preference, passing *hyperlink suffix*, if the steps above defined it.
+    2. Follow the hyperlink or download the hyperlink created by the ``a`` element, as determined by the ``download`` attribute and any expressed user preference, passing *hyperlink suffix*, if the preceding steps defined it.
 
 In this example the HTML Standard is specifying the activation behavior algorithm.
 You can see how the definition for "hyperlink" is used here.
-The algorithm also references other definitions, e.g., "Follow the hyperlink", which is a separate algorithm.
+The algorithm also references other definitions, such as "Follow the hyperlink", which is a separate algorithm.
 So that algorithm is invoked from this algorithm, similar to calling a function in programming.
 
-Algorithms in specifications are usually written to be clear and easy to follow, while an implementation might use a different algorithm that is optimized for performance, memory usage, or power consumption.
+Algorithms in specifications are usually written to be clear and understandable, while an implementation might use a different algorithm that is optimized for performance, memory usage, or power consumption.
 If the end result is equivalent, then the implementation is conforming.
 
 Definition
@@ -215,12 +215,12 @@ For example:
 
     Hyperlink:
 
-    These are links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, e.g. to visit them in a browser or download them.
+    These are links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, for example, to visit them in a browser or download them.
 
 In this example, the HTML standard is defining what a hyperlink is, so that it can be referenced later.
 Definitions in one specification can also be referenced by other specifications.
 
-It should be possible (in principle) to expand each reference with its definition without changing the meaning of the specification.
+It ought to be possible (in principle) to expand each reference with its definition without changing the meaning of the specification.
 For example:
 
     Let *hyperlink suffix* be a U+003F QUESTION MARK character, the value of *x* expressed as a base-ten integer using **ASCII digits**, a U+002C COMMA character (,), and the value of *y* expressed as a base-ten integer using **ASCII digits**.
@@ -247,7 +247,7 @@ For example:
 
     If the ``a`` element has an ``href`` attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents.
 
-    If the ``a`` element has no ``href`` attribute, then the element represents a placeholder for where a link might otherwise have been placed, if it had been relevant, consisting of just the element's contents.
+    If the ``a`` element has no ``href`` attribute, then the element represents a placeholder for where a link might otherwise have been placed, if it had been relevant, consisting of only the element's contents.
 
     Example: If a site uses a consistent navigation toolbar on every page, then the link that would normally link to the page itself could be marked up using an ``a`` element:
 
@@ -265,8 +265,8 @@ For example:
 First, the specification states what an ``a`` element represents depending on whether it has an ``href`` attribute.
 Then it gives an example to demonstrate a case where it makes sense to omit the ``href`` attribute, to support the previous statement.
 
-Examples are non-normative; they should not contain any requirements.
-It should be possible to remove all examples from a specification without changing the meaning of the specification.
+Examples are non-normative; they cannot contain any requirements.
+It ought to be possible to remove all examples from a specification without changing the meaning of the specification.
 
 Note
 ''''
@@ -277,10 +277,10 @@ For example:
 
     Note: The ``href`` attribute on ``a`` and ``area`` elements is not required; when those elements do not have ``href`` attributes they do not create hyperlinks.
 
-In this example we are explaining that an ``href`` attribute is not necessary in order to have a valid anchor tag.
+In this example we are explaining that an ``href`` attribute is not necessary to have a valid anchor tag.
 
-Notes are non-normative; they should not contain any requirements.
-It should be possible to remove all notes from a specification without changing the meaning of the specification.
+Notes are non-normative; they cannot not contain any requirements.
+It ought to be possible to remove all notes from a specification without changing the meaning of the specification.
 
 Warning
 '''''''
@@ -320,8 +320,8 @@ Non-normative things are everything else.
 
 The normative parts represent what test cases need to test and what implementations have to do.
 
-You should therefore make sure that the thing you want to specify behaves as intended as a result of the requirements you specify.
-Any examples, notes, and statements of fact should only serve to make the specification easier to understand.
+Therefore, make sure that the thing you want to specify behaves as intended as a result of the requirements you specify.
+Any examples, notes, and statements of fact only serve to make the specification easier to understand.
 If a feature is defined only by statements of fact and examples, and no requirements, then it is technically not defined.
 
 Avoid ambiguity
@@ -331,7 +331,7 @@ A specification needs to be unambiguous in its requirements and algorithms so th
 
 When possible, express your intention in terms of an algorithm.
 Writing an algorithm usually reduces ambiguity compared to stating requirements based on specific cases.
-It is possible to reason that an algorithm covers 100% of possible cases and an algorithm inherently states the order in which things should happen.
+It is possible to reason that an algorithm covers 100% of possible cases and an algorithm inherently states the order in which things are required to happen.
 
 For example, the specification for the DOM ``createElementNS()`` method as `defined in the (superseded) DOM Level 3 Core specification <https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/core.html#ID-DocCrElNS>`__ states that some things cause an exception to be thrown:
 
@@ -339,7 +339,7 @@ For example, the specification for the DOM ``createElementNS()`` method as `defi
 
     ``NAMESPACE_ERR``: Raised if the ``qualifiedName`` is a malformed qualified name, if the ``qualifiedName`` has a prefix and the ``namespaceURI`` is null, or if the ``qualifiedName`` has a prefix that is "xml" and the ``namespaceURI`` is different from "``http://www.w3.org/XML/1998/namespace``" [XML Namespaces], or if the ``qualifiedName`` or its prefix is "xmlns" and the ``namespaceURI`` is different from "``http://www.w3.org/2000/xmlns/``", or if the ``namespaceURI`` is "``http://www.w3.org/2000/xmlns/``" and neither the ``qualifiedName`` nor its prefix is "xmlns".
 
-If a case matches both the criteria for ``INVALID_CHARACTER_ERR`` and ``NAMESPACE_ERR``, it is ambiguous which exception should be thrown.
+If a case matches both the criteria for ``INVALID_CHARACTER_ERR`` and ``NAMESPACE_ERR``, it is ambiguous which exception is expected be thrown.
 
 `In the current DOM Standard <https://dom.spec.whatwg.org/#namespaces>`__, this is unambiguous by the use of an algorithm, where it is clear that the check for ``InvalidCharacterError`` comes before the checks for ``NamespaceError``.
 
@@ -354,10 +354,10 @@ Testing
 ~~~~~~~
 
 Tests are one way software maintainers verify the correctness of their work.
-They can alert maintainers about bugs (i.e. when new tests are added which their project does not pass).
+They can alert maintainers about bugs (that is, when new tests are added which their project does not pass).
 That's particularly helpful on the web, where different implementations share the same tests and review each other's results.
 Maintainers prioritize fixing the problems that are unique to their project because those represent interoperability challenges for web developers.
-Separately, tests can also help maintainers avoid making mistakes (i.e. when they are changing code, and their change causes a new failure).
+Separately, tests can also help maintainers avoid making mistakes (that is, when they are changing code, and their change causes a new failure).
 
 Even if your contribution doesn't involve changing code directly, it may still be appropriate to write tests.
 
@@ -371,7 +371,7 @@ In that case, you'll need to write brand new tests from scratch!
 
 Many kinds of contributions won't involve tests.
 If you're still unsure about whether you ought to be working with tests, :doc:`there are plenty of people who can help you decide <directory>`.
-If you *do* find yourself writing tests, you should try to be thorough.
+If you *do* find yourself writing tests, try to be thorough.
 Think about the ways people might misinterpret the specification, and write tests that would show them their mistake.
 
 The process of writing tests varies greatly between the various test suites.
@@ -387,7 +387,7 @@ Filing bugs on a Browser
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Browser implementers are more likely to implement a proposed change if there is a bug reported for the change in their bug tracker.
-Therefore, filing a bug for each browser engine that should be changed is an important step.
+Therefore, filing a bug for each browser engine that has incorrect behavior is an important step.
 
 Here are links for filing a new bug for each major browser engine:
 
@@ -402,10 +402,10 @@ Don't worry if your bug gets marked as a duplicate, that is common and not a big
 
 The default template typically asks for steps to reproduce, on the assumption that the bug report needs reproduction and debugging of the browser to understand what the actual bug is.
 For bugs asking to implement a specification change, it might not always add clarity with reproduction steps.
-If you have a specification issue that explains the problem, and a pull request (PR) for a proposed specification change and a PR for a web-platform-tests test case, then the browser bug can often just briefly explain the problem and then link to the relevant specification issue and the PRs.
+If you have a specification issue that explains the problem, and a pull request (PR) for a proposed specification change and a PR for a web-platform-tests test case, then the browser bug can often briefly explain the problem and then link to the relevant specification issue and the PRs.
 
 Make sure to write a clear summary of the bug.
-The summary should briefly but clearly say what the bug is.
+Briefly but clearly say what the bug is.
 
 Here are some good examples:
 
