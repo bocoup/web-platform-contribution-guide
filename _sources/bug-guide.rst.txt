@@ -28,7 +28,7 @@ Clarification bugs
 These are bugs where the main work is clarifying what the specification says.
 Often times browsers will agree on a behavior, and the relevant specification will be inaccurate, or underspecified for the correct behavior.
 If you want to dive into the spec and spec tooling without digging into browsers, this is the type of bug for you.
-The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in his category:
+The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in this category:
 
 - `clarification <https://github.com/whatwg/html/labels/clarification>`__
 - `Needs Example or Figure <https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure>`__
@@ -38,7 +38,7 @@ Interoperability bugs
 
 Interop bugs deal with situations in which browsers behave differently from each other, and the specification either agrees with one or two, or requires a behavior that is not implemented anywhere, or is not clear about the correct behavior.
 If you want to do research into how most websites behave, and determine what is web compatible, this is the type of bug for you.
-The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in his category:
+The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in this category:
 
 - `interop <https://github.com/whatwg/html/labels/interop>`__
 - `needs compat analysis <https://github.com/whatwg/html/labels/needs%20compat%20analysis>`__
@@ -82,14 +82,14 @@ See `Reducing testcases <https://developer.mozilla.org/en-US/docs/Mozilla/QA/Red
 Load this demo in different browsers to see what the result is.
 
 If you get different results in different browsers, then that indicates that there may be an interop bug that requires closer investigation.
-If the demo gives the same result in all browsers, but they don't do what the spec requires, then possibly the spec should be changed to match implemented reality.
+If the demo gives the same result in all browsers, but they don't do what the spec requires, then it is often reasonable to change the spec to match implemented reality.
 If all browsers and the spec agree, then it indicates that there's no bug!
 It can still be worthwhile to submit tests in such cases, to ensure it doesn't regress, and to demonstrate that the specification is interoperably implemented.
 
 Communicate about your work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Comment in the specification issue, saying that you wish to work on it.
+Comment in the specification issue, saying that you want to work on it.
 You can link to your demo and any other findings so far.
 This can avoid duplicating work, but you may also get useful feedback about things to consider.
 
@@ -101,13 +101,13 @@ In some cases, however, there exist reasons to go with the minority behavior, or
 For example, if all browsers do something that is non-sensical and confusing, then that is an argument to specify something else.
 
 However, web compatibility often constrains what changes browsers are able to make.
-If web content stops working when a browser implements a change, then there needs to be a very compelling reason to go through with that change (e.g., a security fix).
+If web content stops working when a browser implements a change, then there needs to be a very compelling reason to go through with that change (for example, a security fix).
 Otherwise, browsers will most likely not ship that change, lest they lose users to competing browsers that are compatible with that web content.
 Therefore, it is useful to research web content, to investigate if there are web compatibility constraints.
 
 This can be done with `HTTP Archive <https://httparchive.org>`__, a dataset of several million web pages, which can be queried `using the BigQuery service <https://httparchive.org/faq#how-do-i-use-bigquery-to-write-custom-queries-over-the-data>`__.
 See `HTTP Archive example <https://github.com/whatwg/html/issues/2379#issuecomment-281921181>`__.
-Another way is with `Use Counters <https://chromestatus.com/metrics/feature/popularity>`__ -- for Chromium, these count the number of page views that hit a particular code path in the implementation.
+Another way is with `Use Counters <https://chromestatus.com/metrics/feature/popularity>`__ -- for Chromium, these count the number of page views that exercises a particular code path in the implementation.
 There are many use counters already, but new ones can be added as well.
 Adding a use counter means changing browser code, which makes this a more advanced technique compared to researching HTTP Archive.
 Note that a new use counter needs to reach stable to get meaningful data, which can take `2-3 months <https://www.chromium.org/blink/when-will-a-fix-ship-in-chrome-stable-or-canary>`__.
@@ -127,7 +127,7 @@ See :doc:`directory` for how to find the relevant implementers.
 Possibly they will all agree with your suggestion, in which case you can go ahead with the next step!
 However, they may also disagree or provide feedback where you need to iterate on the proposal until there is agreement on the general approach, and we need a more concrete proposal to review the specifics.
 
-See `example spec issue <https://github.com/w3c/fxtf-drafts/issues/120>`__ where there was discussion about how the stringifier for ``DOMMatrix`` should work.
+See `example spec issue <https://github.com/w3c/fxtf-drafts/issues/120>`__ where there was discussion about the behavior for the stringifier for ``DOMMatrix``.
 
 Change the spec
 ~~~~~~~~~~~~~~~
@@ -144,7 +144,7 @@ In short, the steps are:
 4. Make the change.
 5. Add the changed file to staging: ``git add the-file.bs``
 6. Commit the change with ``git commit``.
-   The commit message should say what you’re changing and why,
+   Say what you’re changing and why in the commit message,
    and also which issue that the change fixes (with ``Fixes: #1234.``).
    Read the project's contribution guidelines on how to write commit messages, in case there are specific things to consider.
 7. Push the commit to your fork.
@@ -157,13 +157,13 @@ Different specifications can have different tools for generating the document.
 This is usually documented in the ``README.md`` or ``CONTRIBUTING.md`` file.
 For example, :term:`CSS` specifications, as well as most WHATWG specifications,
 use `Bikeshed <https://tabatkins.github.io/bikeshed/>`__,
-which can be installed locally but can also be invoked via a web service.
-Many specifications, e.g. `ARIA <https://github.com/w3c/aria>`__,
+which can be installed locally but can also be invoked through a web service.
+Many specifications, such as `ARIA <https://github.com/w3c/aria>`__,
 use `ReSpec <http://www.w3.org/respec/>`__.
 The HTML Standard has a `custom build tool called Wattsi <https://github.com/whatwg/html/blob/master/CONTRIBUTING.md>`__.
 These preprocessors use slightly different markup for doing things such as cross-references.
 
-You should read the documentation on how the specification's source text is formatted.
+Read the documentation on how the specification's source text is formatted.
 It may have a style guide on how to break lines or on how to phrase things.
 
 If you can't find documentation (or if you're having trouble understanding it),
@@ -186,15 +186,15 @@ For W3C specifications, there is an `ipr check <https://labs.w3.org/repo-manager
   and then `link your W3C and GitHub accounts together <https://www.w3.org/users/myprofile/connectedaccounts>`__.
 
 In either case, you can ask for help in the pull request, or reach out to the working group chairs.
-Each W3C specification should have a "Status of this document" section,
+Each W3C specification has a "Status of this document" section,
 which says which working group it falls under.
 For example, "This document was produced by the CSS Working Group.",
 which links to the `Working Group home page <https://www.w3.org/Style/CSS/members>`__,
-which should have a link to the `working group's charter <https://www.w3.org/Style/2016/css-2016>`__,
+which has a link to the `working group's charter <https://www.w3.org/Style/2016/css-2016>`__,
 which says at the top who the chairs are.
 
 For WHATWG standards, you need to `sign the participation agreement <https://participate.whatwg.org/>`__
-in order to have a pull request accepted (regardless of what the change is).
+to have a pull request accepted (regardless of what the change is).
 
 If the spec is changed, that's great!
 But it's not enough.
@@ -209,14 +209,14 @@ Write a web-platform-tests test
 At this point, if you have a minimal demo from earlier when you `verified the bug <#verify-the-bug>`_,
 you can convert that to a web-platform-tests test.
 
-There are `different kinds of tests <https://web-platform-tests.org/writing-tests/#test-type>`__, but most tests should be one of:
+There are `different kinds of tests <https://web-platform-tests.org/writing-tests/#test-type>`__, but the most common test kinds are:
 
 * `testharness.js tests <https://web-platform-tests.org/writing-tests/testharness.html>`__:
   for things that can be asserted in JavaScript.
   See also the `testharnes.js API documentation <https://web-platform-tests.org/writing-tests/testharness-api.html>`__.
 * `Reftests <https://web-platform-tests.org/writing-tests/reftests.html>`__:
   in the general case, these consist of one test page that exersices the thing to test,
-  and a reference page that should have identical rendering,
+  and a reference page that has identical rendering (when the test passes),
   but the reference achieves in a different way.
   These are good for testing rendering bugs.
   See also the `writing a reftest <https://web-platform-tests.org/writing-tests/reftest-tutorial.html>`__ tutorial.
@@ -226,8 +226,8 @@ you usually need to test more than one thing to verify that it is implemented co
 Further bugs can be found by enumerating and testing interesting cases, including edge cases and error cases.
 See `Making a Testing Plan <https://web-platform-tests.org/writing-tests/making-a-testing-plan.html>`__ for a walkthrough on how to decide what to test (and what not to test).
 
-If the spec change was to remove a feature, then tests that expect that feature to exist should typically be removed,
-but *also* there should be a "negative" test that verifies that the feature is *not* supported.
+If the spec change was to remove a feature, then remove tests that expect that feature to exist,
+but *also* add a "negative" test that verifies that the feature is *not* supported.
 For example, `custom-elements/historical.html <https://github.com/web-platform-tests/wpt/blob/master/custom-elements/historical.html>`__ tests that the v0 API of custom elements is not supported.
 
 When you have some tests, you can `submit them in a pull request <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
@@ -250,7 +250,7 @@ If it does, you can add a comment to it with any new information.
 :doc:`directory` contains tips on how to search for specific bugs.
 If you can't find a bug, report a new one!
 
-The bug report should say what the bug is, and what the expected behavior is.
+In the bug report, say what the bug is, and what the expected behavior is.
 Link to the spec change pull request, if there is one,
 or to the relevant part of the spec.
 Link to the web-platform-tests pull request with the new tests,
@@ -262,7 +262,7 @@ See `example bug <https://bugs.webkit.org/show_bug.cgi?id=172114>`__.
 * `Report a Chromium bug <https://crbug.com/new>`__
 
 When the bugs are reported, you can link to them in the pull request for the specification,
-so that it is easy to find and follow up later.
+so that it can be followed up later.
 
 If you've reached this point, you have done the heavy lifting towards fixing the bug!
 The situation for the bug is now much clearer for browser engine implementers,

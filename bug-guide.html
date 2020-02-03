@@ -54,7 +54,7 @@ Here is a list of the kinds of bugs you might run into, and the impact they’ll
 <p>These are bugs where the main work is clarifying what the specification says.
 Often times browsers will agree on a behavior, and the relevant specification will be inaccurate, or underspecified for the correct behavior.
 If you want to dive into the spec and spec tooling without digging into browsers, this is the type of bug for you.
-The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in his category:</p>
+The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in this category:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/whatwg/html/labels/clarification">clarification</a></p></li>
 <li><p><a class="reference external" href="https://github.com/w3c/csswg-drafts/labels/Needs%20Example%20or%20Figure">Needs Example or Figure</a></p></li>
@@ -64,7 +64,7 @@ The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in 
 <h4>Interoperability bugs<a class="headerlink" href="#interoperability-bugs" title="Permalink to this headline">¶</a></h4>
 <p>Interop bugs deal with situations in which browsers behave differently from each other, and the specification either agrees with one or two, or requires a behavior that is not implemented anywhere, or is not clear about the correct behavior.
 If you want to do research into how most websites behave, and determine what is web compatible, this is the type of bug for you.
-The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in his category:</p>
+The whatwg/html and and w3c/csswg-drafts repositories maintain lists of bugs in this category:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/whatwg/html/labels/interop">interop</a></p></li>
 <li><p><a class="reference external" href="https://github.com/whatwg/html/labels/needs%20compat%20analysis">needs compat analysis</a></p></li>
@@ -108,13 +108,13 @@ A demo is a page that reproduces the bug, but might not have a pass condition.
 See <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Reducing_testcases">Reducing testcases</a> on MDN for a guide on how to do this when starting with a full web page.
 Load this demo in different browsers to see what the result is.</p>
 <p>If you get different results in different browsers, then that indicates that there may be an interop bug that requires closer investigation.
-If the demo gives the same result in all browsers, but they don’t do what the spec requires, then possibly the spec should be changed to match implemented reality.
+If the demo gives the same result in all browsers, but they don’t do what the spec requires, then it is often reasonable to change the spec to match implemented reality.
 If all browsers and the spec agree, then it indicates that there’s no bug!
 It can still be worthwhile to submit tests in such cases, to ensure it doesn’t regress, and to demonstrate that the specification is interoperably implemented.</p>
 </div>
 <div class="section" id="communicate-about-your-work">
 <h2>Communicate about your work<a class="headerlink" href="#communicate-about-your-work" title="Permalink to this headline">¶</a></h2>
-<p>Comment in the specification issue, saying that you wish to work on it.
+<p>Comment in the specification issue, saying that you want to work on it.
 You can link to your demo and any other findings so far.
 This can avoid duplicating work, but you may also get useful feedback about things to consider.</p>
 </div>
@@ -124,12 +124,12 @@ This can avoid duplicating work, but you may also get useful feedback about thin
 In some cases, however, there exist reasons to go with the minority behavior, or to come up with a completely novel approach.
 For example, if all browsers do something that is non-sensical and confusing, then that is an argument to specify something else.</p>
 <p>However, web compatibility often constrains what changes browsers are able to make.
-If web content stops working when a browser implements a change, then there needs to be a very compelling reason to go through with that change (e.g., a security fix).
+If web content stops working when a browser implements a change, then there needs to be a very compelling reason to go through with that change (for example, a security fix).
 Otherwise, browsers will most likely not ship that change, lest they lose users to competing browsers that are compatible with that web content.
 Therefore, it is useful to research web content, to investigate if there are web compatibility constraints.</p>
 <p>This can be done with <a class="reference external" href="https://httparchive.org">HTTP Archive</a>, a dataset of several million web pages, which can be queried <a class="reference external" href="https://httparchive.org/faq#how-do-i-use-bigquery-to-write-custom-queries-over-the-data">using the BigQuery service</a>.
 See <a class="reference external" href="https://github.com/whatwg/html/issues/2379#issuecomment-281921181">HTTP Archive example</a>.
-Another way is with <a class="reference external" href="https://chromestatus.com/metrics/feature/popularity">Use Counters</a> – for Chromium, these count the number of page views that hit a particular code path in the implementation.
+Another way is with <a class="reference external" href="https://chromestatus.com/metrics/feature/popularity">Use Counters</a> – for Chromium, these count the number of page views that exercises a particular code path in the implementation.
 There are many use counters already, but new ones can be added as well.
 Adding a use counter means changing browser code, which makes this a more advanced technique compared to researching HTTP Archive.
 Note that a new use counter needs to reach stable to get meaningful data, which can take <a class="reference external" href="https://www.chromium.org/blink/when-will-a-fix-ship-in-chrome-stable-or-canary">2-3 months</a>.
@@ -145,7 +145,7 @@ and ask editors and implementers if they agree with your suggestion.
 See <a class="reference internal" href="directory.html"><span class="doc">Finding who to talk to</span></a> for how to find the relevant implementers.</p>
 <p>Possibly they will all agree with your suggestion, in which case you can go ahead with the next step!
 However, they may also disagree or provide feedback where you need to iterate on the proposal until there is agreement on the general approach, and we need a more concrete proposal to review the specifics.</p>
-<p>See <a class="reference external" href="https://github.com/w3c/fxtf-drafts/issues/120">example spec issue</a> where there was discussion about how the stringifier for <code class="docutils literal notranslate"><span class="pre">DOMMatrix</span></code> should work.</p>
+<p>See <a class="reference external" href="https://github.com/w3c/fxtf-drafts/issues/120">example spec issue</a> where there was discussion about the behavior for the stringifier for <code class="docutils literal notranslate"><span class="pre">DOMMatrix</span></code>.</p>
 </div>
 <div class="section" id="change-the-spec">
 <h2>Change the spec<a class="headerlink" href="#change-the-spec" title="Permalink to this headline">¶</a></h2>
@@ -160,7 +160,7 @@ The steps for doing so are mostly the same as <a class="reference external" href
 <li><p>Make the change.</p></li>
 <li><p>Add the changed file to staging: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">the-file.bs</span></code></p></li>
 <li><p>Commit the change with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>.
-The commit message should say what you’re changing and why,
+Say what you’re changing and why in the commit message,
 and also which issue that the change fixes (with <code class="docutils literal notranslate"><span class="pre">Fixes:</span> <span class="pre">#1234.</span></code>).
 Read the project’s contribution guidelines on how to write commit messages, in case there are specific things to consider.</p></li>
 <li><p>Push the commit to your fork.
@@ -173,12 +173,12 @@ Read the project’s contribution guidelines on how to write commit messages, in
 This is usually documented in the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> or <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code> file.
 For example, <a class="reference internal" href="glossary.html#term-css"><span class="xref std std-term">CSS</span></a> specifications, as well as most WHATWG specifications,
 use <a class="reference external" href="https://tabatkins.github.io/bikeshed/">Bikeshed</a>,
-which can be installed locally but can also be invoked via a web service.
-Many specifications, e.g. <a class="reference external" href="https://github.com/w3c/aria">ARIA</a>,
+which can be installed locally but can also be invoked through a web service.
+Many specifications, such as <a class="reference external" href="https://github.com/w3c/aria">ARIA</a>,
 use <a class="reference external" href="http://www.w3.org/respec/">ReSpec</a>.
 The HTML Standard has a <a class="reference external" href="https://github.com/whatwg/html/blob/master/CONTRIBUTING.md">custom build tool called Wattsi</a>.
 These preprocessors use slightly different markup for doing things such as cross-references.</p>
-<p>You should read the documentation on how the specification’s source text is formatted.
+<p>Read the documentation on how the specification’s source text is formatted.
 It may have a style guide on how to break lines or on how to phrase things.</p>
 <p>If you can’t find documentation (or if you’re having trouble understanding it),
 you can also review the surrounding text and try to match that style.
@@ -198,14 +198,14 @@ you need <a class="reference external" href="https://www.w3.org/accounts/request
 and then <a class="reference external" href="https://www.w3.org/users/myprofile/connectedaccounts">link your W3C and GitHub accounts together</a>.</p></li>
 </ul>
 <p>In either case, you can ask for help in the pull request, or reach out to the working group chairs.
-Each W3C specification should have a “Status of this document” section,
+Each W3C specification has a “Status of this document” section,
 which says which working group it falls under.
 For example, “This document was produced by the CSS Working Group.”,
 which links to the <a class="reference external" href="https://www.w3.org/Style/CSS/members">Working Group home page</a>,
-which should have a link to the <a class="reference external" href="https://www.w3.org/Style/2016/css-2016">working group’s charter</a>,
+which has a link to the <a class="reference external" href="https://www.w3.org/Style/2016/css-2016">working group’s charter</a>,
 which says at the top who the chairs are.</p>
 <p>For WHATWG standards, you need to <a class="reference external" href="https://participate.whatwg.org/">sign the participation agreement</a>
-in order to have a pull request accepted (regardless of what the change is).</p>
+to have a pull request accepted (regardless of what the change is).</p>
 <p>If the spec is changed, that’s great!
 But it’s not enough.
 Will browsers implement the change?
@@ -217,14 +217,14 @@ at which point there may exist enough web content that expect the bug to exist t
 <h2>Write a web-platform-tests test<a class="headerlink" href="#write-a-web-platform-tests-test" title="Permalink to this headline">¶</a></h2>
 <p>At this point, if you have a minimal demo from earlier when you <a class="reference external" href="#verify-the-bug">verified the bug</a>,
 you can convert that to a web-platform-tests test.</p>
-<p>There are <a class="reference external" href="https://web-platform-tests.org/writing-tests/#test-type">different kinds of tests</a>, but most tests should be one of:</p>
+<p>There are <a class="reference external" href="https://web-platform-tests.org/writing-tests/#test-type">different kinds of tests</a>, but the most common test kinds are:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://web-platform-tests.org/writing-tests/testharness.html">testharness.js tests</a>:
 for things that can be asserted in JavaScript.
 See also the <a class="reference external" href="https://web-platform-tests.org/writing-tests/testharness-api.html">testharnes.js API documentation</a>.</p></li>
 <li><p><a class="reference external" href="https://web-platform-tests.org/writing-tests/reftests.html">Reftests</a>:
 in the general case, these consist of one test page that exersices the thing to test,
-and a reference page that should have identical rendering,
+and a reference page that has identical rendering (when the test passes),
 but the reference achieves in a different way.
 These are good for testing rendering bugs.
 See also the <a class="reference external" href="https://web-platform-tests.org/writing-tests/reftest-tutorial.html">writing a reftest</a> tutorial.</p></li>
@@ -233,8 +233,8 @@ See also the <a class="reference external" href="https://web-platform-tests.org/
 you usually need to test more than one thing to verify that it is implemented correctly.
 Further bugs can be found by enumerating and testing interesting cases, including edge cases and error cases.
 See <a class="reference external" href="https://web-platform-tests.org/writing-tests/making-a-testing-plan.html">Making a Testing Plan</a> for a walkthrough on how to decide what to test (and what not to test).</p>
-<p>If the spec change was to remove a feature, then tests that expect that feature to exist should typically be removed,
-but <em>also</em> there should be a “negative” test that verifies that the feature is <em>not</em> supported.
+<p>If the spec change was to remove a feature, then remove tests that expect that feature to exist,
+but <em>also</em> add a “negative” test that verifies that the feature is <em>not</em> supported.
 For example, <a class="reference external" href="https://github.com/web-platform-tests/wpt/blob/master/custom-elements/historical.html">custom-elements/historical.html</a> tests that the v0 API of custom elements is not supported.</p>
 <p>When you have some tests, you can <a class="reference external" href="https://web-platform-tests.org/writing-tests/github-intro.html">submit them in a pull request</a>.</p>
 <p>The <a class="reference external" href="https://wpt.fyi">wpt.fyi website</a> shows test results for all tests in web-platform-tests in multiple browsers.
@@ -251,7 +251,7 @@ it’s time to report bugs on browser engines that need to be updated.</p>
 If it does, you can add a comment to it with any new information.
 <a class="reference internal" href="directory.html"><span class="doc">Finding who to talk to</span></a> contains tips on how to search for specific bugs.
 If you can’t find a bug, report a new one!</p>
-<p>The bug report should say what the bug is, and what the expected behavior is.
+<p>In the bug report, say what the bug is, and what the expected behavior is.
 Link to the spec change pull request, if there is one,
 or to the relevant part of the spec.
 Link to the web-platform-tests pull request with the new tests,
@@ -263,7 +263,7 @@ See <a class="reference external" href="https://bugs.webkit.org/show_bug.cgi?id=
 <li><p><a class="reference external" href="https://crbug.com/new">Report a Chromium bug</a></p></li>
 </ul>
 <p>When the bugs are reported, you can link to them in the pull request for the specification,
-so that it is easy to find and follow up later.</p>
+so that it can be followed up later.</p>
 <p>If you’ve reached this point, you have done the heavy lifting towards fixing the bug!
 The situation for the bug is now much clearer for browser engine implementers,
 so they can more easily evaluate and prioritize fixing the bug.</p>

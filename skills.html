@@ -34,21 +34,21 @@
             
   <div class="section" id="skills">
 <h1>Skills<a class="headerlink" href="#skills" title="Permalink to this headline">¶</a></h1>
-<p>Before we get to the step by step guide on how to contribute to a web standard and in order to make that guide easier to follow, we’d like to step through an overview of the skills involved in working on web standards.
+<p>Before we get to the step by step guide on how to contribute to a web standard and to make that guide easier to follow, we’d like to step through an overview of the skills involved in working on web standards.
 The goal of this skills overview is to orient you in the guide so that you can see what skills you would be setting out to master if you choose to build a career in web standards.
 If you prefer to learn by doing, you can skip this skills overview and jump right into the <a class="reference external" href="StepbystepguidetofixaW3CorWHATWGbug">step by step guide</a>.
-You do not need to have all of these skills in order to start contributing to the web platform, but we have included this overview for those of you that would like a higher level learning map.
+You do not need to have all of these skills to start contributing to the web platform, but we have included this overview for those of you that would like a higher level learning map.
 These skills are extrapolated from internal retrospective documentation at Bocoup for a Mozilla funded project to <a class="reference external" href="https://bocoup.com/work/fieldset-interoperability">improve the interoperability of the fieldset element</a>.</p>
 <div class="section" id="consensus-building">
 <h2>Consensus Building<a class="headerlink" href="#consensus-building" title="Permalink to this headline">¶</a></h2>
 <p>The web platform is all about consensus.
-Consensus on the web platform involves getting many different people from many different groups to agree on how a web technology should work.
-On any given change to the web platform, you should expect to talk to between 5 and 20 different people from 2-4 different companies and multiple standards groups (such as working groups or technical committees).</p>
+Consensus on the web platform involves getting many different people from many different groups to agree on a web technology specification.
+On any given change to the web platform, you can expect to talk to between 5 and 20 different people from 2-4 different companies and multiple standards groups (such as working groups or technical committees).</p>
 <p>All of the skills covered in this chapter contribute to your ability to build consensus across a large group of stakeholders.
 We build consensus by talking to people, collecting feedback, and modifying our solutions to meet their needs and requests.
 Every change to the web platform has its own nuanced needs for consensus.</p>
 <p>When working on a change to a web browser, for example, it is important to get feedback from the specification editor, a WPT maintainer, and from a person or people who would be implementing your change within each browser engineering team.
-Sometimes you’ll also need to make your case to the manager of the person who would be implementing your change in the browser engine in order to get the work prioritized.</p>
+Sometimes you’ll also need to make your case to the manager of the person who would be implementing your change in the browser engine to get the work prioritized.</p>
 <p>Figuring out who to talk to about what and when can be a difficult project in its own right for a beginner because a lot of this consensus work is done between people who already know each other, know what each other work on, and know who has power and influence over what technology areas in the web.
 This knowledge is a key part of changing the web.
 We’re working to make this a more transparent process through this guide, but it can still be opaque at times.
@@ -65,13 +65,13 @@ This means reading about the bug, and trying to make it happen again locally in 
 <h3>Looking at Data<a class="headerlink" href="#looking-at-data" title="Permalink to this headline">¶</a></h3>
 <p>Research also involves modeling compatibility with the existing platform.
 For changes to web browsers, we model compatibility using the HTTP Archive, a database of twice-a-month crawls of the top 5,000,000 most visited websites consisting of those pages HTTP response bodies.
-We query this database to see how popular web pages use the web platform in order to understand how a technology is used.
+We query this database to see how popular web pages use the web platform to understand how a technology is used.
 We use this data to reason about the risks to a browser for changing things in terms of how it will effect web page rendering for the people who use that browser.
 A user will change browsers if rendering on their favorite websites changes, or if a site they use stops working.
 Browser companies will not make a change if it causes a person to stop using that web browser.</p>
 <p>Another possibility to collecting data is to implement instrumentation in a web browser to measure how often a feature is used.
 For Chromium, this is called a “use counter”; Firefox calls this “telemetry”.
-A benefit over HTTP Archive research is that it is able to reach effectively anything that users access.
+A benefit over HTTP Archive research is that it is able to reach effectively anything that users use, including when logged in to a site.
 A disadvantage is that it takes weeks or months before reliable data is available with this method.</p>
 </div>
 <div class="section" id="soliciting-feedback">
@@ -104,7 +104,7 @@ After a few read-throughs of, for example, HTML, you’ll start to see patterns,
 Don’t be discouraged if these documents look like foreign languages to you at first.
 They are!</p>
 <p>Writing specification prose is in principle similar to writing code.
-You should think about writing a specification as though you are implementing it as a program.
+Think about writing a specification as though you are implementing it as a program.
 With today’s standards of spec writing, that is the level of fidelity you want from a specification.
 It is not enough to describe how something works, we need to precisely describe what needs to be done to implement it completely, including all edge cases and error handling.</p>
 <p>Knowing which spec to put the prose in can be difficult.
@@ -123,9 +123,9 @@ It is also very acceptable to ask in the issue where to specify it.</p>
 <p>The decision about where to specify something ultimately impacts the maintainer(s) of the spec (people listed on specification as editors) most directly.
 It is important to make sure that the specification maintainer is comfortable maintaining the spec prose.
 You can figure this out by reading issues and discussion notes, or by asking them directly.</p>
-<p>There is usually no hard rule for where something should go, but we can use our intuition and specification search skill to figure this out.
-For example, if you have a CSS selector that you want to specify, it should likely go in a CSS WG Selectors spec.
-We want to use our searching skills to figure out where the issue is being talked about, and what the emergent consensus of where the technology should be specified.</p>
+<p>There is usually no hard rule for where to put something, but we can use our intuition and specification search skill to figure this out.
+For example, if you have a CSS selector that you want to specify, a first candidate is the CSS WG Selectors spec.
+We want to use our searching skills to figure out where the issue is being talked about, and what the emergent consensus of where the technology is to be specified.</p>
 <p>Sometimes behavior gets specified in a completely different spec while it is being worked out.
 Maybe that person wanted to keep it in a different spec while they were iterating on the design of the feature until it was stable, so that once it was stable it can be put in its proper home.
 There are sometimes political reasons why things end up in the wrong place.
@@ -168,7 +168,7 @@ This is common in HTML, but can be confusing at first.</p>
 </div>
 <div class="section" id="requirement">
 <h4>Requirement<a class="headerlink" href="#requirement" title="Permalink to this headline">¶</a></h4>
-<p>A requirement is something that a particular conformance class (e.g., document or user agent) needs to do in order to conform to the specification.
+<p>A requirement is something that a particular conformance class (for example, document or user agent) needs to do to conform to the specification.
 For example:</p>
 <blockquote>
 <div><p>If the <code class="docutils literal notranslate"><span class="pre">itemprop</span></code> attribute is specified on an <code class="docutils literal notranslate"><span class="pre">a</span></code> element, then the <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute must also be specified.</p>
@@ -197,14 +197,14 @@ For example:</p>
 </ol>
 </div></blockquote>
 </li>
-<li><p>Follow the hyperlink or download the hyperlink created by the <code class="docutils literal notranslate"><span class="pre">a</span></code> element, as determined by the <code class="docutils literal notranslate"><span class="pre">download</span></code> attribute and any expressed user preference, passing <em>hyperlink suffix</em>, if the steps above defined it.</p></li>
+<li><p>Follow the hyperlink or download the hyperlink created by the <code class="docutils literal notranslate"><span class="pre">a</span></code> element, as determined by the <code class="docutils literal notranslate"><span class="pre">download</span></code> attribute and any expressed user preference, passing <em>hyperlink suffix</em>, if the preceding steps defined it.</p></li>
 </ol>
 </div></blockquote>
 <p>In this example the HTML Standard is specifying the activation behavior algorithm.
 You can see how the definition for “hyperlink” is used here.
-The algorithm also references other definitions, e.g., “Follow the hyperlink”, which is a separate algorithm.
+The algorithm also references other definitions, such as “Follow the hyperlink”, which is a separate algorithm.
 So that algorithm is invoked from this algorithm, similar to calling a function in programming.</p>
-<p>Algorithms in specifications are usually written to be clear and easy to follow, while an implementation might use a different algorithm that is optimized for performance, memory usage, or power consumption.
+<p>Algorithms in specifications are usually written to be clear and understandable, while an implementation might use a different algorithm that is optimized for performance, memory usage, or power consumption.
 If the end result is equivalent, then the implementation is conforming.</p>
 </div>
 <div class="section" id="definition">
@@ -213,11 +213,11 @@ If the end result is equivalent, then the implementation is conforming.</p>
 For example:</p>
 <blockquote>
 <div><p>Hyperlink:</p>
-<p>These are links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, e.g. to visit them in a browser or download them.</p>
+<p>These are links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, for example, to visit them in a browser or download them.</p>
 </div></blockquote>
 <p>In this example, the HTML standard is defining what a hyperlink is, so that it can be referenced later.
 Definitions in one specification can also be referenced by other specifications.</p>
-<p>It should be possible (in principle) to expand each reference with its definition without changing the meaning of the specification.
+<p>It ought to be possible (in principle) to expand each reference with its definition without changing the meaning of the specification.
 For example:</p>
 <blockquote>
 <div><p>Let <em>hyperlink suffix</em> be a U+003F QUESTION MARK character, the value of <em>x</em> expressed as a base-ten integer using <strong>ASCII digits</strong>, a U+002C COMMA character (,), and the value of <em>y</em> expressed as a base-ten integer using <strong>ASCII digits</strong>.</p>
@@ -242,7 +242,7 @@ For example:</p>
 For example:</p>
 <blockquote>
 <div><p>If the <code class="docutils literal notranslate"><span class="pre">a</span></code> element has an <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents.</p>
-<p>If the <code class="docutils literal notranslate"><span class="pre">a</span></code> element has no <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute, then the element represents a placeholder for where a link might otherwise have been placed, if it had been relevant, consisting of just the element’s contents.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">a</span></code> element has no <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute, then the element represents a placeholder for where a link might otherwise have been placed, if it had been relevant, consisting of only the element’s contents.</p>
 <p>Example: If a site uses a consistent navigation toolbar on every page, then the link that would normally link to the page itself could be marked up using an <code class="docutils literal notranslate"><span class="pre">a</span></code> element:</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
@@ -257,8 +257,8 @@ For example:</p>
 </div></blockquote>
 <p>First, the specification states what an <code class="docutils literal notranslate"><span class="pre">a</span></code> element represents depending on whether it has an <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute.
 Then it gives an example to demonstrate a case where it makes sense to omit the <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute, to support the previous statement.</p>
-<p>Examples are non-normative; they should not contain any requirements.
-It should be possible to remove all examples from a specification without changing the meaning of the specification.</p>
+<p>Examples are non-normative; they cannot contain any requirements.
+It ought to be possible to remove all examples from a specification without changing the meaning of the specification.</p>
 </div>
 <div class="section" id="note">
 <h4>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h4>
@@ -268,9 +268,9 @@ For example:</p>
 <blockquote>
 <div><p>Note: The <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute on <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">area</span></code> elements is not required; when those elements do not have <code class="docutils literal notranslate"><span class="pre">href</span></code> attributes they do not create hyperlinks.</p>
 </div></blockquote>
-<p>In this example we are explaining that an <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute is not necessary in order to have a valid anchor tag.</p>
-<p>Notes are non-normative; they should not contain any requirements.
-It should be possible to remove all notes from a specification without changing the meaning of the specification.</p>
+<p>In this example we are explaining that an <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute is not necessary to have a valid anchor tag.</p>
+<p>Notes are non-normative; they cannot not contain any requirements.
+It ought to be possible to remove all notes from a specification without changing the meaning of the specification.</p>
 </div>
 <div class="section" id="warning">
 <h4>Warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h4>
@@ -304,8 +304,8 @@ For example:</p>
 The normative things are requirements, and everything that are tied to requirements (conformance classes, algorithms, definitions).
 Non-normative things are everything else.</p>
 <p>The normative parts represent what test cases need to test and what implementations have to do.</p>
-<p>You should therefore make sure that the thing you want to specify behaves as intended as a result of the requirements you specify.
-Any examples, notes, and statements of fact should only serve to make the specification easier to understand.
+<p>Therefore, make sure that the thing you want to specify behaves as intended as a result of the requirements you specify.
+Any examples, notes, and statements of fact only serve to make the specification easier to understand.
 If a feature is defined only by statements of fact and examples, and no requirements, then it is technically not defined.</p>
 </div>
 <div class="section" id="avoid-ambiguity">
@@ -313,13 +313,13 @@ If a feature is defined only by statements of fact and examples, and no requirem
 <p>A specification needs to be unambiguous in its requirements and algorithms so that people can build conforming and interoperable implementations.</p>
 <p>When possible, express your intention in terms of an algorithm.
 Writing an algorithm usually reduces ambiguity compared to stating requirements based on specific cases.
-It is possible to reason that an algorithm covers 100% of possible cases and an algorithm inherently states the order in which things should happen.</p>
+It is possible to reason that an algorithm covers 100% of possible cases and an algorithm inherently states the order in which things are required to happen.</p>
 <p>For example, the specification for the DOM <code class="docutils literal notranslate"><span class="pre">createElementNS()</span></code> method as <a class="reference external" href="https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/core.html#ID-DocCrElNS">defined in the (superseded) DOM Level 3 Core specification</a> states that some things cause an exception to be thrown:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">INVALID_CHARACTER_ERR</span></code>: Raised if the specified <code class="docutils literal notranslate"><span class="pre">qualifiedName</span></code> is not an XML name according to the XML version in use specified in the <code class="docutils literal notranslate"><span class="pre">Document.xmlVersion</span></code> attribute.</p>
 <p><code class="docutils literal notranslate"><span class="pre">NAMESPACE_ERR</span></code>: Raised if the <code class="docutils literal notranslate"><span class="pre">qualifiedName</span></code> is a malformed qualified name, if the <code class="docutils literal notranslate"><span class="pre">qualifiedName</span></code> has a prefix and the <code class="docutils literal notranslate"><span class="pre">namespaceURI</span></code> is null, or if the <code class="docutils literal notranslate"><span class="pre">qualifiedName</span></code> has a prefix that is “xml” and the <code class="docutils literal notranslate"><span class="pre">namespaceURI</span></code> is different from “<code class="docutils literal notranslate"><span class="pre">http://www.w3.org/XML/1998/namespace</span></code>” [XML Namespaces], or if the <code class="docutils literal notranslate"><span class="pre">qualifiedName</span></code> or its prefix is “xmlns” and the <code class="docutils literal notranslate"><span class="pre">namespaceURI</span></code> is different from “<code class="docutils literal notranslate"><span class="pre">http://www.w3.org/2000/xmlns/</span></code>”, or if the <code class="docutils literal notranslate"><span class="pre">namespaceURI</span></code> is “<code class="docutils literal notranslate"><span class="pre">http://www.w3.org/2000/xmlns/</span></code>” and neither the <code class="docutils literal notranslate"><span class="pre">qualifiedName</span></code> nor its prefix is “xmlns”.</p>
 </div></blockquote>
-<p>If a case matches both the criteria for <code class="docutils literal notranslate"><span class="pre">INVALID_CHARACTER_ERR</span></code> and <code class="docutils literal notranslate"><span class="pre">NAMESPACE_ERR</span></code>, it is ambiguous which exception should be thrown.</p>
+<p>If a case matches both the criteria for <code class="docutils literal notranslate"><span class="pre">INVALID_CHARACTER_ERR</span></code> and <code class="docutils literal notranslate"><span class="pre">NAMESPACE_ERR</span></code>, it is ambiguous which exception is expected be thrown.</p>
 <p><a class="reference external" href="https://dom.spec.whatwg.org/#namespaces">In the current DOM Standard</a>, this is unambiguous by the use of an algorithm, where it is clear that the check for <code class="docutils literal notranslate"><span class="pre">InvalidCharacterError</span></code> comes before the checks for <code class="docutils literal notranslate"><span class="pre">NamespaceError</span></code>.</p>
 <p>A good way to reduce ambiguity is to write specification prose in terms of the <a class="reference external" href="https://infra.spec.whatwg.org/">Infra Standard</a>.
 This standard lays the groundwork for other standards.
@@ -332,10 +332,10 @@ For example, the DOM Standard is written in terms of the Infra Standard.</p>
 <div class="section" id="testing">
 <h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
 <p>Tests are one way software maintainers verify the correctness of their work.
-They can alert maintainers about bugs (i.e. when new tests are added which their project does not pass).
+They can alert maintainers about bugs (that is, when new tests are added which their project does not pass).
 That’s particularly helpful on the web, where different implementations share the same tests and review each other’s results.
 Maintainers prioritize fixing the problems that are unique to their project because those represent interoperability challenges for web developers.
-Separately, tests can also help maintainers avoid making mistakes (i.e. when they are changing code, and their change causes a new failure).</p>
+Separately, tests can also help maintainers avoid making mistakes (that is, when they are changing code, and their change causes a new failure).</p>
 <p>Even if your contribution doesn’t involve changing code directly, it may still be appropriate to write tests.</p>
 <p>If you’re helping to fix a browser which doesn’t follow an instruction in some specification, then you probably need to add some tests to the standard test suite.
 Be sure to review the existing tests, though; it may be that someone has already written a test for the bug that you’ve found!</p>
@@ -345,7 +345,7 @@ It’s also possible that the test suite is missing tests for the behavior you�
 In that case, you’ll need to write brand new tests from scratch!</p>
 <p>Many kinds of contributions won’t involve tests.
 If you’re still unsure about whether you ought to be working with tests, <a class="reference internal" href="directory.html"><span class="doc">there are plenty of people who can help you decide</span></a>.
-If you <em>do</em> find yourself writing tests, you should try to be thorough.
+If you <em>do</em> find yourself writing tests, try to be thorough.
 Think about the ways people might misinterpret the specification, and write tests that would show them their mistake.</p>
 <p>The process of writing tests varies greatly between the various test suites.
 You can learn all the technical details from each suite’s documentation.
@@ -360,7 +360,7 @@ Here are the test suites for the web platform:</p>
 <div class="section" id="filing-bugs-on-a-browser">
 <h2>Filing bugs on a Browser<a class="headerlink" href="#filing-bugs-on-a-browser" title="Permalink to this headline">¶</a></h2>
 <p>Browser implementers are more likely to implement a proposed change if there is a bug reported for the change in their bug tracker.
-Therefore, filing a bug for each browser engine that should be changed is an important step.</p>
+Therefore, filing a bug for each browser engine that has incorrect behavior is an important step.</p>
 <p>Here are links for filing a new bug for each major browser engine:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Core">Gecko</a></p></li>
@@ -373,9 +373,9 @@ If you can’t find anything, or if you find something that is related but not e
 Don’t worry if your bug gets marked as a duplicate, that is common and not a big deal.</p>
 <p>The default template typically asks for steps to reproduce, on the assumption that the bug report needs reproduction and debugging of the browser to understand what the actual bug is.
 For bugs asking to implement a specification change, it might not always add clarity with reproduction steps.
-If you have a specification issue that explains the problem, and a pull request (PR) for a proposed specification change and a PR for a web-platform-tests test case, then the browser bug can often just briefly explain the problem and then link to the relevant specification issue and the PRs.</p>
+If you have a specification issue that explains the problem, and a pull request (PR) for a proposed specification change and a PR for a web-platform-tests test case, then the browser bug can often briefly explain the problem and then link to the relevant specification issue and the PRs.</p>
 <p>Make sure to write a clear summary of the bug.
-The summary should briefly but clearly say what the bug is.</p>
+Briefly but clearly say what the bug is.</p>
 <p>Here are some good examples:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1454622">Change DOMQuad bounds to getBounds() as per specification</a></p></li>

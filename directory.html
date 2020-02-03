@@ -35,7 +35,7 @@
   <div class="section" id="finding-who-to-talk-to">
 <h1>Finding who to talk to<a class="headerlink" href="#finding-who-to-talk-to" title="Permalink to this headline">¶</a></h1>
 <p>Successful specification changes aren’t made in a vacuum.
-It may seem reasonable to think that a working group responsible for a standard decide how things should work, and then implementers are required to comply, but this isn’t how things happen in practice.
+It may seem reasonable to think that a working group responsible for a standard decide how things will work, and then implementers are required to comply, but this isn’t how things happen in practice.
 Instead it is an iterative process where implementations inform what is specified, as much as the influence in the other direction.
 Therefore it is important to talk to the people who are likely to implement your proposed change.
 It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.</p>
@@ -45,12 +45,12 @@ Therefore, we suggest an approach for how to find who are currently involved in 
 <p><strong>If you get stuck, feel free to reach out to us</strong> and we’re happy to help: <a class="reference external" href="mailto:web-platform-contribution-guide&#37;&#52;&#48;bocoup&#46;com">web-platform-contribution-guide<span>&#64;</span>bocoup<span>&#46;</span>com</a></p>
 <div class="section" id="etiquette">
 <h2>Etiquette<a class="headerlink" href="#etiquette" title="Permalink to this headline">¶</a></h2>
-<p>It is easy to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
+<p>It is possible to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
 Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.</p>
 <ul class="simple">
 <li><p>Keep your message short, but provide a link to the relevant <a class="reference internal" href="glossary.html#term-github"><span class="xref std std-term">GitHub</span></a> issue (or other) for more detailed information.
-Say clearly what you are expecting from them (e.g., a review from a subject matter expert, or a statement if they are willing to implement something).</p></li>
-<li><p>Say why you are contacting them in particular (e.g., they are listed in the OWNERS file).</p></li>
+Say clearly what you are expecting from them (for example, a review from a subject matter expert, or a statement if they are willing to implement something).</p></li>
+<li><p>Say why you are contacting them in particular (for example, they are listed in the OWNERS file).</p></li>
 <li><p>Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.</p></li>
 <li><p>If you don’t get a timely response, try something with a broader audience like discussion group, IRC, or report a bug/issue.</p></li>
 <li><p><a class="reference external" href="https://workaround.org/getting-help-on-irc/">IRC etiquette</a>: Ask your question directly.
@@ -59,7 +59,7 @@ Stay connected and wait.</p></li>
 </div>
 <div class="section" id="specifications">
 <h2>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline">¶</a></h2>
-<p>Reporting a new issue on the relevant specification’s repository is a good way to reach the correct people, and also a good place to discuss the topic at hand (e.g., instead of private email threads).
+<p>Reporting a new issue on the relevant specification’s repository is a good way to reach the correct people, and also a good place to discuss the topic at hand (for example, instead of private email threads).
 So if there isn’t already an issue filed for the topic you want to discuss, start with filing a new issue.
 When reaching out to others for feedback, you can link to this issue and ask them to comment there.</p>
 <p>The specification itself is also a good source for finding relevant people to talk to.
@@ -68,7 +68,7 @@ Each specification typically lists who edits the specification.
 In W3C specifications, this is typically listed at the top, maybe under “Specification metadata”.
 In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for “This standard is written by”).</p>
 <p>Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
-Check out the repo, and use <a class="reference internal" href="glossary.html#term-git"><span class="xref std std-term">Git</span></a> commands such as <a class="reference external" href="https://git-scm.com/docs/git-blame">git blame</a> and <a class="reference external" href="https://git-scm.com/docs/git-log">git log</a> to find who wrote a particular part of the specification.
+Check out the repository, and use <a class="reference internal" href="glossary.html#term-git"><span class="xref std std-term">Git</span></a> commands such as <a class="reference external" href="https://git-scm.com/docs/git-blame">git blame</a> and <a class="reference external" href="https://git-scm.com/docs/git-log">git log</a> to find who wrote a particular part of the specification.
 It could be the specification’s editor, but it could also be someone else.</p>
 <p>Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
 Look through open and closed issues and pull requests for the specification, and see who have contributed with comments, reviews, or changes to related issues.</p>
@@ -105,7 +105,7 @@ Click the drop-down arrow in the search field to find Advanced search.</p>
 You can go back and use these fields to narrow down the results later.</p></li>
 <li><p>In “Statuses”, type “Fixed”.</p></li>
 <li><p>In “Components”, find the relevant component.
-Some components are very broad, e.g., Blink&gt;CSS, and some are very specific, e.g., Blink&gt;Layout&gt;Ruby.</p></li>
+Some components are very broad, such as Blink&gt;CSS, and some are very specific, such as Blink&gt;Layout&gt;Ruby.</p></li>
 </ul>
 <p>Click Search.
 Look at the Owners column, this is probably the person who fixed the issue.
@@ -116,7 +116,8 @@ If you don’t get a good list of relevant issues after a few searches, it’s p
 Find the code that implements the feature you want feedback on, and use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">blame</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>.
 This can also be done in <a class="reference external" href="https://cs.chromium.org/">https://cs.chromium.org/</a> – after finding the right file, click “View in”, then “Git blame” or “Git Revision Log”.
 This can identify who most recently changed a particular line of code, or who wrote it originally.
-However, some changes to the code are entirely unrelated to the feature at hand, e.g., it can be part of a bigger refactor or reformatting of the code.
+However, some changes to the code are entirely unrelated to the feature at hand.
+For example, it can be part of a bigger refactor or reformatting of the code.
 Read the commit message to make sure the change is relevant.</p>
 <p>As an alternative to emailing a single person, you can also report a new issue in the Chromium issue tracker.
 Set the “Component” to what you think is the right one.
@@ -129,7 +130,7 @@ This invites them to review the spec change and also make a statement about whet
 <h3>WebKit<a class="headerlink" href="#webkit" title="Permalink to this headline">¶</a></h3>
 <p>The documentation on how to <a class="reference external" href="https://webkit.org/getting-started/">get started with contributing to WebKit</a> covers how to get the code,
 how to <a class="reference external" href="https://trac.webkit.org/wiki/WikiStart#GettingAroundtheWebKitSourceCode">navigate the code</a>,
-but also how to get in contact with the team via mailing lists, IRC, and the bug tracker.</p>
+but also how to get in contact with the team through mailing lists, IRC, and the bug tracker.</p>
 <p>You can navigate the WebKit source code online with <a class="reference external" href="http://trac.webkit.org/">WebKit Trac</a>.
 Click “Browse Source” or “Search”.
 Most of the web-facing features are implemented in <a class="reference external" href="https://trac.webkit.org/browser#webkit/trunk/Source/WebCore">trunk/Source/WebCore</a>.

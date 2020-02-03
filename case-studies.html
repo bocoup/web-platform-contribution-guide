@@ -38,12 +38,12 @@
 <h2>:defined CSS Pseudo-class<a class="headerlink" href="#defined-css-pseudo-class" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/w3c/csswg-drafts/issues/2258">[selectors-4] :defined</a></p>
 <p><strong>Problem</strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">:defined</span></code> pseudo-class was added in order to allow differentiating between custom elements that have been successfully constructed from those that have not yet been constructed or have failed to construct.
+<p>The <code class="docutils literal notranslate"><span class="pre">:defined</span></code> pseudo-class was added to allow differentiating between custom elements that have been successfully constructed from those that have not yet been constructed or have failed to construct.
 This pseudo-class was <a class="reference external" href="https://html.spec.whatwg.org/multipage/semantics-other.html#selector-defined">defined in HTML</a> but did not have a definition in the <a class="reference external" href="https://drafts.csswg.org/selectors/">Selectors specification</a>.</p>
 <p><strong>Solution</strong></p>
 <p>At first, we (Bocoup) proposed to move the definition from HTML into Selectors.
-However, it was pointed out that the Selectors specification should have a host language-agnostic high-level definition,
-and the host language (e.g., HTML) should have a precise definition as appropriate for that language.</p>
+Anne van Kesteren commented that previous features are defined as host language-agnostic in the Selectors specification,
+and the host language (such as HTML) have precise definitions as appropriate for that language.</p>
 <p>We <a class="reference external" href="https://github.com/w3c/csswg-drafts/pull/3735">specified a high-level definition</a> in the Selectors specification with examples showing how to use it for HTML.</p>
 <p>There were already test cases in web-platform-tests, so no new tests were needed.</p>
 <p><strong>Impact</strong></p>

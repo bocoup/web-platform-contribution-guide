@@ -64,7 +64,7 @@ Glossary of Terms and Jargon
         content in a specification that contains requirements or is referenced by something that is normative.
 
     Non-normative
-        content in a specification that is not normative, e.g. examples or statements of fact.
+        content in a specification that is not normative, such as examples or statements of fact.
 
     Prose
         written words.

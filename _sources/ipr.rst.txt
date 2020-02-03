@@ -1,7 +1,7 @@
 Intellectual Property Rights Management
 ---------------------------------------
 
-In order to contribute to the web platform, you must forfeit your intellectual property rights associated with the technology or technique you’re contributing.
+To contribute to the web platform, you must forfeit your intellectual property rights associated with the technology or technique you’re contributing.
 Companies that make browser engines use the W3C and now the WHATWG and other standards bodies to facilitate this process so that all technologies standardized as part of the web are available royalty free.
 All `WHATWG standards are royalty-free <https://whatwg.org/ipr-policy>`__.
 Most W3C Working Groups operate under a royalty-free (RF) licensing mode,
@@ -10,7 +10,7 @@ for example `EPUB3 <https://www.w3.org/2017/02/EPUB3CGcharter>`__.
 
 When contributing to the web, you or the company that you work for will be asked to sign an intellectual property rights agreement which makes copyrights in technologies you work on royalty free and renders patents that govern the technology you are working on neutral, or not enforceable in the context of any implementation of the standard to which you have contributed.
 
-At the W3C this is called the `W3C patent policy <https://www.w3.org/TR/patent-policy/>`__ which you have to agree to in order to participate, either as a representative of your company or as an "invited expert".
+At the W3C this is called the `W3C patent policy <https://www.w3.org/TR/patent-policy/>`__ which you have to agree to, either as a representative of your company or as an "invited expert".
 At the WHATWG you or your company must sign a `Contributors License Agreement <https://participate.whatwg.org/agreement>`__.
 
 It is a benefit to each company who participates to ensure that the technology is unencumbered by patents.

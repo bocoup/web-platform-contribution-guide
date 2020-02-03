@@ -2,7 +2,7 @@ Finding who to talk to
 ----------------------
 
 Successful specification changes aren't made in a vacuum.
-It may seem reasonable to think that a working group responsible for a standard decide how things should work, and then implementers are required to comply, but this isn't how things happen in practice.
+It may seem reasonable to think that a working group responsible for a standard decide how things will work, and then implementers are required to comply, but this isn't how things happen in practice.
 Instead it is an iterative process where implementations inform what is specified, as much as the influence in the other direction.
 Therefore it is important to talk to the people who are likely to implement your proposed change.
 It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.
@@ -16,12 +16,12 @@ Therefore, we suggest an approach for how to find who are currently involved in 
 Etiquette
 ~~~~~~~~~
 
-It is easy to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
+It is possible to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
 Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.
 
 * Keep your message short, but provide a link to the relevant :term:`GitHub` issue (or other) for more detailed information.
-  Say clearly what you are expecting from them (e.g., a review from a subject matter expert, or a statement if they are willing to implement something).
-* Say why you are contacting them in particular (e.g., they are listed in the OWNERS file).
+  Say clearly what you are expecting from them (for example, a review from a subject matter expert, or a statement if they are willing to implement something).
+* Say why you are contacting them in particular (for example, they are listed in the OWNERS file).
 * Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.
 * If you don't get a timely response, try something with a broader audience like discussion group, IRC, or report a bug/issue.
 * `IRC etiquette <https://workaround.org/getting-help-on-irc/>`__: Ask your question directly.
@@ -31,7 +31,7 @@ Here are some tips on minimizing the time you ask of others, while maximizing yo
 Specifications
 ~~~~~~~~~~~~~~
 
-Reporting a new issue on the relevant specification's repository is a good way to reach the correct people, and also a good place to discuss the topic at hand (e.g., instead of private email threads).
+Reporting a new issue on the relevant specification's repository is a good way to reach the correct people, and also a good place to discuss the topic at hand (for example, instead of private email threads).
 So if there isn't already an issue filed for the topic you want to discuss, start with filing a new issue.
 When reaching out to others for feedback, you can link to this issue and ask them to comment there.
 
@@ -42,7 +42,7 @@ In W3C specifications, this is typically listed at the top, maybe under "Specifi
 In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for "This standard is written by").
 
 Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
-Check out the repo, and use :term:`Git` commands such as `git blame <https://git-scm.com/docs/git-blame>`__ and `git log <https://git-scm.com/docs/git-log>`__ to find who wrote a particular part of the specification.
+Check out the repository, and use :term:`Git` commands such as `git blame <https://git-scm.com/docs/git-blame>`__ and `git log <https://git-scm.com/docs/git-log>`__ to find who wrote a particular part of the specification.
 It could be the specification's editor, but it could also be someone else.
 
 Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
@@ -87,7 +87,7 @@ Click the drop-down arrow in the search field to find Advanced search.
   You can go back and use these fields to narrow down the results later.
 * In "Statuses", type "Fixed".
 * In "Components", find the relevant component.
-  Some components are very broad, e.g., Blink>CSS, and some are very specific, e.g., Blink>Layout>Ruby.
+  Some components are very broad, such as Blink>CSS, and some are very specific, such as Blink>Layout>Ruby.
 
 Click Search.
 Look at the Owners column, this is probably the person who fixed the issue.
@@ -100,7 +100,8 @@ Instead of hunting for issues, you can check who has changed the code of the imp
 Find the code that implements the feature you want feedback on, and use ``git blame`` or ``git log``.
 This can also be done in https://cs.chromium.org/ -- after finding the right file, click "View in", then "Git blame" or "Git Revision Log".
 This can identify who most recently changed a particular line of code, or who wrote it originally.
-However, some changes to the code are entirely unrelated to the feature at hand, e.g., it can be part of a bigger refactor or reformatting of the code.
+However, some changes to the code are entirely unrelated to the feature at hand.
+For example, it can be part of a bigger refactor or reformatting of the code.
 Read the commit message to make sure the change is relevant.
 
 As an alternative to emailing a single person, you can also report a new issue in the Chromium issue tracker.
@@ -116,7 +117,7 @@ WebKit
 
 The documentation on how to `get started with contributing to WebKit <https://webkit.org/getting-started/>`__ covers how to get the code,
 how to `navigate the code <https://trac.webkit.org/wiki/WikiStart#GettingAroundtheWebKitSourceCode>`__,
-but also how to get in contact with the team via mailing lists, IRC, and the bug tracker.
+but also how to get in contact with the team through mailing lists, IRC, and the bug tracker.
 
 You can navigate the WebKit source code online with `WebKit Trac <http://trac.webkit.org/>`__.
 Click "Browse Source" or "Search".
