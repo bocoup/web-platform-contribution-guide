@@ -57,8 +57,18 @@ You might be surprised by how working on browser bugs will get you moving into d
 Many of the most prolific contributors to the web platform got their start by working on interoperability bugs between browsers.
 
 In the context of this guide, the goal of working on the web platform is to reach interoperability, not to add features, or change specs.
-This is maintenance work, and it is the most important thing that the web needs.
-This can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser.
+This is maintenance work, and it is the one of the most important things that the web needs.
+In the `2019 MDN Developer Needs Assessment Report <https://insights.developer.mozilla.org/>`__,
+interoperability is among the top pain points for web developers.
+
+When interoperability is poor, it has several negative consequences:
+
+* Web developers are taxed in time and frustration to work around the interoperability problem.
+* End users that use a browser that the web developer didn't cater for has a worse experience.
+* Browsers with minority user share are at disadvantage because many web developers only test in the current market leader, leaving their sites broken in other browsers, which creates incentive for users to switch browsers.
+  This can ultimately lead to the minority browser to stop developing that browser's engine, resulting in less browser engine diversity.
+
+Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser.
 All forms of this work are part of maintenance and we celebrate each kind of contribution.
 
 .. [1]
