@@ -31,8 +31,8 @@
 
           <div class="body" role="main">
             
-  <p>March 2019</p>
-<p>Version 0.1-pre</p>
+  <p>February 2020</p>
+<p>Version 0.1</p>
 <p>Various Authors <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
 <div class="section" id="web-platform-contribution-guide">
 <h1>Web Platform Contribution Guide<a class="headerlink" href="#web-platform-contribution-guide" title="Permalink to this headline">¶</a></h1>
@@ -49,6 +49,34 @@
 <span class="o">|</span><span class="n">________________</span><span class="o">|</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The “web platform” is comprised of a collection of standardized <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">application programming interfaces (APIs)</span></a> that programmers use to make web pages and web applications.
+This includes technologies, like HTML, CSS and JavaScript.
+In addition to including a full implementation of the JavaScript programming language that web browsers share with Node.js, web browsers expose their own standardized <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">APIs</span></a> specifically made for interacting with web pages.</p>
+<p>The web platform is powerful and expressive, but it’s also a little broken in parts.
+That’s where the other part of the web platform comes in.
+The term “web platform” <em>also</em> describes the people and practices that are meant to include everyone in improving the standard programming interfaces.
+The web can only work if it’s built with an understanding of all its constituents–the whole world!
+This guide aims to help you participate in the continuing design of the web platform so that your perspective can help shape the direction of the web.</p>
+<p>In this guide, we are going to focus on bugs in a web standard for browsers.
+Bugs are a great way to get started because to get them fixed, you have to touch all of the components of a web standard; a specification, a patch to the source code of a browser engine, and interoperability tests.
+You might be surprised by how working on browser bugs will get you moving into deep parts of the web platform!
+Many of the most prolific contributors to the web platform got their start by working on interoperability bugs between browsers.</p>
+<p>In the context of this guide, the goal of working on the web platform is to reach interoperability, not to add features, or change specs.
+This is maintenance work, and it is the one of the most important things that the web needs.
+In the <a class="reference external" href="https://insights.developer.mozilla.org/">2019 MDN Developer Needs Assessment Report</a>,
+interoperability is among the top pain points for web developers.</p>
+<p>When interoperability is poor, it has several negative consequences:</p>
+<ul class="simple">
+<li><p>Web developers are taxed in time and frustration to work around the interoperability problem.</p></li>
+<li><p>End users that use a browser that the web developer didn’t cater for has a worse experience.</p></li>
+<li><p>Browsers with minority user share are at disadvantage because many web developers only test in the current market leader, leaving their sites broken in other browsers, which creates incentive for users to switch browsers.
+This can ultimately lead to the minority browser to stop developing that browser’s engine, resulting in less browser engine diversity.</p></li>
+</ul>
+<p>Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser.
+All forms of this work are part of maintenance and we celebrate each kind of contribution.</p>
 </div>
 <div class="section" id="table-of-contents">
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
@@ -113,34 +141,6 @@
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms and Jargon</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>The “web platform” is comprised of a collection of standardized <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">application programming interfaces (APIs)</span></a> that programmers use to make web pages and web applications.
-This includes technologies, like HTML, CSS and JavaScript.
-In addition to including a full implementation of the JavaScript programming language that web browsers share with Node.js, web browsers expose their own standardized <a class="reference internal" href="glossary.html#term-api"><span class="xref std std-term">APIs</span></a> specifically made for interacting with web pages.</p>
-<p>The web platform is powerful and expressive, but it’s also a little broken in parts.
-That’s where the other part of the web platform comes in.
-The term “web platform” <em>also</em> describes the people and practices that are meant to include everyone in improving the standard programming interfaces.
-The web can only work if it’s built with an understanding of all its constituents–the whole world!
-This guide aims to help you participate in the continuing design of the web platform so that your perspective can help shape the direction of the web.</p>
-<p>In this guide, we are going to focus on bugs in a web standard for browsers.
-Bugs are a great way to get started because to get them fixed, you have to touch all of the components of a web standard; a specification, a patch to the source code of a browser engine, and interoperability tests.
-You might be surprised by how working on browser bugs will get you moving into deep parts of the web platform!
-Many of the most prolific contributors to the web platform got their start by working on interoperability bugs between browsers.</p>
-<p>In the context of this guide, the goal of working on the web platform is to reach interoperability, not to add features, or change specs.
-This is maintenance work, and it is the one of the most important things that the web needs.
-In the <a class="reference external" href="https://insights.developer.mozilla.org/">2019 MDN Developer Needs Assessment Report</a>,
-interoperability is among the top pain points for web developers.</p>
-<p>When interoperability is poor, it has several negative consequences:</p>
-<ul class="simple">
-<li><p>Web developers are taxed in time and frustration to work around the interoperability problem.</p></li>
-<li><p>End users that use a browser that the web developer didn’t cater for has a worse experience.</p></li>
-<li><p>Browsers with minority user share are at disadvantage because many web developers only test in the current market leader, leaving their sites broken in other browsers, which creates incentive for users to switch browsers.
-This can ultimately lead to the minority browser to stop developing that browser’s engine, resulting in less browser engine diversity.</p></li>
-</ul>
-<p>Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser.
-All forms of this work are part of maintenance and we celebrate each kind of contribution.</p>
 <dl class="footnote brackets">
 <dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Simon Pieters, Mike Pennisi, Leo Balter, Valerie Young, Boaz Sender, future contributors here</p>
