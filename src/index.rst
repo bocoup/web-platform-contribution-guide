@@ -1,6 +1,6 @@
-March 2019
+February 2020
 
-Version 0.1-pre
+Version 0.1
 
 Various Authors [1]_
 
@@ -22,21 +22,6 @@ Getting started with a history, skill guide and how-to of web standards.
     |                |_______________|
     |________________|
 
-Table of Contents
------------------
-
-.. toctree::
-  :maxdepth: 2
-
-  governance
-  ipr
-  skills
-  bug-guide
-  paths-for-growth
-  case-studies
-  testimonials
-  directory
-  glossary
 
 Introduction
 ------------
@@ -70,6 +55,22 @@ When interoperability is poor, it has several negative consequences:
 
 Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser.
 All forms of this work are part of maintenance and we celebrate each kind of contribution.
+
+Table of Contents
+-----------------
+
+.. toctree::
+  :maxdepth: 2
+
+  governance
+  ipr
+  skills
+  bug-guide
+  paths-for-growth
+  case-studies
+  testimonials
+  directory
+  glossary
 
 .. [1]
    Simon Pieters, Mike Pennisi, Leo Balter, Valerie Young, Boaz Sender, future contributors here
