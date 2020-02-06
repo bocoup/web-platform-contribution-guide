@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Web Platform Contribution Guide'
-copyright = '2019, Bocoup LLC'
+copyright = 'Bocoup and contributors'
 author = 'Bocoup LLC'
 
 
