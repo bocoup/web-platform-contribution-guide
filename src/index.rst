@@ -73,4 +73,10 @@ Table of Contents
   glossary
 
 .. [1]
-   Simon Pieters, Mike Pennisi, Leo Balter, Valerie Young, Boaz Sender, future contributors here
+   Boaz Sender,
+   Jory Burson,
+   Leo Balter,
+   Mike Pennisi,
+   Simon Pieters,
+   Valerie Young,
+   future contributors here
