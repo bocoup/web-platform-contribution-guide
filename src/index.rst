@@ -68,7 +68,7 @@ Table of Contents
   bug-guide
   paths-for-growth
   case-studies
-  testimonials
+  interviews
   directory
   glossary
 
