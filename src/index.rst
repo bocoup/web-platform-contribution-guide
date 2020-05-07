@@ -1,10 +1,6 @@
-February 2020
+February 2020 / Version 0.1 /  Various Authors [1]_
 
-Version 0.1
-
-Various Authors [1]_
-
-Web Platform Contribution Guide
+WEB PLATFORM CONTRIBUTION GUIDE
 ===============================
 
 Getting started with a history, skill guide and how-to of web standards.
