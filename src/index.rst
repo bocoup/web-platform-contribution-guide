@@ -1,7 +1,6 @@
-February 2020 / Version 0.1 /  Various Authors [1]_
+.. cssclass:: details
 
-WEB PLATFORM CONTRIBUTION GUIDE
-===============================
+February 2020 / Version 0.1 /  Various Authors [1]_
 
 Getting started with a history, skill guide and how-to of web standards.
 ------------------------------------------------------------------------
