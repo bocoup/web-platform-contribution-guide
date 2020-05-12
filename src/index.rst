@@ -5,18 +5,8 @@ February 2020 / Version 0.1 /  Various Authors [1]_
 Getting started with a history, skill guide and how-to of web standards.
 ------------------------------------------------------------------------
 
-::
-
-    ____________________          __________________
-    |  Browser          |         |    node.js      |
-    |  (W3C, WHATWG)    |         |    (OpenJS)     |
-    |  HTML          ___|_________|__  Node Global  |
-    |  CSS           | JavaScript    |              |
-    |  ARIA          | (ECMA 262,    |______________|
-    |  Window Object | 402, 404)     |
-    |                |_______________|
-    |________________|
-
+.. image:: _static/img/wpcg-venn-diagram.svg
+  :alt: Venn Diagram
 
 Introduction
 ------------
