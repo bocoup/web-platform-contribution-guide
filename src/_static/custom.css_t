@@ -815,7 +815,7 @@ div.document {
 div.sphinxsidebar {
   width: 260px;
   padding: 25px;
-  font-size: 13px;
+  font-size: 16px;
   background-color: #f5f5f5;
 }
 
@@ -858,7 +858,15 @@ div.sphinxsidebar ul {
 }
 
 div.sphinxsidebar ul li {
-  margin-bottom: 12px;
+  margin: 12px 0;
+}
+
+div.sphinxsidebar ul li.toctree-l1 > a, div.sphinxsidebar ul li.toctree-l2 > a {
+  font-size: 100%;
+}
+
+div.sphinxsidebar ul li.current > a {
+  border-bottom: 1px solid #999;
 }
 
 div.sphinxsidebar input, form input {
@@ -917,6 +925,10 @@ div.bodywrapper .highlight-default .highlight pre {
 
 div.documentwrapper #table-of-contents a {
   color: black;
+}
+
+div.documentwrapper #table-of-contents a:hover {
+  border-bottom: 1px solid #999;
 }
 
 /* Footer */
