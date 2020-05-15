@@ -6,7 +6,7 @@ Getting started with a history, skill guide and how-to of web standards.
 ------------------------------------------------------------------------
 
 .. image:: _static/img/wpcg-venn-diagram.svg
-  :alt: Venn Diagram
+  :alt: Venn diagram where one set is the Browser (W3C, WHATWG) with HTML, CSS, ARIA and the Window Object; the other set is node.js (OpenJS) with the Node Global, and the overlap is JavaScript (ECMA 262, 402, 404).
 
 Introduction
 ------------
