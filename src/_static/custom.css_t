@@ -986,7 +986,3 @@ div.body p, div.body dd, div.body li {
       margin: 0 0 0 310px;
   }
 }
-
-.sphinxsidebarwrapper > h3 {
-  display: none; 
-}
