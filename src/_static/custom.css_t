@@ -854,8 +854,11 @@ a.reference:hover {
 }
 
 div.sphinxsidebar ul {
-  line-height: 2.5em;
   margin-bottom: 30px;
+}
+
+div.sphinxsidebar ul li {
+  margin-bottom: 12px;
 }
 
 div.sphinxsidebar input, form input {
