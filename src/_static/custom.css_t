@@ -785,6 +785,16 @@ nav#breadcrumbs li+li:before {
   src: url("fonts/Oswald-SemiBold.ttf");
 }
 
+
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("fonts/Merriweather-Bold.ttf");
+}
+
+strong {
+  font-family: "Merriweather-Bold";
+}
+
 body {
   font-family: 'Merriweather-Regular';
   font-size: 16px;
@@ -801,7 +811,7 @@ div.sphinxsidebar h4 {
   padding-top: 18px;
 }
 
-h1, div.body h1, div.body h2, div.body h3, div.sphinxsidebar h3, div.sphinxsidebar h4 {
+h1, div.body h1, div.body h2, div.body h3, div.body h4, div.sphinxsidebar h3, div.sphinxsidebar h4 {
   font-family: "Oswald-Regular";
 }
 
@@ -895,21 +905,6 @@ div.sphinxsidebar #searchbox input[type="submit"]:hover, form input[type="submit
 }
 
 /* Main */
-/* .details {
-  margin: 0;
-  background: #fff7da;
-  padding: 5px 30px;
-  font-size: 16px;
-  position: absolute;
-  top: 0;
-  left: 310px;
-  width: 100%;
-} */
-
-/* div.documentwrapper .body .test {
-  margin-top: 30px;
-} */
-
 div.documentwrapper a {
   color: #e94142;
   border: none;
