@@ -87,7 +87,7 @@ OpenJS is not a standards body, but it does have a governance model for adding f
 Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International.
 The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global.
 
-The :term:`node global` is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
+The :term:`Node Global` is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
 The node global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
 Many web developers use node to manage their projects’ build processes.
 Node share several :term:`APIs <API>` with web browsers, such as ``URL``, ``fetch``, and ``TextDecoder``.
