@@ -36,9 +36,9 @@ If you would like to build the site locally, follow these instructions.
 
 
    if you run into trouble with make html command on GNU/Linux, you may have an
-   with your path. If you don't have the energy to fix that, you can change the
-   command from `sphinx-build` to `python3 -m sphinx` in the make file and all
-   should be well.
+   issue with your path. If you don't have the energy to fix that, you can
+   change the command from `sphinx-build` to `python3 -m sphinx` in the make
+   file and all should be well.
 
 5. Run the linter to make sure your changes follow the conventions described
    in CONTRIBUTING.md. To lint and then build, use:
