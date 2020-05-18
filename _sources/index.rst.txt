@@ -38,8 +38,11 @@ When interoperability is poor, it has several negative consequences:
 * Browsers with minority user share are at disadvantage because many web developers only test in the current market leader, leaving their sites broken in other browsers, which creates incentive for users to switch browsers.
   This can ultimately lead to the minority browser to stop developing that browser's engine, resulting in less browser engine diversity.
 
-Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers, but this can also mean deleting things, and writing negative tests to ensure that the feature is not in the browser.
+We're writing this guide in the spirit of the `p5.js community statement <https://p5js.org/community>`__, which recognizes and validates "multiple types of contributions".
+Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers.
+It can also mean deleting things, and writing negative tests to ensure that the feature is not present in a particular browser, or other :term:`Runtime`.
 All forms of this work are part of maintenance and we celebrate each kind of contribution.
+
 
 Table of Contents
 -----------------

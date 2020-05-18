@@ -79,7 +79,7 @@ Additionally, the OpenJS Foundation sends delegates from its projects to represe
 The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global.
 
 The :term:`Node Global` is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
-The node global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
+The Node Global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
 Many web developers use node to manage their projects’ build processes.
 Node share several :term:`APIs <API>` with web browsers, such as ``URL``, ``fetch``, and ``TextDecoder``.
 Node.js is even known to run some of the web-platform-tests tests to ensure interoperability for the features that node and browsers share.

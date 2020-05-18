@@ -72,6 +72,13 @@ Glossary of Terms and Jargon
     PR
         pull request (in :term:`GitHub`).
 
+    Runtime
+        A jargon term for the environment in which code runs, like a browser, or node, etc.
+        The term is derived from the **runtime phase** of a computer's execution of a program.
+        Browsers and node.js both run third party code, so we often refer to them casually as "runtimes".
+        This term is also used to refer to the details and :term:`API` surface of the environment that the program is running in.
+        For example JavaScript code in an HTML document has access to the `window` object in it's runtime, whereas the same code running in node.js would have acces to the :term:`Node Global`.
+
     Spec
         short for specification.
 
