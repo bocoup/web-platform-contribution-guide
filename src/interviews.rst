@@ -51,8 +51,7 @@ Nothing to add here.
 :)
 I would say things that helped include
 
-* humility, to know that there are other people whose work is better than yours and whose input is useful to your work;
-and to be comfortable with that rather than disheartened or intimidated by it
+* humility, to know that there are other people whose work is better than yours and whose input is useful to your work; and to be comfortable with that rather than disheartened or intimidated by it
 * patience and stubbornness, to learn in depth all the relevant materials;
 to keep working at hard problems and working through all the details and all the issues
 * integrity, to prepare thoroughly and to do thorough work;
