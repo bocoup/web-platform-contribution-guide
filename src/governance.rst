@@ -1,17 +1,8 @@
 Web Platform Governance
 -----------------------
 
-::
-
-     ___________________           _________________
-    |  Browser          |         |    node.js      |
-    |  (W3C, WHATWG)    |         |    (OpenJS)     |
-    |  HTML          ___|_________|__  Node Global  |
-    |  CSS           | JavaScript    |              |
-    |  ARIA          | (ECMA 262,    |______________|
-    |  Window Object | 402, 404)     |
-    |________________|               |
-                     |_______________|
+.. image:: _static/img/wpcg-venn-diagram.svg
+  :alt: Venn diagram where one set is the Browser (W3C, WHATWG) with HTML, CSS, ARIA and the Window Object; the other set is node.js (OpenJS) with the Node Global, and the overlap is JavaScript (ECMA 262, 402, 404).
 
 W3C
 ~~~
