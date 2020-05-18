@@ -46,6 +46,19 @@ If you would like to build the site locally, follow these instructions.
        ./lint.sh && make html
 
 ## License
-The guide is free to read, but we currently do not have a license available for
-this guide. Please contact us at web-platform-contribution-guide@bocoup.com if
-you wish to copy or redistribute this guide. Thanks!
+The Web Platform Contribution Guide copyright is held by Bocoup and Contributors
+and is licensed under the Creative Commons Attribution, Non commercial Share
+Alike 4.0 license (CC BY-NC-SA 4.0).
+
+CC-BY-NC-SA requires that reusers give credit to the creator. It allows reusers
+to distribute, remix, adapt, and build upon the material in any medium or
+format, for noncommercial purposes only. If others modify or adapt the material,
+they must license the modified material under identical terms.
+
+To view a copy of this license, visit
+https://creativecommons.org/licenses/by-nc-sa/4.0.
+
+
+
+Please contact us at web-platform-contribution-guide@bocoup.com if
+you have any questions. Thanks!
