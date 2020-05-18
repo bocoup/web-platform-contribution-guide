@@ -66,7 +66,7 @@ Imagining the Runtime
 ~~~~~~~~~~~~~~~~~~~~~
 
 One of the most technically difficult things that we do when we write specifications is to reason about the underlying model and behavior of a feature-set that does not yet exist.
-It is our job to imagine the runtime and execution context, and then write down instructions for how to implement that runtime of our imagination.
+It is our job to imagine the :term:`Runtime` and execution context, and then write down instructions for how to implement that :term:`Runtime` of our imagination.
 
 Depending on the feature, it is sometimes helpful to write down the behavior you are trying to specify in psued-code, actual "brainstorm code", or to implement the feature as a JavaScript program or in a web browser engine before proceeding.
 
