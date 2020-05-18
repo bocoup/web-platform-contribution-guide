@@ -51,18 +51,11 @@ Nothing to add here.
 :)
 I would say things that helped include
 
-* humility, to know that there are other people whose work is better than yours and whose input is useful to your work;
-and to be comfortable with that rather than disheartened or intimidated by it
-* patience and stubbornness, to learn in depth all the relevant materials;
-to keep working at hard problems and working through all the details and all the issues
-* integrity, to prepare thoroughly and to do thorough work;
-to speak up when there's some thing to add, question, or correct in the discussion;
-and to keep working at a solution, and to keep soliciting and integrating feedback,
-until one is found that truly reflects the design intentions of the technology and is thoroughly worked out,
-rather than going with a rough idea that seems good enough for some people
+* humility, to know that there are other people whose work is better than yours and whose input is useful to your work; and to be comfortable with that rather than disheartened or intimidated by it
+* patience and stubbornness, to learn in depth all the relevant materials; to keep working at hard problems and working through all the details and all the issues
+* integrity, to prepare thoroughly and to do thorough work; to speak up when there's some thing to add, question, or correct in the discussion; and to keep working at a solution, and to keep soliciting and integrating feedback, until one is found that truly reflects the design intentions of the technology and is thoroughly worked out, rather than going with a rough idea that seems good enough for some people
 * the desire to do good, because the goal Web standards is to make the Web a better place for everyone
-* a focus on the future and the world, because due to Web-compat constraints, the decisions,
-and the quality or sloppiness of our work, is embedded in this worldwide platform forever.
+* a focus on the future and the world, because due to Web-compat constraints, the decisions, and the quality or sloppiness of our work, is embedded in this worldwide platform forever.
 
 The main advice I'd give to other people starting out is:
 don't be afraid to speak up!

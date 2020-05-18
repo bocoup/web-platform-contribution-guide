@@ -65,7 +65,7 @@ jobs:
 
 workflows:
   version: 2.1
-  "Lint and Build and Deploy":
+  "Lint, Build and Deploy":
     jobs:
       - lint
       - build:
