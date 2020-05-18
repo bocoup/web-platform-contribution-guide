@@ -9,7 +9,7 @@ function lint-rst {
   ERRORS=true
 }
 
-lint-rst '[^0-9.][?!.] [A-Z]' 'Missing semantic line break.'
+lint-rst '\S[^0-9.][!.] [A-Z]' 'Missing semantic line break.'
 lint-rst '[?!.]  ' 'More than one space after punctuation.'
 
 function lint-word {

@@ -177,83 +177,88 @@ Elika J. Etemad (fantasai)
 1. Tell us about the role you play in web standards work - what, where, and how are you contributing?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-I'm one of the tech leads in the CSS Working Group, and have co-edited a
-significant proportion of its specifications for well over a decade. Before
-that I was a volunteer contributor to the Mozilla project, primarily in
-standards-compliance QA. I'm also on the W3C Advisory Board for these two
-years, helping with process and governance.
+I'm one of the tech leads in the CSS Working Group, and have co-edited a significant proportion of its specifications for well over a decade.
+Before that I was a volunteer contributor to the Mozilla project, primarily in standards-compliance QA.
+I'm also on the W3C Advisory Board for these two years, helping with process and governance.
 
 2. How did you first get into web standards work?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Through Mozilla in the early 2000s: back then they explicitly invited people
-to participate in QA and support Mozilla's mission to improve the Web and help
-them counter Microsoft's dominance by filing and triaging bugs and writing
-testcases. Since I had to refer to the specs a lot while I was doing this, I
-started finding bugs in the specs, and reporting those to W3C. Eventually the
-CSSWG invited me to join as an Invited Expert. Basically I followed Ian
-Hickson's footsteps, who went down a similar path a few years earlier.
+Through Mozilla in the early 2000s:
+back then they explicitly invited people to participate in QA and support Mozilla's mission
+to improve the Web and help them counter Microsoft's dominance by filing and triaging bugs and writing testcases.
+Since I had to refer to the specs a lot while I was doing this,
+I started finding bugs in the specs, and reporting those to W3C.
+Eventually the CSSWG invited me to join as an Invited Expert.
+Basically I followed Ian Hickson's footsteps,
+who went down a similar path a few years earlier.
 
 3. What skills do you rely on most in your work? Which do you find most important for success?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Skills are part of the equation. Here I rely on my ability to analyze
-technical problems and proposals in the abstract in depth, to look at the
-higher-level of design quality, to thoroughly understand a complex
-interconnected system and its myriad interactions, to figure out how a given
-proposal can and should integrate with that entire system, and to draft up new
-proposals that elegantly solve multiple constraints. I also rely on my ability
-to communicate all of this clearly to my colleagues, verbally and informally,
+Skills are part of the equation.
+Here I rely on my ability to analyze technical problems and proposals in the abstract in depth,
+to look at the higher-level of design quality,
+to thoroughly understand a complex interconnected system and its myriad interactions,
+to figure out how a given proposal can and should integrate with that entire system,
+and to draft up new proposals that elegantly solve multiple constraints.
+I also rely on my ability to communicate all of this clearly to my colleagues,
+verbally and informally,
 and also formally in excruciatingly precise yet readable technical prose...
 
-The other important part is attitude: valuing the input of others, patiently
-working through a seemingly never-ending stream of critiques knowing that each
-comment is valuable for some reason, whether it be altering the proposal to
-address deficiencies or clarifying the text. Wanting to make everyone happy,
-while adhering to the core design principles of the Web, this is what
-motivates my work.
+The other important part is attitude:
+valuing the input of others, patiently working through a seemingly never-ending stream of critiques
+knowing that each comment is valuable for some reason,
+whether it be altering the proposal to address deficiencies or clarifying the text.
+Wanting to make everyone happy,
+while adhering to the core design principles of the Web,
+this is what motivates my work.
 
 4. What advice would you have given to your younger self when you were starting out?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Nothing to add here. :) I would say things that helped include
-* humility, to know that there are other people whose work is better than
-yours and whose input is useful to your work; and to be comfortable with that
-rather than disheartened or intimidated by it
-* patience and stubbornness, to learn in depth all the relevant materials;
-to keep working at hard problems and working through all the details and all
-the issues
-* integrity, to prepare thoroughly and to do thorough work; to speak up
-when there's some thing to add, question, or correct in the discussion; and to
-keep working at a solution, and to keep soliciting and integrating feedback,
-until one is found that truly reflects the design intentions of the technology
-and is thoroughly worked out, rather than going with a rough idea that seems
-good enough for some people
-* the desire to do good, because the goal Web standards is to make the Web
-a better place for everyone
-* a focus on the future and the world, because due to Web-compat
-constraints, the decisions, and the quality or sloppiness of our work, is
-embedded in this worldwide platform forever.
+Nothing to add here.
+:)
+I would say things that helped include
 
-The main advice I'd give to other people starting out is: don't be afraid to
-speak up! As long as your comments are well-considered and offered
-constructively, we want to hear them. And ask questions if you're confused: if
-you're in a discussion, we want you to understand what's happening so you can
-participate effectively.
+* humility, to know that there are other people whose work is better than yours and whose input is useful to your work;
+and to be comfortable with that rather than disheartened or intimidated by it
+* patience and stubbornness, to learn in depth all the relevant materials;
+to keep working at hard problems and working through all the details and all the issues
+* integrity, to prepare thoroughly and to do thorough work;
+to speak up when there's some thing to add, question, or correct in the discussion;
+and to keep working at a solution, and to keep soliciting and integrating feedback,
+until one is found that truly reflects the design intentions of the technology and is thoroughly worked out,
+rather than going with a rough idea that seems good enough for some people
+* the desire to do good, because the goal Web standards is to make the Web a better place for everyone
+* a focus on the future and the world, because due to Web-compat constraints, the decisions,
+and the quality or sloppiness of our work, is embedded in this worldwide platform forever.
+
+The main advice I'd give to other people starting out is:
+don't be afraid to speak up!
+As long as your comments are well-considered and offered constructively,
+we want to hear them.
+And ask questions if you're confused:
+if you're in a discussion, we want you to understand what's happening so you can participate effectively.
 
 5. Why do you think web standards work is important? What's at stake?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Web standards are better than proprietary standards not just because they're
-free, but because they're open and collaborative. They allow for a wider
-community to be able to define the future of the Web, and the collaboration
-and the deliberation, while it seems slow to people working on individual
-products, allow for a much higher quality Web platform for us all to build on.
+Web standards are better than proprietary standards not only because they're free,
+but because they're open and collaborative.
+They allow for a wider community to be able to define the future of the Web,
+and the collaboration and the deliberation,
+while it seems slow to people working on individual products,
+allow for a much higher quality Web platform for us all to build on.
 
-If we lose the Web standards process, it means one or two companies have come
-to dominate the direction and the possibilities of the Web. Their work might
-be faster, but it will also be lower quality, and it will have a narrower
-intent. Because it won't incorporate such a diversity of interests and
-expertise, it will address fewer use cases and do so with less integrity. In
-the short run, 1-3yrs, it might be exciting to move faster, but in the longer
-run, it will be painful for everyone trying to build on a sloppier foundation.
+If we lose the Web standards process,
+it means one or two companies have come to dominate the direction and the possibilities of the Web.
+Their work might be faster,
+but it will also be lower quality,
+and it will have a narrower intent.
+Because it won't incorporate such a diversity of interests and expertise,
+it will address fewer use cases and do so with less integrity.
+In the short run, 1-3 years,
+it might be exciting to move faster,
+but in the longer run,
+it will be painful for everyone trying to build on a sloppier foundation.
