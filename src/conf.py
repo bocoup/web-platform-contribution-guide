@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Web Platform Contribution Guide'
-copyright = 'Bocoup and contributors'
+copyright = '<p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><a rel="cc:attributionURL" href="https://bocoup.github.io/web-platform-contribution-guide/"><span rel="dct:title">Web Platform Contribution Guide</span></a> by <a rel="cc:attributionURL" href="https://github.com/bocoup/web-platform-contribution-guide/graphs/contributors"><span rel="cc:attributionName">Various Authors</span></a>CC BY-NC-SA 4.0<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p>'
 author = 'Bocoup LLC'
 
 

@@ -39,7 +39,8 @@ When interoperability is poor, it has several negative consequences:
   This can ultimately lead to the minority browser to stop developing that browser's engine, resulting in less browser engine diversity.
 
 We're writing this guide in the spirit of the `p5.js community statement <https://p5js.org/community>`__, which recognizes and validates "multiple types of contributions".
-Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers. It can also mean deleting things, and writing negative tests to ensure that the feature is not present in a particular browser, or other :term:`Runtime`.
+Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers.
+It can also mean deleting things, and writing negative tests to ensure that the feature is not present in a particular browser, or other :term:`Runtime`.
 All forms of this work are part of maintenance and we celebrate each kind of contribution.
 
 
