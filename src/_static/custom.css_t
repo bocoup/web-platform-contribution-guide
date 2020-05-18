@@ -964,10 +964,6 @@ div.body p, div.body dd, div.body li {
       -webkit-box-align: end;
       -ms-flex-align: end;
       align-items: flex-end;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
       width: 100%;
       min-width: 252px;
       height: 100vh;
