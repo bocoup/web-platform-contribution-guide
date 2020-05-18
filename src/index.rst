@@ -1,6 +1,6 @@
 .. cssclass:: details
 
-February 2020 / Version 0.1 /  Various Authors [1]_
+May 2020 / Version 1.0 / Various Authors [1]_
 
 Getting started with a history, skill guide and how-to of web standards.
 ------------------------------------------------------------------------
