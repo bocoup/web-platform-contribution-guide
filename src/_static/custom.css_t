@@ -768,7 +768,7 @@ nav#breadcrumbs li+li:before {
     }
 }
 
-/* Cutsom Stuff */
+/* Custom Stuff */
 
 @font-face {
   font-family: "Merriweather-Regular";
