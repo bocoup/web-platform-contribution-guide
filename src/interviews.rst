@@ -86,6 +86,86 @@ it might be exciting to move faster,
 but in the longer run,
 it will be painful for everyone trying to build on a sloppier foundation.
 
+Brian Kardell (bkardell)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Tell us about the role you play in web standards work - what, where, and how are you contributing?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+My role in standards (like a lot of people's, I imagine) has grown and changed over time.
+I am currently an AC Representative in the W3C and am somehow involved in a long list of things from working group memberships like CSS, to community group memberships like MathML, to contributing to issues and discussions.
+I've been involved in some form or another with a lots of proposals across standards bodies and working groups.
+
+Generally speaking, I suppose (and now professionally), I am an advocate for how we can improve things for everyone.
+From the process, to the time frames involved, to how we can better involve voices that are historically lacking.
+This plays out at many levels: I helped found the Extensible Web Community Group, co-authored the Extensible Web Manifesto and have advocated for practical changes to how we manage standards, make good progress and involve developers and open source projects.
+I lead or help lead several outreach groups, I helped start the WICG discourse and advocate for a particular model of 'incubation'.
+I also am very interested in figuring out how we apply all of these things well so that users, developers and all stakeholders are best served.
+
+2. How did you first get into web standards work?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Its hard to say where one 'begins' to get into standards.
+I can point to 3 pivotal moments, I think: First, I'd been an early adopter of the Web in the mid-90s, and web standards were my introduction to the idea of standards.
+I imagined these as some kind of great school of athens-like think-tank where the best and brightest minds would come up with "the answer" and hand them down to us, almost as if they were some kind of holy writ - saving all of us mere mortals.
+However, as a developer, over time it seemed increasingly clear that that was wrong.
+By the mid-2000's I had plenty of my own thoughts and opinions.
+I would talk about these pretty incessantly with co-workers and local community.
+One day my "partner" at work said
+"You know...
+I am convinced.
+The trouble is, you need to convince the whole rest of the world."
+
+This led to me creating a blog, and occasionally actually contributing thoughts on mailing lists instead of only reading them.
+
+In this I began sharing my own ideas as well and that's where I got a little deeper.
+A few people like Brendan Eich, Tab Atkins were privately very helpful and encouranging - helping me understand lots of details and break things down.
+
+Finally, this overlapped in time with a lot of things that were happening and being discussed and aligned with the things I cared about.
+Through this I made a lot of friendships and had great discussions advocating for some common things - often finding myself having some of the best conversations with folks from jQuery's new standards team.
+Yehuda Katz and I in particular had a lot of great conversations and ultimately the jQuery Foundation nominated me to my first Working Group (CSS).
+
+3. What skills do you rely on most in your work? Which do you find most important for success?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Really, I think it's *mostly* communication.
+I'm very willing to reach out, talk to, and listen to a lot of people.
+I also try to help them understand one another - which is actually surprisingly challenging: we have amazingly different perspectives.
+
+Then, there is a real challenge in imagining what a solution might look like and further still - is there an actually achievable path to it? Is there a way to safely test this theory and iterate towards something good? I'm not sure how to describe that skill -but in a way, my approach is definitely employing skills formed in my years of consulting and the particular sort of roles I played in companies - how to listen to a lot of people, come up with a plan that is deliverable, and build consensus around it.
+
+4. What advice would you have given to your younger self when you were starting out?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ooph, so many things.
+
+* You are probably wrong.
+* Take the time to learn the things you don't really understand and be ok with the fact that it's a process.
+* Don't be afraid to ask someone questions that you imagine are silly if you get stuck: That will only hold you back.
+  Nobody knows as much as you think they do.
+  Knowing that both helps you feel better and can help you dig into problems you assumed others had dug into.
+  Share your thoughts.
+  Be involved.
+  Be patient.
+  Appreciate your limits.
+  Don't burn out.
+  You can't do everything.
+
+5. Why do you think web standards work is important? What's at stake?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+I think that standardization, in general, is important - and particular open standards.
+Standardization matters because it's ultimately a very valuable way to reach the kind of scales, guarantees and interoperability that our world currently depends on.
+You can look at lots of interesting bits of history where this really challenged us in important ways that ultimately lead to modern standards development organizations.
+Most businesses today realize that there is benefit to them in this regard, but that wasn't always the natural state of things.
+One of the key drivers that ultimately created the pressure necessary to even consider this was that operating at the sorts of scales we began around the industrial revolution was downright dangerous.
+There was lots of loss of life and tons of preventable damage.
+While one might think that things like networks and software are somehow different in this regard (their creation isn't likely to cause direct, physical harm), they are a technology that can be (and is) used to better share information.
+There's probably nothing in human history that has had a bigger impact than the ability to share knowledge and ideas efficiently.
+In nearly every way this is key to advancements in improving safety, longevity, and equality.
+That's why I think open standards are even more important:
+They help us build, define and guarantee a commons that we all benefit from.
+
 Valerie Young (spectranaut)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
