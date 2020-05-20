@@ -9,7 +9,9 @@ Guide! In order to maintain consistency, we follow a few stylistic conventions:
   the reason behind this convention.
 - One space after punctuation - don't use double space after a period,
   exclamation mark, or question mark.
-- Avoid using words that are not recommended in the [Google developer documentation styleguide's word list](https://developers.google.com/style/word-list) (ignoring things are specific to Google products).
+- Avoid using words that are not recommended in the
+  [Google developer documentation styleguide's word list](https://developers.google.com/style/word-list)
+  (ignoring things are specific to Google products).
 
 The `lint.sh` script checks for the preceding conventions. You can run it before
 building as follows:
