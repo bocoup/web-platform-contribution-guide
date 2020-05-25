@@ -59,11 +59,9 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "8a:f6:29:f9:b3:9f:b5:1a:fd:b8:44:2e:c5:cc:4a:91"
-      # Temporarily disabled so that the wpc.guide domain could be prepared
-      # and verified without making the site public.
-      #- run:
-      #    name: Deploy docs to gh-pages branch
-      #    command: gh-pages --dotfiles --message "[skip ci] Updates" --dist build/dirhtml
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist build/dirhtml
 
 workflows:
   version: 2.1
