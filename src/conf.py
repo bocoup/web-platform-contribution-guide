@@ -28,7 +28,7 @@ author = 'Bocoup and Contributors'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['sphinxcontrib.rawfiles']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -52,6 +52,10 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-
 # Favicon
 html_favicon = '_static/img/favicon.png'
+
+# The `CNAME` file is a requirement of the GitHub Pages service (where the HTML
+# version of the guide is currently deployed)
+# https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site
+rawfiles = ['CNAME']
