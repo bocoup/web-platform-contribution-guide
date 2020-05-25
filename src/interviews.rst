@@ -54,7 +54,7 @@ I would say things that helped include
 * humility, to know that there are other people whose work is better than yours and whose input is useful to your work; and to be comfortable with that rather than disheartened or intimidated by it
 * patience and stubbornness, to learn in depth all the relevant materials; to keep working at hard problems and working through all the details and all the issues
 * integrity, to prepare thoroughly and to do thorough work; to speak up when there's some thing to add, question, or correct in the discussion; and to keep working at a solution, and to keep soliciting and integrating feedback, until one is found that truly reflects the design intentions of the technology and is thoroughly worked out, rather than going with a rough idea that seems good enough for some people
-* the desire to do good, because the goal Web standards is to make the Web a better place for everyone
+* the desire to do good, because the goal of Web standards is to make the Web a better place for everyone
 * a focus on the future and the world, because due to Web-compat constraints, the decisions, and the quality or sloppiness of our work, is embedded in this worldwide platform forever.
 
 The main advice I'd give to other people starting out is:
@@ -177,7 +177,7 @@ At the time of this writing (2020), I am also one of the editors of `ECMA-402 <h
 As an editor, I review new features and help to fix parts of the spec that are vague or inconsistently formatted.
 
 Additionally, I help maintain `Test262 <https://github.com/tc39/test262/>`__, a test suite for testing conformance of a JavaScript engine (such as a browser or :term:`Node.js`) with the ECMA-262 standard.
-I also work on `test262.report <https://test262.report/>`__, a website that runs test262 on all the major JavaScript engines and reports on the results.
+I also work on `test262.report <https://test262.report/>`__, a website that runs Test262 on all the major JavaScript engines and reports on the results.
 
 Outside of JavaScript, I work on the `WAI-ARIA Authoring Practices <https://github.com/w3c/aria-practices>`__, which aims to be a resource for developers trying to make accessible, interactive modern websites using HTML, CSS and :term:`ARIA`.
 ARIA is an extension to :term:`HTML` and :Term:`SVG` that can be used to provide necessary information to users who are navigating a website using a screen reader.
@@ -186,16 +186,16 @@ ARIA is an extension to :term:`HTML` and :Term:`SVG` that can be used to provide
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When I was in college, I studied physics and expected to go into physics research, but my first programming class completely derailed my plan.
-I immediately found programming enjoyable, and was impressed with the incredible way in which computers and the internet allowed people to collaborate and share information freely across great distances.
+I immediately found programming enjoyable, and was impressed with the incredible way in which computers and the Internet allowed people to collaborate and share information freely across great distances.
 I wanted to be involved in the creation of such empowering technologies!
 
 My first job out of college was web programming for an electronic medical record company.
-I left a few years later to work on the linux operating system Debian through `Outreachy <https://www.outreachy.org/>`__, a program that funds women and minorities to work on free software projects.
+I left a few years later to work on the Linux operating system Debian through `Outreachy <https://www.outreachy.org/>`__, a program that funds women and minorities to work on free software projects.
 There I got my first experience in testing, working on the `Reproducible Builds <https://reproducible-builds.org/>`__ project (the goal: test all of Debian for "reproducibility" -- every binary Debian ships should be reproducible bit-for-bit by any curious developer!).
 
 Eventually, I needed a regular job again, so I began looking for a work place where I could contribute to free and open source software projects.
 Luckily, I found Bocoup, a software consulting company that specializes in reliability, standards and testing of the web platform.
-In my first interview I was exposed to the ECMAScript specification and the test262 test suite, and I thought, "This is cool, I would totally work on this."
+In my first interview I was exposed to the ECMAScript specification and the Test262 test suite, and I thought, "This is cool, I would totally work on this."
 It is through my work at Bocoup that I got involved in all of the answers to question 1!
 
 3. What skills do you rely on most in your work? Which do you find most important for success?

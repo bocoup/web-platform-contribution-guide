@@ -16,7 +16,7 @@ Therefore, we suggest an approach for how to find who are currently involved in 
 Etiquette
 ~~~~~~~~~
 
-It is possible to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the internet who ask things of them.
+It is possible to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the Internet who ask things of them.
 Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.
 
 * Keep your message short, but provide a link to the relevant :term:`GitHub` issue (or other) for more detailed information.
