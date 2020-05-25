@@ -58,7 +58,7 @@ Here are some of the active IRC channels:
 * CSS: `#css on irc.w3.org <https://www.w3.org/wiki/IRC>`__
 * HTML, DOM: `#whatwg on Freenode <https://whatwg.org/irc>`__
 * JavaScript: `#tc39 on Freenode <https://github.com/tc39/ecma262/blob/master/README.md#community>`__
-* Node.js: `#node.js on Freenode <https://nodejs.org/en/get-involved/>`__
+* :term:`Node.js`: `#node.js on Freenode <https://nodejs.org/en/get-involved/>`__
 
 Browser engines
 ~~~~~~~~~~~~~~~

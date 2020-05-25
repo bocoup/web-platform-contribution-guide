@@ -66,13 +66,13 @@ Ecma International
 
 Ecma (formerly ECMA - the European Computer Manufacturing Association) is a standards body based in Geneva Switzerland.
 Ecma has 4 full time employees, and several active TCs (Technical Committees), most notably, TC39 (the 39th technical committee) which writes three specifications: Ecma-262, Ecma-402, Ecma-404 (collectively ECMAScript).
-These are the underlying specifications for the JavaScript programming language which is implemented in web browsers and Node.js.
+These are the underlying specifications for the JavaScript programming language which is implemented in web browsers and :term:`Node.js`.
 We’d really like to get more into how ECMAScript is standardized, but this is material for a separate guide, or potentially a future version of this guide.
 
 OpenJS Foundation
 ^^^^^^^^^^^^^^^^^
 
-The OpenJS Foundation is a US-based Trade organization home to several dozen open source JavaScript projects including Node.js.
+The OpenJS Foundation is a US-based Trade organization home to several dozen open source JavaScript projects including :term:`Node.js`.
 Node.js is a de facto standard with a more ad hoc process for adding features than other technologies.
 OpenJS is not a standards body, but it does have a governance model for adding features to Node.js.
 Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International.
