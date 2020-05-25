@@ -35,7 +35,7 @@ jobs:
     <<: *defaults
     steps:
       - setup_steps
-      - run: make html
+      - run: make dirhtml
       - persist_to_workspace:
           root: build
           paths: html
