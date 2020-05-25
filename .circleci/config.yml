@@ -38,7 +38,7 @@ jobs:
       - run: make dirhtml
       - persist_to_workspace:
           root: build
-          paths: html
+          paths: dirhtml
 
   deploy-pages:
     docker:
@@ -49,7 +49,7 @@ jobs:
           at: build
       - run:
           name: Disable jekyll builds
-          command: touch build/html/.nojekyll
+          command: touch build/dirhtml/.nojekyll
       - run:
           name: Install and configure dependencies
           command: |
@@ -63,7 +63,7 @@ jobs:
       # and verified without making the site public.
       #- run:
       #    name: Deploy docs to gh-pages branch
-      #    command: gh-pages --dotfiles --message "[skip ci] Updates" --dist build/html
+      #    command: gh-pages --dotfiles --message "[skip ci] Updates" --dist build/dirhtml
 
 workflows:
   version: 2.1
