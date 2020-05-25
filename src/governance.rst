@@ -76,7 +76,7 @@ The OpenJS Foundation is a US-based Trade organization home to several dozen ope
 Node.js is a de facto standard with a more ad hoc process for adding features than other technologies.
 OpenJS is not a standards body, but it does have a governance model for adding features to Node.js.
 Additionally, the OpenJS Foundation sends delegates from its projects to represent web developers at the W3C and Ecma International.
-The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the node global.
+The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) operates within the OpenJS foundation and oversees additions and changes to the :term:`Node Global`.
 
 The :term:`Node Global` is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
 The Node Global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
