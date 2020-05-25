@@ -52,13 +52,16 @@ Glossary of Terms and Jargon
         Internet Relay Chat - how people chat with each other about web standards (instead of slack).
 
     JS
-        JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in node.js.
+        JavaScript - the programming language used to manipulate the behavior of web pages, and to write programs that can run on web pages and in :term:`Node.js`.
 
     Living Standard
         A versionless continuously maintained standard (at the WHATWG).
 
+    Node.js
+        An open-source, cross-platform, JavaScript :term:`runtime` environment that executes JavaScript code outside of a web browser.
+
     Node Global
-        the collection of built-in :term:`APIs <API>` in node.
+        the collection of built-in :term:`APIs <API>` in :term:`Node.js`.
 
     Normative
         content in a specification that contains requirements or is referenced by something that is normative.
@@ -73,11 +76,11 @@ Glossary of Terms and Jargon
         pull request (in :term:`GitHub`).
 
     Runtime
-        A jargon term for the environment in which code runs, like a browser, or node, etc.
+        A jargon term for the environment in which code runs, like a browser, or :term:`Node.js`, etc.
         The term is derived from the **runtime phase** of a computer's execution of a program.
-        Browsers and node.js both run third party code, so we often refer to them casually as "runtimes".
+        Browsers and Node.js both run third party code, so we often refer to them casually as "runtimes".
         This term is also used to refer to the details and :term:`API` surface of the environment that the program is running in.
-        For example JavaScript code in an HTML document has access to the `window` object in it's runtime, whereas the same code running in node.js would have acces to the :term:`Node Global`.
+        For example JavaScript code in an HTML document has access to the `window` object in it's runtime, whereas the same code running in Node.js would have acces to the :term:`Node Global`.
 
     Spec
         short for specification.

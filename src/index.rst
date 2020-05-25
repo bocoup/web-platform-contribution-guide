@@ -13,7 +13,7 @@ Introduction
 
 The "web platform" is comprised of a collection of standardized :term:`application programming interfaces (APIs) <API>` that programmers use to make web pages and web applications.
 This includes technologies, like HTML, CSS and JavaScript.
-In addition to including a full implementation of the JavaScript programming language that web browsers share with Node.js, web browsers expose their own standardized :term:`APIs <API>` specifically made for interacting with web pages.
+In addition to including a full implementation of the JavaScript programming language that web browsers share with :term:`Node.js`, web browsers expose their own standardized :term:`APIs <API>` specifically made for interacting with web pages.
 
 The web platform is powerful and expressive, but it's also a little broken in parts.
 That's where the other part of the web platform comes in.

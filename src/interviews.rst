@@ -176,7 +176,7 @@ I am a member of TC39, the 39th technical committee of the Ecma International, w
 At the time of this writing (2020), I am also one of the editors of `ECMA-402 <https://github.com/tc39/ecma402>`__, the `internationalization extension <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global__Objects/Intl>`__ to the JavaScript language, the development of which falls under a Task Group of TC39.
 As an editor, I review new features and help to fix parts of the spec that are vague or inconsistently formatted.
 
-Additionally, I help maintain `Test262 <https://github.com/tc39/test262/>`__, a test suite for testing conformance of a JavaScript engine (such as a browser or Node) with the ECMA-262 standard.
+Additionally, I help maintain `Test262 <https://github.com/tc39/test262/>`__, a test suite for testing conformance of a JavaScript engine (such as a browser or :term:`Node.js`) with the ECMA-262 standard.
 I also work on `test262.report <https://test262.report/>`__, a website that runs test262 on all the major JavaScript engines and reports on the results.
 
 Outside of JavaScript, I work on the `WAI-ARIA Authoring Practices <https://github.com/w3c/aria-practices>`__, which aims to be a resource for developers trying to make accessible, interactive modern websites using HTML, CSS and ARIA.
