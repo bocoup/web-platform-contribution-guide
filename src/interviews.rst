@@ -7,9 +7,9 @@ Elika J. Etemad (fantasai)
 1. Tell us about the role you play in web standards work - what, where, and how are you contributing?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-I'm one of the tech leads in the CSS Working Group, and have co-edited a significant proportion of its specifications for well over a decade.
+I'm one of the tech leads in the :term:`CSS` Working Group, and have co-edited a significant proportion of its specifications for well over a decade.
 Before that I was a volunteer contributor to the Mozilla project, primarily in standards-compliance QA.
-I'm also on the W3C Advisory Board for these two years, helping with process and governance.
+I'm also on the :term:`W3C` Advisory Board for these two years, helping with process and governance.
 
 2. How did you first get into web standards work?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -93,7 +93,7 @@ Brian Kardell (bkardell)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 My role in standards (like a lot of people's, I imagine) has grown and changed over time.
-I am currently an AC Representative in the W3C and am somehow involved in a long list of things from working group memberships like CSS, to community group memberships like MathML, to contributing to issues and discussions.
+I am currently an AC Representative in the :term:`W3C` and am somehow involved in a long list of things from working group memberships like :term:`CSS`, to community group memberships like MathML, to contributing to issues and discussions.
 I've been involved in some form or another with a lots of proposals across standards bodies and working groups.
 
 Generally speaking, I suppose (and now professionally), I am an advocate for how we can improve things for everyone.
@@ -179,8 +179,8 @@ As an editor, I review new features and help to fix parts of the spec that are v
 Additionally, I help maintain `Test262 <https://github.com/tc39/test262/>`__, a test suite for testing conformance of a JavaScript engine (such as a browser or Node) with the ECMA-262 standard.
 I also work on `test262.report <https://test262.report/>`__, a website that runs test262 on all the major JavaScript engines and reports on the results.
 
-Outside of JavaScript, I work on the `WAI-ARIA Authoring Practices <https://github.com/w3c/aria-practices>`__, which aims to be a resource for developers trying to make accessible, interactive modern websites using HTML, CSS and ARIA.
-ARIA is an extension to HTML and SVG that can be used to provide necessary information to users who are navigating a website using a screen reader.
+Outside of JavaScript, I work on the `WAI-ARIA Authoring Practices <https://github.com/w3c/aria-practices>`__, which aims to be a resource for developers trying to make accessible, interactive modern websites using HTML, CSS and :term:`ARIA`.
+ARIA is an extension to :term:`HTML` and :Term:`SVG` that can be used to provide necessary information to users who are navigating a website using a screen reader.
 
 2. How did you first get into web standards work?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -211,8 +211,8 @@ You have to have patience, and let yourself slowly build up your understanding o
 Take notes, draw diagrams, experiment with code.
 
 Second, courage.
-After all these years, I still get nervous asking a question to strangers online, on GitHub or IRC.
-I'm even more nervous when I open a PR for something I know I need more feedback on.
+After all these years, I still get nervous asking a question to strangers online, on :term:`GitHub` or :term:`IRC`.
+I'm even more nervous when I open a :term:`PR` for something I know I need more feedback on.
 Some people need more or less courage, depending on where they are starting from, but I definitely still need it.
 
 Third, all the skills and knowledge of a regular programmer.
@@ -238,7 +238,7 @@ Sometimes this is good, and sometimes it is bad.
 
 Web standards are another way to democratize the creation of technology, but more intentionally.
 The committees are structured to make collaborative decisions and to try to prevent any one person or company's individual motivations from overwhelming the best solutions to a problem.
-The W3C and TC39 are both increasingly reaching out for community involvement from others besides those who make it onto the committee through their jobs or expertise.
+The :term:`W3C` and TC39 are both increasingly reaching out for community involvement from others besides those who make it onto the committee through their jobs or expertise.
 If you are interested in helping the democratic evolution of the web in this way, I encourage you to join.
 
 Simon Pieters (zcorpan)
@@ -247,7 +247,7 @@ Simon Pieters (zcorpan)
 1. Tell us about the role you play in web standards work - what, where, and how are you contributing?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-I am one of the editors of the HTML standard.
+I am one of the editors of the :term:`HTML` standard.
 I have contributed in particular to images, video, form controls, rendering, and the HTML parser.
 
 I try to improve interoperability between browser engines,
@@ -289,7 +289,7 @@ I read a document by Ian Hickson about `how to minimize a test case <https://www
 and started reporting bugs to browsers.
 I was chatting with Anne van Kesteren in ICQ about why CSS didn't have a parent selector.
 
-In 2005, I subscribed to the WHATWG mailing list, and started to participate in discussions about this exciting next version of HTML.
+In 2005, I subscribed to the :term:`WHATWG` mailing list, and started to participate in discussions about this exciting next version of HTML.
 One of my earliest contributions was `suggesting the new doctype <https://annevankesteren.nl/2005/07/html5-doctype>`__.
 
 In 2007, I applied for a summer internship at Opera Software in Linköping, to work on writing tests for HTML5.
