@@ -85,7 +85,7 @@ Most implementations are written in C++, and knowledge of Rust and JavaScript ar
 If you do want to join an organization to work on browser implementations full time, it's a really good idea to go through this process on your own once or twice.
 This gets you familiar with the codebase and helps prepare you for what will likely be a rigorous interview process.
 There are also other implementers in addition to the major browser vendors you may be interested in working with depending on what you find interesting.
-For example, if you are interested in 'Web of Things' specs you could look at organizations like Bosch or Intel, which explore how to leverage web technologies for internet connected devices.
+For example, if you are interested in 'Web of Things' specs you could look at organizations like Bosch or Intel, which explore how to leverage web technologies for Internet connected devices.
 There are also browsers that use existing engines, but focus on specific concerns, as the Brave browser does with privacy.
 Our organization, Bocoup, is a consulting firm which provides spec testing and tooling services.
 

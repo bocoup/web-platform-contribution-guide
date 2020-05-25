@@ -2,7 +2,7 @@ Web Platform Governance
 -----------------------
 
 .. image:: _static/img/wpcg-venn-diagram.svg
-  :alt: Venn diagram where one set is the Browser (W3C, WHATWG) with HTML, CSS, ARIA and the Window Object; the other set is node.js (OpenJS) with the Node Global, and the overlap is JavaScript (ECMA 262, 402, 404).
+  :alt: Venn diagram where one set is the Browser (W3C, WHATWG) with HTML, CSS, ARIA and the Window Object; the other set is Node.js (OpenJS) with the Node Global, and the overlap is JavaScript (ECMA 262, 402, 404).
 
 W3C
 ~~~
@@ -80,9 +80,9 @@ The `Node TSC <https://github.com/nodejs/TSC>`__ (Technical Steering Committee) 
 
 The :term:`Node Global` is a set of built in :term:`APIs <API>` on top of the JavaScript programming language which adds useful functionality that developers use to make software.
 The Node Global is similar to the ``window`` object in browsers, but geared toward server side software, and build tools for web developers.
-Many web developers use node to manage their projects’ build processes.
-Node share several :term:`APIs <API>` with web browsers, such as ``URL``, ``fetch``, and ``TextDecoder``.
-Node.js is even known to run some of the web-platform-tests tests to ensure interoperability for the features that node and browsers share.
+Many web developers use Node.js to manage their projects’ build processes.
+Node.js share several :term:`APIs <API>` with web browsers, such as ``URL``, ``fetch``, and ``TextDecoder``.
+Node.js is even known to run some of the web-platform-tests tests to ensure interoperability for the features that Node.js and browsers share.
 
 IETF
 ^^^^
