@@ -52,6 +52,10 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-
 # Favicon
 html_favicon = '_static/img/favicon.png'
+
+# The `CNAME` file is a requirement of the GitHub Pages service (where the HTML
+# version of the guide is currently deployed)
+# https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site
+html_extra_path = ['CNAME']
