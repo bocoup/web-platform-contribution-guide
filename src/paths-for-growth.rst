@@ -4,7 +4,7 @@ Paths For Growth
 Contributing to the web platform can be a personally and professionally rewarding career.
 What you’ve learned how to do in this guide will serve you in building a career maintaining the web platform.
 If you haven't already done so, take a moment to read the :doc:`interviews` section of this guide to learn more about the paths of other professionals in this field.
-Then, consider taking the steps and learning the skills outlined in the `Skills <Skills>`_ chapter to get your own career off on the right foot.
+Then, consider taking the steps and learning the skills outlined in the :doc:`skills` chapter to get your own career off on the right foot.
 
 Continue Squashing Bugs
 ~~~~~~~~~~~~~~~~~~~~~~~
