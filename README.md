@@ -6,7 +6,7 @@ validates "multiple types of contributions". We are writing this guidebook to
 help you get started contributing to the web platform
 
 Read the published guide at
-[bocoup.github.io/web-platform-contribution-guide/](https://bocoup.github.io/web-platform-contribution-guide/).
+[wpc.guide](https://wpc.guide).
 
 # Contributing to the Contribution Guidebook
 Please see [contributing guidelines](CONTRIBUTING.md) for adding to this
