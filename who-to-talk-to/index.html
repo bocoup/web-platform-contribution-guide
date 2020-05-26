@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Finding who to talk to &#8212; Web Platform Contribution Guide  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Glossary of Terms and Jargon" href="../glossary/" />
+    <link rel="prev" title="Interviews" href="../interviews/" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="finding-who-to-talk-to">
+<h1>Finding who to talk to<a class="headerlink" href="#finding-who-to-talk-to" title="Permalink to this headline">¶</a></h1>
+<p>Successful specification changes aren’t made in a vacuum.
+It may seem reasonable to think that a working group responsible for a standard decide how things will work, and then implementers are required to comply, but this isn’t how things happen in practice.
+Instead it is an iterative process where implementations inform what is specified, as much as the influence in the other direction.
+Therefore it is important to talk to the people who are likely to implement your proposed change.
+It is also important to talk to other parties that are affected: web developers, framework developers, and people who maintain the relevant specification and related tests.</p>
+<p>Finding who to talk to requires a bit of investigation.
+While it may seem simpler to have a list of people for each possible topic, that has several problems: such a list would likely both be huge but also incomplete, and it would become out of date quickly for various reasons, such as new topics appear, people change projects, teams, or employers, or new people become experts on something.
+Therefore, we suggest an approach for how to find who are currently involved in a particular topic.</p>
+<p><strong>If you get stuck, feel free to reach out to us</strong> and we’re happy to help: <a class="reference external" href="mailto:web-platform-contribution-guide&#37;&#52;&#48;bocoup&#46;com">web-platform-contribution-guide<span>&#64;</span>bocoup<span>&#46;</span>com</a></p>
+<div class="section" id="etiquette">
+<h2>Etiquette<a class="headerlink" href="#etiquette" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to end up with a big list of people to reach out to, but keep in mind that they have their own business to take care of and generally have no obligation to respond to people from the Internet who ask things of them.
+Here are some tips on minimizing the time you ask of others, while maximizing your chances to get a useful response.</p>
+<ul class="simple">
+<li><p>Keep your message short, but provide a link to the relevant <a class="reference internal" href="../glossary/#term-github"><span class="xref std std-term">GitHub</span></a> issue (or other) for more detailed information.
+Say clearly what you are expecting from them (for example, a review from a subject matter expert, or a statement if they are willing to implement something).</p></li>
+<li><p>Say why you are contacting them in particular (for example, they are listed in the OWNERS file).</p></li>
+<li><p>Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.</p></li>
+<li><p>If you don’t get a timely response (about 1 week), try something with a broader audience like discussion group, IRC, or report a bug/issue.</p></li>
+<li><p><a class="reference external" href="https://workaround.org/getting-help-on-irc/">IRC etiquette</a>: Ask your question directly.
+Stay connected and wait.</p></li>
+</ul>
+</div>
+<div class="section" id="specifications">
+<h2>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline">¶</a></h2>
+<p>Reporting a new issue on the relevant specification’s repository is a good way to reach the correct people, and also a good place to discuss the topic at hand (for example, instead of private email threads).
+So if there isn’t already an issue filed for the topic you want to discuss, start with filing a new issue.
+When reaching out to others for feedback, you can link to this issue and ask them to comment there.</p>
+<p>The specification itself is also a good source for finding relevant people to talk to.
+The specification editors will usually have relevant expertise.
+Each specification typically lists who edits the specification.
+In W3C specifications, this is typically listed at the top, maybe under “Specification metadata”.
+In WHATWG specifications, it is typically listed somewhere in the Acknowledgements section (search for “This standard is written by”).</p>
+<p>Many specifications are maintained in GitHub, and they usually have a link to the repository from the specification itself.
+Check out the repository, and use <a class="reference internal" href="../glossary/#term-git"><span class="xref std std-term">Git</span></a> commands such as <a class="reference external" href="https://git-scm.com/docs/git-blame">git blame</a> and <a class="reference external" href="https://git-scm.com/docs/git-log">git log</a> to find who wrote a particular part of the specification.
+It could be the specification’s editor, but it could also be someone else.</p>
+<p>Implementers commenting in related specification issues may also be good candidates for giving input on your specification issue.
+Look through open and closed issues and pull requests for the specification, and see who have contributed with comments, reviews, or changes to related issues.</p>
+<p>Specifications or working groups often also have a mailing list and IRC channel.
+This could be stated in the specification itself, or in the repository’s README.
+Both mailing lists and IRC channels usually have public archives.
+Search the archives to see if there has been prior discussion.</p>
+<p>Here are some of the active IRC channels:</p>
+<ul class="simple">
+<li><p>CSS: <a class="reference external" href="https://www.w3.org/wiki/IRC">#css on irc.w3.org</a></p></li>
+<li><p>HTML, DOM: <a class="reference external" href="https://whatwg.org/irc">#whatwg on Freenode</a></p></li>
+<li><p>JavaScript: <a class="reference external" href="https://github.com/tc39/ecma262/blob/master/README.md#community">#tc39 on Freenode</a></p></li>
+<li><p><a class="reference internal" href="../glossary/#term-node-js"><span class="xref std std-term">Node.js</span></a>: <a class="reference external" href="https://nodejs.org/en/get-involved/">#node.js on Freenode</a></p></li>
+</ul>
+</div>
+<div class="section" id="browser-engines">
+<h2>Browser engines<a class="headerlink" href="#browser-engines" title="Permalink to this headline">¶</a></h2>
+<p>Specification changes typically involve changes to browser engine implementations.
+Browser engines usually have people actively participating in standards discussions, who can either respond to your specification issue directly or help with finding who can do so.
+However, that doesn’t always happen, so it can be necessary to find someone to reach out to.</p>
+<p>The approaches include finding who owns a module, who has recently fixed related bugs, who has recently changed related code in the implementation, and ways of reaching out to a slightly wider audience.</p>
+<div class="section" id="chromium">
+<h3>Chromium<a class="headerlink" href="#chromium" title="Permalink to this headline">¶</a></h3>
+<p>Chromium has OWNERS files in its source tree, which list the email addresses of people qualified to review changes in that directory.
+See the Chromium documentation on <a class="reference external" href="https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md">Code Reviews</a> for details.</p>
+<p>You can <a class="reference external" href="https://cs.chromium.org/">navigate the chromium source code on the web</a> or you can <a class="reference external" href="https://chromium.googlesource.com/chromium/src/+/master/docs/#checking-out-and-building">check out the code</a> if you prefer to navigate it locally.
+Navigating the code base can be tricky, but there’s documentation to help, or you can try to search.
+However, it is likely that you want to look in the <code class="docutils literal notranslate"><span class="pre">src/third_party/blink/renderer/core/</span></code> directory in particular, which holds the implementation of most web-facing features (including, but not limited to, <a class="reference internal" href="../glossary/#term-css"><span class="xref std std-term">CSS</span></a>, <a class="reference internal" href="../glossary/#term-dom"><span class="xref std std-term">DOM</span></a>, <a class="reference internal" href="../glossary/#term-html"><span class="xref std std-term">HTML</span></a>, and <a class="reference internal" href="../glossary/#term-svg"><span class="xref std std-term">SVG</span></a>).</p>
+<p>The next approach is to look at issues in the <a class="reference external" href="https://crbug.com/">Chromium issue tracker</a>.
+Click the drop-down arrow in the search field to find Advanced search.</p>
+<ul class="simple">
+<li><p>Change “Search within” to “All issues”.</p></li>
+<li><p>Leave the “with all of the words” and “without the words” empty.
+You can go back and use these fields to narrow down the results later.</p></li>
+<li><p>In “Statuses”, type “Fixed”.</p></li>
+<li><p>In “Components”, find the relevant component.
+Some components are very broad, such as Blink&gt;CSS, and some are very specific, such as Blink&gt;Layout&gt;Ruby.</p></li>
+</ul>
+<p>Click Search.
+Look at the Owners column, this is probably the person who fixed the issue.
+If the results have too few or too many issues, go back and tweak the search by changing the “Components” and “with all of the words” fields.</p>
+<p>If you find a list of relevant issues, and one person has fixed several of them, that is an indication that they have relevant expertise.
+If you don’t get a good list of relevant issues after a few searches, it’s possible that there aren’t enough relevant issues related to the thing you’re looking for.</p>
+<p>Instead of hunting for issues, you can check who has changed the code of the implementation.
+Find the code that implements the feature you want feedback on, and use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">blame</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>.
+This can also be done in <a class="reference external" href="https://cs.chromium.org/">https://cs.chromium.org/</a> – after finding the right file, click “View in”, then “Git blame” or “Git Revision Log”.
+This can identify who most recently changed a particular line of code, or who wrote it originally.
+However, some changes to the code are entirely unrelated to the feature at hand.
+For example, it can be part of a bigger refactor or reformatting of the code.
+Read the commit message to make sure the change is relevant.</p>
+<p>As an alternative to emailing a single person, you can also report a new issue in the Chromium issue tracker.
+Set the “Component” to what you think is the right one.
+This is likely to reach the right people, and also provides for a public discussion.
+The issue summary can be along the lines of “Consider implementing change X”, and link to the spec change.
+This invites them to review the spec change and also make a statement about whether they want to implement the change.</p>
+<p>Finally, you can turn to the <a class="reference external" href="https://www.chromium.org/contact">chromium-discuss discussion group or #chromium IRC</a>.</p>
+</div>
+<div class="section" id="webkit">
+<h3>WebKit<a class="headerlink" href="#webkit" title="Permalink to this headline">¶</a></h3>
+<p>The documentation on how to <a class="reference external" href="https://webkit.org/getting-started/">get started with contributing to WebKit</a> covers how to get the code,
+how to <a class="reference external" href="https://trac.webkit.org/wiki/WikiStart#GettingAroundtheWebKitSourceCode">navigate the code</a>,
+but also how to get in contact with the team through mailing lists, IRC, and the bug tracker.</p>
+<p>You can navigate the WebKit source code online with <a class="reference external" href="http://trac.webkit.org/">WebKit Trac</a>.
+Click “Browse Source” or “Search”.
+Most of the web-facing features are implemented in <a class="reference external" href="https://trac.webkit.org/browser#webkit/trunk/Source/WebCore">trunk/Source/WebCore</a>.
+When viewing a particular file, there are links for “Blame” and “Revision Log”, which are useful for finding who has made changes to the implementation.</p>
+<p>There is also an (unofficial) <a class="reference external" href="https://github.com/webkit/webkit">mirror of WebKit in GitHub</a>, if you prefer to use git to navigate the source code.</p>
+<p>Next, you can look for bugs in the WebKit bug tracker.
+See the WebKit documentation on <a class="reference external" href="https://webkit.org/reporting-bugs/">Reporting Bugs</a>.
+You can use the <a class="reference external" href="https://bugs.webkit.org/query.cgi?format=advanced">Advanced search</a>:</p>
+<ul class="simple">
+<li><p>Select WebKit as the Product</p></li>
+<li><p>Take a guess at the Component (you can select multiple)</p></li>
+<li><p>Status: select RESOLVED, VERIFIED and CLOSED.</p></li>
+<li><p>Resolution: FIXED</p></li>
+<li><p>Write something in the search field to narrow down the results</p></li>
+</ul>
+<p>Click Search.
+Look at the Assignee column.
+If someone has fixed several related bugs, they could be a suitable person to reach out to.
+You can also click on a specific bug, and find the latest comment by WebKit Commit Bot that says “Committed <em>revision</em>”, which says who reviewed the change (“Reviewed by <em>Name</em>”).</p>
+<p>The <a class="reference external" href="https://webkit.org/team/">WebKit Team</a> page has a list of reviewers.
+Check if the reviewer’s name is listed there.
+You can probably work out what their email is from this page.</p>
+<p>Again, you can also report a new bug (“Consider implementing change X”),
+or ask in one of the mailing lists, or in IRC.</p>
+</div>
+<div class="section" id="gecko">
+<h3>Gecko<a class="headerlink" href="#gecko" title="Permalink to this headline">¶</a></h3>
+<p>Mozilla has good documentation on how you can <a class="reference external" href="https://wiki.mozilla.org/Contribute">contribute</a>, and also have a <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction">step-by-step developer introduction</a>.
+The relevant parts for our purposes include:</p>
+<ul class="simple">
+<li><p>how to <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Need_help">ask for help</a></p></li>
+<li><p>how to <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Simple_Firefox_build">get the code</a></p></li>
+<li><p>how to <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_2_Find_something_to_work_on">search for bugs</a></p></li>
+<li><p>how to <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction#Step_4_Get_your_code_reviewed">find a reviewer</a></p></li>
+</ul>
+<p>The <a class="reference external" href="https://dxr.mozilla.org/mozilla-central/source/">source code can also be viewed online</a>.
+When viewing a file, there are logs for “Blame” and “Log” to find out who has made changes to that file.
+The commit messages typically say who reviewed the change, with <code class="docutils literal notranslate"><span class="pre">r=username</span></code>.</p>
+<p>If you prefer to work locally with the code, you can use <a class="reference external" href="https://www.mercurial-scm.org/repo/hg/help/annotate">hg blame</a> or <a class="reference external" href="https://www.mercurial-scm.org/repo/hg/help/log">hg log</a>.
+If you prefer Git over Mercurial, there’s a <a class="reference external" href="https://github.com/mozilla/gecko-dev">read-only Git mirror on GitHub</a>.</p>
+<p>Next, you can <a class="reference external" href="https://bugzilla.mozilla.org/query.cgi?format=advanced">search for bugs in Bugzilla</a> to find out who has fixed related bugs.</p>
+<ul class="simple">
+<li><p>Select Components as the Classification.</p></li>
+<li><p>Select Core as the Product.</p></li>
+<li><p>Take a guess at the Component.
+You can select multiple.</p></li>
+<li><p>Select RESOLVED, VERIFIED, and CLOSED as the Status.</p></li>
+<li><p>Select FIXED as the Resolution.</p></li>
+<li><p>If the component is too broad, type something in the Summary field to search for.</p></li>
+</ul>
+<p>Click Search.
+Look at the Assignee column.
+You can also click on a bug to see who has reviewed.</p>
+<p>The <a class="reference external" href="https://wiki.mozilla.org/Modules/Core">Modules/Core wiki page</a> documents who are the <a class="reference external" href="https://www.mozilla.org/en-US/about/governance/policies/module-ownership/">module owners and peers</a> for different parts of the code, and also links to a discussion group for each module.
+Module owners have a leadership role, and make decisions about what changes can be made to that module.</p>
+<p>The <a class="reference external" href="https://wiki.mozilla.org/Standards">Standards wiki page</a> has Mozilla’s points of contact per web standard or working group.
+The people listed here are likely good candidates to reach out to for a given specification, and may be able to help identify who the right person to talk to is for a given issue.</p>
+</div>
+</div>
+<div class="section" id="web-platform-tests">
+<h2>web-platform-tests<a class="headerlink" href="#web-platform-tests" title="Permalink to this headline">¶</a></h2>
+<p>Folders have a META.yml file with <code class="docutils literal notranslate"><span class="pre">suggested_reviewers</span></code> which lists GitHub usernames of people who want to be notified of pull requests for that folder, maybe because they want to review, but not necessarily.
+In any case, they have indicated interest in the folder in question, so they may be good candidates to reach out to for the subject matter at hand.</p>
+<p>Using Git (<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">blame</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>) to find who has contributed to a particular test is a good way to find the right person for a test.
+This can also be viewed in GitHub’s user interface; when viewing a file, the contributors for that file are listed, and there are also “Blame” and “History” buttons (<a class="reference external" href="https://github.com/web-platform-tests/wpt/blob/master/url/historical.any.js">example</a>).</p>
+<p>It can also be worthwhile to search for open and closed issues and pull requests, to see who are contributing with issues, code, comments, and who are reviewing.</p>
+<p>Finally, you can reach out in IRC <a class="reference external" href="http://irc.w3.org/?channels=testing">#testing on irc.w3.org</a> (<a class="reference external" href="https://w3.logbot.info/testing">archive</a>), or the <a class="reference external" href="https://lists.w3.org/Archives/Public/public-test-infra/">public-test-infra mailing list</a>.</p>
+</div>
+<div class="section" id="test262">
+<h2>Test262<a class="headerlink" href="#test262" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/tc39/test262">Test262</a> is the testsuite for JavaScript and related specifications.
+Similarly to web-platform-tests, you can find out who has contributed to a test using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">blame</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>.</p>
+<p>TC39 (the committee for JavaScript) has a <a class="reference external" href="https://tc39.es/process-document/">process</a> for changes to the language where a proposal goes through several stages, and each proposal has a “champion”.
+The current proposals are <a class="reference external" href="https://github.com/tc39/proposals">tracked in GitHub</a>, where the proposals’ authors and champions are listed.</p>
+<p>Finally, you can reach out on IRC, <a class="reference external" href="https://github.com/tc39/ecma262/blob/master/README.md#community">#tc39 on Freenode</a>, or the <a class="reference external" href="https://esdiscuss.org/">es-discuss mailing list</a>.</p>
+</div>
+<div class="section" id="web-developers-and-framework-developers">
+<h2>Web Developers and Framework Developers<a class="headerlink" href="#web-developers-and-framework-developers" title="Permalink to this headline">¶</a></h2>
+<p>This category can be a bit tricky because it is a much larger audience.
+How to proceed probably depends heavily on the topic at hand.</p>
+<p>Maybe there are frameworks that handle the use case that you want feedback on.
+If you find such frameworks, you can reach out to the maintainers and ask for their input.
+Maybe they also have an idea about how to get relevant feedback from web developers that are using their framework.</p>
+<p>Other ways to reach web developers can involve talking to people who have a community of web developers around them.
+A question on Twitter from such a person can go a long way to identify pain points web developers have.</p>
+<p>Other ways involve actively searching for blog posts where web developers document how they work around something or complain about differences between browsers.
+Searching for questions in <a class="reference external" href="https://stackoverflow.com/">StackOverflow</a> can also reveal common problems.</p>
+<p>You can also help conduct surveys such as the <a class="reference external" href="https://hacks.mozilla.org/2019/07/mdn-web-developer-designer-survey/">MDN Web Developer and Designer Survey</a> or <a class="reference external" href="https://www.gwhitworth.com/blog/2019/07/form-controls-components/">this survey about form controls</a>.</p>
+<p>You can speak at web developer conferences to raise awareness and get direct feedback about a particular issue.</p>
+<p>Some browser vendors have Developer Relation teams, which can help act as a communication channel between browser vendors or web standards groups and web developers.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wiki.mozilla.org/Devrel">Mozilla Devrel</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/ChromiumDev">Google Chrome Developer Relations on Twitter</a></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../">Web Platform Contribution Guide</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../governance/">Web Platform Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipr/">Intellectual Property Rights Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../skills/">Skills</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bug-guide/">Step by step guide to fix a W3C or WHATWG bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../paths-for-growth/">Paths For Growth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case-studies/">Case Study Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interviews/">Interviews</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Finding who to talk to</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#etiquette">Etiquette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#specifications">Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#browser-engines">Browser engines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-platform-tests">web-platform-tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test262">Test262</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-developers-and-framework-developers">Web Developers and Framework Developers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary of Terms and Jargon</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../">Documentation overview</a><ul>
+      <li>Previous: <a href="../interviews/" title="previous chapter">Interviews</a></li>
+      <li>Next: <a href="../glossary/" title="next chapter">Glossary of Terms and Jargon</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;<span xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">
+	<a rel="cc:attributionURL" href="https://bocoup.github.io/web-platform-contribution-guide/">
+		<span rel="dct:title">Web Platform Contribution Guide</span></a>
+	by
+	<a rel="cc:attributionURL" href="https://github.com/bocoup/web-platform-contribution-guide/graphs/contributors">
+		<span rel="cc:attributionName">Various Authors</span></a>
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+		CC BY-NC-SA 4.0
+		<img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" alt><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt></a>
+</span>
+.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/who-to-talk-to.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

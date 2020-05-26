@@ -1,9 +1,232 @@
+
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		Coming soon.
-	</body>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting started with a history, skill guide and how-to of web standards. &#8212; Web Platform Contribution Guide  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="#" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex/" />
+    <link rel="search" title="Search" href="search/" />
+    <link rel="next" title="Web Platform Governance" href="governance/" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p class="details">May 2020 / Version 1.0 / Various Authors <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
+<div class="section" id="getting-started-with-a-history-skill-guide-and-how-to-of-web-standards">
+<h1>Getting started with a history, skill guide and how-to of web standards.<a class="headerlink" href="#getting-started-with-a-history-skill-guide-and-how-to-of-web-standards" title="Permalink to this headline">¶</a></h1>
+<img alt="Venn diagram where one set is the Browser (W3C, WHATWG) with HTML, CSS, ARIA and the Window Object; the other set is Node.js (OpenJS) with the Node Global, and the overlap is JavaScript (ECMA 262, 402, 404)." src="_images/wpcg-venn-diagram.svg" /></div>
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The “web platform” is comprised of a collection of standardized <a class="reference internal" href="glossary/#term-api"><span class="xref std std-term">application programming interfaces (APIs)</span></a> that programmers use to make web pages and web applications.
+This includes technologies, like HTML, CSS and JavaScript.
+In addition to including a full implementation of the JavaScript programming language that web browsers share with <a class="reference internal" href="glossary/#term-node-js"><span class="xref std std-term">Node.js</span></a>, web browsers expose their own standardized <a class="reference internal" href="glossary/#term-api"><span class="xref std std-term">APIs</span></a> specifically made for interacting with web pages.</p>
+<p>The web platform is powerful and expressive, but it’s also a little broken in parts.
+That’s where the other part of the web platform comes in.
+The term “web platform” <em>also</em> describes the people and practices that are meant to include everyone in improving the standard programming interfaces.
+The web can only work if it’s built with an understanding of all its constituents–the whole world!
+This guide aims to help you participate in the continuing design of the web platform so that your perspective can help shape the direction of the web.</p>
+<p>In this guide, we are going to focus on bugs in a web standard for browsers.
+Bugs are a great way to get started because to get them fixed, you have to touch all of the components of a web standard; a specification, a patch to the source code of a browser engine, and interoperability tests.
+You might be surprised by how working on browser bugs will get you moving into deep parts of the web platform!
+Many of the most prolific contributors to the web platform got their start by working on interoperability bugs between browsers.</p>
+<p>In the context of this guide, the goal of working on the web platform is to reach interoperability, not to add features, or change specs.
+This is maintenance work, and it is the one of the most important things that the web needs.
+In the <a class="reference external" href="https://insights.developer.mozilla.org/">2019 MDN Developer Needs Assessment Report</a>,
+interoperability is among the top pain points for web developers.</p>
+<p>When interoperability is poor, it has several negative consequences:</p>
+<ul class="simple">
+<li><p>Web developers are taxed in time and frustration to work around the interoperability problem.</p></li>
+<li><p>End users that use a browser that the web developer didn’t cater for has a worse experience.</p></li>
+<li><p>Browsers with minority user share are at disadvantage because many web developers only test in the current market leader, leaving their sites broken in other browsers, which creates incentive for users to switch browsers.
+This can ultimately lead to the minority browser to stop developing that browser’s engine, resulting in less browser engine diversity.</p></li>
+</ul>
+<p>We’re writing this guide in the spirit of the <a class="reference external" href="https://p5js.org/community">p5.js community statement</a>, which recognizes and validates “multiple types of contributions”.
+Work towards improving interoperability can sometimes mean adding specification prose, writing tests, and filing bugs on browsers.
+It can also mean deleting things, and writing negative tests to ensure that the feature is not present in a particular browser, or other <a class="reference internal" href="glossary/#term-runtime"><span class="xref std std-term">Runtime</span></a>.
+All forms of this work are part of maintenance and we celebrate each kind of contribution.</p>
+</div>
+<div class="section" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="governance/">Web Platform Governance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="governance/#w3c">W3C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="governance/#whatwg-and-html">WHATWG and HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="governance/#other-standards-bodies-and-foundations">Other Standards Bodies and Foundations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ipr/">Intellectual Property Rights Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skills/">Skills</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="skills/#consensus-building">Consensus Building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skills/#research">Research</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skills/#imagining-the-runtime">Imagining the Runtime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skills/#spec-writing">Spec writing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skills/#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skills/#filing-bugs-on-a-browser">Filing bugs on a Browser</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bug-guide/">Step by step guide to fix a W3C or WHATWG bug</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#select-a-bug">Select a bug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#verify-the-bug">Verify the bug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#communicate-about-your-work">Communicate about your work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#figure-out-the-right-behavior">Figure out the “right” behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#present-research">Present research</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#change-the-spec">Change the spec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#write-a-web-platform-tests-test">Write a web-platform-tests test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug-guide/#report-bugs-for-browser-engines">Report bugs for browser engines</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="paths-for-growth/">Paths For Growth</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="paths-for-growth/#continue-squashing-bugs">Continue Squashing Bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paths-for-growth/#analyze-web-compat-bugs">Analyze Web Compat Bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paths-for-growth/#join-a-web-platform-tests-team">Join a web-platform-tests Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paths-for-growth/#become-a-spec-editor">Become a Spec Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paths-for-growth/#become-a-browser-implementer">Become a Browser Implementer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paths-for-growth/#become-a-working-group-chair">Become a Working Group Chair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paths-for-growth/#start-a-community-group-or-interest-group">Start a Community Group or Interest Group</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="case-studies/">Case Study Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="case-studies/#defined-css-pseudo-class">:defined CSS Pseudo-class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="case-studies/#search-event">Search Event</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interviews/">Interviews</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interviews/#elika-j-etemad-fantasai">Elika J. Etemad (fantasai)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interviews/#brian-kardell-bkardell">Brian Kardell (bkardell)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interviews/#valerie-young-spectranaut">Valerie Young (spectranaut)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interviews/#simon-pieters-zcorpan">Simon Pieters (zcorpan)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="who-to-talk-to/">Finding who to talk to</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="who-to-talk-to/#etiquette">Etiquette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="who-to-talk-to/#specifications">Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="who-to-talk-to/#browser-engines">Browser engines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="who-to-talk-to/#web-platform-tests">web-platform-tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="who-to-talk-to/#test262">Test262</a></li>
+<li class="toctree-l2"><a class="reference internal" href="who-to-talk-to/#web-developers-and-framework-developers">Web Developers and Framework Developers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary/">Glossary of Terms and Jargon</a></li>
+</ul>
+</div>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Boaz Sender,
+Jory Burson,
+Leo Balter,
+Mike Pennisi,
+Simon Pieters,
+Valerie Young,
+future contributors here</p>
+</dd>
+</dl>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Web Platform Contribution Guide</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="governance/">Web Platform Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipr/">Intellectual Property Rights Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skills/">Skills</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bug-guide/">Step by step guide to fix a W3C or WHATWG bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paths-for-growth/">Paths For Growth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case-studies/">Case Study Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interviews/">Interviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="who-to-talk-to/">Finding who to talk to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary/">Glossary of Terms and Jargon</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="governance/" title="next chapter">Web Platform Governance</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;<span xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">
+	<a rel="cc:attributionURL" href="https://bocoup.github.io/web-platform-contribution-guide/">
+		<span rel="dct:title">Web Platform Contribution Guide</span></a>
+	by
+	<a rel="cc:attributionURL" href="https://github.com/bocoup/web-platform-contribution-guide/graphs/contributors">
+		<span rel="cc:attributionName">Various Authors</span></a>
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+		CC BY-NC-SA 4.0
+		<img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" alt><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt></a>
+</span>
+.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
 </html>
