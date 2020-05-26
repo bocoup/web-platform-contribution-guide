@@ -23,7 +23,7 @@ Here are some tips on minimizing the time you ask of others, while maximizing yo
   Say clearly what you are expecting from them (for example, a review from a subject matter expert, or a statement if they are willing to implement something).
 * Say why you are contacting them in particular (for example, they are listed in the OWNERS file).
 * Contact at most 1 person from each project, and ask them to forward your request if someone else is more appropriate.
-* If you don't get a timely response, try something with a broader audience like discussion group, IRC, or report a bug/issue.
+* If you don't get a timely response (about 1 week), try something with a broader audience like discussion group, IRC, or report a bug/issue.
 * `IRC etiquette <https://workaround.org/getting-help-on-irc/>`__: Ask your question directly.
   Stay connected and wait.
 
