@@ -57,7 +57,7 @@ Table of Contents
   paths-for-growth
   case-studies
   interviews
-  directory
+  who-to-talk-to
   glossary
 
 .. [1]

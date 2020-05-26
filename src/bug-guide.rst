@@ -122,7 +122,7 @@ Present research
 Present your research findings on how browsers behave and, if applicable, what web content usage patterns are.
 You can suggest in the specification issue what you think the right fix is based on the findings,
 and ask editors and implementers if they agree with your suggestion.
-See :doc:`directory` for how to find the relevant implementers.
+See :doc:`who-to-talk-to` for how to find the relevant implementers.
 
 Possibly they will all agree with your suggestion, in which case you can go ahead with the next step!
 However, they may also disagree or provide feedback where you need to iterate on the proposal until there is agreement on the general approach, and we need a more concrete proposal to review the specifics.
@@ -247,7 +247,7 @@ it's time to report bugs on browser engines that need to be updated.
 
 But before reporting new bugs, search the bug trackers to see if a bug already exists.
 If it does, you can add a comment to it with any new information.
-:doc:`directory` contains tips on how to search for specific bugs.
+:doc:`who-to-talk-to` contains tips on how to search for specific bugs.
 If you can't find a bug, report a new one!
 
 In the bug report, say what the bug is, and what the expected behavior is.
