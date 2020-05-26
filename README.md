@@ -32,10 +32,9 @@ If you would like to build the site locally, follow these instructions.
 4. Build the site. Windows users should execute the `make.bat` batch file.
    GNU/Linux and macOS users should use the `make` command:
 
-       make html
+       make dirhtml
 
-
-   if you run into trouble with make html command on GNU/Linux, you may have an
+   if you run into trouble with `make dirhtml` command on GNU/Linux, you may have an
    issue with your path. If you don't have the energy to fix that, you can
    change the command from `sphinx-build` to `python3 -m sphinx` in the make
    file and all should be well.
@@ -43,7 +42,7 @@ If you would like to build the site locally, follow these instructions.
 5. Run the linter to make sure your changes follow the conventions described
    in CONTRIBUTING.md. To lint and then build, use:
 
-       ./lint.sh && make html
+       ./lint.sh && make dirhtml
 
 ## License
 The Web Platform Contribution Guide copyright is held by Bocoup and Contributors

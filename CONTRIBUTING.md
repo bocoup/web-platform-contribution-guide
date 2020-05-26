@@ -13,7 +13,7 @@ Guide! In order to maintain consistency, we follow a few stylistic conventions:
 The `lint.sh` script checks for the preceding conventions. You can run it before
 building as follows:
 
-    ./lint.sh && make html
+    ./lint.sh && make dirhtml
 
 We also ask that you read our [Code of Conduct](CODE_OF_CONDUCT) before
 contributing, and follow the expectations and spirit of that document in the
