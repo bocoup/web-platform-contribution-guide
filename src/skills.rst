@@ -25,7 +25,7 @@ Figuring out who to talk to about what and when can be a difficult project in it
 This knowledge is a key part of changing the web.
 We’re working to make this a more transparent process through this guide, but it can still be opaque at times.
 Don’t feel bad if you get stuck.
-You can start by referring to the :doc:`directory` section of this guide.
+You can start by referring to the :doc:`who-to-talk-to` section of this guide.
 If you’re still stuck, you can email web-platform-contribution-guide@bocoup.com for an introduction.
 
 Research
@@ -370,7 +370,7 @@ It's also possible that the test suite is missing tests for the behavior you're 
 In that case, you'll need to write brand new tests from scratch!
 
 Many kinds of contributions won't involve tests.
-If you're still unsure about whether you ought to be working with tests, :doc:`there are plenty of people who can help you decide <directory>`.
+If you're still unsure about whether you ought to be working with tests, :doc:`there are plenty of people who can help you decide <who-to-talk-to>`.
 If you *do* find yourself writing tests, try to be thorough.
 Think about the ways people might misinterpret the specification, and write tests that would show them their mistake.
 
