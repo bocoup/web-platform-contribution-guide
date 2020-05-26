@@ -3,7 +3,7 @@ Skills
 
 Before we get to the step by step guide on how to contribute to a web standard and to make that guide easier to follow, we’d like to step through an overview of the skills involved in working on web standards.
 The goal of this skills overview is to orient you in the guide so that you can see what skills you would be setting out to master if you choose to build a career in web standards.
-If you prefer to learn by doing, you can skip this skills overview and jump right into the `step by step guide <Step by step guide to fix a W3C or WHATWG bug>`_.
+If you prefer to learn by doing, you can skip this skills overview and jump right into the :doc:`step by step guide <bug-guide>`.
 You do not need to have all of these skills to start contributing to the web platform, but we have included this overview for those of you that would like a higher level learning map.
 These skills are extrapolated from internal retrospective documentation at Bocoup for a Mozilla funded project to `improve the interoperability of the fieldset element <https://bocoup.com/work/fieldset-interoperability>`__.
 
