@@ -59,3 +59,10 @@ html_favicon = '_static/img/favicon.png'
 # version of the guide is currently deployed)
 # https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site
 html_extra_path = ['CNAME']
+
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html',
+    ]
+}
