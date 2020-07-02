@@ -132,6 +132,10 @@ See `example spec issue <https://github.com/w3c/fxtf-drafts/issues/120>`__ where
 Change the spec
 ~~~~~~~~~~~~~~~
 
+The previous sections were focused on helping the Working Group evaluate proposals and discuss tradeoffs in the specification issue. 
+Once there is alignment on the high-level approach, the next step is typically a more concrete proposal in the form of a pull request for the specification. 
+This is the responsibility of the specification's editors, but others can create the initial proposal and otherwise help with this.
+
 Most specifications are maintained in :term:`GitHub`.
 Proposing a change is done by submitting a pull request.
 The steps for doing so are mostly the same as `the steps for web-platform-tests <https://web-platform-tests.org/writing-tests/github-intro.html>`__.
