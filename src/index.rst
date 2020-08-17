@@ -43,6 +43,15 @@ Work towards improving interoperability can sometimes mean adding specification 
 It can also mean deleting things, and writing negative tests to ensure that the feature is not present in a particular browser, or other :term:`Runtime`.
 All forms of this work are part of maintenance and we celebrate each kind of contribution.
 
+.. topic:: Testimonials
+
+  .. epigraph::
+
+    I challenged myself to make deliberate contributions to as many web platform areas as I can.
+    Made a few tiny PRs to Servo, WPT and the HTML Standard, and even though they were very minor, it's weirdly satisfying! 😃
+    Kudos to Bocoup for making Web Platform Contribution Guide 💪, it helped a lot to get the lay of the land, as getting into the web standards world can be intimidating even if you have a relevant background.
+
+    -- `Maxim Tsoy <https://twitter.com/muodov/status/1294294830340857856?s=20>`__
 
 Table of Contents
 -----------------
