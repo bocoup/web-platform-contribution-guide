@@ -7,30 +7,12 @@ Web Platform Governance
 W3C
 ~~~
 
-The W3C (World Wide Web Consortium) is an international standards body, with 20 or so employees based out of four universities; MIT (Massachusetts Institute of Technology), ERCIM (European Research Center for Informatics and Mathematics), Keio University in Japan and Beihang University in Beijing, China.
+The W3C (World Wide Web Consortium) is an international standards body, with 60 or so employees based out of four universities; MIT (Massachusetts Institute of Technology), ERCIM (European Research Center for Informatics and Mathematics), Keio University in Japan and Beihang University in Beijing, China.
 The W3C has 450 member companies which send delegates to WGs (working groups).
 Working groups oversee specifications.
-There is an annual meeting of all working groups hosted in a different city each year called TPAC (Technical Plenary Advisory Committee).
+There is an annual meeting of all working groups hosted in a different city each year called TPAC (Technical Plenary and Advisory Committee meetings week).
 
-The W3C working groups oversee and are leading the charge on technologies like SVG, CSS, :term:`ARIA`, Web Driver, Generic Sensors, Web XR, Web Payments, Gamepad and UI Events.
-
-CSS WG
-^^^^^^
-
-The CSS WG is a working group at the W3C.
-CSS Specifications have levels instead of versions, and are backwards compatible.
-The people working on CSS decided early on that CSS has levels.
-CSS1 was the beginning.
-Both CSS1 and CSS2 were monolithic specifications defining all of CSS features at that level.
-After CSS2, the CSS WG started modularizing the specification by technology.
-New specifications that built on top of CSS2 technologies became modules at level 3. Then all new CSS technologies that got started after CSS2 started with level 1. So some CSS technologies are at level 1 (for example, CSS Variables Level 1) while others are at level 5 (for example, Media Queries Level 5) at the time of this writing.
-For this reason, we don’t talk about "CSS3" or "CSS4".
-We use the general term "CSS" and refer to individual technologies at their different levels.
-
-ARIA
-^^^^
-
-:term:`ARIA` (Accessible Rich Internet Applications) is a collection of standards developed by several working groups at the W3C that deal with accessibility of web technologies, mainly assistive technologies like screen readers.
+The W3C working groups oversee and are leading the charge on technologies that impact developers and users everyday, like :term:`SVG`, :term:`CSS`, :term:`ARIA`, and Web Payments. `35 working groups, 10 interest groups <https://www.w3.org/Consortium/activities>`__, and `over 300 community and business groups <https://www.w3.org/community/groups/>`__ advance technologies from idea to standard, with over `250 active specifications <https://w3c.github.io/spec-dashboard/report.html>`__ tracked.
 
 WHATWG and HTML
 ~~~~~~~~~~~~~~~
