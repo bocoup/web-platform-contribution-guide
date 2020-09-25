@@ -89,6 +89,8 @@ For example, if you are interested in 'Web of Things' specs you could look at or
 There are also browsers that use existing engines, but focus on specific concerns, as the Brave browser does with privacy.
 Our organization, Bocoup, is a consulting firm which provides spec testing and tooling services.
 
+A great resource to get started tinkering with browser engines is `Demystifying Browsers <https://textslashplain.com/2020/02/09/demystifying-browsers/>`__ by Eric Lawrence.
+
 Become a Working Group Chair
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
