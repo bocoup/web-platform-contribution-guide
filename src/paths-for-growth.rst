@@ -75,6 +75,8 @@ We often assume that this work is limited to browser vendors like Apple, Google,
 Luckily the underlying engines that drive these browsers -- WebKit, Chromium, Gecko, and now Servo -- are all open source.
 That means you can start contributing browser implementations or fixes *without* joining one of these companies.
 
+Eric Lawrence, a veteran browser engineer, offers some great advice for those starting to tinker in their post `Demystifying Browsers <https://textslashplain.com/2020/02/09/demystifying-browsers/>`__.
+
 As with other contribution examples we've provided in this guide, getting started requires a few important steps.
 First, read the project's documentation, get the code, and build it.
 If there's something you don't understand, ask for help in the project's irc channel -- if the documentation isn't clear, improvements are always welcome!
@@ -88,8 +90,6 @@ There are also other implementers in addition to the major browser vendors you m
 For example, if you are interested in 'Web of Things' specs you could look at organizations like Bosch or Intel, which explore how to leverage web technologies for Internet connected devices.
 There are also browsers that use existing engines, but focus on specific concerns, as the Brave browser does with privacy.
 Our organization, Bocoup, is a consulting firm which provides spec testing and tooling services.
-
-A great resource to get started tinkering with browser engines is `Demystifying Browsers <https://textslashplain.com/2020/02/09/demystifying-browsers/>`__ by Eric Lawrence.
 
 Become a Working Group Chair
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
