@@ -77,7 +77,7 @@ with or without explanation. You will not be penalized for your departure, or
 expected to explain. If you would like to report a violation of this Code of
 Conduct, please contact (1) Sheila Moussavi at sheila@bocoup.com if you would
 like to keep the matter confidential, or (2) hr@bocoup.com if you would like to
-notify the full leadership team of Boaz Sender, Rick Waldron, and Sheila
+notify the full leadership team of Boaz Sender and Sheila
 Moussavi. Any further communication will be determined with your consent. If
 another individual asks you to stop engaging in some behavior in the course of
 your work with Bocoup, you should comply immediately, and are encouraged to
