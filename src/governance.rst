@@ -12,7 +12,7 @@ The W3C has 450 member companies which send delegates to WGs (working groups).
 Working groups oversee specifications.
 There is an annual meeting of all working groups hosted in a different city each year called TPAC (Technical Plenary and Advisory Committee meetings week).
 
-The W3C working groups oversee and are leading the charge on technologies that impact developers and users everyday, like :term:`SVG`, :term:`CSS`, :term:`ARIA`, and Web Payments. `35 working groups, 10 interest groups <https://www.w3.org/Consortium/activities>`__, and `over 300 community and business groups <https://www.w3.org/community/groups/>`__ advance technologies from idea to standard, with over `250 active specifications <https://w3c.github.io/spec-dashboard/report.html>`__ tracked.
+The W3C working groups oversee and are leading the charge on technologies that impact developers and users everyday, like :term:`SVG`, :term:`CSS`, :term:`ARIA`, and Web Payments. `35 working groups, 10 interest groups <https://www.w3.org/groups/>`__, and `over 300 community and business groups <https://www.w3.org/community/groups/>`__ advance technologies from idea to standard, with over `250 active specifications <https://w3c.github.io/spec-dashboard/report.html>`__ tracked.
 
 WHATWG and HTML
 ~~~~~~~~~~~~~~~
