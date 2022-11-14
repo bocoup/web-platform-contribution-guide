@@ -39,7 +39,7 @@ Glossary of Terms and Jargon
         Hypertext Transfer Protocol
 
     HTTP Archive
-        A database of the :term:`HTML`, :term:`CSS` and :term:`JS` response bodies and other data of the top several million1,000,000 pages, collected twice per month.
+        A database of the :term:`HTML`, :term:`CSS` and :term:`JS` response bodies and other data of the top several million pages, collected twice per month.
         Useful for figuring out how web developers use the web, and what changes will be compatible.
 
     Interoperable
